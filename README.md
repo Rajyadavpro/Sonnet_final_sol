@@ -2,17 +2,17 @@
 
 ## Overview
 
-This production-ready system uses Google Gemini AI to automatically process support tickets and generate tailored solutions. It intelligently extracts structured information from raw tickets, finds the best matching Standard Operating Procedure (SOP) from a comprehensive knowledge base, and creates personalized responses for customers.
+This production-ready system uses Google Gemini AI to automatically process support tickets and generate tailored solutions. It extracts structured information from raw tickets, identifies the issue, matches the best Standard Operating Procedure (SOP), and outputs results in JSON format for easy integration and analysis.
 
 ## 🚀 Key Features
 
-- **🤖 AI-Powered Ticket Analysis**: Uses Gemini 1.5 Flash (temperature=0) for deterministic, structured information extraction
+- **🤖 AI-Powered Ticket Analysis**: Uses Gemini 2.5 Pro (temperature=0) for deterministic, structured information extraction
 - **🧠 Intelligent SOP Matching**: Automatically finds the most relevant SOP from 107+ procedural documents using semantic analysis
-- **🔄 Dynamic Content Processing**: Handles any JSON structure without hardcoded field dependencies - fully adaptable
-- **👥 Personalized Response Generation**: Creates tailored solutions addressing specific customer details, company context, and Sonnet IDs
+- **🔄 Dynamic Content Processing**: Outputs results in JSON format, including ticket issue, SOP title, SOP content, and step modifications
+- **👥 Personalized Response Generation**: Creates tailored solutions addressing specific ticket issues and SOP steps
 - **🛡️ Comprehensive Fallback System**: Gracefully handles missing data, API failures, and edge cases
 - **📁 Clean Architecture**: Professional project structure with organized source code, data separation, and output management
-- **⚡ Convenience Scripts**: One-click workflow execution with error handling and progress reporting
+- **⚡ Convenience Scripts**: One-click workflow execution with error handling, progress reporting, and clear output messages
 - **🔐 Secure Configuration**: API keys and sensitive data properly protected with .gitignore
 
 ## 🏗️ System Architecture
@@ -36,6 +36,19 @@ This production-ready system uses Google Gemini AI to automatically process supp
 ├── 📁 config/
 │   ├── .env                          # 🔐 API keys and configuration (gitignored)
 │   └── .env.example                  # 📋 Environment template
+├── 📁 outputs/
+│   └── ticket_dataX/
+│       └── result.json               # 📝 AI-generated structured output for each ticket
+## Usage
+
+1. Place your Gemini API key in `config/.env` as `GEMINI_API_KEY=your_key_here`.
+2. Add ticket files to `data/ticket/ticket_data/` and SOP file to `data/consolidated/consolidated_documents.txt`.
+3. Run `python test.py` to process all tickets in parallel.
+4. Find results in `outputs/ticket_dataX/result.json` for each ticket, containing:
+   - Issue mentioned in the ticket
+   - Title of the SOP
+   - Content of the SOP
+   - Step-by-step modification instructions
 ├── 📁 data/
 │   ├── 📁 consolidated/
 │   │   └── consolidated_documents.txt # 📚 Knowledge base (107 SOP files)
