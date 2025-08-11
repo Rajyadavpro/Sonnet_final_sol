@@ -1,0 +1,22 @@
+Questionnaire on Topics Covered in the Meeting:
+1. What is the purpose of using a fourth system of record (SOR)?
+Answer: The fourth system of record, named SOR, is used to gather all necessary information, including images, validation documents, and review letters, which are not available on the primary web page or application. This integration helps in conducting a thorough investigation. 0:03
+2. What is the idea behind Sona?
+Answer: Sona was created to address the inconvenience of using multiple systems of record by providing an all-in-one solution. It integrates information from various entities and systems, including Oscar, to streamline the investigation process. 0:31
+3. How does Sona handle information from different entities?
+Answer: Sona imports information from every entity it integrates with, categorizing it into primary and secondary columns. It also includes images and other data to ensure compliance and improve investigation efficiency. 1:51
+4. What is the role of the rules engine in Sona?
+Answer: The rules engine in Sona processes the gathered information based on customer policies and procedures. It applies rules to the data and can automatically form responses for disputes, reducing the need for human intervention. 3:45
+5. What are the different types of notifications mentioned in the meeting?
+Answer: The types of notifications include ADR notifications (informing about changes made by bureaus), AUD notifications (updating trade lines between reporting cycles), and block notifications (related to red flags and preventing re-reporting of blocked information). 8:39
+6. What are direct disputes and how are they handled?
+Answer: Direct disputes are disputes that come directly to the data furnisher through various means such as letters, calls, emails, or web portals. The data furnisher investigates these disputes, gathers validation documents, and responds to the consumer. 13:36
+7. What is the significance of the checklist in Sona?
+Answer: The checklist in Sona helps users follow the necessary steps during the investigation of a direct dispute. It ensures that all required actions are completed and can be customized based on client-specific needs. 27:20
+8. How does Sona handle frivolous disputes?
+Answer: Sona allows clients to handle frivolous disputes based on their internal policies. For example, if a consumer sends the same dispute repeatedly, the client may categorize it as frivolous and not respond to it. 16:48
+9. What is the future state goal for Sona regarding response letters?
+Answer: The future goal for Sona is to generate dispute response letters and append validation documents to them, providing a complete package for the client to print and mail to the consumer. 26:02
+10. What customization options are available in Sona for dispute reasons and responses?
+Answer: Sona allows clients to customize dispute reasons and responses through the admin access. They can add or modify reasons and responses as needed, ensuring they align with their specific requirements. 27:44
+These questions and answers cover the key topics discussed in the meeting, providing a comprehensive overview of the functionalities and processes related to Sona.

@@ -1,0 +1,22 @@
+List of Questionnaire Covered in the Meeting Along with Detailed Answers:
+1. What is the purpose of using Azure AI for text analysis?
+Azure AI is used for OCR (Optical Character Recognition) and text analytics to extract and analyze text from documents. This includes recognizing entities like names, addresses, and account numbers. The process involves sending documents to Azure AI, which returns a JSON file with the extracted data. 15:27
+2. What are the input and output formats for the Azure AI API?
+The input to the Azure AI API is typically a PDF or image file (JPEG, PNG, TIFF). The output is a JSON file containing the recognized text and entities, including confidence scores and sentiment analysis. 15:39
+3. Why is the JSON output from Azure AI stored locally?
+The JSON output is stored locally for debugging and comparison purposes. This helps in troubleshooting and verifying the consistency of the data across different versions of the Azure AI model. 17:20
+4. What are the key components of the OCR engine and their roles?
+The OCR engine consists of several components: Azure AI for initial text recognition, a custom model for enhanced entity recognition, and a Python-based service using SpaCy for further text analysis. These components work together to process and analyze documents, extracting relevant information for further use. 10:23
+5. How does the system handle different file formats for OCR?
+Currently, the system primarily supports PDF files for OCR. However, Azure AI also supports JPEG, PNG, and TIFF formats. The system is designed to handle these formats, but the UI and processing logic are primarily configured for PDFs. 11:13
+6. What is the process for setting up the local development environment for the OCR engine?
+Setting up the local environment involves installing Node.js, cloning the repository, configuring environment variables, and running the server. Detailed steps include setting up the necessary dependencies and ensuring the correct configuration for communication between services. 1:09:09
+7. How does the system ensure secure communication between services?
+Secure communication is ensured through the use of secret keys and TLS. Each service uses a secret key to validate requests and ensure that only authorized services can communicate with each other. 1:25:30
+8. What are the common issues faced during the OCR process and their solutions?
+Common issues include incorrect entity recognition, missing data, and processing errors. Solutions involve debugging the JSON output, verifying the consistency of the data, and updating the models or processing logic as needed. 25:50
+9. How does the system handle errors during the OCR process?
+Errors are logged and the status of the document is updated accordingly. The system uses a status code to indicate the state of the document (e.g., error, processing, completed) and takes appropriate actions based on the status. 8:57
+10. What are the future improvements planned for the OCR engine?
+Future improvements include upgrading to the latest version of the Azure AI model, enhancing the entity recognition capabilities, and potentially integrating new AI technologies for better accuracy and performance. 26:03
+These questions and answers cover the key topics discussed in the meeting, providing a comprehensive overview of the OCR engine and its components.

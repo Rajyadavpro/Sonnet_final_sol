@@ -1,0 +1,45 @@
+KPI to evaluate the success of the knowledge transfer
+
+To evaluate the effectiveness of the KT sessions, we have broadly divided into 3 portions along with weightage. The measurement to evaluate will be basis of ratings within the range of 1 to 10 points, reviewed by Chandan, Lidi and Sreeni
+Category	: Onboarding Sessions + Hands-on
+Weightage	: 25%. 
+Duration	: 3 weeks
+Create test for every session. Tests to include known issues or bugs that can drive the analysis and resolution by the team.  
+A questionnaire will be generated based on current documentation and training videos. 
+We will evaluate or grade the resulting artifacts or train of thoughts. 
+For the DevOps team, we will assign specific tasks for environment creation or replication. 
+For the Dev team, task will include the setting up of the local environment for development.  
+
+Category	: Simulation 
+Weightage	: 25%. 
+Duration	: 4 weeks 
+In addition to the test cases, we will use previous customer requests, bugs and tickets in general to generate the simulation of an issue.  
+We will include complexity to cover cases for Developer, DevOps or Support can do. 
+Everything will start from Support and based on knowledge acquired they can pass to the Dev team. 
+Outage simulation for different components in the Ecosystem. 
+
+Category	: Shadowing & Reverse-Shadowing 
+Weightage	: 25%. 
+Duration	: 2 weeks of Shadowing and 3 weeks of Reverse-Shadowing
+Support Shadowing 
+While shadowing the current team, the new team members are expected to document the SOP. 
+Current team will be validating and Correcting the SOP. 
+Development Showing 
+PR Reviews, comments and recommendations. 
+Describe how the issues will be solved with the tools and knowledge they have related to features and bugs. 
+Support Reverse-Shadow 
+Response time and Quality of the response to be evaluated by current team members. 
+Customer satisfaction. Evaluate the bad ratings by doing a deep analysis of the situation. 
+Developer Reverse-Shadow 
+PR Reviews 
+QA/Test performance. Evaluate Unit testing generation. Improve of Coverage. 
+ 
+Standard Operating Procedures (SOP) write it down. (KPI for current team) 
+Guide the creation of the SOP. (each team member) 
+Completion of items in the Sprint 88 & 89 (each team member) – Need Amanda to Sprint Planning and add anything that will be include for current. 
+  
+Notes:  
+Sonnet DevOps will drive until stabilization.
+No more items in 90+ Sprints for Current teams (Task for current team only shadowing) 
+ 
+ 

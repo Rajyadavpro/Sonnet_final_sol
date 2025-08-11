@@ -1,0 +1,17 @@
+                                         CASE:DISPUTES STUCKED IN NEW STATUS
+
+Step 1: Initially check with the dashboard whether it has disputes in new status those are waiting for in house data--
+
+
+Step 2: Cross check with look ahead
+
+
+Step 3: Go into sonnet admin> Rules engine> disputes>rules engine queue
+Search with company name and see if the disputes has been stucked (if the company has status with T) and then go to reset processed flag and give the company name and submit.
+After submitting the disputes rules engine runs and unlock those stucked disputes.
+Verify it on the dashboard.
+
+
+Step 4:
+Inform the user as disputes are available now and then close the ticket. 
+

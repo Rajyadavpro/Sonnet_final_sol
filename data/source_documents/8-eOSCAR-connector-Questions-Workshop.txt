@@ -1,0 +1,57 @@
+Sonnet Services and Communications
+
+What Sonnet services are involved in ACDV downloads
+
+What Sonnet services are involved in ACDV responses to eOSCAR
+
+What Sonnet services are involved in the creation of ACDV receipts
+
+Some companies are reporting they don’t have any disputes to work in today. Order the checklist to research the possible issue:
+Review Sonnet web app logs				- 4
+Review Rules engine logs				- 3
+Review eOSCAR Connector logs			- 2
+Check on Admin dashboard				- 1
+Ask customers about further evidence		- 5
+
+Some companies are reporting they are recently missing ACDV receipts. Order the checklist to research the issue:
+Ask customers about further evidence
+Review Sonnet web app logs
+Review eOSCAR Connector logs
+Review Notary Logs					- 1 (and only 1)
+Review Sonnet Probe logs				- 
+Check on Admin dashboard
+
+Given a company alias (company_abbreviation) and a date, what’s the expected log path to trace associated events to a control number or action?
+/sonnet/scrape/logs/2025/Feb/alias/xxxx13.log
+
+Many log entries use what internally is called “fingerprint”. What is that being used for?
+CompanyAlias: Type(ACDV/AUD..):Action/Buerue:ControllerNumber
+credencerm:ACDV:Download:384878
+credencerm:ACDV:EFX:99995030531194023
+To locate the records during troubleshooting
+
+
+A company is reporting issues with some responded ACDVs. In their side, they find no actual responses, but Sonnet does show the specific Control Numbers as responded on 2025-02-10. What are the services and log path you must verify to further analyze the response events
+Sonnet Admin 
+DB
+eOscar Connector
+/sonnet/scrape/logs/2025/Feb/alias/acdv-response.20250210.log
+
+
+A client is requesting a new strategy to split download batches into their three companies. Which Services can potentially require new features?
+
+What’s the attachment(images) recovery process in Sonnet?
+Create a new download recovery job in the affected environment
+Query e-OSCAR manually to get the data for the specific artifacts
+Replicate the environment locally and provide the attachments to Support. (On-Demand special cases)
+
+A couple of company responses have been stuck for a while. There seem to be no progress in the responses list despite the API user is being marked intermittently as “in-use”. What’s the recommended sequence of actions in that scenario?
+Report the issue to the support team					- 1
+Verify there is data to submit						- 2
+Toggle the “in-use” switch							- 4
+Create a bug task in your Sprint placeholder				- 5
+Dig into the company response logs to find out any abnormal situation	- 3
+
+A client has reported issues with the data in their AUD receipts. A field value in the PDF is not matching with was reported. You have been assigned the corresponding User story. Describe your process to task out the story and explain your reasoning for each one.
+
+There has been an alarming number of companies without downloads today. Describe your process to research/fix the situation and explain your reasoning on each step.

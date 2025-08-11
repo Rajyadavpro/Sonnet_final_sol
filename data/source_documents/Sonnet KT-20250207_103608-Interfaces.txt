@@ -1,0 +1,22 @@
+Questionnaire on the Topics Covered in the Meeting
+1. What are the main responsibilities of the internal interfaces discussed in the meeting?
+Answer: Internal interfaces are responsible for accessing the customer's system of record to insert, update, or retrieve consumer or account information and other supporting data. They use technologies like Node.js, Express, and Nest.js. 26:26
+2. What are the three types of interfaces mentioned, and what are their roles?
+Answer: The three types of interfaces are batch interfaces, API-integrated interfaces, and internal interfaces. Batch interfaces handle large data transfers, API-integrated interfaces facilitate real-time data exchange, and internal interfaces access customer systems of record for data retrieval and updates. 25:21
+3. How does the XP-2 connector handle account information, and what are its limitations?
+Answer: The XP-2 connector uses a straightforward structure to handle account information, primarily focusing on fetching data without submitting it. It does not have scripts and tooling for certain functionalities, and it relies on a CLI utility for parameter translation. 9:38
+4. What challenges were faced with the J Exchange interface, and why is it not widely used?
+Answer: The J Exchange interface faced challenges in retrieving specific fields like payment history profiles, which are crucial for its functionality. Due to these limitations, it is not widely implemented, and customers are encouraged to integrate with the system via API instead. 46:24
+5. What is the significance of the refresh process in the interfaces, and how is it implemented?
+Answer: The refresh process ensures that the most recent data from the customer's system of record is available. It runs daily at a specified time, updating the data to reflect any changes made in the customer's system. This process is crucial for maintaining data accuracy. 1:30:47
+6. How do the SIM Exchange and Correlation interfaces differ in their initialization and data retrieval methods?
+Answer: The SIM Exchange interface initializes by loading all company properties from the database, and it fails if the setup is incorrect. In contrast, the Correlation interface dynamically fetches configuration data during runtime, making it more flexible and lightweight. 1:33:57
+7. What are the common customization requests from customers, and how are they handled in the interfaces?
+Answer: Common customization requests include specific data transformations, account status rules, and payment history formatting. These requests are handled by implementing custom logic within the service methods for each customer, ensuring their unique requirements are met. 1:16:54
+8. What technologies and tools are used for logging and debugging in the J Exchange interface?
+Answer: The J Exchange interface uses extensive logging to capture requests, responses, and errors. This logging is required for certification and debugging purposes, ensuring that all interactions with the interface are well-documented and traceable. 52:38
+9. What are the key differences between the XP-2 and SIM Exchange connectors in terms of their structure and functionality?
+Answer: The XP-2 connector is simpler, focusing on fetching data without submitting it, and lacks certain scripts and tooling. The SIM Exchange connector is more complex, with multiple endpoints for different data types and a structured initialization process that relies on database configurations. 9:38
+10. How do the interfaces handle session management and authentication for secure data access?
+Answer: Interfaces like Correlation use session IDs to manage authentication, ensuring secure data access. These session IDs are refreshed frequently to prevent expiration and maintain a secure connection with the customer's system. 1:45:01
+These questions and answers cover the key topics discussed in the meeting, providing a comprehensive overview of the interfaces, their functionalities, challenges, and customization requirements.

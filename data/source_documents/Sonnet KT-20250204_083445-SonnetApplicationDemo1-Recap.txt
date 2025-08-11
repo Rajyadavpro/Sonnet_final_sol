@@ -1,0 +1,14 @@
+Key Topics:
+Login Types and SSO: Amanda and Chandan discussed the different login types for the production environment, including SSO login and username-password login, and how they are determined by the user's IP address. 0:12
+Dashboard Overview: Amanda explained the dashboard layout, including various tiles representing different queues and dispute statuses, and how users can navigate through them. 4:49
+Dispute Steps Explanation: Amanda clarified the three steps involved in the data file exchange process for disputes, including downloading the dispute, receiving customer information, and sending the response. 6:34
+Response Queue and Errors: Amanda and Chandan discussed how disputes move to the response queue, the need for user submission, and handling errors in the response queue. 7:17
+Dispute Statuses and States: Amanda explained the correlation between dispute steps and states, such as new, active, QA, and WIP, and how disputes move between these states based on user actions. 10:54
+Duplicate Disputes: Amanda and Vinay discussed the concept of duplicate disputes, which are multiple disputes received on the same account number, and how they are grouped and handled in the system. 14:31
+Response Code Assignment: Amanda explained how response codes are assigned by the rules engine and the importance of having a response code for every dispute. 20:41
+Consumer Information Columns: Amanda described the different columns in the consumer information tab, including the Oscar, primary, secondary, and recommended response columns, and how they are populated and used. 21:32
+AUD Creation and Usage: Lidiexy Alonso explained the process of creating an AUD (Automated Update Dispute) to correct or update information in the system, and how it can be used to fix errors or update trade lines. 27:22
+Custom Work Queues: Lidiexy Alonso discussed the creation and management of custom work queues, which can be defined by users or admins based on specific criteria. 36:31
+AUD Notifications: Lidiexy Alonso explained the different types of notifications, including AUD notifications, block notifications, and Dr. notifications, and how they are handled in the system. 1:01:34
+Block Notifications: Lidiexy Alonso described block notifications, which are used to block trade lines for identity theft or other reasons, and how users can review and take action on these notifications. 1:03:54
+Data Flow Overview: Lidiexy Alonso provided an overview of the data flow for ACDVs (Automated Consumer Dispute Verifications), including the process of receiving disputes from bureaus, gathering system of record information, and submitting responses. 1:16:24

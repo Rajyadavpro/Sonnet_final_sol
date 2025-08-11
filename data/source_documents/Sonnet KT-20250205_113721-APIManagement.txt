@@ -1,0 +1,21 @@
+Questionnaire on Topics Covered in the Meeting
+1. What is the purpose of the application gateway in Azure?
+The application gateway in Azure serves as a front door for the app, providing an extra layer of security for accessing the API and communication. It includes a web application firewall and handles SSL/TLS termination. 2:17
+2. What are the key components of the application gateway setup?
+The key components include the front-end listener, SSL profile, root and intermediate certificate chain, and the web application firewall. The front-end listener waits for customer requests, and the SSL profile handles TLS termination. 3:00
+3. How is the client certificate handled in the application gateway?
+The client certificate is not needed directly; only the root and intermediate certificates are required. The client signs the request with their private key, and the gateway authenticates it. 3:55
+4. What is the validity period of the certificates used?
+The certificates from DigiCert are valid until 2031, although some customers may require yearly renewals due to compliance needs. 4:22
+5. How are IP addresses whitelisted in the network security group?
+IP addresses are whitelisted by adding an explicit allow rule in the network security group's inbound security rules. This involves specifying the source IP/CIDR ranges. 9:43
+6. What is the role of the API management instance in the setup?
+The API management instance acts as a middleman between the gateway and the API server. It handles inbound policies, custom domains, and versioning of APIs. 13:09
+7. How are logs managed for monitoring and troubleshooting?
+Logs are managed using Azure Monitor with 100% sampling, logging errors, IP addresses, and headers. This helps in troubleshooting issues, especially with reluctant customers like Navy Federal Credit Union. 22:08
+8. What was the specific issue encountered with Navy Federal Credit Union's requests?
+Navy Federal Credit Union was sending HTML encoded JSON in the request body, which was not expected. This was due to their proxy applying HTML encoding to the request body. 24:07
+9. How was the issue with Navy Federal Credit Union's requests resolved?
+The issue was resolved by allowing plain text requests and treating them as JSON in the code, ensuring compatibility with their proxy's behavior. 25:35
+10. What are the future plans for the API management instance?
+There are plans to potentially replace the API management instance with a direct gateway to API server setup, simplifying the configuration and reducing costs. 27:21

@@ -1,0 +1,75 @@
+How to login with Active Directory SSH to production (Only production requires PIM access)
+First activate your PIM group 
+You can go to https://portal.azure.com search on Azure AD Privileged Identity management then select that link.  Once in the PIM portal select SECD-PaliPrd-Virtual-Machine-Admin under eligible assignments then activate access with reference to support ticket, change control or dev ops story.
+
+Activate your role – note default is 24 hours.
+
+
+
+Step 1: Ensure you have the latest Azure CLI installed.
+
+You can install the Azure CLI from https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest . Note that you can install this on Windows, macOS, and just about any flavor of Linux.
+Step 2: Run the Azure CLI and log into your Azure account.
+
+Once you've installed the CLI, open a command prompt, terminal, or PowerShell and run the following command to log into your Azure account.
+
+az login
+Step 3: Install the SSH extension for Azure CLI
+az extension add --name ssh
+Step4: Use the command to login into the vm’s in a subscription.
+Production Servers require PIM!
+az ssh vm --vm-name prdpipe-l01 --resource-group rg-PaliPRD-LAN --prefer-private-ip --subscription Sonnet_Production_Environment
+
+az ssh vm --vm-name prdkey01 --resource-group rg-PaliPRD-LAN --prefer-private-ip --subscription Sonnet_Production_Environment
+SFTP Severs
+az ssh vm --vm-name prdweb01 --resource-group rg-PaliPRD-DMZ --prefer-private-ip --subscription Sonnet_Production_Environment
+az ssh vm --vm-name prdweb02 --resource-group rg-PaliPRD-DMZ --prefer-private-ip --subscription Sonnet_Production_Environment
+API Server
+az ssh vm --vm-name prdapi02 --resource-group rg-PaliPRD-DMZ --prefer-private-ip --subscription Sonnet_Production_Environment
+
+az ssh vm --vm-name prdcoresa01 --resource-group rg-PaliPRD-IMZ --prefer-private-ip --subscription Sonnet_Production_Environment
+az ssh vm --vm-name prdint01 --resource-group rg-PaliPRD-IMZ --prefer-private-ip --subscription Sonnet_Production_Environment
+Image Servers
+az ssh vm --vm-name prdrpa01 --resource-group rg-PaliPRD-IMZ --prefer-private-ip --subscription Sonnet_Production_Environment
+az ssh vm --vm-name prdrpa02 --resource-group rg-PaliPRD-IMZ --prefer-private-ip --subscription Sonnet_Production_Environment
+az ssh vm --vm-name prdocr01 --resource-group rg-PaliPRD-LAN --prefer-private-ip --subscription Sonnet_Production_Environment
+az ssh vm --vm-name prdresp01 --resource-group rg-PaliPRD-LAN --prefer-private-ip --subscription Sonnet_Production_Environment
+az ssh vm --vm-name prdresp02 --resource-group rg-PaliPRD-LAN --prefer-private-ip --subscription Sonnet_Production_Environment
+Rules Engine Server
+az ssh vm --vm-name prdre01 --resource-group rg-PaliPRD-LAN --prefer-private-ip --subscription Sonnet_Production_Environment
+
+
+CQA
+az ssh vm --vm-name cqaweb01 --resource-group rg-PaliCQA-DMZ --prefer-private-ip --subscription Sonnet_CQA_Environment
+
+
+UAT 
+az ssh vm --vm-name uatkey01  --resource-group rg-Paliuat-LAN --prefer-private-ip --subscription Sonnet_UAT_Environment
+az ssh vm --vm-name uatapi01  --resource-group rg-Paliuat-DMZ --prefer-private-ip --subscription Sonnet_UAT_Environment
+az ssh vm --vm-name uatweb01 --resource-group rg-Paliuat-DMZ --prefer-private-ip --subscription Sonnet_UAT_Environment
+az ssh vm --vm-name uatresp01  --resource-group rg-Paliuat-LAN --prefer-private-ip --subscription Sonnet_UAT_Environment
+az ssh vm --vm-name uatint01  --resource-group rg-Paliuat-IMZ --prefer-private-ip --subscription Sonnet_UAT_Environment
+az ssh vm --vm-name uatrpa02  --resource-group rg-Paliuat-IMZ --prefer-private-ip --subscription Sonnet_UAT_Environment
+az ssh vm --vm-name uatpipe-l01  --resource-group rg-Paliuat-LAN --prefer-private-ip --subscription Sonnet_UAT_Environment
+az ssh vm --vm-name uatrpa01  --resource-group rg-Paliuat-IMZ --prefer-private-ip --subscription Sonnet_UAT_Environment
+az ssh vm --vm-name uatre01  --resource-group rg-Paliuat-LAN --prefer-private-ip --subscription Sonnet_UAT_Environment
+az ssh vm --vm-name uatcoresa01 --resource-group rg-Paliuat-IMZ --prefer-private-ip --subscription Sonnet_UAT_Environment
+
+
+
+
+Dev
+az ssh vm --vm-name devrpa02 --resource-group  rg-PaliDev-IMZ --prefer-private-ip --subscription Sonnet_Development_Environment
+az ssh vm --vm-name devweb01 --resource-group  rg-PaliDev-DMZ --prefer-private-ip --subscription Sonnet_Development_Environment
+az ssh vm --vm-name Devlinux-vm1  --resource-group  sonnet-dev --prefer-private-ip --subscription Sonnet_Development_Environment
+az ssh vm --vm-name devapi01  --resource-group  rg-Palidev-DMZ --prefer-private-ip --subscription Sonnet_Development_Environment
+az ssh vm --vm-name devresp01  --resource-group  rg-Palidev-LAN --prefer-private-ip --subscription Sonnet_Development_Environment
+az ssh vm --vm-name devrpa02  --resource-group  rg-Palidev-LAN --prefer-private-ip --subscription Sonnet_Development_Environment
+az ssh vm --vm-name devint01 --resource-group rg-PaliDev-IMZ --prefer-private-ip --subscription Sonnet_Development_Environment
+az ssh vm --vm-name devre01  --resource-group  rg-Palidev-LAN --prefer-private-ip --subscription Sonnet_Development_Environment
+
+
+
+Export the SSH configuration for use with SSH clients that support OpenSSH
+https://learn.microsoft.com/en-us/azure/active-directory/devices/howto-vm-sign-in-azure-ad-linux#export-the-ssh-configuration-for-use-with-ssh-clients-that-support-openssh
+such as putty etc..

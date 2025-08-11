@@ -1,0 +1,36 @@
+Questionnaire on Topics Covered in the Meeting
+1. What are the different login types discussed in the meeting?
+2. How is the login screen determined for users?
+3. What is the purpose of the Sonnet Admin side and Sonnet Demo side of the Web App?
+4. What are the steps involved in the data file exchange process?
+5. What happens if there is an error in sending the response to EOscar?
+6. What is the purpose of the 360 view in Sonnet?
+7. What are the different states a dispute can be in?
+8. What is the purpose of the checklist in Sonnet?
+9. What are AUDs and when are they created?
+10. What are block notifications and how are they handled?
+
+Questionnaire on Topics Covered in the Meeting
+1. What are the different login types discussed in the meeting?
+Answer: The meeting discussed two types of logins: SSO (Single Sign-On) based login and username/password login. The type of login displayed depends on the client's configuration and the user's IP address. 1:47
+2. How is the login screen determined for users?
+Answer: The login screen is determined by the user's IP address and SSO configuration present or not. An SSO user should be in the range of IPs assigned at the Organization level where the IP address is whitelisted. Once those requirements at meet they will be redirected accordingly. If the user login from outside the network, they are taken to the regular username/password screen, same as any other none SSO users. 2:17
+3. What is the purpose of the Sonnet Admin side and Sonnet Demo side of the Web App?
+Answer: The Sonnet admin side is for administrative tasks, while the demo side is used for demonstrating functionalities. Users can select the company they are servicing and access the relevant environment. 1:23
+4. What are the steps involved in the data file exchange process?
+Answer: The data file exchange process involves three steps:
+Step 1: Contains a portion of the data of the disputes coming from eOscar for the customer to lookup the account/consumer data in their SOR.
+Step 2: Receiving the matching account and customer's information from the SOR attached to the dispute in Sonnet.
+Step 3: Contains the account and customer's information response sent back to eOscar for the Customer to processed. 7:03
+5. What happens if there is an error in sending the response to EOscar?
+Answer: If there is an error in sending the response to EOscar, the dispute remains in the response queue, and an error message is displayed to the user. The user can correct the error and resubmit the response. 8:29
+6. What is the purpose of the 360 view in Sonnet?
+Answer: The 360 view in Sonnet shows all disputes received for the same account number. It allows users to group and submit responses for multiple disputes simultaneously. 15:59
+7. What are the different states a dispute can be in?
+Answer: Disputes can be in various states such as new, active, QA (Quality Assurance), WIP (Work in Progress), completed and Error. The state changes based on user actions and the progress of the dispute resolution process. 12:05
+8. What is the purpose of the checklist in Sonnet?
+Answer: The checklist in Sonnet is used by users to verify and mark off items during the investigation of a dispute. It helps ensure that all necessary steps are completed before submitting the response. 32:10
+9. What are AUDs and when are they created?
+Answer: AUDs (Automated Update Disputes) are created to update information in the bureaus. They are used when there is a need to correct or update information after a dispute has been responded to. 27:56
+10. What are block notifications and how are they handled?
+Answer: Block notifications are received from the bureaus when a trade line is blocked due to identity theft or other reasons. Users can review the block notification and create a Block Recission Request (BRR) to reinstate the trade line if necessary. 1:04:01

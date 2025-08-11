@@ -1,0 +1,2052 @@
+StuckChallenging Tickets Discussion & Knowledge Sharing with Amanda (MonWedFri)-20250721_223408-Meeting Recording
+July 21, 2025, 5:03PM
+2h 13m 6s
+
+Supriya Siddappa Kulageri started transcription
+
+Sagar Gurudatta Pai   0:04
+Having a conversation with Liddy that this is working as expected and what they're expecting would be an enhancement.
+And.
+We are struggling to communicate in which IT will be convincing for The customer to understand what what we are trying to say.
+
+Supriya Siddappa Kulageri   0:27
+Thanks.
+
+Amanda Gilbert   0:28
+OK, so it's the mid Florida ticket. Let me look. I see it on your screen, but I have a hard time following when you're scrolling, so I'm just gonna look on my screen.
+
+Sagar Gurudatta Pai   0:39
+Yeah, I'm not stable when I'm presenting. I know that I've got that feedback many times, I know.
+
+Amanda Gilbert   0:41
+You're OK.
+
+Supriya Siddappa Kulageri   0:52
+1.
+Yeah.
+
+Amanda Gilbert   1:29
+So you're talking specifically about 22046 only, correct?
+
+Sagar Gurudatta Pai   1:38
+I guess The related incidents are also The same because on DevOps I believe nothing has been done. One second, I was going through IT 8119.
+
+Amanda Gilbert   1:55
+Mhm.
+
+Sagar Gurudatta Pai   1:57
+Because I did not see any communication, but I see directly. Uh.
+Enhancement request where The child parenting parent child link linked dispute should follow The same queue and IT should give what do you call?
+There was additional information there. I should give A. note indicating why IT was sent to The QAQ.
+
+Amanda Gilbert   2:28
+I see, yeah.
+So I'm.
+
+Sagar Gurudatta Pai   2:37
+Because I.
+Yes, please go ahead. Sorry.
+
+Amanda Gilbert   2:39
+Mm-hmm. I'm creating another one because it looks like it wasn't addressed fully.
+
+Sagar Gurudatta Pai   2:46
+OK.
+
+Amanda Gilbert   2:46
+I remember meeting with him about the disputes that are going to QA because I was under the impression they they were all going to QA and he said only the children were going to QA and that's how it was set up.
+
+Sagar Gurudatta Pai   2:53
+Mhm.
+
+Amanda Gilbert   3:02
+So I created a successor user story for an enhancement, but I don't see where the grouping is addressed.
+
+Sagar Gurudatta Pai   3:12
+Even I did not see that.
+
+Amanda Gilbert   3:15
+I don't either. I'm putting it in 101 and I'll give you a new ID, so just a second.
+
+Sagar Gurudatta Pai   3:21
+OK.
+
+Amanda Gilbert   4:05
+OK, 8503.
+And I'm checking the two incidents there.
+OK, same thing.
+
+Sagar Gurudatta Pai   5:08
+Then I was looking at this one as well. Can we move to next one?
+
+Amanda Gilbert   5:14
+Yeah.
+
+Sagar Gurudatta Pai   5:15
+8159.
+Where they wanted to copy The custom queue from The consumer queue from 24200 to this organization 24201.
+
+Amanda Gilbert   5:31
+OK.
+
+Sagar Gurudatta Pai   5:32
+I see this year.
+Not there.
+
+Amanda Gilbert   5:49
+OK.
+So there's two things.
+
+Sagar Gurudatta Pai   5:51
+This is not.
+OK.
+
+Amanda Gilbert   5:54
+There's two things that have to happen.
+
+Sagar Gurudatta Pai   5:58
+Mhm.
+
+Amanda Gilbert   5:58
+For a custom queue, the first thing is that it has to be built in the rules engine.
+
+Sagar Gurudatta Pai   6:04
+OK.
+
+Amanda Gilbert   6:04
+The second thing is you have to build the queues for the UI, so either they're not built in the rules engine or they're not built in the UI, or both.
+So we need we can find out. I can show you how to find out or you can just ask the person who did the task.
+
+Sagar Gurudatta Pai   6:19
+Uh.
+I have pinged Vinay basically for it.
+
+Amanda Gilbert   6:30
+Mhm.
+
+Sagar Gurudatta Pai   6:32
+8159.
+I was already on it. My bad, sorry.
+I'm waiting for him to ping me. I'm just waiting for his confirmation because there isn't any information which I can see here. There are many linked items here there.
+So I'll guess I'll wait for him to get back to me.
+
+Amanda Gilbert   7:03
+OK.
+
+Sagar Gurudatta Pai   7:05
+And what was The other item? This one again, yeah, this is again related to rules engine where we said that IT is fixed, but The customer got back stating that IT is not fixed.
+
+Amanda Gilbert   7:06
+Mm.
+100.
+
+Sagar Gurudatta Pai   7:24
+So multiple items in this DevOps #8240.
+
+Amanda Gilbert   7:33
+OK, so.
+We so this one was closed. The original was closed. The client came back and said no, it's not fixed.
+
+Sagar Gurudatta Pai   7:43
+Mm-hmm. No.
+
+Amanda Gilbert   7:51
+OK.
+What was the number for that one? The ticket number?
+
+Sagar Gurudatta Pai   7:59
+22670.
+
+Amanda Gilbert   8:15
+OK, so a couple things #1.
+
+Sagar Gurudatta Pai   8:18
+Mhm.
+
+Amanda Gilbert   8:21
+Anytime we change their no touch, we should be turning off their no touch.
+So Vinay should be doing that. Whether or not he's doing it, I don't know. But we make the change. So we make the change. We turn off the no touch. They validate the change. Once it's good, we turn it back on. It looks like we left it on.
+
+Sagar Gurudatta Pai   8:28
+OK.
+Mhm.
+
+Amanda Gilbert   8:43
+Which is. Does that make any sense to you?
+I'm trying to make sure we're on the same page.
+
+Sagar Gurudatta Pai   8:47
+So The check.
+I got IT that you are saying that whenever we are deploying any, making any changes related to no touch, no touch needs to be turned off. We make The changes, The customer validates IT and then we turn on The no touch, correct. So by keeping IT on, does IT mean that The changes never got into effect?
+
+Amanda Gilbert   8:57
+Yes.
+Yes.
+No, it means the customer wasn't able to validate the changes.
+
+Sagar Gurudatta Pai   9:14
+OK.
+
+Amanda Gilbert   9:16
+So it doesn't make sense for us to change automation and leave the automation on, right? They have to check it. They have to make sure because otherwise we can be held liable for issues. And I don't know about you, but I don't want to be liable for a client not being able to validate automation.
+
+Sagar Gurudatta Pai   9:16
+OK.
+And.
+
+Amanda Gilbert   9:35
+So that's the first thing, and that would be on the dev's responsibility because they're the ones they know when they're going to make the change.
+
+Sagar Gurudatta Pai   9:39
+Um.
+OK.
+
+Amanda Gilbert   9:44
+Um.
+We should leave the work item that is closed as closed, but yeah, that's fine. The end for it is what I meant. We should leave it as is, but I think we need to.
+
+Sagar Gurudatta Pai   9:50
+It is resolved, not closed.
+Mm-hmm.
+
+Amanda Gilbert   10:00
+Do a new one.
+
+Sagar Gurudatta Pai   10:02
+Mhm.
+OK, I will do that.
+
+Amanda Gilbert   10:08
+All right. And make sure hold, hold on, let me let me do it because I want to make sure that it's attached to the original one, which is 8240. I just want it to be a successor of 8240. So if you can, if you can make sure that that happens.
+So we yeah, just do the one above it add link cause yeah right there and then new and then just select successor.
+
+Sagar Gurudatta Pai   10:26
+OK.
+It will not let me copy anything, right?
+
+Amanda Gilbert   10:52
+What do you mean?
+
+Sagar Gurudatta Pai   10:55
+It will pick up the details automatically or I wanted to copy the details.
+
+Amanda Gilbert   11:00
+No, it's. You'll have to copy the details. It's completely separate.
+
+Sagar Gurudatta Pai   11:33
+We would have to change the due date again as well for this putting a due date there because I remember while prioritization we did add that so we should accommodate it in the IT in the current sprint or the next one. Ideally I guess this sprint.
+
+Amanda Gilbert   11:39
+Mhm.
+And we don't have any room in this spread. There's zero space, so you'll have to put it in the next one, yeah.
+
+Sagar Gurudatta Pai   11:55
+OK, so I'm not adding anything.
+101.
+
+Amanda Gilbert   12:33
+Yes.
+
+Sagar Gurudatta Pai   13:09
+OK.
+I can.
+So any more I wanted to talk about?
+I have to get back to this customer.
+No, I guess just two.
+I don't have anything else. These these were the only one which I wanted to talk.
+
+Amanda Gilbert   13:47
+OK.
+
+Sagar Gurudatta Pai   13:49
+James is there.
+
+Amanda Gilbert   13:51
+Oh, nice.
+Hello, James.
+
+James Maki   13:54
+Yep, I'm here.
+What's up, guys?
+
+Sagar Gurudatta Pai   13:59
+Are you not well?
+
+James Maki   14:02
+I'm good.
+
+Sagar Gurudatta Pai   14:07
+Alright, stage is yours, Supriya Manju s s.
+
+Supriya Siddappa Kulageri   14:18
+OK.
+Let me share my story.
+Um.
+So.
+Amanda. So I have asked him like, oh, he was getting this error.
+Call 3170.
+
+Amanda Gilbert   14:49
+All right.
+Um, James, we could pull up the dispute and in sonnet Supriya.
+
+Supriya Siddappa Kulageri   15:18
+So.
+Sorry.
+
+Amanda Gilbert   15:29
+Will you go look at the dispute in Sonnet?
+
+Supriya Siddappa Kulageri   15:32
+Yes.
+We chat and we rock that too.
+Error after means in the account history we checked and we can see that the correction was made after the error came. So that's what we have said. The mind is telling.
+
+Amanda Gilbert   16:59
+Oh, what was the response code that they used?
+
+Supriya Siddappa Kulageri   17:06
+23.
+
+Amanda Gilbert   17:07
+Hmm.
+Can you look at the history really quick?
+OK.
+OK.
+Did they change the response code at any point in time?
+
+Supriya Siddappa Kulageri   18:09
+Window history.
+
+Amanda Gilbert   18:11
+Yeah, do a control F to and just search for response code.
+Yeah, so that's why.
+Um.
+It I think the issue is resolved because James, I think this was related to remember that error that was coming for response code 03 when it was a consumer identity the dispute.
+
+James Maki   18:54
+Uh, vaguely.
+
+Amanda Gilbert   18:55
+Well, they changed it from an 03 to a 23, so that's why I think it's related.
+
+James Maki   19:06
+OK, that makes sense.
+
+Amanda Gilbert   19:07
+S.
+So I think for this one you can tell them that um.
+
+Supriya Siddappa Kulageri   19:10
+I.
+
+Amanda Gilbert   19:17
+It was a bug related. I don't want to say a bug. How do we phrase that? You can say.
+Um, we believe the development team has addressed this.
+And if you continue to see this error, please let us know.
+
+Supriya Siddappa Kulageri   19:42
+Stop.
+Thanks.
+Bye.
+Oh, Amanda, so for this Dr. notifications.
+
+Amanda Gilbert   21:03
+Mhm.
+
+Supriya Siddappa Kulageri   21:04
+So I have uh corresponded them this. So what's the next step?
+OK. Yeah.
+
+Amanda Gilbert   21:40
+OK, let's go look at the transaction inside of Sonnet.
+
+Supriya Siddappa Kulageri   22:12
+Yes.
+
+Amanda Gilbert   22:27
+You have to change the type that you're searching for.
+OK.
+So this one.
+Is you see the type how it says Dr. Notification ID?
+So that means that there may not be a specific account number associated with this.
+But basically the Bureau is saying that they deleted.
+Some consumer information. Scroll down. Let's see what they deleted.
+So they deleted the address. See that in the middle.
+
+Supriya Siddappa Kulageri   23:33
+Yes.
+
+Amanda Gilbert   23:37
+Keep scrolling down. Let's see what else they have.
+OK, that's it.
+So that address has been deleted. There is not an account number. They have to do the look up by the consumer information.
+So let's, um, back out of it and then let's go back to the ticket.
+OK, so.
+You can tell Ryan. You can say Ryan, this is a Dr. Notification ID.
+Which is related to consumer information only.
+
+Supriya Siddappa Kulageri   24:52
+Who?
+
+Amanda Gilbert   24:55
+Period. The CRA.
+Has deleted.
+Some consumer information.
+In accordance with their internal policy or IP.
+
+Supriya Siddappa Kulageri   25:26
+Hmm?
+
+Amanda Gilbert   25:27
+And then period. And then you can say these are not always associated with an account number when they're specifically related to consumer information only.
+
+Supriya Siddappa Kulageri   25:30
+Yes.
+M.
+These are not always associated with.
+
+Amanda Gilbert   25:55
+With an account number.
+
+Supriya Siddappa Kulageri   26:02
+Who?
+
+Amanda Gilbert   26:05
+Especially when they are Dr. Notification ID.
+As those are related to consumer information usually.
+OK.
+
+Supriya Siddappa Kulageri   26:58
+OK.
+Is this enough?
+
+Amanda Gilbert   27:08
+That's good.
+
+Supriya Siddappa Kulageri   27:26
+OK.
+
+Amanda Gilbert   27:34
+All right.
+
+Supriya Siddappa Kulageri   27:36
+Okay. Uh So this one in the dev environment, I have created his account.
+So I think this is his connection issue maybe.
+
+Amanda Gilbert   27:53
+Um, there's a separate white listing that needs to be done.
+
+Supriya Siddappa Kulageri   27:53
+Damn.
+
+Amanda Gilbert   28:01
+James, can James, can you help with that? Because this is in dev and it's got that extra white listing.
+
+James Maki   28:14
+Are you talking about like for the firewall?
+
+Amanda Gilbert   28:15
+Yeah.
+
+James Maki   28:18
+OK.
+I can. We are also starting to escalate that to the Pavana IT guys also, right? They're they're handling all the firewall stuff, but yes, I can.
+
+Amanda Gilbert   28:30
+OK.
+
+James Maki   28:36
+Handle it. Am I? You know, I'm saying there's not an IP address here on the ticket, right? Am I overlooking it?
+
+Amanda Gilbert   28:39
+Do do they know also like?
+
+Supriya Siddappa Kulageri   28:48
+Yes.
+
+James Maki   28:51
+OK. All right. So I know we had one.
+On the setup tickets.
+Alright, uh, if you go over to the dev environment, uh, there should be an IP address that's already whitelisted for him.
+What uh?
+
+Supriya Siddappa Kulageri   29:16
+Please.
+Oh.
+
+James Maki   30:00
+Oh yeah, these were the guys that gave us the 192 address.
+OK, uh.
+So they they gave us like an internal IP address, so the one that's whitelisted for them.
+
+Supriya Siddappa Kulageri   30:16
+Yes, this one.
+
+James Maki   30:17
+Yeah, yeah, yeah. So that's not actually like a valid IP address. So I think that's what the problem is. So just just ask them to like verify what the IP address is that they're connecting from.
+Uh, like their their public IP.
+And then uh, and then we can add that in the firewall.
+Because that's not a that's not a public facing IP address, so that's not the one that we need to whitelist.
+
+Supriya Siddappa Kulageri   30:39
+OK.
+Yes.
+
+James Maki   30:59
+And do you guys know what what I mean when I say that that's not a public IP address? Like do you guys know about the 192.168 IPS?
+
+Supriya Siddappa Kulageri   31:07
+Yes, means that one will be not applicable for all users.
+
+James Maki   31:08
+OK.
+Well, it's not even that. It just means like it's it's not even public facing like that's not the IP address that's facing towards the Internet. So that that's like a.
+
+Supriya Siddappa Kulageri   31:21
+Hmm.
+
+James Maki   31:24
+It's it's like an internal IP address, like it's it's not quite the same as like the 10 dot IPS.
+But it's but it's sort of similar to that.
+But so anyone, anytime someone sends you an IP address that starts with 192.168, that's not a public IP address and that's not gonna get them.
+Uh, connected to to Sonnet.
+
+Supriya Siddappa Kulageri   32:40
+OK.
+So this one actually I didn't understand. I have asked him for the whatever subscriber code they have created.
+So.
+
+James Maki   33:20
+Can you can you click on the on the person the profile icon on the right side?
+On the right side, just like close that profile part.
+Yeah, on the right, click on the person.
+
+Supriya Siddappa Kulageri   33:41
+Yeah.
+I.
+
+James Maki   33:43
+On the far right, like actually all the way to the right.
+
+Amanda Gilbert   33:48
+The little symbol, The little person symbol.
+
+Supriya Siddappa Kulageri   33:49
+No.
+
+James Maki   33:51
+Like above the apps, above the apps icon. Like no further to the right. Yeah, yeah, the one. The person above that. Yes, there, just so we can see the ticket better.
+
+Supriya Siddappa Kulageri   33:53
+Yeah.
+This one.
+You said to maximize the OK.
+
+Amanda Gilbert   34:07
+So this one should be.
+This one is something you can do by yourself O if you Scroll back to the very first communication.
+
+Supriya Siddappa Kulageri   34:14
+Yes.
+
+Amanda Gilbert   34:20
+Um, they say we have a new subscriber code. We need to add it.
+The only thing that we're really missing from their first reply is the Bureau, because we have to select the Bureau.
+
+Supriya Siddappa Kulageri   34:35
+Mhm.
+
+Amanda Gilbert   34:36
+But if you'll Scroll down to where Gayla replies right there. Oh, one more just below that you replied and then right there. So she refers to to a novice.
+
+Supriya Siddappa Kulageri   34:48
+Hello.
+
+Amanda Gilbert   34:52
+So that subscriber code is for Innovus, so let's go add that.
+So you'll go into Sonnet.
+
+Supriya Siddappa Kulageri   35:01
+Yeah.
+
+Amanda Gilbert   35:04
+You'll go to the company admin.
+OK. And there you go. And then first thing that we're going to do is go down to Innovus and expand that.
+And the reason why we're just double checking is because we don't want to add it twice accidentally.
+When we are downloading, if we don't have the subscriber code here, we will add it when we download if it doesn't exist. So just click on the little arrow down there on the right side.
+And let's see if that is in the list currently.
+And it's not, so you're going to add it at the top.
+So you're going to select the Bureau name. You're going to put the subscriber code in.
+Remove the space at the end. There you go and then save and then you can let her know that it's been added.
+
+Supriya Siddappa Kulageri   36:41
+OK.
+Yes, Amanda, I was having only those. So this one, so the rule updates. So do I need to?
+
+Amanda Gilbert   37:18
+OK.
+
+Supriya Siddappa Kulageri   37:26
+Oh, create a new DevOps or do we have any?
+
+Amanda Gilbert   37:30
+Yes, it needs a new DevOps.
+
+Supriya Siddappa Kulageri   37:31
+Existing demo.
+OK, I will do that.
+
+Sagar Gurudatta Pai   37:41
+Supriya Manju s s for any rules related query. If it's a new one or update to the rules engine or anything, you should straight away click a demo. You need to follow the SOP which I have shared with you all.
+
+Supriya Siddappa Kulageri   37:47
+Who?
+
+Sagar Gurudatta Pai   37:57
+Especially for tickets request which use case for which you have to directly create DevOps. If you have any doubts for that, we can have a session again on that. We'll have it OK.
+
+Supriya Siddappa Kulageri   38:11
+No, it's not.
+OK, so that's it from and like I don't have anything else.
+
+Amanda Gilbert   38:22
+OK.
+
+Supriya Siddappa Kulageri   38:51
+Saravana, you're on mute.
+
+Saravanabhavan S   39:01
+Hello.
+
+Amanda Gilbert   39:02
+Hello.
+
+Saravanabhavan S   39:03
+Yeah, so Amanda ticket number 23344. So then they are two users like whenever they are putting into work in progress still it even a active list. So it makes other on the list to place on the board.
+So, but they didn't give the any ID, so not ID. So we need ID to investigate, right?
+
+Amanda Gilbert   39:26
+Yeah, so.
+That's really the like. I've never heard of the send to whip not working ever.
+And every user should have access, so I would ask for specific IDs to investigate.
+
+Saravanabhavan S   39:45
+OK.
+OK. So we have to investigate in both these two companies like RSC and Cyclone.
+
+Amanda Gilbert   39:52
+Um.
+I What are we doing? I don't think there's anything to investigate right now. I think we prompt them for details, so we need more information. So I would just say we need some more information to.
+
+Saravanabhavan S   40:00
+OK.
+E.
+
+Amanda Gilbert   40:13
+Provide some Sonnet ID's where the user sent them to WIP and they remained inactive so we can investigate.
+
+Saravanabhavan S   40:13
+The.
+Yes.
+OK.
+OK, so and.
+So same in Barclays, so they also having multiple users accessing same dispute at same time so.
+From their side, they know.
+
+Amanda Gilbert   40:42
+So we have. Sorry, go ahead.
+
+Saravanabhavan S   40:46
+From their side they share that WAP but when I try to research on that I can see like work in progress to complete only.
+So may they may there may be bug from their side.
+
+Amanda Gilbert   41:06
+Um.
+I don't think so. I think that there may be.
+This is related to disputes, not walking, right? Something different.
+
+Saravanabhavan S   41:22
+Uh.
+Like they are two agents, so if one agents like accessing the same same dispute at the same time, they're having issues.
+
+Amanda Gilbert   41:29
+Mhm.
+Right, so it's dispute's not walking because normally s s.
+If I'm in a dispute, you can't go into that dispute and we refer to that as dispute locking. So it's locked. It locks everyone else out and I believe we have a problem ticket for this same issue.
+
+Saravanabhavan S   42:02
+OK.
+
+Amanda Gilbert   42:04
+So see if you can find the problem ticket for disputes not locking.
+
+Saravanabhavan S   42:11
+OK.
+
+Sagar Gurudatta Pai   42:14
+I can help with that. It's in the it's in the sheet which SharePoint sheet which I shared which Chandan shared. But Amanda that DevOps ID is listed as deployed and fixed.
+
+Saravanabhavan S   42:14
+So I can't stop.
+
+Amanda Gilbert   42:28
+OK, it's not. So I is it really deployed? That's what I want to know.
+
+Sagar Gurudatta Pai   42:37
+OK, give me a few minutes. I'll share that as it's carry on. I'll share that. Let me get back.
+
+Saravanabhavan S   42:42
+Yeah.
+So shall I just link this to the problem ticket?
+
+Amanda Gilbert   42:50
+Yes.
+
+Saravanabhavan S   42:51
+OK.
+And one more so we have done that Renton builds on last Friday. So they are asking yes they don't have a sort of interrogation integrations. So the so they asking like remove the current disputes from and schedule the download from.
+
+Amanda Gilbert   43:06
+Mm-hmm, mm-hmm.
+
+Saravanabhavan S   43:15
+Ask her.
+
+Amanda Gilbert   43:15
+Mhm.
+
+Saravanabhavan S   43:17
+Asking which time um can take place.
+
+Amanda Gilbert   43:23
+So we have a DevOps item for this one also. So if you Scroll down just a little bit, you'll see there's a DevOps item.
+Maybe.
+
+Saravanabhavan S   43:37
+Noon.
+
+Amanda Gilbert   43:37
+No.
+Um, can you click on Selfbank to see all of their other tickets?
+
+Saravanabhavan S   43:49
+So 8206 we have one DevOps, another DevOps bank.
+
+Amanda Gilbert   43:57
+Um.
+Scroll down just a little bit.
+Hmm, they should have. There is one. Let me find it.
+So there is a DevOps work item.
+Already. Let me see if I can find it.
+
+Saravanabhavan S   44:15
+OK.
+
+Amanda Gilbert   44:19
+Um.
+
+Saravanabhavan S   44:19
+So we have one existing DevOps 8206 for cell back.
+
+Amanda Gilbert   44:28
+8206.
+
+Saravanabhavan S   44:29
+Yes.
+
+Amanda Gilbert   44:35
+Yeah, that's the one that should be attached.
+
+Saravanabhavan S   44:38
+OK.
+M.
+
+Amanda Gilbert   45:52
+OK, so for now.
+You found the link. It looks like it did not get moved over in Sprint, so it probably just dropped and.
+
+Saravanabhavan S   46:05
+OK.
+
+Amanda Gilbert   46:08
+I went ahead and created another story in 101 with this.
+
+Saravanabhavan S   46:16
+OK.
+
+Amanda Gilbert   46:16
+But you can still find it. So for now there's another thing that we can do. The disputes are getting stuck in new status and so we need to move the disputes to active status.
+
+Saravanabhavan S   46:30
+OK.
+
+Amanda Gilbert   46:31
+Do you know how to do that?
+
+Supriya Siddappa Kulageri   47:13
+Uh, Sarona, that update.
+
+Saravanabhavan S   47:14
+Oh, it's this.
+This one time.
+
+Amanda Gilbert   47:22
+Um.
+
+Manjunath S   47:22
+Yes, let insert into that query.
+
+Amanda Gilbert   47:28
+Yes.
+You can use that one, but you you'll need to change the Sonnet status from active to new, but you can use both of those.
+
+Saravanabhavan S   47:36
+Uh.
+OK.
+
+Amanda Gilbert   47:50
+So delete that whatever you're typing, delete it.
+
+Saravanabhavan S   47:55
+Uh, just I'm putting a no, no, no, no.
+
+Amanda Gilbert   48:00
+OK, so see where you have active already there.
+
+Saravanabhavan S   48:05
+So we have to give you.
+
+Amanda Gilbert   48:08
+Yeah, just replace active with new.
+
+Saravanabhavan S   48:11
+OK.
+So if we run these two queries.
+
+Amanda Gilbert   48:22
+Yeah, I would resave this query. I would take out this one, but like don't take it out, don't delete it. Just change where you have active, change it to new.
+On both because we were doing something different when we changed these. So for this purpose where we're trying to move stuff from active to new.
+
+Saravanabhavan S   48:35
+OK.
+Thank you.
+
+Amanda Gilbert   48:46
+You'll just run these two queries and you're referencing new status.
+
+Sagar Gurudatta Pai   49:07
+I've pasted the disputes not locking DevOps in the chart.
+
+Amanda Gilbert   49:13
+OK.
+
+Saravanabhavan S   49:50
+Where else come to them?
+
+Amanda Gilbert   49:53
+I'm sorry.
+
+Sagar Gurudatta Pai   49:55
+Go to the front, go inside the application and see whether you can see disputes in new status, right? Whenever you make any changes, try to validate first or whenever you guys are communicating.
+
+Saravanabhavan S   49:56
+So.
+Yes.
+
+Sagar Gurudatta Pai   50:12
+Any fixes to customer validated first?
+
+Saravanabhavan S   51:00
+It is updating in rules engine, right?
+
+Amanda Gilbert   51:03
+Yeah, it looks like it's still running.
+
+Saravanabhavan S   51:07
+So it wants everything as to false.
+
+Amanda Gilbert   51:08
+Sick.
+Yeah, but if you go to the the client side of Sonnet, you should see the number has changed.
+
+Saravanabhavan S   51:42
+Yes, the numbers has been changed.
+
+Amanda Gilbert   51:46
+You said yes, it has.
+
+Saravanabhavan S   51:51
+It was around like 267 before. Now it's changed to 0.
+
+Amanda Gilbert   51:56
+Oh, nice. OK, that's good. The other way that you can check is if you go to their look ahead.
+On the left menu, yeah, that one right there. And what we're looking for is new. So I don't see any new. Do you see any new?
+
+Saravanabhavan S   52:17
+No.
+
+Amanda Gilbert   52:18
+Yeah, it's a different color too. So I think what you did worked and you can tell them that it's good. What I would expect. So you fixed it for today, right? Tomorrow they're going to have the same thing that's going to happen.
+
+Saravanabhavan S   52:20
+M.
+Yeah.
+
+Amanda Gilbert   52:37
+We're going to download. The disputes are going to hang out new until dev does their part.
+
+Saravanabhavan S   52:43
+OK.
+
+Amanda Gilbert   52:43
+Um, you can expect that the client is going to reach out consistently.
+
+Saravanabhavan S   52:50
+OK, so instead I didn't have, instead I can do a daily work on until the task missed.
+
+Amanda Gilbert   52:50
+But you have a workaround. Do what?
+Yeah.
+
+Saravanabhavan S   53:00
+OK.
+
+Amanda Gilbert   53:00
+That's all that you can do until they fix the the part that's not working.
+
+Saravanabhavan S   53:06
+So before that I have to do a download or I'll just if I run this query to move to the end to the new, it's fine.
+
+Amanda Gilbert   53:15
+You have all. You don't have to do a download that's already scheduled.
+
+Saravanabhavan S   53:19
+OK.
+
+Amanda Gilbert   53:19
+You'll just have to run those queries to move them from new to active.
+
+Saravanabhavan S   53:27
+OK.
+OK.
+
+Amanda Gilbert   53:41
+All right. Um.
+
+Saravanabhavan S   53:43
+Best one.
+
+Amanda Gilbert   53:44
+All right.
+
+Saravanabhavan S   53:45
+And this one we took you, uh, create the dev task, right?
+
+Amanda Gilbert   53:51
+These can rule to not recommend 03 deletion response. Yeah, that one. That one needs a dev task. It's roles.
+
+Saravanabhavan S   54:09
+That's up for my exam.
+
+Amanda Gilbert   54:12
+OK, we're out of time and I have a hard stop. So Manju, if it's an emergency, you can message me the IDs and I can help you or you can wait until Wednesday.
+
+Manjunath S   54:29
+Sure, Amanda. If any emergency case, I'll let you know.
+
+Amanda Gilbert   54:33
+OK.
+Thank you. See you guys later.
+
+Manjunath S   54:37
+Thank you, Amanda.
+
+Sagar Gurudatta Pai   54:38
+Thanks, Amanda. Thanks everyone. Bye, bye.
+
+Saravanabhavan S   54:38
+Thank you.
+
+Amanda Gilbert   54:41
+Thank you.
+
+James Maki   54:44
+Thank you, guys. Hey, uh, Servon, are you uh?
+Are you gonna be busy?
+In about 30 minutes.
+
+Saravanabhavan S   54:55
+No jobs.
+No jobs.
+
+James Maki   54:58
+OK, do you want to get on a call? I know Scar had asked us to spend a little bit of time, like some one-on-one time together. Can I? I'm gonna send a meeting out just for me and you for like an hour. Is that cool?
+
+Saravanabhavan S   55:11
+OK, James.
+
+James Maki   55:12
+OK. All right. I will see you then.
+
+Saravanabhavan S   55:15
+Thank you. Thanks.
+
+Manjunath S   55:17
+Yeah, James. So, James, so.
+
+James Maki   55:17
+Right.
+Mhm.
+
+Manjunath S   55:22
+I have small doubt.
+One second.
+These two tickets I need to create and already they are dev talk. So for this report one right? Shall I link it to that? It is related to the reports like they're not getting the reports accurate number.
+
+James Maki   55:47
+Is this reports tab is not reporting accurate numbers?
+For completed responses.
+Alright, she didn't really tell us. Is she talking about The productivity reports?
+'Cause I don't like that's.
+
+Manjunath S   56:09
+Like, yeah, completed response.
+
+James Maki   56:13
+OK, but like A. but.
+But so like, is she talking about like The disputes submitted or or The pro? OK, all right, she is talking about The productivity reports. OK, all right. So I mean, we already kind of know about that being an issue. So there should, there should be A. problem ticket.
+
+Manjunath S   56:22
+The productivity report.
+Mhm.
+
+James Maki   56:35
+Already. All right. And then and did you find?
+
+Manjunath S   56:35
+Yeah.
+
+James Maki   56:40
+Did you look in DevOps? You found The dev task board also.
+Or that's what you're looking for now.
+
+Manjunath S   56:44
+Uh, productivity.
+Productivity, I think it is not resolved yet still.
+
+James Maki   56:51
+Yeah, no, it's definitely not resolved for sure, 'cause that's gonna be something that Lyd's gonna have to work on. Yeah, incident.
+Yeah, there should be something there. There we go. Yeah. So I think that's our main one there.
+
+Manjunath S   57:08
+Yeah, I will just update.
+
+James Maki   57:09
+If you would just ask her like can for like The like specific examples of like what she's seeing that's wrong just just so we have IT for The problem tickets.
+And then I and then you could tell her that we're looking into it. Um.
+Be able like in anything that these guys that these that The clients can show us like that shows us like The exact issue and anything that they that you guys can get from them to show that will be helpful.
+
+Manjunath S   57:35
+OK.
+And I think this one also some I have some image issue.
+
+James Maki   57:51
+What was The did we did we complete that one? Oh, The history request 23229, The second one? Yeah, did we complete?
+
+Manjunath S   58:00
+This one, this one that's actually I need to send the report to their mail ID.
+
+James Maki   58:08
+OK, 'cause didn't we?
+
+Manjunath S   58:11
+Actually, we have sent them the report.
+
+James Maki   58:13
+OK. And then he was just having trouble accessing it, right?
+
+Manjunath S   58:16
+Yeah.
+
+James Maki   58:20
+All right. Oh, was it? Was IT Ben or Joey that was having trouble?
+
+Manjunath S   58:25
+Hmm.
+
+James Maki   58:26
+So I think it's just because whoever IT was, like they weren't copied. I think it's probably Joey, right? Yeah, Joey, can you open The attachment? He doesn't have access. OK, so I think if you just send The attachment again now, now that Joey has CC'd on it, send The attachment again.
+
+Manjunath S   58:32
+Yeah, doing, yeah.
+Oh.
+A.
+OK.
+
+James Maki   58:42
+And then and then let's also send A. Zendesk password reset for Joey just to make sure that he can just make sure that he can log in and download The attachment.
+
+Manjunath S   58:53
+OK.
+
+James Maki   58:53
+And that should that should take care of it. Yeah, but I yeah, but so I think Joey just couldn't access IT because he wasn't originally on The ticket. So I think you just have to resend IT again now that he's on it.
+
+Manjunath S   58:55
+Shut us.
+Uh.
+Sure.
+
+James Maki   59:05
+All right.
+
+Manjunath S   59:08
+That a course.
+Yeah, that's it. James dot. Yeah, James, if anything is there, this one James. Actually this is like this is ACDV report, right? I mean ACDV number.
+
+James Maki   59:25
+OK.
+Yeah, IT looks like A. control number. Yeah. How documents are saved for us. Oh, this is for Columbia. Oh, this is for the.
+
+Manjunath S   59:40
+Yeah, yeah, this image issue.
+
+James Maki   59:45
+Yeah, alright, so this is for The renaming.
+
+Manjunath S   59:49
+Actually, they are facing the image.
+
+James Maki   59:50
+I got 35 images, but The download we received for images only contains The first image. What is going on here? OK.
+Uh.
+OK, so possibly what's happening is because we can receive up to five, up to five TIF files for A. single account. So I suspect that is probably The issue here.
+
+Manjunath S   1:00:11
+Mhm.
+Yeah.
+
+James Maki   1:00:23
+Um uh.
+Let's see, he gave us the control number. Look it up on the admin side real fast and let's look at the account history and let's go to the to the very, very beginning of the account history where the image was downloaded and it should tell us.
+How many files there were O? Let's start there.
+Yeah, but yeah, so these guys are requesting.
+Or uh or are in the process of like requesting some uh.
+Uh, renaming changes. Uh, but the problem is.
+They've already changed their naming format with the credit bureaus, so now they're coming through inconsistently and so they're wanting us.
+
+Manjunath S   1:01:19
+Musti.
+
+James Maki   1:01:21
+Yeah, yeah, go to history. Alright.
+So like whenever you're just looking at history stuff, it's certainly better to look it up on the admin side just so we're not actually going into the account, but it's fine. So let's go all the way down to the bottom. I'll I'll wait at the beginning.
+OK.
+All the way down.
+There we go. OK, oh, and there is only one attachment. OK, alright, so there's only one file 'cause there's only one attachment. So alright, so I was wrong.
+Uh, so that doesn't make sense for him to have only gotten the first image.
+
+Manjunath S   1:02:00
+Uh.
+
+James Maki   1:02:05
+Yeah, so that doesn't make sense at all. OK, this is on.
+The API server.
+Alright, uh, let's see if the file is. It should still be on the server. Let's let's go see.
+But.
+
+Manjunath S   1:02:33
+Columbia.
+
+James Maki   1:02:34
+It should be on the API server. Let's go ahead, disconnect, disconnect from level one and let's go over to the API.
+
+Manjunath S   1:02:53
+Yes, I payable one.
+
+James Maki   1:02:57
+No, we want to go to API and I think it's gonna be API 02.
+Uh, looks like you might have to go to my list.
+Oh, I'll go to the. I mean, you can get it from. Actually, it might not be on here. Go to my the other one.
+The the server list.
+Uh, back. Uh, go up a level into documents.
+Yeah, and the Azure server list.
+Yeah.
+
+Manjunath S   1:04:53
+This one Jim CPA photo.
+
+James Maki   1:05:00
+Yeah, that one. Yep.
+
+Manjunath S   1:05:31
+Same thing, the CD space on FTpedia.
+
+James Maki   1:05:36
+Well, you're on the API server, so there's no FTP directory.
+Oh yeah, I mean, you can pretty much always bet it's always gonna start with slash sonnet, so you can pretty much always start there. And then if you aren't sure, just go there first and then do LL so you can see what's available.
+No, you were right. You had it.
+
+Manjunath S   1:06:01
+OK, CDs is on it.
+
+James Maki   1:06:04
+Uh, you left out the space, but yeah.
+Yeah, like you can. You can pretty much guarantee it's always gonna start here. So yeah, so do that first.
+And then do LL so you can see the available subfolders. All right, so this is the API directory or server. So the only thing that this is used for is for the clients to pick up their images.
+O Let's go into the images folder.
+Alright, and now you now you should see your list of clients. So the the API structure, it it kind of mimics the image servers. So they're pretty much the same. Like if if you're going to one of these three servers, either the API or the two image servers, you're probably going to slash on it slash images first.
+And then this is gonna be Genesis is is their name. They they have an alias. Yeah, yeah, that's the one.
+
+Manjunath S   1:07:05
+Genesis grid.
+
+James Maki   1:07:15
+All right, so since this is the API server, there's gonna be a lot of files here. See, I mean, you can list them out first if you want. That's fine. It doesn't matter, but we're gonna oh.
+There's nothing.
+
+Manjunath S   1:07:31
+0.
+
+James Maki   1:07:34
+Alright, that's not what I expected. These guys are API, are they? Didn't I see? Don't they have a token? They do have a token.
+I'm confused.
+
+Manjunath S   1:07:52
+Yeah.
+
+James Maki   1:07:56
+All right, so.
+
+Manjunath S   1:07:56
+API client teams.
+
+James Maki   1:07:59
+OK, but their image files aren't there.
+Or.
+Are these guys some kind of weird hybrid? What's going on here?
+Uh.
+OK, I guess, I guess so.
+All right. Uh, OK, so I guess.
+Yeah, that's not confusing at all.
+Alright, so I guess these guys do the data transfer over API, but I guess their images are sent over FTP.
+Alright, so that's kind of unique.
+Experian.
+All right, well, I guess you can get off of this server then. Apparently they don't use this for the images. All right, so that's actually that's unfortunate.
+Um.
+Alright, when was the when was the account received? Go back over to your sonnet.
+Alright, uh uh, look it up again on the admin side.
+Oh, how old is this dispute?
+OK. Received on the 30th. OK, well, shoot.
+Um.
+Oh, well, OK, well.
+Alright, alright, so if you go back, let's go go back over to the FTP server over to web 01. So it looks like.
+It looks like they're moving.
+All right, so they're moving all of their image files.
+They're leaving them on our server.
+Which is sort of good 'cause that means we can look at him, but.
+Yeah, Genesis Grant again.
+And go look in their process folder.
+So they're leaving all their files out there.
+
+Manjunath S   1:11:31
+Uhuh.
+
+James Maki   1:11:33
+So for one, that's really annoying. We don't want them to do that. We I've said it before. We are not supposed to be infinite storage for these people. Like they're really kind of abusing us by doing this. But the good news is it looks like everything out there or everything should still be out there, so we can.
+Look here and see if the file is there.
+Alright, so do you have the do you have the control number copied?
+
+Manjunath S   1:12:03
+Yes, James.
+
+James Maki   1:12:03
+OK, alright, so let's do uh.
+OK, all right, let's do a find Tye find and then sace star and then paste in the control number.
+Take off the space at the end, hit hit hit backspace one time and then do another star.
+All right, and hit enter.
+OK. All right. So the file is there. So that's good. OK. All right. Let's see if we can. Let's see if you can download this. I think this will work. All right.
+So uh, go over somewhere on your local on your local side. Uh, go to your folder.
+Just anywhere really.
+
+Manjunath S   1:13:01
+New folder should create new one.
+
+James Maki   1:13:03
+No, like like on on your computer, go to like your local folders, like go go somewhere on your local machine.
+And we and we need to open a git bash window.
+Yeah, just go like to like to your downloads folder or something, something like that.
+
+Manjunath S   1:13:45
+Miss James.
+
+James Maki   1:13:48
+Alright, so right click on like a blank space and let's do a open git bash here.
+And runs.
+Run this command.
+Uh, yes.
+Alright, good. Alright. And then I'm gonna send you one more command.
+Alright, and so we need to paste in the file name.
+Uh.
+So before you run that, go back to. Yeah, go back to the server. Copy the dot TIFF file name.
+
+Manjunath S   1:15:08
+Yeah.
+
+James Maki   1:15:17
+The dot TIF one, the dot TIF one, the one above that.
+
+Manjunath S   1:15:17
+The working.
+
+James Maki   1:15:21
+Yeah, yeah, copy the whole thing.
+Alright, and then and then over in your bash window after after the processed slash.
+
+Manjunath S   1:15:31
+A.
+
+James Maki   1:15:33
+So go left one more space and then paste that. Paste that file name in right there. There you go. Alright, go ahead and run that.
+Perfect. All right, so you have downloaded the file. All right, so if we go back to your Downloads folder, we should see that TIF image now.
+
+Manjunath S   1:16:06
+Yeah, it's a case.
+
+James Maki   1:16:07
+Alright, so let's let's take a look at that and let's see if we can see all the pages.
+
+Manjunath S   1:16:15
+Open with.
+
+James Maki   1:16:15
+The the the TIF file. The TIF file. You're clicking the wrong thing.
+Yeah.
+There we go. All right. And all right. And it looks like there's 38 pages there. So, So what's he talking about?
+
+Manjunath S   1:16:28
+Yeah.
+
+James Maki   1:16:33
+All right.
+Alright, so we verified that all the pages are there. It's one file.
+Dude, I've I've seen it before and I swear I bet he's probably just not looking at it right. And I bet he's just missing the page button where like wherever it is that he's looking, if he's looking at it in his system, whatever it is that he's doing.
+But alright, but so we've verified now that all the pages are there, so you can so you can tell him.
+
+Manjunath S   1:16:59
+Uh-huh.
+Uh.
+
+James Maki   1:17:06
+We have fair so you can tell them exactly what we did.
+Uh.
+
+Manjunath S   1:17:10
+We have.
+
+James Maki   1:17:15
+Yeah, we we verified all pages are present in the file. I would send him the file name that you downloaded. I would send him that file name so you can tell him exactly what file to look at and you can also tell him it's still on the server. So if he wants to go redownload it, he can do that.
+So most of the time people can't do this because I mean this, this is probably why we tell them to pick up their files, right? Is 'cause we don't we don't want, we don't want to be responsible for this kind of thing, but.
+
+Manjunath S   1:17:52
+Uh huh.
+
+James Maki   1:17:59
+But in this case, it is kind of good for us like that. We can literally tell him, yeah, just go download it again and see for yourself.
+So that that is that is kind of helpful for us.
+Available, yeah, on the server in I would say in the process folder and then I would say yeah and then.
+
+Manjunath S   1:18:26
+Available on the server in the.
+
+James Maki   1:18:29
+Yep, and yeah, in the process folder.
+And so you're telling them exactly where to look.
+
+Manjunath S   1:18:46
+Oh, we'll attest the document that we have downloaded.
+
+James Maki   1:18:51
+Um.
+I mean, I don't think you, I don't think you need to do that since it's already on the FTP and we saw as you were thumbing through those images, there is PII in there like it looked like there was a Social Security card. So I really would rather not send that.
+
+Manjunath S   1:18:56
+Yeah.
+Uh huh.
+
+James Maki   1:19:09
+But uh yeah, but but give them the file name though. Like just just copy that and tell them this is the file.
+
+Manjunath S   1:19:18
+This is the file name right?
+
+James Maki   1:19:19
+Yeah, Yep, that one.
+
+Manjunath S   1:19:35
+Yeah.
+
+James Maki   1:19:36
+Yeah, yeah, I think that's good.
+So I mean like this should have answered any questions that he has, right? Like like we verified that the images are all there. If you don't believe us, you can go download the file again. Here is where it is. Here's the file name.
+
+Manjunath S   1:19:45
+Ha ha.
+
+James Maki   1:19:56
+So yeah, so it should take should take care of it.
+
+Manjunath S   1:19:57
+OK.
+Oh.
+
+James Maki   1:20:00
+All right, and so so save those commands that I just said because so like that's that's what you can use to download files off the FTP server. So you have to run that first command. So like that creates like the permission file, right? And I know we've talked about it before, but just to reiterate.
+
+Manjunath S   1:20:04
+Uhuh.
+
+James Maki   1:20:15
+So that was the that's what the first command I sent does is it sets up like your little the credential for you to log in. And then yeah, then that second one. So you're.
+Like the the way that the commands work in there is just telling.
+So that's like the that's the local IP address for the server is what that 10.104.4.50 is. So there's a different local IP address for each server, right? So like if you wanted to download from the API server, you could do that also. It's just gonna have a different IP address.
+
+Manjunath S   1:20:45
+Mhm.
+
+James Maki   1:20:47
+And I don't know all of them, but.
+Uh, I think I do have the API one though.
+I think it's buried in my history somewhere.
+All right. Do you guys have have more tickets that you guys need help with? Do I need to set up some more time later on this afternoon?
+
+Manjunath S   1:21:53
+Uh, no.
+
+James Maki   1:21:53
+Well, my afternoon, I know it's already getting kinda late for you guys.
+
+Manjunath S   1:21:59
+Yeah, James, that something related to like asterisk symbol.
+For the you just federal.
+Like, uh, said like valid character. So again they were given a reply.
+
+James Maki   1:22:27
+To use Azure.
+All right.
+Alright, So what is she trying to do? She's trying to.
+
+Manjunath S   1:22:46
+First trying to like in the payment portal. Oh, she would like to use the asterisk symbol to remove this completely.
+
+James Maki   1:23:06
+Uh.
+Um, I.
+I think they just leave it blank, but I'm not positive.
+Um.
+Uh, yeah, that might be kind of a question for Amanda. Um.
+
+Manjunath S   1:23:48
+Yeah.
+
+James Maki   1:23:48
+Yeah, I don't. I don't think I have an answer on that one, unfortunately, or not, not one that I'm positive about anyway.
+
+Manjunath S   1:23:54
+Sure.
+This mass good account. We have a OPS link for this items. Oh yeah, already Amanda has created, I think.
+
+James Maki   1:24:13
+OK, yeah, yeah. So I met just already got that in place, it looks like.
+
+Manjunath S   1:24:28
+Yeah, I just update this in on hold.
+OK yeah James, so like how do we send the step to file for the previous date? Like I'll just check it but we haven't received the step two for the date 7/10.
+
+James Maki   1:24:49
+Alright, so the automation is only gonna pick up the current day's files, so if you're trying to get an old one, you have to do it manually.
+
+Manjunath S   1:24:54
+Mhm.
+
+James Maki   1:24:59
+Uh, so you have to go go get the credentials from VS code.
+And from the server you have to log in and download the file.
+
+Manjunath S   1:25:10
+True code is for like ERC, right?
+
+James Maki   1:25:17
+True Accord is, yes, but was that was for team recovery, right?
+
+Manjunath S   1:25:23
+Oh yeah, so that thing recovery.
+Oh, yes.
+So password we have to remove the own special character items.
+
+James Maki   1:25:58
+Yes, yes, there is one there.
+
+Manjunath S   1:26:03
+On this one.
+
+James Maki   1:26:05
+Yep.
+
+Manjunath S   1:26:12
+We need this P no right only this is the password.
+
+James Maki   1:26:18
+Uh, that is the password. Yeah, the whole thing. Yep, you got it.
+
+Manjunath S   1:26:28
+Oh, we need to do so.
+
+James Maki   1:26:31
+You do so do control C to to stop the connection.
+And then we'll we'll see if it'll let you connect now, 'cause these guys.
+They do like a temporary logout every time you have a failed attempt.
+OK, that's good.
+
+Manjunath S   1:27:03
+Oh.
+
+James Maki   1:27:04
+Alright, is that not the right password?
+Open. Open up your terminal, yeah.
+
+Manjunath S   1:27:11
+This one.
+
+James Maki   1:27:16
+Yeah.
+All right, all right. Just all right. I I don't like what you're doing. All right.
+Did did the password get updated? Is there? Are are you behind? Open up your terminal. Do do control C again. Stop the connection.
+All right, in VS code, open up your terminal.
+Let's go to view, I think view terminal.
+Alright, so let's do get checkout main.
+Uh gets GIT.
+No, whenever you're doing a get command in VS like in VS code, it's always gonna be GIT.
+
+Manjunath S   1:28:14
+OK, good check out main singles without space.
+
+James Maki   1:28:20
+Uh, with a space.
+Space between out and main. Yeah, checkout's one word. Space. Space. Main. There you go. Yes.
+Alright, and then do get pull.
+Yep.
+Now see in your team recovery commands just got updated.
+All right, all right. OK, all right. So now you're up to date. closeout of your Team Recovery Step 2 tab.
+Yeah, close it, don't save and then and then go back and open it again.
+So it looks like you were using. You were using the old password because your script was not up to date.
+
+Manjunath S   1:29:28
+OK.
+
+James Maki   1:29:29
+So there's so there's the new password.
+
+Manjunath S   1:29:46
+No special characters, right? Yeah.
+
+James Maki   1:29:49
+Yeah, no, no escape character. Yep.
+Mm.
+All right, something.
+OK.
+
+Manjunath S   1:30:16
+Mm.
+I think it takes some time to grant the access right once it is denied.
+
+James Maki   1:30:29
+I mean possibly.
+
+Manjunath S   1:30:32
+Mhm.
+OK Jim, so once we login into this, it will be in the out folder, right?
+
+James Maki   1:30:42
+Uh, yes.
+
+Manjunath S   1:30:45
+OK, so it will be in the database.
+
+James Maki   1:30:46
+I'm afraid. All right, I'm. I'm afraid that I really hope you didn't lock out our account.
+Like that's actually.
+Yes.
+I don't understand what's happening. Why is this not working?
+Why is that password not working?
+Uh, yeah, it looks like that was taken care of.
+
+Manjunath S   1:32:31
+SCCS is so dungeon, so I just processed the step 2 files and all the dispute size been moved to the active status.
+
+James Maki   1:32:40
+Great.
+
+Manjunath S   1:32:48
+So just select those this ticket.
+
+James Maki   1:32:54
+Uh, yeah, it looks like it.
+
+Manjunath S   1:33:21
+Uh, Jim, so that uh landly the properties have been corrected.
+
+James Maki   1:33:38
+Oh yeah, what was?
+Uh, was this one of the two that was that was having the?
+
+Manjunath S   1:33:48
+Yeah they were able to access so but some error they are getting in properly. So last time we checked it right.
+
+James Maki   1:34:04
+Yeah, alright. So I think we need to look at crush for this, right?
+
+Manjunath S   1:34:08
+Uh.
+
+James Maki   1:34:10
+Wait, what? What did that message say? What was that error?
+OK.
+
+Manjunath S   1:35:10
+Properties.
+
+James Maki   1:35:11
+Yeah.
+I.
+Yeah, OK, so this is for Langley. All right, so this is connecting to the web 01 server is where this is looking. All right, so Langley FCU is the correct.
+OK, alright, so in the in the URL go all the way to the end.
+
+Manjunath S   1:35:40
+Uh.
+
+James Maki   1:35:47
+And it should have Langley FCU there.
+
+Manjunath S   1:35:50
+Yeah.
+
+James Maki   1:35:52
+OK.
+OK, uh, alright, hit. Uh, let's let's try and test it.
+OK.
+Right. Uh, was this the one that you? This was one that you had to remake, right? Because I had the 'cause I had the.org.
+
+Manjunath S   1:37:07
+Yes, James yeah.org I just but did it my mistake and.
+We deleted all the directories for them and recreated once again.
+
+James Maki   1:37:25
+OK, all right. And so in here, did you just edit the URL? Did you take out the.org and then save it? Is that how you?
+
+Manjunath S   1:37:34
+Yeah, yeah, I removed the and updated it as a Lang FCU.
+
+James Maki   1:37:36
+OK.
+
+Manjunath S   1:37:48
+Yeah, before they were not able to access, but now they are able to access.
+
+James Maki   1:37:48
+OK.
+Who was able to access?
+
+Manjunath S   1:37:58
+The line set of which.
+Like Vikas has just got me an update like after creating the new one I just sent him like only team can access but there are error images they are getting.
+
+James Maki   1:38:22
+All right.
+Alright, so the error messages are getting there, so it's having trouble listing the directory. So it seems like it's still having trouble finding the Langley FCU folder that you created. So that's so that's what's causing the error. So.
+The way that I would try to address that.
+Uh.
+How should we address that?
+All right. Um.
+Let me see.
+You guys still never had like Bitwardin access figured out, right?
+
+Manjunath S   1:40:15
+No, James.
+
+James Maki   1:40:19
+OK.
+And I don't know what to do about that. Um.
+So like what I wanna try and do is is copy.
+The properties from another company like one that's working.
+Is what I wanna try and do.
+Um.
+
+Manjunath S   1:41:09
+Test.
+
+James Maki   1:41:15
+I mean, yeah, you can if you want.
+
+Manjunath S   1:41:22
+Yeah.
+
+James Maki   1:41:23
+Alright, so that's one that's working.
+So I would start with copying the username.
+The the problem is the password because the password is encrypted, so you can't just copy that. Copy the username.
+
+Manjunath S   1:41:49
+Oh.
+
+James Maki   1:41:50
+No, not that username. No, go, go back, go back to where you were.
+
+Manjunath S   1:41:56
+URL.
+
+James Maki   1:41:57
+Go go back to LFCU, go back to the other one.
+
+Manjunath S   1:42:00
+Yeah.
+A.
+
+James Maki   1:42:04
+And and go to properties.
+The username right there. It's like in the middle.
+Or is it username and password?
+
+Manjunath S   1:42:14
+Yes. Oh.
+
+James Maki   1:42:17
+Yeah, that copy that.
+Alright, and then and then cancel this and let's go back over to the Langley one.
+Uh, go ahead and paste it over the username.
+Alright, uh, and hit OK.
+1.
+
+Manjunath S   1:42:55
+Save.
+
+James Maki   1:42:58
+Yeah, go ahead, save it and then let's test it and let's see if that did anything.
+
+Manjunath S   1:43:05
+Test.
+
+James Maki   1:43:06
+Yeah.
+I feel like it's probably not gonna help, but who knows, yeah.
+So connect cost.
+Uh, what can we do here?
+Uh, go back over to the end of the URL again.
+OK.
+Alright, alright, how do we how do we change this? Alright, so I think there's some stuff missing from the URL.
+
+Manjunath S   1:46:12
+Uh.
+
+James Maki   1:46:14
+Uh.
+Alright, uh.
+Here. Um.
+OK, here.
+Alright, uh, in the URL change.
+Overwrite. What's there with this? So it looks like there might be some more stuff to the URL.
+So like everything from like the at symbol over to the company name.
+Yeah, so I'll put it in the chat so you so you can copy what I have and overwrite overwrite what's there.
+
+Manjunath S   1:47:18
+Still here?
+This whole thing, James.
+
+James Maki   1:47:24
+Uh.
+That that's what you're gonna overwrite, yes.
+Except for the company name.
+No, sorry, no, I I sent it. Copy what I sent.
+Copy what I sent and overwrite what's there for the URL.
+
+Manjunath S   1:48:19
+From the Earth chamber.
+
+James Maki   1:48:23
+Right.
+And then and leave the company, yeah.
+
+Manjunath S   1:48:28
+Yeah.
+
+James Maki   1:48:35
+No, I I already, I already sent it. I'm telling you what to paste in. I sent it. The thing that I sent. The last thing that I sent, I sent the URL, yeah.
+
+Manjunath S   1:48:42
+Are you saying? Sorry, sorry, sorry, sorry, sorry.
+
+James Maki   1:48:50
+Yeah.
+There you go. Yeah, paste that in. Alright, and let's test that.
+I don't know if we need to save it first. Let's see.
+
+Manjunath S   1:49:15
+Service shape or like?
+
+James Maki   1:49:17
+Alright, let's let's let's go and test it. I mean, why not? It's just a test.
+Hey, there we go. Hell yeah, that's what I'm talking about. All right, it's OK.
+
+Manjunath S   1:49:23
+Yeah, that sounds sexy.
+
+James Maki   1:49:30
+Alright, uh, and then save.
+Alright, and now.
+Alright, and now let's have them try again. Alright, well, hold on, let's before we do that, let's see if I can.
+Why don't we test it first? Do you do you have their FTP credentials?
+I think you sent it to me.
+
+Manjunath S   1:49:51
+Yes, chips.
+Yeah, I have it.
+
+James Maki   1:49:56
+All right, let me see if I still.
+
+Manjunath S   1:49:56
+And is available or not? Yeah, I will send you the password.
+
+James Maki   1:50:03
+Let me see if you already sent it. I think you did.
+
+Manjunath S   1:50:07
+I'll send you again, right?
+
+James Maki   1:50:18
+All right, and this is for Langley FCU.
+Wow, what the heck?
+Alright, it's still saying it's having trouble listing the.
+Yeah, come on, man. Really.
+Alright, go back over to crush, see if it. Is it giving the error again?
+
+Manjunath S   1:51:35
+So we test the connection again.
+
+James Maki   1:51:38
+Yeah, did did you save it?
+
+Manjunath S   1:51:42
+Yeah.
+
+James Maki   1:51:45
+The.
+Uh, check the URL again.
+Yeah, it's back. It doesn't have the the dot file dot core. It doesn't have that stuff again.
+Where's that pulling from?
+Uh, try updating the URL again. Uh.
+Paste in the the part that I sent.
+What the heck?
+All right, hit OK.
+All right, and save again.
+All right, let's go back to properties.
+And and check to check the URLs, see if it's still there.
+OK, alright.
+
+Manjunath S   1:53:08
+Test.
+
+James Maki   1:53:12
+Uh, no. I'm just gonna go ahead and run.
+What the heck?
+Why is this Kee reverting?
+What is going on here?
+That is not correct. You're not.
+Go and test it.
+OK.
+So why am I still not getting into VaZilla?
+
+Manjunath S   1:55:00
+So I check the URL once again.
+
+James Maki   1:55:05
+Uh, sure.
+
+Manjunath S   1:55:18
+Wishing that file code.
+
+James Maki   1:55:21
+And it was gone again, wasn't it?
+
+Manjunath S   1:55:23
+Yeah.
+
+James Maki   1:55:28
+What the heck?
+
+Manjunath S   1:55:43
+OK.
+
+James Maki   1:56:10
+It wasn't. There was a second person that was having trouble, wasn't there? Wasn't there another client that was having like the same issue or something similar?
+
+Manjunath S   1:56:21
+No, James, only for Langley, I think so.
+
+James Maki   1:56:25
+Yes.
+
+Manjunath S   1:56:30
+But for the SFTP Selana had on ticket, I don't know what was the update on the Selana.
+
+Saravanabhavan S   1:56:42
+Yes, man, Joe.
+
+Manjunath S   1:56:44
+Yeah, I don't ticket it for that SFTP creation. Is it done?
+Are you facing any issues on the?
+
+Saravanabhavan S   1:56:55
+So the only thing is build bottom access we raise the ticket.
+
+Manjunath S   1:57:01
+For the IP address.
+
+Saravanabhavan S   1:57:05
+No IP address. I done that. The teammate ticket you're asking, right?
+
+Manjunath S   1:57:08
+Oh, OK.
+No, no, for the SFTP only. Oh yeah, don't take it right for the new connection SFTP.
+Hello.
+
+Saravanabhavan S   1:57:37
+Yes, blue checking, blue it 812.
+
+Manjunath S   1:57:48
+So I think only for the the slam.
+Mhm.
+
+Saravanabhavan S   1:57:57
+SFTPI don't have manjo but IP has been widely trans.
+
+Manjunath S   1:58:05
+OK.
+Oh.
+Um.
+
+James Maki   1:58:11
+Uh.
+All right, I'm showing that the test is still successful when I when I try it.
+Um, but when I try in FileZilla, like it's saying it's connected, but it's not actually listing out.
+Like the contents like I can't see the image images and process folders.
+So it's definitely not working.
+
+Manjunath S   1:58:41
+Uh, have you checked in the server?
+
+James Maki   1:58:42
+Please.
+I mean, I don't think there's really anything to do on the server.
+I think it has to do with like with the way that the the login is trying to find the directory. Like that's where the problem seems to be.
+But.
+All right. Um.
+Let's try right over in crush. Let's just try setting up a whole new destination for it. Go ahead and cancel this. Or actually, let's see what? Yeah, go ahead. Dang it. How are we gonna do this?
+Alright, I think I'm gonna have to do it since.
+I'm the only one that's in.
+Alright.
+All right.
+I'm just gonna create a new one, new remote item.
+SMB 3.
+FCU.
+Alright, why didn't?
+Oh, I think I supposed to do that first, OK.
+OK.
+Yes.
+So here.
+Spell stuff right.
+Yeah, come on. Are you kidding me? What the hell is your deal?
+Oh, why is this not saving currently? Why does this keep changing? I don't understand.
+Why? Why do you keep ******* changing?
+Literally doesn't make any sense.
+This is so ******* annoying.
+I don't understand why I just keep changing. Why is it not saving?
+Just crap.
+Just a bunch of crap.
+It just immediately overrides it. It just immediately takes it out. It's not doing anything right. Now you don't even have to ******* add symbol here. What the hell?
+This thing is so stupid.
+Finally got it.
+Oh my God, that was an absolute pain.
+Bro, how are you gonna start giving an error after you just ******* worked? How the hell?
+Unbelievable.
+All right, I don't know what's going on. It keeps reverting like it's not saving the change, like the thing with the URL. That's definitely the problem.
+I don't know why. I don't know why it's broken. I don't know.
+
+Manjunath S   2:09:39
+OK.
+
+James Maki   2:09:45
+I don't know, I don't know. But that's the answer. It's like it's the URL.
+Because whenever it's there, whenever it has it the way that I set it, when I tell it what to ******* use, it works and then it keeps removing it and it keeps going back.
+To the old URL and every time it does that is when it stops working.
+So I don't know what's going on.
+Um.
+But that is 100% the problem.
+
+Manjunath S   2:10:20
+Oh.
+Sados.
+So like there'll be regularly, there'll be accessing like all the other items. So is this a major issue?
+
+James Maki   2:10:35
+And now it's and now it's working again.
+All right, now it's working.
+
+Manjunath S   2:10:48
+OK.
+
+James Maki   2:10:49
+Alright, so maybe if we just stop touching it.
+All right, it should be working now.
+Lang Langley should be working.
+
+Manjunath S   2:11:07
+Yeah.
+So like we need to test it again or just shall I respond to the OK, OK, OK.
+
+James Maki   2:11:13
+No, don't touch. Do not. Do not test it again. Don't touch it. It's working. Just respond on the ticket and tell them. Tell them to try it again.
+Alright, alright, I need to drop so I have another call coming up.
+
+Manjunath S   2:12:27
+Oh.
+Sure, yes.
+
+James Maki   2:12:28
+And and I have my own tickets that I'm working on. I'm trying to finish up today.
+
+Manjunath S   2:12:33
+Yeah.
+
+James Maki   2:12:35
+Alright, so let me do this. If there's anything else like high priority you guys still want help with today, shoot me a message and I should be done.
+In 45 minutes. And if there's something else that I need that I can help you guys with, I will do what I can.
+
+Manjunath S   2:12:48
+Yeah.
+OK, James.
+
+James Maki   2:12:53
+All right. All right. Thank you, guys.
+
+Manjunath S   2:12:54
+Thank you, James.
+
+Saravanabhavan S   2:12:58
+My minutes.
+
+James Maki   2:12:59
+Alright, alright, no problem. Talk to you later.
+
+Saravanabhavan S stopped transcription

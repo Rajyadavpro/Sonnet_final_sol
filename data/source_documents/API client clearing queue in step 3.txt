@@ -1,0 +1,13 @@
+Use case-  API client clearing the data in the step 3 even if the data files are not available for the company .    For reference  ticket # 21850, company name – Mortgage portal.
+
+
+Question - 
+
+Step 1- Open Pg-admin and execute the below query
+
+Query 1 – Select * from facs_file_queue where company_id = ------  and file_step =3.
+Query 2- delete from facs_file_queue where company_id = 14400 and file_step =3
+
+Run these 2 queries in Pg- admin and check in the sonnet dashboard the data files have changed to 0.
+
+

@@ -1,0 +1,22 @@
+Questionnaire Covered in the Meeting:
+1. Why are migrations not created for the databases?
+Answer: Migrations were not created initially because the database changes were managed manually by a dedicated team. Tracking changes through tickets and processes was preferred over migrations. However, it was acknowledged that having migrations would have helped with tracking and documentation. 47:11
+2. Why are multiple languages used for the project?
+Answer: Multiple languages were used due to historical reasons. Initially, the project had performance issues, and Node.js was chosen for its concurrency benefits. The transition from Python to Node.js aimed to improve performance and handle more clients efficiently. 55:05
+3. How can the existing codebase be improved?
+Answer: The codebase can be improved by modularizing the code, separating repeated code into single files, and creating components or services for better identification and maintenance. This approach would make it easier to manage and debug the code. 1:05:50
+4. What is the issue with the Chrome update affecting the application?
+Answer: The Chrome update to version 133 caused the application to become unresponsive. The issue is suspected to be related to JavaScript or Bootstrap 3 compatibility with the new Chrome version. The team is investigating the problem by checking the dev tools and considering potential JavaScript library blocks. 1:31:03
+5. What is the process for setting up the development environment?
+Answer: The development environment setup involves using Vagrant and VirtualBox. There was a mismatch in the versions used, causing issues. The team is working on aligning the versions and ensuring the correct setup. Additionally, the database setup requires specific IP addresses and credentials. 1:47:19
+6. How to handle the database for local development?
+Answer: The database should be set up locally with the correct structure and data. The team discussed providing a minimal set of data to populate the tables and ensure the application runs correctly. They also considered creating a tool to pull company data from the database for local use. 1:57:14
+7. What is the OCR form and its purpose?
+Answer: The OCR form was an attempt to migrate away from the legacy Laravel application by using Vue.js. It was designed to handle PDF documents and highlight fields based on OCR results. The form allows users to input values and select candidates detected by the OCR. 1:12:45
+8. What are the steps to resolve the Chrome issue?
+Answer: The team is investigating the issue by checking the dev tools, considering potential JavaScript library blocks, and reviewing the compatibility of Bootstrap 3 with the new Chrome version. They plan to identify the root cause and implement a fix. 1:31:03
+9. How to access the UAT environment?
+Answer: Users need to install Cato and follow the documentation provided by the team. Access credentials and setup instructions will be shared to ensure proper access to the UAT environment. 2:06:58
+10. What is the process for obtaining the database backup?
+Answer: The database backup will be provided by the DB team. The backup file will be uploaded to SharePoint, and the team will share the location for download. This backup will include the necessary data for local development. 1:46:46
+These questions and answers cover the key topics discussed during the meeting, providing detailed insights into the technical challenges and solutions proposed by the team.

@@ -1,0 +1,10 @@
+ISSUE: DELETING THE DISPUTES IN ERROR QUEUE
+
+***DELETING THE DISPUTES THAT ARE IN ERROR QUEUE 
+ 
+         select id from dispute where company_id = 24400 and sonnet_status = 'Error' 
+****  REQUESTING TO DELETE THE DISPUTES FOR THE CUSTOM DATE IN THE ACTIVE QUEUE
+Query:
+     update dispute set sonnet_status = 'Worked' where company_id = 24400 and response_due_date < '2025-03-22' and sonnet_status = 'Active' 
+** date format – YYYY-MM-DD 
+

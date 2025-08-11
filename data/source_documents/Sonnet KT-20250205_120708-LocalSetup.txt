@@ -1,0 +1,42 @@
+Questionnaire on Topics Covered in the Meeting
+1. What is the purpose of setting up a local environment for the API?
+The local environment setup allows developers to test and run the API locally using PHP Artisan Serve. This setup involves pointing to a local or CQA database and running the server on a specified port. 37:05
+2. How is the API token generated and used for authentication?
+The API token is generated during the implementation phase for API customers. It is created in the admin interface and saved in the database. This token is used for authenticating API requests by including it in the URL. 42:18
+3. What are the main responsibilities of the encryption as a service?
+The encryption as a service is responsible for encrypting and decrypting PII data such as Social Security numbers and dates of birth. It provides endpoints for encryption and decryption and manages encryption keys for each customer. 1:14:40
+4. How does the move images service work and what is its purpose?
+The move images service is responsible for renaming and moving image files downloaded from E-Oscar to the appropriate directories. It handles specific customer requirements for file naming and converts TIF files to PDF if needed. 1:20:34
+5. What is the naming strategy and how is it implemented?
+The naming strategy involves defining templates for file names based on customer requirements. These templates are stored in the database and include functions for transforming data, such as converting to uppercase or adding constants. The strategy ensures consistent and customizable file naming. 1:29:36
+6. What are the common services used in the Laravel API?
+The Laravel API uses common services such as resources for defining responses and controllers for handling requests. However, there are no specific common services mentioned in the meeting. 13:02
+7. How is error handling managed in the console commands for data files?
+Error handling in console commands is managed by logging errors to the Laravel logs. If a command fails, it will be retried in the next scheduled run. There is no explicit error handling mentioned for individual commands. 59:00
+8. What are the steps involved in setting up the local environment for data files?
+Setting up the local environment for data files involves using PHP Artisan to run console commands. Developers can schedule the cron jobs on their local machine to test the functionality. 1:10:27
+9. How are API routes versioned and organized in the Laravel API?
+API routes are versioned and organized by grouping them into different files, such as API.php for version 1 and APIv3.php for version 3. The folder structure includes controllers for each version. 9:36
+10. What are the challenges faced in migrating to Laravel 10 and PHP 8.1?
+The main challenge in migrating to Laravel 10 and PHP 8.1 is the need to update GPG keys and ensure compatibility with the new environment. The migration is partially complete, with some issues still being resolved. 52:37
+Detailed Answers
+1. Purpose of Local Environment Setup for API
+The local environment setup allows developers to test and run the API locally using PHP Artisan Serve. This setup involves pointing to a local or CQA database and running the server on a specified port. 37:05
+2. API Token Generation and Usage
+The API token is generated during the implementation phase for API customers. It is created in the admin interface and saved in the database. This token is used for authenticating API requests by including it in the URL. 42:18
+3. Responsibilities of Encryption as a Service
+The encryption as a service is responsible for encrypting and decrypting PII data such as Social Security numbers and dates of birth. It provides endpoints for encryption and decryption and manages encryption keys for each customer. 1:14:40
+4. Move Images Service
+The move images service is responsible for renaming and moving image files downloaded from E-Oscar to the appropriate directories. It handles specific customer requirements for file naming and converts TIF files to PDF if needed. 1:20:34
+5. Naming Strategy Implementation
+The naming strategy involves defining templates for file names based on customer requirements. These templates are stored in the database and include functions for transforming data, such as converting to uppercase or adding constants. The strategy ensures consistent and customizable file naming. 1:29:36
+6. Common Services in Laravel API
+The Laravel API uses common services such as resources for defining responses and controllers for handling requests. However, there are no specific common services mentioned in the meeting. 13:02
+7. Error Handling in Console Commands
+Error handling in console commands is managed by logging errors to the Laravel logs. If a command fails, it will be retried in the next scheduled run. There is no explicit error handling mentioned for individual commands. 59:00
+8. Local Environment Setup for Data Files
+Setting up the local environment for data files involves using PHP Artisan to run console commands. Developers can schedule the cron jobs on their local machine to test the functionality. 1:10:27
+9. API Routes Versioning and Organization
+API routes are versioned and organized by grouping them into different files, such as API.php for version 1 and APIv3.php for version 3. The folder structure includes controllers for each version. 9:36
+10. Challenges in Migrating to Laravel 10 and PHP 8.1
+The main challenge in migrating to Laravel 10 and PHP 8.1 is the need to update GPG keys and ensure compatibility with the new environment. The migration is partially complete, with some issues still being resolved. 52:37

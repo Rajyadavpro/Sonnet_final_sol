@@ -1,0 +1,11 @@
+Key Topics:
+Setting Up New Environment: Chip and Vandana discussed setting up a new environment for the web app, suggesting a QA or hotfix environment to deploy each component, including the web database and API, to facilitate testing. 0:30
+Manual Script Execution: Chip suggested running scripts manually from the new server to avoid setting up multiple SSH agents and connections, which Vandana agreed to. 1:41
+Azure Subscription and Access: Chip and Vandana confirmed that the setup would be done in the Provana Azure subscription, and Vandana mentioned having the required access to create new resource groups. 2:21
+Repository Migration: Chip and Vandana discussed moving repositories from Sonic Azure DevOps to Provana, considering the impact on ongoing work and the need to handle pull requests methodically. 4:24
+Creating New Resource Group: Vandana suggested creating a new resource group for the QA environment, and Chip agreed, emphasizing the need to mimic the current structure if possible. 2:44
+Virtual Machine Setup: Chip and Vandana worked on setting up a virtual machine in the new environment, discussing specifications, security, and networking configurations. 14:12
+Importing Repositories: Vandana and Chip worked on importing repositories from Sonic Azure DevOps to Provana, ensuring that all branches and necessary scripts are included. 26:18
+Database Setup: Vandana emphasized the need to create a new database and deploy master tables and data in the new server to ensure a fresh environment for testing. 10:57
+Access and Security: Chip and Vandana discussed SSH access and security configurations for the new virtual machine, ensuring proper authentication and key management. 38:55
+Testing and Deployment: Vandana and Chip planned to start testing and deployment in the new environment, with Vandana taking responsibility for importing repositories and setting up the environment. 27:10

@@ -1,0 +1,12 @@
+CASE: Disputes came back with the same error..
+
+Issue-->
+I JUST processed to disputes and they came back with the same error (ACDV CONTROL NUMBER ERROR) Why is that? we don&#039;t touch those numbers. Due the time sensitive nature of these dispute can you please assist as quickly as possible? 
+
+*****To resolve I ran this query to find the ids from the eoscar_response table:
+select * from eoscar_response where dispute_id in (62373950,62373966)
+ 
+there were 2 entries for each dispute so one had to be removed from each and then resubmit the response.
+example: delete from eoscar_response where id = 159007747 (this is the id from eoscar_response and not the dispute_id so be careful when running this type of query)
+ 
+this is one of the rare times we delete from eoscar_response table.

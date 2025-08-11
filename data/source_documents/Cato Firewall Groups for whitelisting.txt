@@ -1,0 +1,12 @@
+Cato Firewall Groups for whitelisting
+Security tab -> Remote Port Forwarding
+API Group:
+sonnetapi.palinode.io
+
+CQA API:
+cqa-sonnetapi.palinode.io
+
+SFTP Groups:
+SFTP Gateway (22)
+SFTP Gateway (38122)
+SFTP Gateway (30000-31000)

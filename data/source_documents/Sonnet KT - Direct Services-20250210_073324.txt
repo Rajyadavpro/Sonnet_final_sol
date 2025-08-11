@@ -1,0 +1,18 @@
+Questionnaire Covered in the Meeting with Detailed Answers:
+1. What files are needed for configuration?
+Answer: The `.env` file and the `homestead.yml` file are required for configuration. 0:46
+2. Is there any other XML file needed for configuration?
+Answer: No additional XML files are needed beyond the `.env` and `homestead.yml` files. 0:59
+3. What is the status of the database backup?
+Answer: There is a backup of the database which is almost empty. A request has been made to Luis for a copy of his database, which contains more data. 1:42
+4. Where should PostgreSQL be installed?
+Answer: PostgreSQL can be installed on the local system. There is also an option to use Azure PostgreSQL, which is being worked on by Vandana. 2:57
+5. Is the database migration done using migration scripts or manually?
+Answer: The database migration is done manually by importing the backup data. No migration scripts are used. 5:05
+6. Are there any steps documented for software installation?
+Answer: Yes, the steps for software installation are documented in the repository's README file. 8:58
+7. How to handle the IP address for accessing SQL in the local system?
+Answer: The IP address used for accessing SQL in the local system is the one assigned in the Vagrant configuration. 13:00
+8. Are there any tools recommended for installing PostgreSQL and other services?
+Answer: Tools like DBngin are recommended for installing PostgreSQL, Redis, and other services. 14:38
+These questions and answers cover the main topics discussed during the meeting.

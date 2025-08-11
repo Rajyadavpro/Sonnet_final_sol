@@ -1,0 +1,488 @@
+Transcript
+June 24, 2025, 4:04PM
+
+Manjunath S started transcription
+
+Saravanabhavan S   0:03
+I think I don't have access to a dev environment.
+
+James Maki   0:07
+You do have access 'cause I set you up.
+
+Saravanabhavan S   0:20
+So we have to see in a server, right?
+
+James Maki   0:30
+Like.
+
+Manjunath S   0:34
+Oh, I have sent a link in the chat, so I'll just open the.
+OK.
+This ticket backlog, upper lock.
+
+James Maki   1:52
+You didn't need me to reset it. Oh, you're doing it OK.
+
+Saravanabhavan S   4:21
+Or else I will do it later, James. So apart from that.
+So yesterday we have speaking about the API, right? That one he's telling like.
+He has to uh give this uh retrieve the data from step two. For that he has uh in step one you need a a date of account information and step one direct details.
+So I checked with the documents. Uh.
+So in step one direct we have only a code number but there is not date of account information.
+
+James Maki   5:08
+What was the ticket number again?
+
+Saravanabhavan S   5:12
+22942.
+
+James Maki   5:39
+That's.
+I don't understand what he's asking.
+
+Saravanabhavan S   5:48
+So in our API documentation, so you just need to retrieve the data from step one. He need a data of account information in that here, but we have only a phone number, not about data of account number.
+So like he's telling his his business practice.
+So we have sent like yesterday the date of account information format like month, year, year, month, day.
+That's why you're requesting like.
+
+James Maki   6:54
+I have no idea what the **** he's talking about.
+I need to know which system of record data to retrieve. I don't know what he means by that.
+All the account info piece of the step two body.
+There is no date of count information in the step one direct details, so I don't know if I grab the most recent.
+But why is that not acceptable for business practices? Why? Why would you not grab the most recent if you receive a dispute, someone saying that they don't agree with what you're charging them for or what you're like reporting on them?
+Why would you not use the most recent?
+Account information I.
+I don't know. I have absolutely no idea. It's over my head. I I have no clue what he's asking. I don't have an answer for him. I would send this to the dev team because I don't have an answer. So you have to find someone else that does.
+
+Saravanabhavan S   8:01
+This is.
+
+James Maki   8:02
+What he's saying doesn't. Yeah, yeah, you have to. Yeah, yeah, you're. Yeah. I have absolutely no idea what he's talking about.
+
+Saravanabhavan S   8:05
+Sorry.
+OK.
+OK so ticket number 22965 in that they are asking about how long we able to retrieve the files. So in in the folder in the images we have. So they are asking about the image files, the files are how long it will be there like it is a.
+
+James Maki   8:31
+For for SFTP.
+
+Saravanabhavan S   8:32
+Fixed time frame or?
+OK, yes.
+
+James Maki   8:36
+Hold on. All right, this is this is for HP Sears.
+
+Saravanabhavan S   8:39
+For a saptic voltage image.
+
+James Maki   8:41
+All right, we don't want to retain images like they should all like after they pick them up or if we send them to them. I don't know how these guys, I don't know who's hosting.
+We're hosting.
+Looks like.
+
+Saravanabhavan S   9:04
+They're asking whether we have fixed time or like.
+
+James Maki   9:06
+Yeah, I I got it. I got it. I understand.
+
+Saravanabhavan S   9:09
+OK.
+
+James Maki   9:12
+All right, so this is another group of people that aren't picking up or aren't removing any of their files. Jesus Christ, we have these files are over a year old. These mother.
+2023 Oh hell no. Hell no. Get this out of here.
+
+Manjunath S   9:29
+Two years back.
+
+Saravanabhavan S   9:34
+Yes, they are having files from 2023.
+
+James Maki   9:37
+Why is my? Yeah, no, we're deleting stuff right this second. Absolutely not.
+
+Saravanabhavan S   9:51
+Yeah, hotly.
+OK.
+
+James Maki   10:07
+To be holding on to these people's files for an extended period of time, but if they're leaving them on the server, we also don't have a process that's going in and removing them.
+So if they're not picking them up, if they're just leaving them on our server, unless we find them and remove them like I'm about to, they'll be there forever until like until someone does something about it. But that is not our policy. That is not how we should be operating.
+And it just is what it is. But why are you telling me?
+I swear to God.
+What is happening right now?
+
+Saravanabhavan S   10:58
+So like uh.
+
+James Maki   11:01
+Oh my God, dude. All these image files back to 2022. These have never. These people have never removed a single file off our ******* server. Oh hell no.
+
+Saravanabhavan S   11:01
+It is a we can pay them.
+
+James Maki   11:24
+Our our policy is only to maintain images for 30 days past the due date. Beyond that, we don't. We we shouldn't be maintaining them. If we find them, we're going to remove them. So this guy has left his files out there the entire time since he's been a customer of ours, apparently.
+
+Saravanabhavan S   11:36
+OK.
+
+James Maki   11:42
+And I guess we've just never noticed it. But so he has. He has all of his files out there. As of right now, he can go all the way back to 2022 and pick up his stupid *** images, which is a problem like cause that has like.
+Like potentially like who knows what images are in there that could contain like like PII information and stuff that we do not want to be responsible for.
+Tell him we only guarantee up to 30 days past the due date. That's the that's the answer to. That's the answer to his question.
+
+Saravanabhavan S   12:13
+OK.
+OK.
+On James Uh 22953 and so we so we talk about the password reset. So I tell them Sagar but he.
+
+Manjunath S   12:21
+Yes.
+
+James Maki   12:26
+I don't understand what Cigar is saying. Yeah, I was. I was gonna reply to him. I don't understand what Cigar is saying there. We can't reset his password. Like, can you reset our Pravana password? Can you reset Sabrina's password? No. So why could? So why could we reset Russ's? Yeah, like, I I don't understand what.
+
+Saravanabhavan S   12:27
+Hi, good night.
+Thank you.
+No, no. So I didn't even have to do the.
+
+James Maki   12:44
+The conversation is here. I don't know if Sagar got confused. Like if you like forgot what it was that were.
+Yeah.
+
+Saravanabhavan S   12:52
+So he's not aware of the SSD. He don't have access SSD access also. So maybe think he are raising the issues to our support team.
+
+James Maki   13:03
+Yeah, he needs to get in. He needs to get in contact with the Pravana IT team. I don't know how to like other than SSD.
+I don't know how he's supposed to do that, but it's not. But it's not us. Like this is the Sonnet support desk, not the Pravana support desk. We do not reset Pravana passwords. I'm annoyed that he's even sending this to us. Like he got too comfortable, I think.
+
+Saravanabhavan S   13:14
+I'll.
+OK.
+
+James Maki   13:28
+Well, never mind. I'm not gonna say anything.
+
+Manjunath S   13:29
+OK.
+
+Saravanabhavan S   13:31
+OK.
+
+James Maki   13:31
+But no, I like somehow you gotta get him in touch with the Pravana IT because that's not a password that you can reset.
+
+Saravanabhavan S   13:49
+What do you manage, bro? You can go ahead, bro. I will reset the trust and my password on the.
+
+Manjunath S   13:57
+OK.
+First important thing is like this one now API images.
+From the Navy.
+
+Supriya Siddappa Kulageri   14:25
+Uh, Jim, I think that image issues haven't resolved it, right?
+
+James Maki   14:35
+Which images?
+
+Supriya Siddappa Kulageri   14:41
+Navy and United both image issues.
+
+James Maki   14:46
+Alright, well, Navy is talking about the API.
+Yeah, United Auto does not. United Auto does not use the API.
+
+Supriya Siddappa Kulageri   14:51
+Yes.
+
+James Maki   14:55
+So I'm guessing that their ticket is something different.
+
+Manjunath S   15:00
+Yeah, this one they're like they're not able to to download the API.
+
+James Maki   15:22
+Alright, uh.
+Oh.
+Don't understand.
+I mean, this is something that Amanda was working on. I don't know.
+2.
+I mean in this API call, I don't understand. I mean like like that's not an ID doesn't match. Is that supposed to be some kind of an image ID? Like I don't know what.
+Like I mean the sonnet ID in their screenshot does not match the sonnet ID.
+In their description.
+So I don't.
+
+Manjunath S   17:06
+This one.
+
+James Maki   17:09
+Yeah, so, alright, so like, they're saying that they failed.
+To get the image ID.
+I I don't. I don't know. I don't understand.
+
+Manjunath S   17:22
+To be created the for this, but there is not about select.
+
+James Maki   18:10
+I mean, it's possible they've been removed. I mean Amanda's message on there from.
+June 10th, 2 weeks ago it was that was that the image files were scheduled to be purged.
+So, I mean, if that's what happened, if they did get purged, I mean, that kind of explains why they're getting an image not available for this dispute. I mean, that's pretty straightforward, but I don't know what.
+
+Manjunath S   18:52
+Oh.
+This one that's so they're asking for the.
+Step to file but when I check it there are no step to file on this particular date in the server.
+
+James Maki   19:09
+So he's saying that the step too far from that date is still on their server is what he's complaining about. So you're not. You can't pick that up with automation because it's from a past date. Automation won't pick it up. You got to go get it manually. That's the only way to do it. I I doubt that it actually matters that it's out there. I don't know. Do they still have stuff that's.
+
+Manjunath S   19:13
+Hello.
+OK.
+From inside Sonic.
+
+James Maki   19:34
+We have 3 disputes that are waiting for data.
+
+Manjunath S   20:12
+The script to file is missing.
+
+James Maki   20:16
+Yes, he's saying that the file is still on their server.
+'Cause they're they're hosting, not us. So the file is on their server, so we have to go to their server to get the file. That's it.
+So on this Navy images issue, so Sigar has a message on here from yesterday.
+Saying to bring it up during our our call with the devs and you didn't do that, right?
+
+Manjunath S   21:11
+And.
+
+James Maki   21:14
+The Navy Federal ticket. You're talking to 22779.
+
+Manjunath S   21:15
+Cool.
+Yeah.
+
+James Maki   21:21
+Yeah. So, so you forgot to bring it up on the call when when we had the devs there.
+
+Manjunath S   21:30
+Yeah, I forgot it.
+
+James Maki   21:40
+Alright, one thing at a time. Alright, yeah, let's do team recovery. This is, yeah, let's get this done.
+And then we'll go back to the Navy thing. So you're like, you're gonna have to talk to the devs because I don't know what the expectation here is. I don't know. I'm annoyed that Amanda dumped this on us, like her putting a message on there saying that the files are about to be purged and blah blah blah.
+
+Manjunath S   22:02
+Yeah.
+
+James Maki   22:04
+Like.
+Cool. That means something needs to be done about it right then. Like not just put a note on the ticket and let it happen like.
+If it's that serious.
+Like that should have been like a chat discussion or something like that should have been brought up. So I mean, I mean, hell, like we could have moved the files like we could have done.
+Something.
+So I don't know what.
+
+Manjunath S   22:38
+Should I give I guess for distance?
+
+James Maki   22:43
+Uh, no 'cause you've forgotten a very important thing.
+
+Manjunath S   22:48
+So.
+
+James Maki   22:49
+Uh, yeah, go ahead. Go ahead and say yes.
+But you are.
+I guess it doesn't matter.
+
+Manjunath S   23:01
+You have to remove the characters or.
+
+James Maki   23:05
+Yes.
+Uh.
+Hold on. I don't think so, actually. I think you've already done that.
+Uh.
+All right, maybe you do need to remove.
+Check my version.
+2.
+
+Manjunath S   24:03
+Maybe ought to get a sort of.
+
+James Maki   24:07
+Yeah, that's what you didn't do.
+
+Manjunath S   24:11
+Yeah, so.
+
+James Maki   24:11
+Uh, you do need to remove. You do need to remove the.
+Do you? Is that an escape character?
+
+Manjunath S   24:20
+Permission is denied.
+
+James Maki   24:26
+Yeah, I think they have really strict security settings and I think we're blocked.
+
+Manjunath S   24:39
+Should I inject from this?
+
+James Maki   24:41
+Do control C to exit to stop what you're doing.
+So I think we're gonna have to wait a while now because I think that.
+Whenever you have a failed login with these guys.
+I think it blocks you.
+For some amount of time.
+Yeah, yeah. All right. So we're not gonna be able to connect under server for a while. So yeah, so we can't do anything on that now.
+
+Manjunath S   25:21
+OK.
+
+James Maki   25:32
+Uh, we need. We need to.
+We need to talk to a man about this.
+Because I don't like, I have absolutely no idea. Like, I I hate that they're continuously just dumping us in the middle of things that are like ongoing and that like other people already have knowledge about and know what's happening. And then we're just apparently expected to just come in and just figure it out.
+Like, I'm really over that. It's.
+
+Manjunath S   26:57
+So what do we do for the steps? Any idea?
+
+James Maki   27:05
+Ask Amanda.
+
+Manjunath S   27:14
+So if I can go or should I?
+
+James Maki   27:39
+I'm gonna check on the API server.
+
+Manjunath S   30:28
+Should I try to correct Tinder Sagun for the Tingle recovery?
+
+James Maki   30:47
+You can try.
+
+Manjunath S   31:03
+Password. We don't need this dash B right? Only this one.
+
+James Maki   31:10
+To take out the escape character.
+
+Manjunath S   31:24
+That's it, right?
+
+James Maki   31:27
+Yes, that's right.
+
+Manjunath S   31:37
+Denied.
+
+James Maki   31:51
+All right, control C It's not gonna let you on.
+I I don't know how long it takes for it to.
+Refresher, whatever it is it needs to do.
+
+Manjunath S   32:13
+This is.
+Do you have it in a video of those those terms?
+
+James Maki   34:02
+I don't have answers to any of those questions. This has turned into a really a really ****** day.
+
+Manjunath S   34:06
+OK.
+
+James Maki   34:14
+As of right now, I don't believe that there is any process to clear out block notifications from Sonnet. I think they are there forever as of right now. I don't think they ever go away. I could be wrong, but I'm pretty confident about that.
+
+Manjunath S   34:25
+Yes.
+
+James Maki   34:30
+So #2, the answer is no. I feel like didn't we just answer that for somebody else? Was that the same person? Probably.
+And I don't know what a good contact number is anymore. Is it still the Sun support desk? Like you guys get those calls, right?
+The phone number is still the same. I have no idea. No one tells me anything.
+
+Manjunath S   34:59
+OK.
+Yeah.
+So.
+Should we respond on this or just for a reference, shall I attach the ACDP PDF?
+Games.
+
+James Maki   36:59
+Mhm.
+
+Manjunath S   36:59
+Yeah, so they responded.
+
+James Maki   37:02
+I'm I'm reading. I'm looking, I'm looking. I'm trying to find an answer 'cause I don't know.
+I don't have all the answers, so we got to figure it out. And the only way to do that is to start looking. So right now I'm in the knowledge base in Zendesk, looking at an article on block notifications, trying to see if there's any information that's going to help us.
+
+Manjunath S   37:14
+Yeah.
+
+Saravanabhavan S   41:39
+OK.
+
+James Maki   41:52
+Yes.
+Can you guys hear me?
+
+Manjunath S   42:42
+Distance.
+
+James Maki   42:45
+OK, apparently I'm having Internet troubles.
+So you might lose me.
+
+Manjunath S   42:53
+No, already there is a breakage in the walls.
+
+James Maki   43:16
+Something is wrong.
+What's going on?
+
+Manjunath S   43:40
+I can see this later.
+
+James Maki   43:48
+Yeah, it's really weird. Like the call is still active, but everything else on my computer is down.
+
+Manjunath S   43:56
+OK.
+
+James Maki   43:58
+I I don't have any access to Sonnet.
+No, nothing is responding.
+Not sure what's going on.
+And it says I'm disconnected from the VPN. I don't understand how the call is still active. I'm so confused. What the **** is happening?
+OK, can I please get my Internet? Hello.
+
+Manjunath S   44:37
+Cool.
+
+James Maki   44:44
+But.
+What the hell is going on?
+
+Manjunath S   48:17
+Jim, show connected.
+
+Manjunath S stopped transcription

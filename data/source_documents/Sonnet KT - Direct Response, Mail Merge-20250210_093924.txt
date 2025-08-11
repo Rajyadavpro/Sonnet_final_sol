@@ -1,0 +1,20 @@
+Questionnaire Covered in the Meeting:
+1. Direct Dispute Process:
+Question: What happens when a user completes a direct dispute?
+Answer: When a user completes a direct dispute, the system generates a response letter based on templates. This letter is sent to the client via API or FTP, but the mailing is handled by the client. 0:04
+2. Mail Merge Functionality:
+Question: How does the mail merge function work for generating letters?
+Answer: The mail merge is a temporary solution for companies using Word documents to generate letters. Clients download a report, perform the mail merge in Word, and modify the report as needed. 1:32
+3. Future Roadmap for Letter Generation:
+Question: What are the future plans for letter generation in the system?
+Answer: There is a plan to develop a letter generation module or service that will create letters based on client responses. This is currently in the pipeline and will be a separate service. 5:44
+4. Client Customization of Reports:
+Question: How do clients customize reports for their needs?
+Answer: Clients often modify the downloaded reports to meet their specific needs before performing the mail merge function in Word. 2:33
+5. Setup of Local Environment:
+Question: What is the process for setting up the local environment?
+Answer: The local environment setup involves troubleshooting issues identified in the production environment and replicating services. This process will be documented and recorded if possible. 6:36
+6. Direct Response Codes:
+Question: What is the status of direct response codes?
+Answer: The goal is to elevate direct response codes to a greater level, and this is part of the backlog for future development. 5:24
+These questions and answers cover the main topics discussed during the meeting.

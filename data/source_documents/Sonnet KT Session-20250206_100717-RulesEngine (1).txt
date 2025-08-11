@@ -1,0 +1,11 @@
+Key Topics:
+Rules Engine Setup: Lidiexy and Amanda Gilbert discussed the setup of the rules engine in the local environment, emphasizing the need to install Python 2.7 and Python 3. They also mentioned the importance of creating a virtual environment and installing necessary packages. 0:48
+Python Versions: Vinay and Neeteesh confirmed the installation of Python 3.12 and discussed the compatibility of different Python versions with the rules engine. 2:42
+Amanda's Role: Lidiexy highlighted Amanda Gilbert's role as a Python developer and her responsibility for maintaining the rules engine, including performing pull requests and testing. 2:56
+Rules Engine Flow: Lidiexy and Vinay discussed the flow of the rules engine, including the process of downloading data from the Oscar service, processing it through the core, and placing it in the dispute queue for the rules engine to pick up. 10:17
+Purpose of Rules Engine: Lidiexy and Vinay explained that the primary purpose of the rules engine is to recommend responses based on the data received from the customer and the system of record. 12:21
+Custom Logic: Amanda Gilbert explained the process of applying custom logic for different customers, including the use of default logic in DB models and the creation of custom files for each customer. 17:05
+No Touch Logic: Amanda Gilbert described the no touch logic, which allows for the automation of certain disputes based on predefined criteria, excluding disputes with images or FCRA relevant information. 1:12:03
+Response Codes: Amanda Gilbert provided an overview of the response codes used in the rules engine, including the historical context and the current codes used for different scenarios. 54:31
+Custom Queues: Amanda Gilbert and Vinay discussed the creation of custom queues in the rules engine, including the use of company IDs and the importance of maintaining clean code. 41:43
+AUD and Direct Rules Engines: Amanda Gilbert briefly explained the AUD and direct rules engines, highlighting their similarities to the main rules engine and the differences in data processing. 1:23:15

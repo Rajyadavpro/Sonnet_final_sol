@@ -1,0 +1,1220 @@
+Transcript
+June 16, 2025, 8:03PM
+
+Supriya Siddappa Kulageri started transcription
+
+James Maki   0:04
+Did you run the the command to fix the card IDs on web O2 on the server?
+
+Manjunath S   0:09
+It will go to server, right? Yeah.
+
+James Maki   0:09
+you on the server.
+Uh.
+
+Manjunath S   0:12
+Yeah.
+
+James Maki   0:14
+Alright, so you did that and then you reprocessed the Step 2 files.
+
+Manjunath S   0:18
+Steptofiles.
+Thanks.
+I just saw the comment butter in reposses disturbed files.
+
+James Maki   0:47
+OK.
+
+Manjunath S   0:48
+Oh, web portal server, right?
+
+James Maki   0:51
+The web O2 server is where you run the card ID fix and then but then process the files on web O1.
+
+Manjunath S   0:54
+Yeah.
+And.
+PHP artition, common gems.
+
+James Maki   2:27
+Uh.
+I guess, but you're not in the right folder.
+And so if you like I.
+Uh, you didn't have the uh.
+
+Manjunath S   2:49
+I have permission denied.
+
+James Maki   2:51
+Yeah, well that that folder doesn't exist, so it's. I think it's go to Sonic user 1st and and then list it out. OK, I think the name of the folder is slightly different than that.
+Yeah, CD.
+Uh yeah, uh, slash on it slash user.
+There and then list it out.
+Sonnet at Pans is the name of it.
+Uh, so you just said the name part wrong.
+
+Manjunath S   3:41
+Yeah, I just did it.
+
+James Maki   3:43
+Yeah, no. Now you can run the the artisan command.
+
+Manjunath S   3:44
+Hello.
+OK.
+
+James Maki   4:13
+Oh, yes.
+Oh, in front of new redo the it's supposed to be a dash, dash. I think the way that he put it there. I think he had it wrong.
+Yeah, in a in front of new, yeah, delete the.
+No eyes.
+
+Manjunath S   4:38
+This one.
+
+James Maki   4:38
+Yeah, yeah, delete that and put a put a dash, dash.
+And then and then take out the the middle dash, dash.
+Yeah, I'll write it.
+There we go.
+
+Supriya Siddappa Kulageri   5:10
+Oh, James, when we have to use this soon.
+
+James Maki   5:14
+Well, right now, honestly, you should be running it every morning until until the dev team fixes this and puts a fix in so we don't have to. Right now we have to do it manually.
+
+Manjunath S   5:35
+Exiting from our to Sabha.
+
+James Maki   5:38
+Yeah, you can exit off this server now and go over to the web 01.
+Right, so the Step 2 files are already in the process folder, so let's move them back.
+To the root and then you can.
+Rocess them again.
+Yeah, you might as well just move all of them. Well, well, yeah, or at least move.
+Yeah, I guess just move the 20, the six of 16 ones. So if you do MV.
+Space. Yeah, yeah, just copy that first part of the date.
+No, just copy the first part like up to the the 0616.
+So it's year, month, day, just copy up that far.
+No, in in the file name you you were in the right spot.
+Yeah, in the 16. There you go. Yeah, copy that and then you can paste that in and put a star and that'll move all the step 2 files from today. It'll move just those to the the next folder. So now do your space dot dot slash.
+There they go.
+
+Manjunath S   8:03
+What a source on it.
+
+James Maki   8:04
+Oh, oh, yeah. I mean, we do that every single time. It's so funny.
+
+Manjunath S   8:10
+Keep.
+Hello.
+
+James Maki   8:22
+Uh.
+If you want, if you want to see what's what's still in there.
+All right, so you so you moved today's step 2 files back up to the root directory. So now over in the UI.
+Uh, you can read in their files.
+There we go.
+And this time and this time we should get get some more accounts loaded.
+
+Supriya Siddappa Kulageri   8:52
+Oops.
+
+James Maki   8:57
+Yeah, so you can just click the top one and it'll load all three.
+OK.
+
+Supriya Siddappa Kulageri   9:02
+Jim, what if we have the pull option in this dashboard? So we can just pull it or first we need to move the...
+
+James Maki   9:10
+So that's polling. Polling is when you need to retrieve a file from the client's FTP. So if if the file is on their server, then yes, you have to pull it.
+
+Supriya Siddappa Kulageri   9:25
+So if that OK, OK, got it. So after that there is no need of for reprocessing the step two file, right?
+
+James Maki   9:33
+Well, that's what we're doing right now. We're processing it right now.
+That's that's what he just did by hitting that button to process Step 2.
+
+Supriya Siddappa Kulageri   9:43
+Look.
+
+James Maki   9:55
+So since there was three files there, it might take a minute, but it shouldn't take too long.
+Great. How many were there on the dashboard?
+
+Manjunath S   10:52
+36.
+The three in now.
+
+James Maki   11:39
+Alright, so it doesn't seem.
+To actually be loading anything. Oh, never mind. I'm wrong. So the number's dropping. There we go. OK, that's good.
+
+Manjunath S   11:50
+Yeah.
+
+James Maki   11:58
+OK. Yeah, that's great. OK. So these guys have been testing. So there's still five there and that's because these guys have been doing some testing with direct and that's what those five are.
+So you don't have to worry about those, but so good. So it looks like those that are 18, those should be in the roles engine queue now since they're no longer in the step one queue.
+So as soon as this process, we should be good to go.
+
+Manjunath S   12:35
+Yeah, Step 2 is being processed.
+
+James Maki   12:37
+Yeah.
+All right. And then I remember we were.
+But we were trying to get.
+
+Manjunath S   12:49
+Yeah, it's 0, James.
+
+James Maki   12:55
+0 Wayne Perfect. All right, that's exactly what you want to see.
+
+Manjunath S   13:05
+So that's it, right?
+
+James Maki   13:06
+All right, I that is it for that ticket. So these guys were having an issue last week. If you remember with a if you look at their to speak queue, they have some that are missing SOR data.
+
+Manjunath S   13:25
+Yeah.
+
+James Maki   13:25
+And so we were trying to get that last week, remember. So I think we had sent like some new step one files and like we didn't like a whole bunch of stuff, right? Yes. All right. So it looks like we still haven't got that data.
+
+Manjunath S   13:33
+Oh.
+
+James Maki   13:45
+Uh, so I want to try and check one of the files and see if it's there.
+Right, so last time we sent it, looks like it was.
+1240 on June 12th.
+O if we look inside this file.
+Do we have this account?
+Yes, we do.
+Although that is a.
+Checked up looking name OK.
+OK, if you would return to disk queue.
+All right, back on the server, let's move.
+Yeah, so let's do the same thing that we did before. This time, instead of moving the 616 files, let's move the 612 files.
+Uh, move those back.
+Yeah, it moves us to the root.
+
+Manjunath S   15:44
+Oh, sorry, James. I was on mute this file.
+
+James Maki   15:48
+Yeah, move the yeah, all the 612 files.
+Uh, Yep, Yep.
+
+Manjunath S   16:16
+Right.
+
+James Maki   16:27
+Right. And wait just one. Wait just one second. Let me.
+We read my query.
+OK, alright, process file.
+I'll just, I'll just start to now, yeah.
+Cool.
+Alright.
+So there's only nine that are missing data, and so it should be in these in those 612 files, so hopefully we can.
+Fix these and finally be done.
+With United Auto.
+
+Manjunath S   17:28
+Yeah, I think it's gone.
+I think it's wrong.
+
+James Maki   17:53
+OK.
+No, they're still waiting for data now, so I set them. I set them back to new status so they're not the queue.
+
+Manjunath S   18:32
+In this query.
+
+James Maki   18:40
+No.
+No, I I already did it. I did it before you process the files.
+
+Manjunath S   18:47
+OK.
+
+James Maki   18:56
+I'm just watching the I'm just watching the dashboard now trying to see if these.
+These nine move out.
+Like they're supposed to.
+All right, I'm not sure why.
+Those are not loading.
+The file is done processing.
+
+Supriya Siddappa Kulageri   20:09
+ohh James for true accord and southern Oregon. So for those also they are not valid disputes.
+
+James Maki   20:18
+OK, all right, so so same thing. Try and process their files from today.
+
+Supriya Siddappa Kulageri   20:26
+Yes, I did, but also they are not loading.
+
+James Maki   20:28
+Right then.
+
+Manjunath S   20:56
+So James have to deactivate this company.
+
+James Maki   21:13
+Um.
+Yeah, so disabling a company is really easy. We've we've done that before.
+Um.
+Uh, over on the company page.
+Insights on it.
+I think your screen might be frozen. It looks like I'm still looking at Zendesk. It looks like your cursor is not blinking anymore.
+
+Supriya Siddappa Kulageri   22:05
+No, James's power has cracked.
+I get lost to.
+
+James Maki   22:09
+Oh, OK.
+Oh, OK, gotcha.
+
+Supriya Siddappa Kulageri   22:13
+OK, uh, let me take up history.
+
+James Maki   22:16
+Mhm.
+Or.
+
+Supriya Siddappa Kulageri   22:23
+So this one only since from morning I'm trying to pull this step too.
+
+James Maki   22:32
+OK, there's a the the step one file did get sent right? It's not on our server. Uh, Scroll down.
+OK, good. Yeah. So it's not the files waiting, yeah.
+So when when this gets done, we should have theirs to should have their step two file.
+
+Supriya Siddappa Kulageri   22:55
+First we need to push step one and then pull up the step.
+
+James Maki   22:58
+No, it looks like it's already been sent. If it if it was still on our server, you would see it in that files waiting section. And the fact that it's not there means that it should have been sent, so they should have that. So yeah, so now the next step is to get their Step 2.
+So if when that completes, if we still do not have their Step 2 file.
+Then that might be. The answer to her question is why she doesn't have disputes.
+We can, uh.
+Uh, we can also go look on their server just to see what's there.
+Have you got your? Have you got your repos?
+Access fixed.
+
+Supriya Siddappa Kulageri   23:56
+Oh, no, James. Actually, one time I got means it came and again I have lost that.
+So for the first time Emery has resolved it and day before yesterday I was on Friday I was checking with that.
+
+James Maki   24:05
+OK.
+
+Supriya Siddappa Kulageri   24:14
+So it was working, but today again it was not working. Need to check again.
+Don't know what's happening with that.
+
+James Maki   24:24
+OK.
+Uh, yeah, that's uh.
+Yeah, if you don't have that, that really kind of limits you. Um.
+For FTP stuff.
+Sir, Vaughn, how about you over in in Azure, are you able to get to the repos section?
+
+Supriya Siddappa Kulageri   24:57
+Sorry, now, James.
+
+James Maki   24:59
+Uh, asking Sarah Vaughn.
+
+Supriya Siddappa Kulageri   25:04
+Oh no, actually it was working on Friday, right? So I haven't asked him. So tomorrow once he comes back, I will ask him.
+
+James Maki   25:13
+OK, yeah, but I'm I'm asking Sarah Vaughn now if like if he has access to rebos.
+
+Supriya Siddappa Kulageri   25:18
+Saravana.
+Uh, I don't think so. He has Sharma. Do you have access for repos?
+Hello.
+
+James Maki   25:38
+Mhm.
+You there, Sarah Vaughn?
+
+Supriya Siddappa Kulageri   25:46
+I wanna.
+
+James Maki   25:47
+Uh.
+Maybe you stepped away for a minute.
+
+Supriya Siddappa Kulageri   25:52
+Hmm.
+
+James Maki   25:52
+OK.
+
+Saravanabhavan S   25:54
+Just, just, just, I'm, I'm audible now.
+
+James Maki   25:57
+Oh, there he is.
+Yep.
+
+Supriya Siddappa Kulageri   26:00
+Yes. So do you have access for Dev Azuri?
+
+Saravanabhavan S   26:02
+Uh.
+Yes, I have access. No, I don't think. I didn't work on the repros, but I have access for dev I sure.
+
+Supriya Siddappa Kulageri   26:07
+For repose.
+
+James Maki   26:21
+Alright, but you don't have the repos section.
+
+Saravanabhavan S   26:25
+No, I I I think don't know.
+
+James Maki   26:29
+OK.
+All right, well, Sabrina, whenever you talk to someone next about yours, probably be a good idea to ask about Servon. Also, make sure that both of you guys get. Yeah, make sure both of you guys get access.
+
+Supriya Siddappa Kulageri   26:48
+Yeah, sure. Yeah, I will look into yourself.
+
+James Maki   26:54
+OK. Thank you.
+Right.
+
+Supriya Siddappa Kulageri   27:01
+So for this Step 2 has not.
+On the side word.
+So we need to pull out from there, right?
+Or else we need to.
+
+James Maki   27:15
+Yeah, so, all right, so we're still not getting their file. OK, all right, so let me let me check their server real fast and just see what's on there.
+See if uh the step one file is still there.
+Or if they've done anything.
+All right, I'm on their server.
+I see the step one file is in their incoming folder.
+And there is no step two file. OK, I love it when they blame us for stuff and they're the ones that aren't doing their job. But OK, all right, so the step one file is on their server, so they have not processed it yet.
+So the step two file is not available so on the ticket.
+Let's ask her.
+Or let's tell her. Yeah, this is on the the Oregon one, yeah.
+Let's tell her.
+We have verified the step one file has been uploaded to you.
+Please process it and let us know when the step two is available.
+
+Supriya Siddappa Kulageri   29:25
+All step on file.
+
+James Maki   29:27
+Yeah, verify that the step one file has been uploaded to you.
+Please process and let us know when the step two file is available.
+And so when she tells you that step that the file is available, then you can use that button to pull to step two and you should be able to get it this time or the next time.
+
+Supriya Siddappa Kulageri   29:55
+OK.
+The for true accord.
+
+James Maki   30:23
+Yeah, here, hold on one second. Actually, before we move on, let me let me show you guys what I did just so you can, so we have it in the video and and you guys have the instructions. All right, so this was.
+How I verified they had the file, so I'm in their folder on the web O1 server and so credit.
+This is the script for their file push for the step one, so copy the SFTP command through to the URL.
+That's what I'm gonna use here to connect.
+Sudo sue went to Sonnet first whenever you're testing FTP connection use Sony user and then I have the password copied which is that.
+So I'm gonna paste it in and now I'm connected to their FTP server.
+So LS to list all contents on the client server. They do have a sonnet directory, so it went there first and then they have incoming and outgoing folders.
+So I looked at the incoming.
+And there is today's step one file.
+So that's how we verified that it's still pending and that they need to process it.
+And that's it. So then by to disconnect.
+All right.
+Uh, just wanna make sure I showed you guys just.
+
+Supriya Siddappa Kulageri   32:13
+Yeah.
+
+James Maki   32:15
+Refresher. All right, next ticket.
+Oh, I was gonna try look more into the ERC or.
+Actually, let's focus on United Auto since.
+
+Supriya Siddappa Kulageri   32:53
+Mhm.
+It was actually 69 but it came to 23 now.
+
+James Maki   33:00
+OK, so you did get a few more loaded. OK, alright, that's good.
+OK, so they still have more, uh, that are in new status then?
+If you go to the the look ahead calendar.
+
+Supriya Siddappa Kulageri   33:17
+This one also the count has been changed. Step 2. So again.
+
+James Maki   33:21
+Yes, yes. So anytime that you reload a Step 2 file, it is going to add the number of records to the file count.
+So each time you reprocess a step two file, that count's gonna go up.
+And yeah, so that can get. If you've had to reload a file a few times, it can get kind of a like that's not very helpful anymore, right?
+Um, but yeah, like any uh.
+So like if a if a dispute's already active, but like it's it reloads that data, it'll like it gets added again.
+Um.
+All right, so we do also have their step two file from Friday. Did you did you reprocess just the one from today or did you also do the 613 file?
+
+Supriya Siddappa Kulageri   34:21
+Just the 613.
+Sit 16.
+
+James Maki   34:27
+Oh, yeah, OK.
+
+Supriya Siddappa Kulageri   34:29
+OK.
+
+James Maki   34:34
+Thank you. Oh.
+OK. Oh, that was the SO credit. OK, let's see.
+
+Supriya Siddappa Kulageri   34:50
+Oh, do I need to do this one as well? 13th.
+
+James Maki   34:53
+Yeah, yeah. If you if you didn't do it before, yeah, let's go ahead and do that one also.
+
+Supriya Siddappa Kulageri   35:00
+OK.
+
+James Maki   35:01
+Uh, you're already you're already pseudoed into us on it.
+
+Supriya Siddappa Kulageri   35:11
+Yeah.
+
+James Maki   35:11
+Yeah.
+
+Supriya Siddappa Kulageri   35:24
+So deactivate the company.
+
+James Maki   35:35
+Uh, yeah, so the the deactivations.
+Uh, for a sonnet. Uh is super easy.
+Um.
+Yeah.
+Yeah. So we'll go over, yeah, we'll go over to the to that company.
+
+Supriya Siddappa Kulageri   36:12
+Mhm. Admin side.
+
+James Maki   36:14
+OK, Yep.
+And let's let's look at their users tab real quick. I just want to see the last time that they were in Sonnet.
+They were in there today.
+OK.
+Alright, uh, let's go back over to the UI side. Uh, visit and sign it.
+I want to see if they completed some disputes today, so let's look at the dispute section.
+It did complete one.
+In the dashboard is there is that in the in the step 3 queue?
+Just go to the dashboard.
+Yes, OK.
+OK, what was that ticket number again?
+860.
+OK, since they have some activity there, I'm gonna message Amanda real fast in the support.
+Uh, chat.
+
+Supriya Siddappa Kulageri   38:07
+Uh, pot gems.
+
+James Maki   38:12
+I'm messaging Amanda in the support chat real fast just to verify that she wants us to close this down or like or or deactivate them.
+OK.
+All right, so yeah, I just want to double check just since they had the user activity. I want to double check that we should deactivate these guys now. I don't want, I don't want to get yelled at again. Like I want to Shimai got bad at us for the LJ Ross one.
+Yeah.
+
+Supriya Siddappa Kulageri   39:17
+Yes, please.
+
+James Maki   39:18
+OK.
+All right.
+OK, let's.
+I'm gonna go ahead and make their step three file.
+I'm doing it right now.
+And.
+Oh, let's see. Do these guys, right? It looks like we're hosting for these guys, right?
+That's what it looks like.
+Alright, so she said we can go ahead and do this for USCB, so.
+All right, looks like the file has been created.
+OK.
+All right, let's also check Rev solve.
+As well, yeah, the other company.
+Oh, looks like they have not.
+OK, alright, nothing there in their queue.
+Uh uh, check their user activity real fast.
+Uh, nothing. OK, cool.
+All right. That's like really old. All right. That's kind of weird.
+OK, alright, let's start with these guys.
+Uh.
+Yep, so first we need to know just what kind of client they are. So it looks like this one. If you go back to the if you go to the edit company tab and then check the additional settings.
+All right, so these guys, they're not, they're not API, they don't have a token. So we just want to, we just want to double check what type of client they are before we do this because it's going to wipe out all of their actions. So we just want to make sure that we get all the back end stuff.
+
+Supriya Siddappa Kulageri   42:49
+Oh.
+
+James Maki   43:05
+So we need to know what type of client they are, like what type of data exchange they use, if it's FTP, if it is FTP, who's hosting or their API because we do want to, we will have to go through and like delete their folders off of the servers.
+So you wanna know which servers to go to and all that. Uh. So if you look at the additional settings, uh, these guys do have.
+The push and pull turned on, so that means that the client was hosting the FTP. So that means that they are going to have scripts inside of the data files repo that need to be deleted.
+So that's that's really all you're checking for is just to just to make sure what type of client it is so that you know, so that you know what repos they need to be removed from and what scripts to take them out of.
+All right, all right. So so these guys are a client hosted FTB. So now we know that we're good to proceed. So you can go back to the general section.
+And we are going to enter in a termination date for today.
+Or actually, let's use the the date in the ticket.
+
+Supriya Siddappa Kulageri   44:27
+Yes, she gave the date.
+
+James Maki   44:30
+Yeah, so let's use that date.
+
+Supriya Siddappa Kulageri   44:32
+4:30.
+
+James Maki   44:44
+All right. And then we're gonna turn off is active and when you do this.
+When you save this, it's going to clear out. It's going to do pretty much all the work for you inside of Sonnet. It's going to do most of it. So it's going to disable the users. It's going to delete or turned off scheduled actions. It's going to do a whole bunch of things. So don't do this unless you mean to do it.
+Uh, so let's save this. Yep, save changes.
+All right, and now if you scroll back up, it should have turned off.
+OK, not here. All right. If you go to the users, everyone, all of them should be disabled now. I think they pretty much already were. Yeah, so permissions are removed, all that stuff.
+The schedules. Check the schedules tab. See if they've.
+I can't remember if they just get disabled or if they get deleted. OK, they're just disabled. OK, great. OK, so that's good. So this will also tell you.
+Like what scripts that need to be removed from it all and all that stuff too. So all right, great. So you can go ahead and you can remove the scheduled download.
+
+Supriya Siddappa Kulageri   46:13
+This one.
+
+James Maki   46:14
+Uh, Yep.
+OK, oh, that's kind of annoying. It takes you to the.
+OK, it took you to the scheduled downloads screen. OK, let's go back to the company. Go back to organizations.
+Uh, it was a Revsolve who we were on.
+
+Supriya Siddappa Kulageri   46:46
+Yeah.
+
+James Maki   46:46
+Yeah, so it doesn't let you select it now that it's disabled. That's that's also annoying if you do a do a control F.
+And and just search for it normally.
+And I look for myself.
+Uh, click out of the the.
+There you go there.
+No, now you should click on it. Go back.
+There, if you click on it, it should let you in.
+Yeah, so it just for whatever reason that filter.
+At the top of the organization, saying is just a.
+Yeah, like it grays out the disabled clients. That's annoying. OK, but OK, all right, so you don't have the data files repo, so you can't do that part of it.
+But once the one of the next steps would also be to remove their folders off of the servers.
+So you want to take them off. You're you're basically just undoing everything that you do in a setup, right? You're just kind of working backwards. So you want to take them off like I remove them from the RPA O2 server.
+And the web O1 server.
+Yeah. Oh, yeah, you're good.
+
+Supriya Siddappa Kulageri   48:33
+RP.
+
+James Maki   48:35
+Yes, RPA 02. Yeah. Or actually, I think we need to do both. Is there two? Yeah, there is there. Yeah, we need to do. We need to do both, actually. So it doesn't matter what you what we do first. Yeah, we can do this one. RPA 02. Let's do it.
+
+Supriya Siddappa Kulageri   49:04
+OK.
+
+James Maki   49:05
+All right, it's like I said. So we're basically just undoing everything that you do in a setup. So this is one of the image servers. So you're gonna go to Sonet images.
+If you list out the folders, we should see Revsolve on there.
+Yep, yeah. So we need to go into it first to remove any subdirectories.
+Uh yeah, CDCD go go into the folder.
+All right. And there should be some subfolders here. So if you list them out, you should see. Yeah, all right. And all of those look to be empty.
+So you can just remove them all. So if you do RMDIR.
+You know you don't need to go into them and then just do a star, space star.
+Where where that space?
+Yeah, so that'll remove all of the subdirectories here.
+Oh, I think you need to pseudo Sue's on it first. Yeah.
+I I almost remembered it in time.
+Yeah, so now if you do it, it should work. There you go. All right, so you have to do that first before you can delete the main folder. Like you can't have anything inside of a folder to before you delete it. So that's why you have to do this step. But yes, now if you go back up, now we can.
+Remove der revsolve.
+R under no go go go back up a level to the images directory.
+
+Supriya Siddappa Kulageri   51:18
+No, no web one web one server.
+
+James Maki   51:29
+And we need to remove the Revsol folder.
+Yeah.
+Uh, so now do RMDIR revsolve.
+Uh, no, no, no, no. Revsolve, not star.
+Yes, there you go.
+OK, perfect. OK, so they have been removed off this server. And yes, now you want to do the exact same thing over on the RPA 01 server.
+And then after that we'll we can remove them from web 01.
+And then that should be all of them.
+
+Supriya Siddappa Kulageri   53:48
+James.
+OK, WDI.
+
+James Maki   53:53
+Yeah.
+Yeah, there you go.
+
+Supriya Siddappa Kulageri   54:01
+Now from web one.
+
+James Maki   54:05
+Uh, Yep.
+
+Supriya Siddappa Kulageri   54:08
+So do we need to do it in the same pattern like first RP O2, RP one and then web one?
+
+James Maki   54:16
+It doesn't really matter what order you go in.
+
+Supriya Siddappa Kulageri   54:21
+Hmm.
+Yes.
+Same Jin.
+
+James Maki   54:50
+Yes, it's all gonna be the same.
+Yeah, there's there's gonna be a little bit more to delete on the FTP folder.
+So like like cause like so images is gonna have subfolders right? So you need to remove those first.
+If I if you do the the if you do the RM dir star now, the only thing it'll probably delete is the process folder.
+
+Supriya Siddappa Kulageri   55:28
+Okay, shall I do that?
+
+James Maki   55:30
+Yeah, I mean, you can.
+So those other things are those dot FT PS. Those are files, not folders, so those aren't going to be included in that. The the RM only removes directories. That's specifically what's for is removing is removing folders.
+RM is for removing files, so you can go ahead and you can you can do that RM star.
+And that'll take out the dot FTP files.
+Yep.
+All right, so if you if you list out the contents now, the only thing left should be the images folder. And that's because it has. That's because it has things in it. There's still the the subfolders inside of images. Yeah, so let's go inside images.
+
+Supriya Siddappa Kulageri   56:23
+Right.
+Yes.
+
+James Maki   56:33
+And see if you can remove.
+Yeah, and try and remove those folders. So try try the RM dir star.
+If I if they have any files in any of their subdirectories, then it won't let us. OK, all right, so it looks like it did all of them except for the Experian one. All right, so if you list out the contents, you should see that folder there.
+All right, so let's go inside there.
+And let's see what's inside list about.
+OK, just a couple random files. OK, yeah, we can remove those. So just RM star.
+Yeah, there you go. All right. And now we should be able to remove that Experian directory. So if you go back up a level, you should be able to remove it now.
+Uh, you have to tell it my folder to delete.
+
+Supriya Siddappa Kulageri   58:03
+So we need to delete EXPR now, right?
+
+James Maki   58:11
+You do, but you can't do it from inside of it.
+
+Supriya Siddappa Kulageri   58:17
+Um.
+
+James Maki   58:18
+So the the last time you tried to do it, you just put RM dir. You didn't put the star or EXPR like you you didn't tell it what to delete. That's why I said it's missing the operand.
+Like you, you just put the command, but you didn't tell it what to do with it.
+
+Supriya Siddappa Kulageri   58:38
+MDI it's it's bear, right?
+
+James Maki   58:39
+So there's so well, so so you're already in that folder now. So if if you look at the blue where you're at, you're in that folder, so you can't, you can't delete it from inside.
+You have to go back up a level.
+Now you can delete it.
+There you go.
+Alright, and now you can delete the images folder.
+All right, so this is now empty. Now you can go back up a level and delete this one as well.
+Yep.
+There you go. All right, so they have been removed from all of the servers. So the only thing that you are not able to do right now is the the repo part, which isn't terribly important.
+
+Supriya Siddappa Kulageri   59:41
+I.
+
+James Maki   59:43
+I mean like really like we just want to remove it just to.
+Kinda keep the repo as clean as possible, but it's actually it's not critical that that happens. So all right, so you're you're done with the rest of part. This company has been fully disabled.
+So nothing else that you need to do on this one. So this one this was a this was a two company job. So this is Revsolve and USCB.
+So over on the USCB side.
+Yep, so this one is a sonnet hosted FTP one. If you look at the additional settings, they do not have the push pull command.
+So we are hosting this one for this client, so I don't want to. I don't want to delete their folder just yet since we made a step three file for them and they're going to want that receipt that they worked in Sonnet.
+But we can go ahead and disable them inside of Sonnet. So so you can go ahead and set the termination date and turn off the is active.
+And that'll do all the sonnet portion for this.
+
+Supriya Siddappa Kulageri   1:01:09
+OK.
+
+James Maki   1:01:10
+And then I wanna wait until tomorrow to to do the FTP side of it, just to give him a chance to pick up that last file and.
+Yeah, and just close out everything that they did inside of Sonnet.
+So, so we're not going to do that portion for USCB today.
+We can do that for tomorrow, but on the ticket we can say user access has been disabled.
+
+Supriya Siddappa Kulageri   1:01:34
+OK.
+
+James Maki   1:01:43
+Uh, for for.
+
+Supriya Siddappa Kulageri   1:01:43
+Reminder we should say, right?
+
+James Maki   1:01:48
+What's that?
+
+Supriya Siddappa Kulageri   1:01:51
+To Amanda, only Vishopse, right?
+
+James Maki   1:01:54
+Uh, yeah.
+
+Supriya Siddappa Kulageri   1:01:54
+So she made interest in this one.
+
+James Maki   1:01:57
+Yes, yeah, I made a requested this one. Yeah, like any any deactivation request should come from, yeah, like someone.
+Uh, someone with Impravana. Uh.
+Amanda or I don't know. I don't know if anyone else is gonna be.
+Making those requests but.
+
+Supriya Siddappa Kulageri   1:02:21
+we have deactivated reso.
+
+James Maki   1:02:22
+Revsolve and USCB inside Sonnet.
+And then if you want to list out the other things that we've already done, you could say we've also removed revsolve from the servers.
+We did that as well.
+And that's really and that's good enough for right now and and if you want to keep this open until tomorrow and then we'll we'll complete the USCB side of it.
+And then when that's done, then you can close out the ticket.
+
+Supriya Siddappa Kulageri   1:03:04
+OK, so tomorrow morning we can just remove all the folders from the servers, right?
+
+James Maki   1:03:11
+Yeah, yeah, yeah. Tomorrow we'll finish removing, yeah.
+
+Supriya Siddappa Kulageri   1:03:13
+So afterwards, OK, so after that we can close this ticket.
+
+James Maki   1:03:18
+Yes.
+
+Supriya Siddappa Kulageri   1:03:21
+OK.
+so let me put it on pending
+
+James Maki   1:03:25
+Uh, yeah, that's fine. Yeah, yeah, you can you can do pending.
+
+Supriya Siddappa Kulageri   1:03:41
+Action professionals.
+
+James Maki   1:03:43
+Yeah.
+Uh, so yeah, so you're just gonna you're gonna follow all those same steps.
+
+Supriya Siddappa Kulageri   1:03:52
+Oh, yes, I will do that later on.
+
+James Maki   1:03:55
+Yeah, that's totally fine.
+
+Supriya Siddappa Kulageri   1:03:58
+Mm.
+So Sadar was asking about 1 ticket.
+
+James Maki   1:04:00
+Yeah.
+Yeah, let's look at that one. What was that? Yeah.
+
+Supriya Siddappa Kulageri   1:04:06
+OK.
+
+James Maki   1:04:10
+Oh, did we get, did we get 2 tickets? Is that one from Andrea? Is that for the same thing?
+The the.
+
+Supriya Siddappa Kulageri   1:04:22
+So are you looking into this?
+
+James Maki   1:04:26
+Well, I just see that Andrea also put in a ticket for Navy. She did. OK, so so this one and 869 are are the same ticket.
+
+Supriya Siddappa Kulageri   1:04:40
+In March.
+
+James Maki   1:04:42
+Yeah, yeah. Go ahead and merge the 869. Merge that into the 868.
+Yeah.
+Yeah, and it's it's gonna give you a warning since.
+Andrea Andrea's from Pravana and Whitney is from Navy. So that's what the warning, that's what this is saying. So just continue merge.
+Yeah, commas private. Perfect. Yeah. Confirm. Cool.
+All right.
+
+Supriya Siddappa Kulageri   1:05:28
+So what about this James? United auto credit? Did you know?
+
+James Maki   1:05:33
+So we got their disputes from today loaded, but they still have some from last week that are having trouble. So there's there's nine that that were missing SOR data and I set them back to new status to try and so we could reprocess the files.
+And just like 2 Accord, there's still a few that are not getting loaded.
+
+Supriya Siddappa Kulageri   1:05:59
+I want to reply the responder.
+
+James Maki   1:06:01
+Yeah, that's a that's a really good question. All right. Yes, I do. I was trying to.
+Take a closer look at those.
+Um.
+Alright, um.
+What's the best way to do this?
+United Auto.
+Yeah.
+Uh.
+All right.
+Uh, so I'm going to. I've moved their 612 files back again. Uh.
+And I'm going to try.
+And to.
+All right, so I'm just manually loading to step 2 files again, the 612 ones for them.
+And.
+Just doing what I can to try and see if there's any.
+Uh errors here.
+All right, so.
+OK, I guess ID.
+I don't think that's one of the IDs that we're looking for here 07 to 07.
+No, see that.
+Right. And sorry, nothing in the.
+All right. Yeah. So I'm really not sure 517.
+I'm not sure why the data for these is refusing to load.
+Uh, so if we go back over here.
+
+Supriya Siddappa Kulageri   1:10:08
+Thames I'm gonna look for true accord. It's also not clearing.
+
+James Maki   1:10:11
+I guess.
+What's that?
+
+Supriya Siddappa Kulageri   1:10:18
+Oh, for through account.
+
+James Maki   1:10:20
+Yes, yeah, Truecore does seem to be having the same issue. Yeah, so I mean only we can only work on one at a time, so.
+Let's see if we can get these guys fixed.
+Alright, so.
+11/30/1213 and 12:40.
+12:40.
+All right, so it should be on any of these step 2 files.
+Alright, and there's the record.
+So why is this not loading when it's right there?
+OK.
+Uh, let's focus on just these account numbers.
+All right, So what I'm gonna do?
+So and we need to make sure you guys are able to do this also.
+Uh, do you guys have the Bash software installed?
+That get get bash. I know we talked about it in the past.
+Uh, but that's what I use to pull files down.
+
+Supriya Siddappa Kulageri   1:12:23
+In same days we have.
+
+James Maki   1:12:24
+Uh.
+You do have it.
+
+Supriya Siddappa Kulageri   1:12:32
+Yes.
+
+James Maki   1:12:34
+OK, great.
+All right, so whenever you're gonna pull the file off of the FTP server, you have to run this command first, which creates this little config set up here. And so this is kind of like your SSH key basically.
+That, uh, authenticates you to the server.
+Uh, So what I'm gonna do?
+Is.
+Use this command.
+And I'm going to get.
+This file name.
+And download it right here.
+All right, so here is.
+Don't worry about an update right now.
+All right.
+So there's one.
+Bottom line #2.
+That's three.
+Alright, I wanna focus on just these account numbers.
+So I'm trying to single them out and actually, how about we do this instead? Let's cut those and let's just move them all to the bottom.
+Alright, only three more.
+So what I'm gonna do is I'm gonna make a new step two file with just these records so that I know these are the 9.
+And there's nothing else in here.
+And this way.
+There we go. All right, take out these.
+And I'll save this.
+Uh, let me get a new name. Uh, just so it's separated and.
+Uh, easier to track. I don't need to do that because I already have a batch right here.
+And so now instead of that.
+The.
+I'm just going to do start dot CSV since that's the only one that's there. All right, so kind of reversing my command here. Now I'm going to upload the only CSV or all the CSV files I have here, which is only one. Upload that back to the FTP server into the United Auto.
+Directory.
+Which now we see.
+All right, so now we can process this file.
+With just these nine accounts and see what happens.
+And it says it only found one.
+I.
+But.
+I do not understand.
+Why this data is not loading?
+No.
+All right. Is there something in here?
+Oh.
+ACDV not found with given statuses and conditions.
+Now what are these two?
+20 seconds.
+All right, I don't understand what's happening.
+I mean, it seemed.
+I mean, I wanna say it's related to the band service.
+But I could be wrong.
+Uh, there's also a lot of duplicates on this account. That could be the reason it's having trouble. Like maybe it's trying.
+Maybe for some reason it's trying to.
+I mean it says ACDV not found with given statuses and conditions.
+Alright, and what did it say?
+I said the exact same thing with this.
+So version two and you both had the same results.
+It's finding this ID. What is this ID? Oh, what'd I just hit?
+Participants. OK, I'm good.
+What is this ID?
+All right, looks like it's this this account number.
+Alright, so on this one.
+Is it?
+It is. OK, all right, so this one, there's a duplicate account. Seems to be part of the problem here.
+So trying to process this Step 2 file, it's not seeing the accounts that's in new status. It's only seeing the account that's in active status, so it keeps applying the information to this account.
+And it's ignoring the other one.
+Which is this one?
+Where there's like no indication that it's been trying to process on the step two file, even though it's been trying to process the whole time.
+All right. Is that control number? Is that specified?
+Doesn't look like it, so it looks like they have the account numbers here at the end.
+And maybe that's part of the problem.
+Uh, I'm not sure.
+All right.
+To accord.
+Hey, true accord at least. Hey, they're down to 0 waiting for data.
+That's cool.
+
+Supriya Siddappa Kulageri   1:25:54
+Yes.
+
+James Maki   1:25:55
+Awesome. So on the True Accord ticket, you you can let them know that it they're all available. That one. That one looks. Yeah, you can close that one. Sweet. All right, well, at least that one's good to go. So it's just United Auto that's being a pain.
+
+Supriya Siddappa Kulageri   1:26:01
+Yeah.
+
+James Maki   1:26:11
+OK.
+All right.
+Uh.
+On United Auto if you want to tell them.
+All of today's disputes are available. There's nine accounts.
+That are having trouble loading data.
+And tell them that we're escalating those to our dev team for assistance.
+Awesome.
+And and I guess really, that's kind of all you can say.
+Alright, I'm gonna stop sharing. Yeah, United Auto, that's at this point these these nine accounts, this is one or these are ones that I do wanna talk to Amanda about.
+We have. I have just so many tickets now that I want to talk about on our Level 3 call tomorrow, assuming that we actually get to have it.
+
+Supriya Siddappa Kulageri   1:27:41
+But she's not at all scheduling that call.
+
+James Maki   1:27:47
+I know.
+Oh yeah, and uh and.
+Does does she have another open ticket?
+Yeah, tell her we will follow up on ticket.
+What one is it?
+Oh, alright, alright. It might already be solved. Um.
+
+Supriya Siddappa Kulageri   1:28:35
+Return this.
+
+James Maki   1:28:37
+I thought Manju had another ticket from her and I was gonna say we'll follow up on that ticket about the just piece of missing data, but.
+Yeah, I'm not finding it now, so oh, here it is.
+
+Supriya Siddappa Kulageri   1:28:53
+James.
+
+James Maki   1:28:54
+OK, that's fine.
+
+Supriya Siddappa Kulageri   1:28:56
+for this one.
+Oh, to deactivate the API clients. So do we need to do the same process that we did before?
+
+James Maki   1:29:08
+Yes, the the only difference is that you also need to remove them from the API O2 server.
+But yeah, API 02, yeah.
+There there is no 01, it's just the 02 server. But yeah, so that that's that's the only difference. So everything else is, everything else is the same. So just one more server to remove them from.
+
+Supriya Siddappa Kulageri   1:29:30
+Yes.
+OK, so sudden.
+Oregano. So I think they have.
+Send the step to friend.
+
+James Maki   1:29:55
+OK, yes, so.
+
+Supriya Siddappa Kulageri   1:29:55
+OK, I will do that and now. So this one James. So I think we haven't done the client setup for API.
+We done only for FTP clients.
+
+James Maki   1:30:10
+Uh, the instructions are in the.
+Like it's it's it's the same instructions.
+
+Supriya Siddappa Kulageri   1:30:19
+OK, so till that server because I was not having the repose access, so I have done till that in the server what we need to do right?
+So I have a little bit over there. So after that into Visual Studio I haven't done.
+
+James Maki   1:30:30
+Uh, yes.
+Right. So if you want, we know we can do that tomorrow with with Manju back on the call. We can just have him. We can take him through that portion since he does have the repos.
+So yeah, so if you wanna wait till till tomorrow to close the ticket for that, we'll.
+
+Supriya Siddappa Kulageri   1:30:55
+I think this one is not, uh, urgent, right?
+Means we can make it tomorrow also.
+'Cause she has asked this for June 4th exactly.
+
+James Maki   1:31:08
+Oh, wow. That's been sitting there for a while. Oh, OK, yeah.
+
+Supriya Siddappa Kulageri   1:31:12
+I don't know. It came into my bucket on Friday only. So before that I don't know who sent me this assigned me this.
+
+James Maki   1:31:23
+OK. Yeah, I don't see, I don't see an initial response on there.
+
+Supriya Siddappa Kulageri   1:31:29
+Yeah.
+
+James Maki   1:31:30
+Yeah, I don't know.
+Uh, OK.
+Yeah, well, and so for implementation, like there's not really shouldn't be anything that you have to do for CQA setup other than whitelist the IP addresses.
+So you can you can go ahead and send those in the in the Kato chat if you want.
+
+Supriya Siddappa Kulageri   1:31:49
+Mhm.
+
+James Maki   1:31:56
+And tell them that they need to be whitelisted for the CQA and prod API.
+
+Supriya Siddappa Kulageri   1:32:05
+But we haven't set up the client at right. We haven't implemented so.
+
+James Maki   1:32:11
+Sure, but you can, but they can do. They can go ahead and do the white listing though, because that's not really tied to anything else. So you can send that, so you can get that part done for them at least and then.
+
+Supriya Siddappa Kulageri   1:32:24
+So which of all these all these three and?
+
+James Maki   1:32:24
+Yeah, and and then that's one thing.
+So so non prod is going to be the CQA one and and then prod is going to be prod. So they just need to whitelist that one IP address for CQA and then the other two for production.
+
+Supriya Siddappa Kulageri   1:32:47
+And the ghetto.
+
+James Maki   1:32:50
+Yeah, the Kato chat. Yeah, Kato whitelisting. That's it.
+
+Supriya Siddappa Kulageri   1:32:59
+So to whom I need to ask?
+
+James Maki   1:33:02
+Uh.
+You don't need to direct it to anyone specific, just say can someone please whitelist the following?
+And a non prod I would change change that to CQA.
+Because non-prod is not specific enough.
+Yeah, like where it where it says non prod, I would change that to CQA.
+Yeah, yeah, there. Yep, I would do it just like that.
+
+Supriya Siddappa Kulageri   1:33:44
+I'm Lisa and for prod.
+
+James Maki   1:33:49
+Yeah, I mean that's that's fine. Yeah, like they they understand what broad is, so.
+Yeah, so, yeah, yeah. So Cameron is is who normally does it, but I see he's added a couple more people to the group. So that's why I say you don't have to specify who I I haven't had any interaction with those other guys yet, but.
+
+Supriya Siddappa Kulageri   1:34:02
+OK.
+
+James Maki   1:34:16
+Yeah, whoever gets to it. So they should, they should let you know when that part's done. And then, yeah, and then we'll do.
+All right, let's, let's check inside CQA real fast. Is there anything that we have to do there?
+What was the company? What was that set up for? What was that?
+That long name Santander.
+OK.
+Yeah.
+
+Supriya Siddappa Kulageri   1:34:52
+I don't know I can. The disputes has loaded in this also.
+
+James Maki   1:34:59
+Perfect. All right, you can let her know it's done.
+All right.
+All right. Is that a good stopping place for today?
+
+Supriya Siddappa Kulageri   1:36:00
+Yes, James.
+Thank you. Thanks for your time.
+
+James Maki   1:36:08
+Alright, no problem guys. Yep, I will talk to you tomorrow or I guess later on today for you. It's already you're ahead of me.
+
+Supriya Siddappa Kulageri   1:36:15
+Yes, it's already 3:00 AM.
+
+James Maki   1:36:18
+All right.
+Yeah, Yep. All right. Well, I'll let you guys go get some sleep.
+
+Supriya Siddappa Kulageri   1:36:25
+OK. Thank you.
+
+James Maki   1:36:26
+All right. Bye.
+
+Saravanabhavan S   1:36:26
+Yes, thank you.
+Bye.
+
+Supriya Siddappa Kulageri   1:36:30
+Memo.
+
+James Maki   1:36:30
+Yes.
+
+Saravanabhavan S stopped transcription

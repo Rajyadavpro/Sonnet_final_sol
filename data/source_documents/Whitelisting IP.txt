@@ -1,0 +1,12 @@
+
+Use Case 5 – Whitelisting IP 
+
+
+Select the company in the sonnet.
+Select menu at right top corner and click on sonnet admin.
+Click view users and click on the users.
+Copy the given IP from the Zendesk and find for the IP, If the IP is not found then need to create the new IP.
+Creating New IP.
+Go to menu click on the sonnet Admin and select edit company and click on the IP address and select the user.
+Paste the IP address on the IPV4 and click on the user and add the description and click on the save changes.
+Come back to Zendesk and give the response to the ticket and mark it as solved.

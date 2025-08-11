@@ -1,0 +1,18 @@
+                                     Large volume in step 3
+Requested: we have a very large volume in step 3 appearing on the dashboard. If any of that volume contains block notifications would you please remove them so I know what our true number is
+Steps:
+Go to Pg admin and run the below query to check the block notifications and to remove the large fileso to Pg admin  —
+      select * from facs_file_queue where company_id = 18400 and file_step = 3
+**Here it will show the table with BL in dispute source.
+ 
+delete from facs_file_queue where company_id = 18400 and file_step = 3 and dispute_source = 'BL'
+** It will remove the BL in dispute source
+
+Again run with select query to cross check whether BL has been removed or not:
+select * from facs_file_queue where company_id = 18400 and file_step = 3
+**If the dispute source is AU then it has been removed 
+
+
+Close the task
+
+

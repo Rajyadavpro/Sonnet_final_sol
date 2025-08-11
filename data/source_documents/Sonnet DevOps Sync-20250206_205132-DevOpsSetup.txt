@@ -1,0 +1,31 @@
+Questionnaire on the Topics Covered in the Meeting:
+1. What environment is being set up for the web app?
+Answer: A new QA environment is being set up to deploy each component, including the web database and API, to avoid confusion with existing scripts in the dev environment. 0:18
+2. Why is a new environment being created instead of using the existing dev environment?
+Answer: The new environment is being created because the team is unsure about the purpose of many scripts in the existing repositories. This new setup will help in organizing and deploying components more effectively. 0:19
+3. What is the purpose of the new environment?
+Answer: The new environment will be used for testing and knowledge transfer (KT) sessions. It will allow the Dev team to deploy everything and give the testing team a space to conduct their tests. 0:53
+4. Which Azure subscription is being used for the new environment?
+Answer: The new environment will be set up within the Provana Azure subscription. 2:10
+5. How will the scripts be executed in the new environment?
+Answer: The scripts will be executed manually from the new server to avoid setting up multiple SSH agents and connections. 1:41
+6. What is the plan for migrating repositories?
+Answer: The plan is to import repositories from the existing Sonit Azure DevOps to the new environment. The team will ensure that any open pull requests are managed properly before the migration. 4:24
+7. What is the approach for setting up the new environment?
+Answer: The approach involves creating a new resource group, setting up virtual machines, and configuring the necessary networking and security settings. The team will mimic the structure of the existing resource groups if possible. 2:35
+8. What are the technical specifications for the virtual machine in the new environment?
+Answer: The virtual machine will be an Ubuntu server with 2 CPUs and 8 GB of memory. It will use a standard SSD for storage. 14:12
+9. How will the team handle the database setup in the new environment?
+Answer: A new database will be created, and the master table and data will be deployed to this new server. The environment will be treated as a fresh setup, similar to onboarding a new client. 10:49
+10. What are the security considerations for the new environment?
+Answer: The new environment will have a public-facing resource group with high security. The team will ensure that SSH keys are managed securely and that network security groups are configured appropriately. 12:15
+11. What is the timeline for keeping the new environment?
+Answer: The new environment will be kept for a maximum of one month for KT and testing purposes before switching back to the dev environment. 9:05
+12. Who is responsible for setting up the virtual networking and other infrastructure components?
+Answer: The IT team is responsible for setting up the virtual networking, subnets, and public IPs. The development team will coordinate with them to ensure everything is configured correctly. 24:09
+13. What is the process for accessing the new virtual machine?
+Answer: Access to the new virtual machine will be through SSH. The team will use public keys for authentication and configure the necessary inbound ports for SSH and HTTP/HTTPS. 38:55
+14. What are the next steps after setting up the virtual machine?
+Answer: The next steps include deploying the web app, configuring the Apache server, and ensuring that all necessary components are set up and tested in the new environment. 28:16
+15. What challenges were discussed regarding the migration and setup process?
+Answer: Challenges include managing dependencies, ensuring that open pull requests are handled, and configuring the new environment to mimic the existing structure while adhering to security policies. 4:24

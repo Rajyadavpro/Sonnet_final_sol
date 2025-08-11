@@ -1,0 +1,8 @@
+Key Topics:
+Software Whitelisting: Vinay and Lidiexy discussed the whitelisting and approval of software configurations, including the need for specific configuration files such as the .env and homestead.yml files. 0:12
+Database Backup: Lidiexy mentioned the need for a database backup with more data and suggested getting a copy from Luis, as the current backup is almost empty. 1:42
+PostgreSQL Installation: Vinay, Lidiexy, and Chandan discussed the installation of PostgreSQL on local systems and the possibility of using Azure SQL. They clarified that PostgreSQL would be installed locally and not on Vagrant. 2:57
+Database Migration: Vinay and Lidiexy clarified that database migration would be done manually by importing the backup data, rather than using automated migration scripts. 5:05
+Daily Standups and Sprint Planning: Lidiexy and Chandan discussed the need to reorganize and start daily standups, as well as scheduling sprint planning sessions. They agreed to check Chip's availability for a standup meeting. 7:45
+Documentation for Software Installation: Vinay and Lidiexy emphasized the importance of having a standard document for software installation steps, including database file locations and settings. Vinay mentioned creating a document for Windows machines. 10:27
+Alternative Tools for Database Management: Lidiexy shared information about alternative tools for database management, such as Laravel and DB Gene, which can help with installing and managing databases like PostgreSQL and Redis. 14:38

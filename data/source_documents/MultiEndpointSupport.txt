@@ -1,0 +1,27 @@
+Overview
+
+As JHA’s integrated services platform has grown over recent years, coupled with the tendency to move services to the Cloud, the number of supporting environments for a given institution may utilize more than a single server farm.  These environments, or farms, are established to meet needs concerning capacity, provider services and location of data.  
+To support this, consumers are required to support multiple endpoints for an institution. As a consumer, you must prepare for the possibility that not all operations will utilize the same endpoint.  With those endpoints, the message credentials and the jXchangeHdr values must also be configurable to correlate to multiple environments.
+Normally, the boundary separating environments are the providers themselves.  Core based services, 4Sight and Synergy are just a few of the providers and may have separate endpoints for an institution.   Multiple endpoints/environments are not present for every situation but are increasing in frequency.   At a high level, the link to group multiple endpoints is the Institution itself, then the provider.  At the bottom level, each operation is associated with a given endpoint.
+During a production environment implementation, the IDG Operations team will provide access information for each configured provider.  This information may contain a single or multiple endpoints.  
+This document is provided to help you understand these requirements.   Below are diagrams to help visualize this concept.  
+
+
+
+Single tenant applications supporting multiple endpoints
+
+The following diagrams are provided merely as examples of how an application might be required to access multiple endpoints for a particular institution.  This does not imply that certain providers are grouped within an environment. 
+
+
+
+
+
+
+
+
+
+
+
+Multi-Tenant applications supporting multiple endpoints
+
+

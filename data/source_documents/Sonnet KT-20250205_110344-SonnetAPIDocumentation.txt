@@ -1,0 +1,42 @@
+Questionnaire on Topics Covered in the Meeting
+1. What is the purpose of the document Amanda is explaining?
+The document Amanda is explaining is intended to provide definitions and transaction details for users, particularly those on the IT side, to understand and build to the specifications. It includes information on transaction types, endpoints, and the workflow integration for handling disputes and data exchanges. 1:53
+2. What are the different environments mentioned for the token authorization?
+The environments mentioned are the production environment and the development environment (CQA - Client Quality Assurance). Each environment has a specific URL and token for access. 3:04
+3. What is the significance of the Step 1 and Step 2 processes in handling disputes?
+Step 1 involves getting a list of disputes that Sonnet has not received SOR information for, and Step 2 involves posting detailed information about each dispute back to Sonnet. This process helps in tracking and managing disputes effectively. 3:57, 4:46
+4. What is the debug functionality and when is it used?
+The debug functionality is used for detailed logging of Step 2 posts during the implementation process. It helps in troubleshooting and is always turned on in lower environments. It can also be manually triggered in production for troubleshooting purposes. 7:47
+5. What is the purpose of the Step 2 refresh function?
+The Step 2 refresh function allows users to keep their data updated by sending refreshed information to Sonnet. This is useful when the data initially sent might be outdated due to the time taken to work on the dispute. 9:04
+6. What are the key differences between ACDVs and AUDs?
+ACDVs are indirect disputes coming from the Oscar, while AUDs are transactions intended to update the trade line between reporting cycles. AUDs use a different endpoint and require specific fields like transaction type and account number. 17:01
+7. How are images associated with disputes handled?
+Images associated with disputes are sent using base 64 encoding. Clients can download these images using specific IDs provided by Sonnet. There can be up to five image files per dispute. 12:42
+8. What is the process for handling direct disputes?
+Direct disputes are uploaded by the user to Sonnet, reviewed, and then processed similarly to ACDVs but with different endpoints and transaction types. Verbal disputes can also be created by sending a Step 2 post with a specific transaction type. 23:30
+9. What are the notifications mentioned, and how are they processed?
+Notifications like AUD notifications, DR notifications, and block notifications are read-only and do not require a response. They are processed directly into Step 3, where users can get a list and details of each notification. 25:44
+10. What is the current status of the BRR data exchange?
+The BRR data exchange is in production but not widely used by customers yet. The documentation is being updated to reflect the latest version. 31:17
+Detailed Answers
+1. Purpose of the Document:
+The document provides definitions and transaction details for users, particularly those on the IT side, to understand and build to the specifications. It includes information on transaction types, endpoints, and the workflow integration for handling disputes and data exchanges. 1:53
+2. Environments for Token Authorization:
+The environments mentioned are the production environment and the development environment (CQA - Client Quality Assurance). Each environment has a specific URL and token for access. 3:04
+3. Step 1 and Step 2 Processes:
+Step 1 involves getting a list of disputes that Sonnet has not received SOR information for, and Step 2 involves posting detailed information about each dispute back to Sonnet. This process helps in tracking and managing disputes effectively. 3:57, 4:46
+4. Debug Functionality:
+The debug functionality is used for detailed logging of Step 2 posts during the implementation process. It helps in troubleshooting and is always turned on in lower environments. It can also be manually triggered in production for troubleshooting purposes. 7:47
+5. Step 2 Refresh Function:
+The Step 2 refresh function allows users to keep their data updated by sending refreshed information to Sonnet. This is useful when the data initially sent might be outdated due to the time taken to work on the dispute. 9:04
+6. Differences Between ACDVs and AUDs:
+ACDVs are indirect disputes coming from the Oscar, while AUDs are transactions intended to update the trade line between reporting cycles. AUDs use a different endpoint and require specific fields like transaction type and account number. 17:01
+7. Handling Images Associated with Disputes:
+Images associated with disputes are sent using base 64 encoding. Clients can download these images using specific IDs provided by Sonnet. There can be up to five image files per dispute. 12:42
+8. Handling Direct Disputes:
+Direct disputes are uploaded by the user to Sonnet, reviewed, and then processed similarly to ACDVs but with different endpoints and transaction types. Verbal disputes can also be created by sending a Step 2 post with a specific transaction type. 23:30
+9. Processing Notifications:
+Notifications like AUD notifications, DR notifications, and block notifications are read-only and do not require a response. They are processed directly into Step 3, where users can get a list and details of each notification. 25:44
+10. Status of BRR Data Exchange:
+The BRR data exchange is in production but not widely used by customers yet. The documentation is being updated to reflect the latest version. 31:17

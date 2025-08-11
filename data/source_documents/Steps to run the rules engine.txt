@@ -1,0 +1,12 @@
+Steps to run the rules engine
+First connect to the rules engine server prdre01:
+az ssh vm --vm-name prdre01 --resource-group rg-PaliPRD-LAN --prefer-private-ip --subscription Sonnet_Production_Environment
+
+Then sudo to the sonnet user:
+$sudo su sonnet
+
+Change directories to the rules-engine-python folder:
+$cd /sonnet/rules-engine/rules-engine-python/
+
+Run the rules engine command:
+$python rules_engines_mod.py

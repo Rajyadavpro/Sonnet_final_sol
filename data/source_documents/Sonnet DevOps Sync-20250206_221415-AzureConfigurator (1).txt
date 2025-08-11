@@ -1,0 +1,8 @@
+Key Topics:
+Setting Up Azure Configurator: Chip and Vandana discussed setting up the Azure Configurator, including updating the PHP version from 7.4 to 8.2. They also talked about the tools and commands needed for the setup, such as using PowerShell and Bitwise SSH client. 2:35
+Access to Billing Information: Chandan requested access to the SharePoint where billing files are kept. Chip confirmed that he had added access and provided the necessary URL to Chandan. 33:32
+Cloning Project from Sonnet: Vandana and Chip discussed cloning the complete project from Sonnet to their current setup. They also talked about the need to configure the repositories and clone everything from Sonnet to Provana. 50:19
+Access to Resources: Vandana requested access to the resources in the tenant's Azure portal. Praveen advised her to raise a request and mentioned that he had already given access to Chandan and his team. 52:08
+Configuring Apache: Chip and Vandana worked on configuring Apache, including enabling required Apache modules and running necessary commands. They also discussed the need for an encryption server for certain configurations. 47:16
+Setting Default Branch: Chip and Vandana discussed the need to set the default branch to "main" instead of "master" in their repository to avoid confusion. Vandana agreed to make the change. 1:19:04
+Next Steps: Chip mentioned that he and Liddy would work on configuring the Apache settings together. Vandana agreed to configure all the repositories and clone everything from Sonnet to Provana. 1:38:21

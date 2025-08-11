@@ -1,0 +1,12 @@
+
+USE CASE 8 - Response Queue is backed up and not sending out.
+
+Step 1 – Go to the sonnet and select the company.
+Step 2 – Click on the response queue.
+It is usually just because of the login has gotten hunk basically. We are going to reset it
+Step 3 – Select Menu from the top right corner and click on the sonnet admin.
+Step 4 – Select Dashboard and use Ctrl + F   to find the company.
+Step 5 –  Select next to the company name. If the submitting ACDV’s toggle is on turn it off and select save to sonnet.
+Step 6 – Select Organization and select the company and click on the company and select visit in sonnet at the left top.
+Step 7 – Click on the response queue and check for the response. 
+Step 8 – Give response and close the ticket.

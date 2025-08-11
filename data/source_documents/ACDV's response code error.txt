@@ -1,0 +1,58 @@
+
+USE CASE 11 - ACDV’S RESPONSE CODE ERROR
+
+Step 1- Go to Sonnet and select the company.
+Step 2- Open the shared folder and click on the Fix response code error.sql
+
+QUERY -      select dispute.company_id, response_due_date,name, error_message, dispute.id from dispute
+join company on company.id=dispute.company_id
+join eoscar_response_errors err on err.dispute_id=dispute.id
+where sonnet_status='Error'
+order by response_due_date
+
+Update eoscar_response
+set response_code = '23'
+where dispute_id in  (select dispute.id from dispute
+join eoscar_response_errors err on err.dispute_id=dispute.id
+where sonnet_status='Error'
+and error_message like '%RESPONSE CODE ERROR:%You may change your Response Code to 23%')
+
+
+Update dispute
+set sonnet_status='Complete'
+where id in (select dispute.id from dispute
+join eoscar_response_errors err on err.dispute_id=dispute.id
+where sonnet_status='Error'
+and error_message like '%RESPONSE CODE ERROR:%You may change your Response Code to 23%')
+
+Update eoscar_response
+set response_code = '22'
+where dispute_id in  (select dispute.id from dispute
+join eoscar_response_errors err on err.dispute_id=dispute.id
+where sonnet_status='Error'
+and error_message like '%RESPONSE CODE ERROR:%You may change your Response Code to 22%')
+
+Update dispute
+set sonnet_status='Complete'
+where id in (select dispute.id from dispute
+join eoscar_response_errors err on err.dispute_id=dispute.id
+where sonnet_status='Error'
+and error_message like '%RESPONSE CODE ERROR:%You may change your Response Code to 22%')
+
+Update eoscar_response
+set response_code = '21'
+where dispute_id in  (select dispute.id from dispute
+join eoscar_response_errors err on err.dispute_id=dispute.id
+where sonnet_status='Error'
+and error_message like '%RESPONSE CODE ERROR:%You may change your Response Code to 21%')
+
+Update dispute
+set sonnet_status='Complete'
+where id in (select dispute.id from dispute
+join eoscar_response_errors err on err.dispute_id=dispute.id
+where sonnet_status='Error'
+and error_message like '%RESPONSE CODE ERROR:%You may change your Response Code to 21%') 
+
+Step 4- Run the above query one at a time.
+Step 5- Go to the sonnet and give a response and mark the ticket as solved and submit it.
+

@@ -1,0 +1,16 @@
+USE CASE 10 -   DIRECT DISPUTE DELETION.
+
+
+Step 1-    Go to sonnet and select the company.
+Step 2 -  Then click on direct and click on the investigation select active and search the id is in active or not.
+
+**If the ticket is not active and we have duplicate:
+delete from response_queue where id = 50127033     ß  run this in query in pg admin
+**If the ticket is active 
+
+Run the below query in pg-admin
+update direct_dispute set sonnet_status = 'Worked' where id
+ Sonnet ID 
+Step 3- Once the query is returned successfully check if the dispute is deleted or not.
+
+Step 4- If the dispute is deleted then go to Zendesk and give a response to the ticket and mark it as solved.

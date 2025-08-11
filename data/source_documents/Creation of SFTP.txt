@@ -1,0 +1,74 @@
+USE CASE -  SFTP SETUP
+
+STEP 1- Open shared folder and search for Image server copy the command login to the command prompt (Copy the below command and paste in the command prompt)
+Command 1  - az ssh vm --vm-name prdrpa01 --resource-group rg-PaliPRD-IMZ --prefer-private-ip --subscription Sonnet_Production_Environment 
+Command 2 – sudo su sonnet
+Command 3 – cd /sonnet/images
+Command 4 - ./make_dirs.sh ______ company abbreviation in the blank space.
+
+ààà Exit from rpa01 server
+
+Step 2 – Repeat the same steps for rpa02 server
+Command 1- az ssh vm --vm-name prdrpa02 --resource-group rg-PaliPRD-IMZ --prefer-private-ip --subscription Sonnet_Production_Environment 
+Command 2 – sudo su sonnet
+Command 3 – cd /sonnet/images
+Command 4 - ./make_dirs.sh______ company abbreviation in the blank space.
+Command 5 - cd /sonnet_attachments/www  à this is the step to verifying the permissions.
+
+Command 6 – ll or ls  à it is used to list out the folders present in the directory and check for the company which you have created is present or not.
+
+Check for the client if the client is API client then proceed with API data exchange if not go for FTP data exchange.
+
+The below steps is for FTP data exchange.
+
+Step 3 – Login to the SFTP server command(copy the below command and paste it in the command prompt)
+Commnad 1 - az ssh vm --vm-name prdweb01 --resource-group rg-PaliPRD-DMZ --prefer-private-ip --subscription Sonnet_Production_Environment 
+Command 2 – sudo su sonnet
+Command 3 – cd /sonnet/ftpdir
+Command 4 - ./make_dirs.sh______ company abbreviation in the blank space.
+Command 5 - – ll or ls  à it is used to list out the folders present in the directory and check for the company which you have created is present or not.
+Step 4 – Open Visual studio  and go to file at the top left corner click on select folder and select move images.
+
+Step 5 – Create New Branch into Visual studio
+
+Step  6 – Go to move_images_azure.sh and add the company name into it.
+
+
+Step 7- Stage the changes , and give brief description into it and then commit.
+
+Step 8 – Push the changes .
+
+
+Step 9 – Go to Sonnet repo and pull the request that we made in visual studio to take approval from the reviewer.
+
+
+Create FTP User for Company  
+Log into crushftp go to user menu 
+Add user as company abbreviation 
+Create new remote item with name of companyabbreviation 
+Pick SMB3 use the string with the correct company abbreviation palinodeprodsftpstore.file.core.windows.net/prdsftpfs/companyabbreviation 
+ 
+Go to Bitwarden to get the credentials for the ftp storage account palinodeprodsftpstore  
+Update the User name and Password – note this update the URL – save then test  
+Modify the permission to match permissions  
+
+
+Provide Client FTP Login Information 
+Provide company FTP login information via ShareFile link on the ZenDesk ticket.  
+Create a text document with the format below, update the username with the company's abbreviation and the FTP user's password and save in the Company's folder named ftp_users:  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+To create and share a ShareFile link, go to https://palinode.sharefile.com/dashboard and select Share Files.  Attach the text document then Get Link.  Share the link with the company contact on the ticket.  
+Company confirms they are able to access the FTP.  
+Backend setup is complete.  Solve ZenDesk ticket  
+
+
+

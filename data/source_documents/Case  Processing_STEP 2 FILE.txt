@@ -1,0 +1,16 @@
+                              Case : PROCESSING STEP 2 FILE
+
+Step 1: Login into prodweb01 server:
+                    az ssh vm --vm-name prdweb01 --resource-group rg-PaliPRD-DMZ --prefer-private-ip --subscription Sonnet_Production_Environment
+Step 2: Change the directory into FTPDIR à cd /sonnet/ftpdir
+Step 3: Check the company names with à ll and then change the directory to processed.
+
+Step 4: Then change the directory into company nameà cd comp_abbrv
+Step 5: Check whether it contains step 2 attachment or not and then move it.
+** sudo su sonnet
+**mv attachment_01 ../
+
+Step 6: After the step 2 is moved successfully then check into datafiles and read step 2:
+
+
+Step 7: After the read step done and step 2 has been processed then inform the same to user and close the ticket.

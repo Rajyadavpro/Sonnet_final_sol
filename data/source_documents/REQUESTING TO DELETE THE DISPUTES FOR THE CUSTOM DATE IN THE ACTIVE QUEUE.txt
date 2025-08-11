@@ -1,0 +1,12 @@
+USECASE -   REQUESTING TO DELETE THE DISPUTES FOR THE CUSTOM DATE IN THE ACTIVE QUEUE
+
+EX - Can you please remove disputes through 3/21 from our Active queue
+
+STEP 1- Go to sonnet and select the company.
+STEP 2-  Open pg-admin and paste the below query 
+Query - update dispute set sonnet_status = 'Worked' where company_id = 24400 and response_due_date < '2025-03-22' and sonnet_status = 'Active'
+** date format – YYYY-MM-DD
+
+
+STEP 3- Check the disputes whether it has deleted or not in the dispute page.
+Step 4 – Give a response to the ticket and mark it as solved.

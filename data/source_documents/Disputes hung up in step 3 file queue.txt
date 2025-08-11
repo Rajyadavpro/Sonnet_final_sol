@@ -1,0 +1,16 @@
+                                 DISPUTES HUNG UP IN STEP 3 FILE QUEUE 
+Requested: We have some disputes that look to be hung up in our Step 3. Would you be able to provide some insight as to what these disputes are?
+Resolving Steps :
+STEP 1: Go to PGAdmin and run the below quey
+Select * from facs_file_queue where company_id= ______ and file_step=3
+STEP 2: make it in ascending order 
+Select * from facs_file_queue where company_id= ______ and file_step=3 order by created_on
+Step 3: Take any one of the dispute Id from the table and search with that ID in Dispute search(sonnet admin) 
+Step 4 : If you see any disputes with that sonnet Id then run the below query for specific date we needed to delete :
+Select * from facs_file_queue where company_id= ______ and file_step=3 and (created_on >’dd-mm-yyyy’ and created on <’dd-mm-yyyy-)
+Select * from facs_file_queue where company_id= ______ and file_step=3 and dispute_source=’EO’ and (created_on >’dd-mm-yyyy’ and created on <’dd-mm-yyyy-)
+
+
+
+
+

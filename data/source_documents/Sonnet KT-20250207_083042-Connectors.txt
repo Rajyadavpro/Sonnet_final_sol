@@ -1,0 +1,22 @@
+Questionnaire on Topics Covered in the Meeting:
+1. What is the main purpose of the E Oscar connector?
+The E Oscar connector interfaces Sonnet with E Oscar, handling tasks such as downloading and submitting disputes. It isolates Sonnet from E Oscar, ensuring that Sonnet only understands actions like downloading or submitting without needing to know the specifics of E Oscar. 8:11
+2. How does the E Oscar connector handle job updates and tracking?
+The connector updates jobs by communicating with Sonnet, providing feedback on job status, including whether it started, completed, or failed. It tracks the number of disputes found and processed, and updates Sonnet with this information. 19:02
+3. What are the key components of the E Oscar connector?
+The key components include the core model for accessing Sonnet, a customized logger for dynamic file path writing, and utilities for image manipulation. The connector also uses events to communicate with actions due to the long processing times of some tasks. 14:10
+4. What challenges are associated with the E Oscar connector's download process?
+Challenges include handling duplications, managing failed downloads, and ensuring that disputes are correctly recovered. The process involves manual detection of issues and setting up recovery jobs, which can sometimes fail and require manual intervention. 2:56
+5. How does the E Oscar connector manage attachments and images?
+Attachments are converted to TIFF files and extracted as JPEGs for use in the UI. The connector periodically moves these files to specific locations and renames them as needed. 5:53
+6. What is the significance of the company ID in the E Oscar connector?
+The company ID is used extensively and is considered as important as the company name. It helps in identifying and managing companies within the system, especially when dealing with multiple companies or complex configurations. 42:53
+7. How does the E Oscar connector handle errors and retries?
+Errors are logged and do not halt the process. The connector has a security measure to declare a job as failed if it is retried too many times. This prevents job execution starvation and ensures that other jobs can proceed. 29:11
+8. What improvements were made from the original Python scraper to the current E Oscar connector?
+The original Python scraper was replaced with a command-based approach, improving reusability and efficiency. The current connector uses API endpoints instead of navigating web pages and clicking around, making the process faster and more reliable. 9:52
+9. How does the E Oscar connector handle special cases and configurations for different companies?
+The connector uses a combination of job descriptions and extra configuration files to manage special cases and dynamic criteria for different companies. This allows for flexibility in handling various requirements and exclusions. 23:24
+10. What is the role of the CLI interface in the E Oscar connector?
+The CLI interface is used for executing commands related to the E Oscar connector's operations. It allows for manual triggering of tasks and provides a way to handle special cases that may not be covered by the automated processes. 9:01
+These questions and answers cover the main topics discussed in the meeting, providing a comprehensive overview of the E Oscar connector and its functionalities.

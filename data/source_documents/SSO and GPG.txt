@@ -1,0 +1,175 @@
+Transcript
+June 10, 2025, 5:04PM
+
+James Maki started transcription
+
+James Maki   0:07
+OK.
+All right, so SSO is single sign on. So that's like what we use whenever you're logging into Sonnet. It gives you just the just a Click to sign in.
+So that's something that we offer for for our clients as well. So on the company screens there is a single sign on section is where you're going to look for these kind of setups and it's it's pretty straightforward. So there's a few.
+URLs that we need from their setup and then there's a certificate that they send us that we need. This is the most important, the SSO ID, which we always just use the company abbreviation or the alias.
+We use that same thing for this for the for the ID. Whenever this is what turns SSO on is whenever the SSO ID is entered. That is what activates SSO for the client so.
+If someone is like if there's an active client that's like testing and like wants to start using SSO and you're and they're trying to go live, this is how you would control turning it on and off is just by putting the SSOID in OK.
+So as far as getting these URLs and the certificate, this is all provided by the client and we do have set up information for them. So our setup document is already here in our shared documents folder. I put it with the new client setup information since that's.
+Typically, who's going to be using this? But so. So whenever a client is wanting to start using SSO, this is the document that you're going to send them.
+And it has. It's pretty straightforward as far as like what they need to do to get it set up. Usually this goes very smoothly and they provide the URLs and the certificate. You just copy and paste it all into the setup and usually it just works.
+So there is. We've had one client so far that's been having a lot of trouble with it. I've had a couple calls with them trying to troubleshoot along with their vendor. So whenever someone has trouble, you guys just need to escalate. You guys just need to get someone on the dev team involved.
+I don't know if Natish or Vinay is is taking over that part, but yeah, but so if a client's trying to set this up, you've sent them the information, they've sent you the URLs, you've plugged everything in.
+And something's not working. Go to the dev team, get help to figure it out, like escalate however you need to. OK, so don't be don't be afraid to do that and engage the dev team for help, but it should be pretty straightforward.
+And so as far as what all that looks like, let me see, do I still have?
+I wonder if I still have a.
+Copy of someone.
+So this one.
+Yeah.
+All right, here's a good one.
+Alright, so this is usually a usually whenever they're sending it to you, like sending you the SSO information.
+Uh.
+This is what it looks like. OK, I already have it.
+Oh.
+This is a JPAG. What's this?
+OK, yeah. Oh yeah. So this is the one that was having trouble.
+Uh, yes. So that's just a screenshot. OK, alright, so that's not a good one.
+I want like a complete one.
+That doesn't look like OK.
+Right. Uh, anyway. Uh, yeah.
+But that's it. So it's all just copy and paste is is really all you guys need to should have to do.
+Oh.
+I really would like to find.
+The completed one.
+It's the folder.
+Let's just do this.
+There we go. Alright, yeah, so this is generally what you're gonna get from the clients. It's just gonna be.
+Text file, Word document, whatever it is with the URLs. So you just copy and paste from there and then the cert.
+Start I believe you want to open up with either notepad plus plus or or notepad so you can get to the certificate and then yeah, so you just copy like the entire middle part would be all of that.
+Is what you would copy.
+And that's what you would face here.
+And that's it for SSO. That's that's really all you have to do to turn it on.
+So like I said, so you'll just send a if anyone ever asks for it.
+This is the setup instructions that you're gonna send them.
+And they should be able to just follow it.
+I guess we should take a look or a closer look here. So the these instructions are designed only for Azure since that's what we use for RSSO. So this is the only real documentation that we have on it. So if someone is.
+Same like they use like a different software. The instructions are basically the same, so they'll still use the same document. But yeah, but we don't have anything specific for any other type of software.
+Um, so this this is all we got.
+All right. And that's it for SSO. All right. So GPG is a little bit more complicated. Well, I mean, not really. So the setup, whenever you're setting up GPG, same thing with SSO, you're going to work with the dev team to kind of get it done.
+Uh, 'cause it is a little.
+Is a little tricky and just involves just some high-level knowledge. So if anyone is requesting to set up encryption, you're still going to you will. You'll probably want to create a dev task and work with whoever.
+Peter Vinay, Natish.
+Whoever does to get it, uh, get up and running, we do have.
+Instructions here inside of the knowledge base in Zendesk as far as generating a file.
+Or actually not even generate a file. This is for decrypting the file. So let's say let's say we need to look at.
+Say like we're onboarding like a new client and we're going through like the normal data validation process, like looking at their step files, making sure they're sending everything in the correct fields. These are the commands that this is how you're going to decrypt a file.
+Um, so uh, like a good.
+Let's use golden one here.
+Oh, we don't have a Step 2. Darn it.
+Who else uses encryption? Redcock does.
+Uh, OK, this should work.
+Alright.
+So we used GPG encryption by default. It's very similar to PGP, just a different format. Yeah, so not really any difference there, but yeah.
+So.
+Uh, this is the command that we use to decrypt a file.
+And then I have an example right below it of like one that's actually plugged in. Oh, snap on this one. OK.
+I'm gonna go over there.
+Let's do that, actually.
+OK, sweet.
+Yeah, alright, so this is the command that we're gonna use. So I'm gonna copy all of this.
+I'm gonna leave that last part out because I'm just gonna type that myself.
+So.
+Here is our command.
+All right, so the first thing that we need to change here is what I have in Alex is stuff that needs to be plugged in. So the first thing it's asking for is the output file name.
+File name.
+So we want to remove that variable from the command, and we're just going to use the same name.
+Of the file that we're trying to decrypt, so I'm gonna copy that.
+So right there. And so that's what our output file's gonna look like is it's just gonna be a regular CSV.
+Alright, and we are running this from ftpdir snap on credit slash processed.
+Alright, and then we need the original file name.
+Choose this.
+All right.
+Oh, I almost forgot.
+I need to Sudosu Sonic first.
+And then I can run the command. Alright, so this should decrypt the file for us and boom.
+All right, so this is what it looks like whenever it successfully decrypts.
+The self contents and there is our file.
+So if you're ever trying to troubleshoot an issue with a file, if you like, if you're looking for just like we do with our regular step 2 files, like if we need to go in and look for something, trying to find an account like whatever it is, this is our command to decrypt the files.
+And you really just gotta make sure that you put in the new file name that you're gonna use.
+And the original file is at the end, so it's pretty straightforward. It's not a lot. And then.
+If you ever need to send our secret key to anyone, so this is like so they can add it to their key ring so they can decrypt the files on their end. This is the location.
+That the key is in, so if we.
+Go over there.
+Home.
+Select.
+It lists U to contents.
+All right.
+And it is pass one is our is the actual key file.
+And that is listed right here in the command. That's how you can tell that that's what it's calling.
+
+Manjunath S   13:05
+And James, this is related to somewhat like the files or the images.
+
+James Maki   13:10
+This is mainly going to be for STEP files. There are a couple clients that also use it for images, but that's that's more of a custom kind of a thing and that's something that you would escalate to the dev team and work with them on.
+So like that's like Barclays is doing that and Liddy has been helping me with that one to try and get to try and get them live. So yeah, so there are you you may have clients ask for it on their images and if they do.
+Oh, you'll just work with the dev team.
+Which, and honestly, honestly, you're probably gonna be working with the dev team anyway to to get this set up. I I always do.
+
+Manjunath S   13:49
+OK.
+
+James Maki   14:00
+It it's just a better way to go about it, like to make sure it's handled correctly because I'm not. I'm definitely not an expert at this either. So yeah, like as far as like setting up a new key and like adding a a new client, I'm not familiar with that myself.
+Uh.
+So yeah, again, just uh, engage the dev team whenever you're not sure how to do something.
+And that's gonna be our.
+It's gonna be one of our new mottos.
+But yeah, right. And then as far as setting up, is there, do I have anything else? I don't think I do.
+Do I have anything else on GPG?
+Doesn't look like it.
+Yeah.
+Yeah, so so if you ever get a ticket from the implementation team like saying like a like a client wants to set up SSO, our our our process is gonna be to create a dev task and work with them to get it set up.
+Make sure that the keys get exchanged properly and are added in the correct location, so I believe.
+Uh.
+I believe whenever we receive a key.
+Just go into that private folder.
+Sure.
+I think they just go in here. I think if someone ever sends us like a new key, I think it just goes in this folder. But again, engage the dev team whenever you aren't sure to to make sure it's done correctly.
+Don't. Don't be. Don't be afraid to escalate.
+And that's really all I have.
+To show you guys on this like there is. There isn't much to it.
+Yeah, it.
+It can feel a little complicated, but it's it's actually not. This is the biggest thing. Yeah, like if you ever need to decrypt files.
+Uh.
+And uh, just for the sake of.
+Uh, I'm gonna say this into our documents folder also. Uh, just to try to keep everything together so you guys aren't having to.
+Go searching all around.
+Um.
+There.
+All right.
+Added that to the documents as well, so you guys can easily find that right on that. And that's really all I have on the subject. Do you guys have any questions?
+
+Manjunath S   17:59
+No, James.
+
+James Maki   18:00
+Yeah, like it is pretty straightforward. Um, yeah. So hopefully you guys, I don't think you guys will have any trouble with this. It's.
+
+Manjunath S   18:09
+I think we recorded this session.
+
+James Maki   18:11
+Uh, yes, I did record it, yes.
+
+Manjunath S   18:13
+That's a time of thank you.
+
+James Maki   18:15
+Absolutely.
+Alright, alright. Well, yeah, that's all I got for you right now. If if you guys don't have any questions on this stuff, I'll go ahead and.
+In the recording to get this out there for you guys.
+
+Manjunath S   18:34
+Yeah, right now, no jumps.
+
+James Maki   18:38
+OK.
+Right, good stuff.
+
+James Maki stopped transcription

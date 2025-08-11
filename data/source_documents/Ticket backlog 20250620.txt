@@ -1,0 +1,502 @@
+Transcript
+June 20, 2025, 4:03PM
+
+Manjunath S started transcription
+
+James Maki   0:04
+Go ahead and pull it, pull it up whenever you're ready.
+
+Manjunath S   0:04
+Yeah, yes.
+Yeah, actually yesterday we saw that that that is some source regarding the.
+Resets.
+This one lives.
+
+James Maki   0:37
+All right, did you look on the server?
+
+Manjunath S   0:40
+Yeah, I just looked on the server, but uh, there is no receipts for the particular date.
+So if there is no receipts on the server, we can download it right from the SQL query.
+
+James Maki   1:25
+All right. Uh.
+So when we looked at this before, like when when the receipts were delayed, they were downloaded like the following day.
+Or like as soon as like the issue was resolved and like the queue got cleared like they started downloading so they just had like a different date on them. So what you need to do is you need to verify the disputes or you need to look for the disputes that were completed on that day.
+
+Manjunath S   1:44
+Yeah.
+
+James Maki   1:54
+So you can do that inside Sonnet. You can do a search for the ones that were completed that day. From there you can get you can get the control numbers.
+
+Manjunath S   2:00
+Mhm.
+
+James Maki   2:03
+And then you can go look in the receipts folder and see if there was a receipt for that control number.
+
+Manjunath S   2:18
+Now for in the times images there are like uh missing the 16th.
+After 15 there is no date in the 60.
+
+James Maki   2:31
+Yeah, so did the images from the 16th, did they get mixed in with the ones from the 17th?
+
+Manjunath S   2:36
+Yeah.
+
+James Maki   2:40
+Are you're saying yes, but.
+
+Manjunath S   2:43
+No, no, no. I'm saying like there is no images for the date 16.
+
+James Maki   3:07
+All right, so if the files were delayed, then they might just be there under a different day. So the files aren't there from the 16th, but maybe they got moved over on the 17th when whatever happened was resolved.
+So what you need to do is over and sonnet. You need to go search for the disputes received that day.
+
+Manjunath S   3:22
+Yes.
+
+James Maki   3:29
+And you need to find some with images.
+Well, I would do it from the search screen.
+And I'm looking for a solid received date on the 16th.
+
+Manjunath S   3:53
+So not date completed or received it.
+
+James Maki   3:56
+No, we're looking for a received date.
+
+Manjunath S   3:58
+OK.
+
+James Maki   4:03
+So the image attachments are downloaded with the dispute, so those should be received on the same day that dispute that the disputes are received.
+
+Manjunath S   4:11
+16th and 16th both are same.
+
+James Maki   4:13
+Right.
+And then we also want to look just for the ones with images.
+Yep. All right, so let's search for that.
+OK.
+Yes.
+Uh, all right.
+Uh, so from here.
+Now we need to we need to track these images and see.
+If they were ever moved over to the server, so let's go into one of these disputes. Doesn't matter which one.
+And we're gonna copy the control number.
+Right, and this is an Experian dispute, so that tells us what folder the image file should be in. So now we can go. So now we can go back over to the server.
+
+Manjunath S   5:16
+OK.
+
+James Maki   5:24
+But right now you're in the TransUnion folder. We're looking for experience, so you need to go up a level.
+And then go into the Exterian folder.
+
+Manjunath S   5:38
+Yes.
+Hello.
+
+James Maki   5:51
+Uh.
+No, you don't really need to do that. So we're so we're looking for a specific file, so so you can just do find.
+
+Manjunath S   5:59
+OK.
+
+James Maki   6:08
+Space star.
+For wild card and then 'cause the control number is at the end of the file names, so we do the star in front and then you can paste in and paste in the control number.
+And then it should end in dot tiff.
+Because these are relative files.
+All right, so run that and let's see if it finds anything.
+OK, there it is. OK, so the file is there. Uh.
+So let's do LS dash LTR so we can look at all the files in order by date.
+All right, and so now, so now we know the file's there, so it should be probably between the 16th and the 17th, or we know there's nothing there from the 16th, right? So I'm guessing it's probably on the 17th. So if we scroll up into the 17th, let's see if we can find that control number.
+
+Manjunath S   6:58
+Yeah.
+
+James Maki   7:12
+Uh, just to verify.
+So, alright, so what's the control number we're looking for?
+
+Manjunath S   7:24
+Control number.
+
+James Maki   7:27
+Yeah, yeah, we're we're just gonna look through the list and see if we can find it, 'cause it should be here in the 17th, probably.
+So let's just kind of scan through here and see if we find it. So what's the number? What are we looking for?
+
+Manjunath S   7:43
+246424.
+
+James Maki   7:46
+Right. And that ends in 6016, right?
+So it's usually easier to look at the end of the oh, if you're looking at the beginning, that's also fine. All right, it looks like. All right, I think I see it. Yeah, right there on the 448 up one. Oh, look at that. And there is images there from the 16th.
+So what? Wait, what did she say on the ticket again?
+
+Manjunath S   8:18
+France images from 16th and.
+
+James Maki   8:21
+Oh, specifically TransUnion, OK.
+OK, shoot. OK, all right. In that case, let's go back to Sonnet. So we're tracking the wrong thing, apparently. So return to dispute queue. Or actually, actually, it's better to hit the back button because we want your.
+Uh, that's fine. Alright, put your search criteria back in.
+Uh, so looking on the 16th.
+And only with images.
+Then.
+Is there a?
+Oh, credit Bureau. Select TransUnion.
+Alright, and now let's search.
+OK, so there were no.
+There were no disputes with images for TransUnion on the 16th. OK, so she's actually not missing anything there because there just were no files.
+OK, all right. And what were the receipts that she was missing?
+It was like.
+
+Manjunath S   9:39
+What is it on 13th and 15th?
+
+James Maki   9:48
+OK.
+13th through the 15th. OK, all right. So all of those receipts, OK.
+OK, let's reset your search.
+So just start a new one.
+Alright, and this time let's search for completed date.
+And she says it's the 13th through the 15th.
+Which is a weekend, OK.
+All right, all right. Uh, let's search for that.
+
+Manjunath S   10:27
+Oh, with images.
+
+James Maki   10:30
+No, we don't need that for this.
+Because, because receipts get get generated for all disputes, not just the ones with images. We were using that before because we were focused on those Transunion images.
+Alright, so they did have some here on the 13th.
+OK.
+Um, all right. Uh, let's uh.
+Right click on one of those and open it in a new tab.
+I think it'll be easier for us to.
+Uh, try clicking on the ID. Right click on the ID.
+So did I give you that option? That's weird.
+
+Manjunath S   11:17
+No.
+
+James Maki   11:17
+OK, OK. All right. Never mind. All right, let's just go into it then.
+
+Manjunath S   11:20
+Oh.
+Or shall we open this unit in Nagar Hotel?
+
+James Maki   11:33
+No, it's OK. Let's just go into this view.
+And let's look at the account history and that should tell us when the receipt was generated.
+
+Manjunath S   11:50
+Is it generated on 16?
+
+James Maki   11:52
+OK, all right, so that's what we thought.
+
+Sagar Gurudatta Pai   11:54
+Go back, go back on the consumer tab again.
+And.
+OK, this issue is fixed. The account now is getting green. I saw somewhere that someone is still reporting that issue like still driving. Uh.
+I just finished reviewing all the open tickets. Moving to pending tickets now.
+
+James Maki   12:26
+OK.
+
+Sagar Gurudatta Pai   12:26
+I just joined because I was getting bored alone, working alone.
+
+James Maki   12:30
+No problem.
+
+Sagar Gurudatta Pai   12:34
+Back to work, but I'll keep updating the tickets.
+
+James Maki   12:35
+Right. All right. Well, so, all right. So actually, it still happens to me.
+So hold on before, before you, before you tell them it's fixed. So I'm just so.
+
+Sagar Gurudatta Pai   12:46
+No, I am not telling anyone it's fixed. I saw a ticket where it was said it is not. They're still facing this problem.
+
+James Maki   12:53
+Yeah, yeah. So I still see it too. So I'm just over here in the demo company.
+And look, it's going back to red. So it is. It is still happening, at least sometimes. Oh, you know what? I think it's because the dispute that he's on is a completed dispute. So it's so it's already green because it's dispute submitted.
+So that one like shouldn't really go back to.
+I mean, yeah.
+So it's not it's not fixed.
+
+Sagar Gurudatta Pai   13:26
+But it is not because it is not fixed, right?
+
+James Maki   13:28
+Oh, oh, oh, hold on. But here, this one's not doing it. This one is staying green.
+This is just another dispute here in the demo company.
+
+Sagar Gurudatta Pai   13:44
+Sorry I delayed the problem while investigating.
+
+James Maki   13:54
+Yeah, it's still happening here.
+
+Sagar Gurudatta Pai   13:58
+I observed one common thing. Both had one block notifications.
+
+James Maki   14:04
+Oh.
+
+Sagar Gurudatta Pai   14:12
+Related, not related, I don't know.
+This one that one did not know.
+
+James Maki   14:19
+Yeah, see, can find one that here. Here's one that doesn't have a block notification.
+Nope, that's doing it too.
+
+Sagar Gurudatta Pai   14:30
+I don't even know the use case for it.
+
+James Maki   14:34
+Yeah, I don't either.
+I thought it was across the board, but what was the one that I was in?
+Sorry.
+
+Sagar Gurudatta Pai   14:47
+OK, you guys carry on. I'm so sorry.
+
+James Maki   14:50
+All right, no problem, Cigar.
+Alright.
+Uh, where were we?
+
+Manjunath S   15:02
+Um, looking on the account tab history.
+
+James Maki   15:07
+Yes, OK, yes. And we saw the receipt was generated on the 16th. So what I would, so I would tell her the receipts from those days were generated on the 16th and so they have that, so they have that date.
+
+Manjunath S   15:10
+Um.
+Yes.
+
+James Maki   15:23
+Because because when the receipt generates, it just uses whatever the current date is like it does. It doesn't go back to like what the actual completed date was, it just uses the current date. So so her files are there. She's just.
+
+Manjunath S   15:23
+Yeah.
+
+James Maki   15:40
+Not understanding which ones they are.
+Sir, are you good to respond on that?
+
+Manjunath S   15:49
+Yes James, but what is my notice if the it's showing like receipt is generated on the 16th right? So in the server also it will be on the same date or it will be in next.
+
+James Maki   15:57
+Yes.
+Yeah, on the server it'll have, yeah 'cause it has the date in the middle of the file name. So on on the server it'll it'll show as the 16th.
+
+Manjunath S   16:08
+Yes.
+
+James Maki   16:13
+Because that's when the receipt was generated.
+
+Manjunath S   16:15
+OK.
+So.
+So we check for this 13th also or just I responded.
+
+James Maki   16:26
+We already did that. There were there were no.
+
+Manjunath S   16:28
+OK.
+
+James Maki   16:32
+There were no Trans Union images on that day.
+
+Manjunath S   16:57
+E.
+
+James Maki   17:32
+Do you have another ticket we can look at? We only have a few more minutes before me. Me and Sabrina need to jump on another call, but.
+
+Saravanabhavan S   17:42
+James 22933.
+
+Manjunath S   17:58
+Is it good or should I change any sentences?
+
+James Maki   18:06
+You're not sharing your screen right now. I took it from you to show to to show a to show a cigar, that thing.
+
+Manjunath S   18:10
+Oh, it's so.
+Yeah.
+Yeah.
+
+James Maki   18:32
+Yeah, so I would explain to her. So on your second sentence there about the receipts, those dates were generated on the 16th and so they show that date like you need to tell her what to look for.
+Like you're just saying that they were generated, but there's nothing there on the server from those dates. Like, she's not gonna understand that, right? So you have to, yeah, so you have to explain they were generated, but they show as being from the 16th.
+
+Manjunath S   18:54
+Oh.
+
+James Maki   19:02
+Yeah, so so you're right. So generate on the 16th and show that date instead of the completed date.
+
+Manjunath S   19:23
+Yeah.
+
+James Maki   19:25
+Yeah. OK. All right. Yeah, that's good.
+
+Manjunath S   19:29
+Uh, pending.
+
+James Maki   19:31
+Yeah, yeah, pending 'cause we need her to confirm that she understands what we're saying.
+Yeah, right. And then real quick, the one that Servon asked about 22933.
+
+Saravanabhavan S   19:49
+Yes, Williams.
+
+James Maki   19:50
+So this is for CBH so.
+All right, so there's a screen. There's a company screen that we can look at.
+To see like to check their downloads, to check their downloads.
+
+Saravanabhavan S   20:06
+Yeah.
+I'll just wait on this one.
+
+Manjunath S   20:13
+Oh, false. OK.
+Set on a sharing.
+
+Saravanabhavan S   20:22
+This I'm connecting the just waiting.
+
+Manjunath S   20:26
+OK.
+
+Saravanabhavan S   20:47
+Yes.
+
+James Maki   21:04
+Wrong one.
+
+Saravanabhavan S   21:08
+OK, James.
+
+James Maki   21:10
+You you went to the wrong company.
+No.
+
+Saravanabhavan S   21:18
+So like see.
+
+James Maki   21:20
+You went to a different CBH. There was two. You went. You went to the wrong one. See, you're at Hudson Valley.
+No, you want the bottom one, Yeah.
+
+Saravanabhavan S   21:38
+OK then Sir.
+
+James Maki   21:38
+OK. All right. So we're showing no disputes received today. So if you go, yeah, so if you go over to the admin side, there is a downloads tab.
+
+Saravanabhavan S   21:44
+Yes.
+
+James Maki   21:54
+And that will show you like their recent download history.
+Up at the top, there's a tab. Nope on the on the company. Scroll back up.
+
+Saravanabhavan S   21:59
+Oh, this.
+
+James Maki   22:06
+To the right. There you go. Yep.
+
+Saravanabhavan S   22:06
+View downloads.
+
+James Maki   22:11
+So this is their recent download history. So this will show you all the totals that we have downloaded for them. So we have not received any disputes for them for a while now actually.
+
+Saravanabhavan S   22:17
+OK.
+Yes, well.
+
+James Maki   22:25
+So, yeah, and so I wanna say, I can't remember. I think these guys said that they were gonna stop credit reporting. So like, I think they're winding down. But yes, so we can, so we can see the dates there. So they were asking about like the last few days.
+
+Saravanabhavan S   22:41
+And.
+
+James Maki   22:41
+And yes, we can confirm that no disputes were received.
+
+Saravanabhavan S   22:45
+Yes.
+
+James Maki   22:47
+Yeah.
+
+Saravanabhavan S   22:48
+So what they can reply to them? So from sonat UAL so they we we can see that there is no dispute received.
+
+James Maki   22:57
+Right.
+
+Saravanabhavan S   23:01
+Okay. That's it from my side.
+
+James Maki   23:05
+All right, cool. Yeah, no problem. All right, let's go ahead and stop here. So so I get ready for this next call coming up and then.
+
+Saravanabhavan S   23:06
+Thank you.
+
+James Maki   23:20
+I don't think it's. I don't imagine it's gonna take very long.
+So we might be able to join back up in about 30 minutes.
+
+Manjunath S   23:31
+OK, James, client call.
+
+James Maki   23:34
+Yeah, yes, client call about some just some AED receipt files. So I'm gonna, I'm trying to record it for you guys. Yeah, so I have I have Supriya on there just so there's someone to.
+
+Manjunath S   23:40
+OK.
+
+James Maki   23:49
+Just participate and listen in and everything. But yeah, but yeah, but I didn't want to overwhelm them to invite everybody, so.
+
+Manjunath S   23:53
+Oh ****.
+
+James Maki   23:58
+Oh.
+But right, we will talk to you guys again here soon. Thank you.
+
+Manjunath S   24:04
+Thank you, James.
+
+Saravanabhavan S stopped transcription

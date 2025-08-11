@@ -1,0 +1,18 @@
+Questionnaire on Topics Covered in the Meeting:
+1. What are AUD notifications and what information do they contain?
+Answer: AUD notifications are sent from the Bureau to a data furnisher to inform them whether an AUD (Automated Universal Data) was processed or not. They include the consumer's name, account information, and the reason for processing or not processing the AUD. 1:06
+2. What are block notifications and what actions should data furnishers take upon receiving them?
+Answer: Block notifications inform data furnishers that certain consumer information or trade lines have been blocked due to identity theft. Data furnishers should review the block and update their systems to prevent re-reporting. If they disagree with the block, they can request a re-insertion through a Block Precision Request (BRR). 3:04
+3. What is the difference between a block tradeline and a block ID notification?
+Answer: A block tradeline notification means the entire trade line associated with a consumer account is blocked, while a block ID notification means only a piece of consumer information (e.g., address, name, social security number) is blocked. 4:33
+4. What is a BRR and what information must be included when creating one?
+Answer: A BRR (Block Precision Request) is used to request the re-insertion of a trade line that was blocked. It must include subscriber codes, consumer information, account information, and an attestation of the evidence supporting the request. 9:56
+5. What are DR notifications and what types of changes do they report?
+Answer: DR (Dispute Response) notifications report changes made by the Bureau to a trade line, including responses to disputes, BRRs, and other modifications. They can indicate actions like modifications or deletions based on internal policies. 12:54
+6. How can users search and filter transactions in the system?
+Answer: Users can search transactions using various fields and build custom queues to filter specific types of transactions, such as those with images or active statuses. 17:02
+7. What types of reports are available and how can they be accessed?
+Answer: Reports are categorized by transaction type (e.g., ACDV, BRR, Direct notifications) and can be viewed on-screen or downloaded as Excel files. Custom reports are also available for specific user requests. 18:11
+8. What is the purpose of the look-ahead feature and what does it display?
+Answer: The look-ahead feature displays a 30-day rolling count of disputes that are not completed, showing the dispute count by day. 19:17
+Note: The answers are based on the meeting content and provide a detailed explanation of the discussed topics.

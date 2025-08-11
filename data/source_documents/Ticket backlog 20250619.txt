@@ -1,0 +1,984 @@
+Transcript
+June 19, 2025, 4:52PM
+
+Manjunath S started transcription
+
+James Maki   0:05
+What's the issue?
+But Amanda wasn't really understanding. Amanda's not even CC'd on this like she followed up on the ticket, but she's not even.
+Like a follower on here, so so she's not gonna see.
+Did uh, did you just add her as a follower?
+Or was she already there?
+
+Supriya Siddappa Kulageri   0:38
+On James.
+
+James Maki   0:38
+Did did you add Amanda as a follower or was she already there? You did. OK, OK, OK, good.
+
+Supriya Siddappa Kulageri   0:41
+Yes. No, no, I have it now.
+
+James Maki   0:55
+All right.
+Um.
+OK, I don't. I don't know if we need Amanda for this to set up a call.
+Mm.
+OK, you've added a band to. All right, let's ask.
+Ask what times they're available tomorrow for a call.
+And and you haven't met a copied on it, so she'll be aware. I think we can handle this without her because if they just need us to to regenerate some receipts like we can, we can do that.
+Yeah, yeah. So just ask what times they're available tomorrow and we'll and we'll try and set something up.
+
+Supriya Siddappa Kulageri   1:55
+OK.
+
+James Maki   1:55
+I put a put a put a Amanda, put Amanda back on there. Like I do want her to be a follower. I'm just saying I don't know if we I don't think. I don't think we'll actually need her on the call, but I do want her to be aware of it though.
+Yeah, So what time's tomorrow you're available?
+And then we'll we'll figure out how we want to schedule it out.
+
+Supriya Siddappa Kulageri   2:39
+OK.
+
+James Maki   2:44
+Tomorrow. What time's? What time's tomorrow?
+Because we don't.
+I do not have time this afternoon, so I don't want them to.
+Be like, let's get on a call in an hour. Like, no, sorry, we can't do that.
+Yeah, yeah, yeah, that's that's good.
+
+Supriya Siddappa Kulageri   3:29
+Newbase transformed little matter files for fair options.
+
+James Maki   3:33
+All right, so that is one that I'm working on with Liddy. I sent he needed the list of control numbers. I sent that to him earlier today.
+So hopefully either either today or tomorrow, hopefully we can get that wrapped up and closed. But yeah, so I did make progress on that here if you want to put the the dev link for that.
+Here, I'll I'll drop it in the chat for you.
+
+Supriya Siddappa Kulageri   4:05
+Yeah.
+
+James Maki   4:08
+And then and then you can put that on hold for right now.
+So I because I think they actually have a duplicate ticket.
+Yeah, that's OK.
+
+Supriya Siddappa Kulageri   4:49
+OK, so for retail also he needs.
+
+James Maki   4:53
+Yes.
+Alright, so remember you're you're in the production environment.
+
+Supriya Siddappa Kulageri   5:23
+Which environment this is Dev environment?
+
+James Maki   5:27
+So in the in the title in CQA.
+
+Supriya Siddappa Kulageri   5:32
+So.
+Thank you, OK.
+
+James Maki   5:36
+Yeah, yeah, I have. I have no idea what a certain environment is. I don't know where he got that from, but.
+
+Supriya Siddappa Kulageri   5:43
+But before for mortgage we have given in the production only, right?
+
+James Maki   5:49
+No, we gave them. They they had the one for production. We sent them the one from from CQA. So if you remember like they were using the wrong token. So we sent them the right one for mortgage. I don't think they have. I don't think retail is set up in.
+
+Supriya Siddappa Kulageri   5:56
+OK.
+
+James Maki   6:10
+Is it NCQA? I think everything previously was just from orchids.
+
+Supriya Siddappa Kulageri   6:16
+Yes, it's not there.
+No, we do have.
+
+James Maki   6:24
+OK.
+OK.
+Yeah, you can, uh, go ahead and send them that. Yep.
+Alright, it's there. Cool.
+
+Supriya Siddappa Kulageri   6:41
+Mm.
+
+James Maki   7:03
+Yeah, you're good. OK.
+Cool.
+
+Supriya Siddappa Kulageri   7:34
+shall I put it in pend it
+
+James Maki   7:39
+No, I think you can go ahead and close it again because yeah, because he he said he's going to open up a new, a new ticket whenever they get the disputes from you, Oscar, right. So I think you're still, yeah, so you're still good to close up.
+
+Supriya Siddappa Kulageri   7:50
+Yes.
+Hey.
+OK.
+Oh.
+
+James Maki   8:07
+Excuse me.
+Is that all of them?
+
+Supriya Siddappa Kulageri   8:10
+It.
+Yes.
+
+James Maki   8:12
+Wait.
+All right. How about you, Margio?
+
+Supriya Siddappa Kulageri   8:17
+That's.
+
+Manjunath S   8:22
+Nya James. Definitely I have it.
+This one I have to just update it on hold or?
+
+James Maki   8:44
+Oh, OK, not sure.
+
+Manjunath S   8:46
+Hello.
+
+James Maki   8:52
+Yeah, this was one. This was one that I wanted to.
+
+Manjunath S   8:53
+This is from.
+
+James Maki   8:58
+I want to try to clarify with Amanda, right? Um.
+So because I think they're about to be changing their account numbers anyway.
+This was one I want to talk about this. I wanted to do this on a Level 3 call, didn't I? This was one from.
+Last Thursday we were looking at.
+Um.
+Uh, all right. Uh, can we?
+Should we just ping Amanda about this and see if we can get an answer?
+Right. Uh.
+Trying to remember how we did this.
+Uh, did the.
+To download anything for them, no.
+This is for Genesis.
+Did I just look at their files?
+Yeah, all right. Yeah, these guys are apparently moving.
+Every image file they pick up, apparently they're moving them to.
+Rocess folder.
+And not removing them from our.
+List too long.
+What?
+There we go.
+That didn't move anyway.
+Oh my God.
+Clients.
+What I'm trying to do is I'm I'm trying to get to one of their. Oh, these guys are API, aren't they? I think I'm.
+Wait, no, they're not. No, they're not there because I'm in their folder.
+
+Manjunath S   15:08
+OK.
+
+James Maki   15:13
+Yeah, they are API.
+That's right. OK. And that was why we couldn't figure out more because there was no file for us to go look at. It was just coming from the API, so.
+Um.
+M.
+Is there an API log that we can look at that will tell us?
+Is there anything that tells me what client this is for?
+Alright, so I'm on the API server now.
+And I'm looking for a log that's going to.
+Potentially help us.
+Yes.
+Yeah.
+So confused. What am I looking at here?
+OK, that's on RPAO too. OK, that's fine. OK.
+I don't have any answer on this right now on the.
+Uh, Columbia.
+Um.
+I mean, I don't know if.
+Yeah, like when my last note on there still is still.
+Kind of where I'm stuck at. I don't.
+I'm not finding uh the company in.
+The API logs. I mean, I might just not be looking in the right place, so I'm not sure.
+Yeah, we need help. We need help researching that one because I'm just not sure where to look.
+Yeah. And so I I do not have an update on that right now.
+
+Manjunath S   25:36
+OK, Jim, so any update on this thing?
+Oh, just.
+
+James Maki   25:59
+Well, there's a dev task on there.
+So where's? Where's? So where's that at? It's on hold. Why is it on hold?
+
+Manjunath S   26:03
+Yeah, it's on hold.
+So we given any response and we ask for estimated.
+
+James Maki   26:15
+What's going on with the dev task?
+
+Manjunath S   26:20
+Object I think so.
+
+James Maki   26:26
+All right, let's let's go look at the dev task because it's been, it's already been escalated to the dev team. So if they want an update, then we need to know where the dev team is at. What have they done?
+If anything.
+Oh, that was this one. OK. All right. So we were just talking about that earlier this morning, right? That was the one that then I was asking about.
+So I can't remember what did Vinay say he was working on that today.
+
+Manjunath S   27:54
+So.
+
+James Maki   27:58
+Or was that a different one?
+
+Manjunath S   28:14
+So the develop team is working on this right?
+
+James Maki   28:21
+Yes, yeah, yeah, 'cause Vinay was asking about that on the on the stand up call today.
+
+Manjunath S   28:31
+So I get the same response.
+
+James Maki   28:34
+I guess.
+
+Manjunath S   29:04
+Yeah.
+Well, this one, Jim. So actually they've got settled like QA. We asked for. We search for the username, but we didn't find right? So again, they'll send the username.
+I tried to search.
+
+James Maki   29:26
+Oh, it's their user, Anna. OK.
+
+Manjunath S   29:29
+Yeah.
+
+James Maki   29:38
+All right, well, all right. Well, for one, you just try to search by Anna, which is the first name, and you put that in the last name field. But for two, this is an employee, not a consumer. So you can't search that way because that's looking for consumers. That's looking for people like.
+
+Manjunath S   29:47
+Uh.
+
+James Maki   29:56
+With disputes, but they're talking about a user like a person who's working the disputes, not not someone who has a dispute, so.
+
+Manjunath S   30:02
+Can.
+
+James Maki   30:08
+Alright, well, what's what's the ticket number?
+
+Manjunath S   30:15
+It's 22850.
+
+James Maki   30:21
+Update disputes changes. Changes are not staying. Please refer to Anna disputes in QA that were sent 75% setting.
+Employee made the proper changes, but they did not save.
+OK.
+OK, I understand, but they still did not give us a dispute ID for us to look at.
+What? What do they expect us to do?
+
+Manjunath S   30:55
+That's it.
+
+James Maki   30:56
+And I do not see anything in the QAQ from Anna.
+Anna hasn't worked since June 13th was the last time that she was in Sonnet.
+All right, she like she needs to give us an actual ID to look at, especially if the user hasn't been in there for a freaking week.
+Like what?
+Like if they want us to look at the history of anything, they have to tell us what dispute to look at, right? Like we can't.
+
+Manjunath S   31:50
+But where do we find this?
+The user.
+
+James Maki   31:57
+Yes, it is a user. It is someone who is working inside Sonnet. So it is one of the United Auto employees.
+
+Manjunath S   32:03
+OK.
+Mhm.
+
+James Maki   32:16
+Alright, but so she's saying that like changes did not stay like.
+This is so annoying.
+Right, that changes there.
+May 2025 change blank to L.
+2025 change blank to L.
+Terms duration 12001 change from 74 to 0.
+
+Manjunath S   33:28
+The.
+
+James Maki   33:45
+All right, so I just went through just a. I just chose the first dispute in their QA queue just to see what I could find.
+So let's go ahead and do that. Alright. So yeah, so I just went, yeah, so I just went into that first one because I I don't see Anna's name on any of these, but I just went in just to see what I could find. So yeah, let's go into that and so let's go down to the history.
+
+Manjunath S   33:56
+This one.
+
+James Maki   34:10
+So, so she's saying that the changes that the user is making are not being saved.
+So we have to look at the history to see what it is that she changed. All right, so she's in here. So there's a few things that she changed. So we can see she changed like actual payment amount, changed that from 74 to zero. She changed the terms duration from one to 001. She made, I mean changed the payment history.
+
+Manjunath S   34:34
+Mhm.
+
+James Maki   34:37
+She changed May 2025 from blank to L So let's go to the account tab and let's see if we can see those changes.
+And the information.
+Mm.
+All right, so terms frequency or terms duration is one that she changed and we can see 001. It's a right below the fixed. All right, so that we saw that in the history that's still there. So that's saved.
+We see in the actual payment amount they have a 0.
+It's down a couple more, so right right above the last highlight.
+
+Manjunath S   35:26
+This one, yeah.
+
+James Maki   35:27
+Yeah, right above it. Yeah. So she changed it from 74 to zero. We see the zero. So that was saved. She also changed the payment history. So if you Scroll down just a little bit in May 2025, we should see an L and we do. So that was saved.
+So all the changes that Anna made were saved because they're still here. So let's respond. Go ahead, copy the sonnet ID from the URL.
+Yeah, go ahead, copy that and and let's tell her we reviewed this dispute.
+That is it.
+Uh, where Anna made changes?
+And we see the changes still on the dispute.
+Or are still saved on the dispute. Yeah, let's say saved.
+Uh.
+So is yeah, alright, so you can do a do a full stop there and let's just ask like is there another? Is there a dispute where the changes are not saved?
+Like we we need her to give her to give us a dispute that we can actually review and see where that is not being saved, right? So we review, we reviewed one, we verified that the changes were saved. So now we need an example of where the issue is actually occurring because so far we have not seen it.
+
+Manjunath S   37:06
+Oh.
+
+James Maki   37:16
+I know we only checked one dispute, but.
+That's all the time that they're getting out of us if they can't tell us where to look, so.
+
+Manjunath S   37:32
+Pending.
+
+James Maki   37:33
+Yeah, yeah, split it in pending. Let's see if she can give us an example and and don't forget to exit the disputants on it. Make sure you return to queue to get out of it.
+Yeah, right. That way we don't don't keep it locked on them.
+
+Manjunath S   37:58
+This one, James, actually we have closed this ticket. The follow up ticket is 22651. Actually it is sold. What today Sagar has just opened that it's still machine from May 28, 29th, 3031st.
+And there's a lot of student.
+
+James Maki   38:29
+Well, where's he getting that from?
+Why is he saying that?
+Oh.
+Are you ******* kidding me? You gotta be ******* kidding me with this, dude.
+
+Manjunath S   39:25
+Just.
+Just a minute, Chips.
+
+Saravanabhavan S   39:44
+It seems like I have to get.
+22918 and 2294 regarding uh productivity report.
+
+James Maki   40:23
+Hi.
+Yeah, we we we know, we we know that productivity reports are broken. We have a dev task for it.
+That's nothing.
+That's that's nothing that we're gonna be able. That's nothing we're gonna be able to fix.
+
+Saravanabhavan S   40:42
+Yeah, so what should I give a reply like this is I just give the reply that this issue has been escalated to dev team, so that's fine.
+
+James Maki   40:50
+Yeah, yeah, that's basically all you can say because we don't have, we don't have any kind of timeline like it's it's gonna be a big fix because like you're talking about refactoring and building. Yeah, and I think.
+
+Saravanabhavan S   40:59
+OK.
+
+James Maki   41:04
+And priority wise, I think reporting is kind of is kind of a notch below everything else that they have going on. Yeah. So I think that's the best you can say for right now.
+
+Saravanabhavan S   41:07
+OK.
+And at 22870 James we sure or like the the the issue also has to be escalated to.
+22870.
+
+James Maki   41:28
+A task needs to be for this. What is this? Read for them to review again? I have attached the logic. OK, so that's that's a rules request.
+So I mean, we can look at the Word document and just make sure that it's in.
+A good readable formatting and yes it is.
+Um.
+Yeah, so yeah, all all all rules requests have to go to the dev team, so we have to make a task for that.
+
+Saravanabhavan S   42:02
+Oh.
+So I just give a repay to them that the devotee map we ask later to devotee.
+It's fine.
+
+James Maki   42:18
+OK.
+
+Saravanabhavan S   42:20
+On 22792 James.
+
+James Maki   42:34
+Uh, that is also a productivity report, right? Yeah.
+
+Saravanabhavan S   42:39
+But.
+Shall I link the ticket to the productivity report? So because I didn't link to that.
+
+James Maki   42:48
+Uh, the one that you just said are.
+
+Manjunath S   42:49
+Yes, there is a problem.
+
+Saravanabhavan S   42:51
+Yeah.
+
+James Maki   42:52
+The the one you, yeah, the one you just said, that one already was linked.
+But what was again 227?
+
+Saravanabhavan S   42:58
+You do.
+That is the link.
+
+James Maki   43:01
+So 1/2.
+
+Manjunath S   43:03
+Oh.
+
+Saravanabhavan S   43:05
+22792.
+
+James Maki   43:06
+92.
+
+Saravanabhavan S   43:09
+That is not just wait a minute. Let me check. Yes, that was link. Thank you. OK, that's that's from my side.
+
+James Maki   43:15
+Yep.
+OK.
+
+Manjunath S   43:32
+This is from source, right? Jones?
+
+James Maki   43:35
+All right.
+
+Manjunath S   43:38
+Uh.
+
+James Maki   43:44
+Yes, this is from source and they said a bunch of ******** is what they said.
+All right, so they said they didn't.
+All right. So on 6/1, there was an issue, right? That was when we were coming off at the weekend and on that Monday.
+Something was going on. Was that the Monday that downloads were stopped?
+Something was going on that day.
+
+Manjunath S   44:25
+Yeah.
+
+James Maki   44:26
+So the receipts from June 1st were generated on June 2nd instead.
+So they are out there, they just have the wrong date on them.
+So that's true for the receipts.
+If we check.
+May 28th. All right, so next thing I'm gonna say. All right, so this is part of the problem right here. Well, actually, and actually, it's not even a problem. This is gonna be great. No, hold on. You're gonna love this. Go over to the server. Go over to web 01.
+
+Manjunath S   45:09
+Yeah, I think I'm already on the border.
+
+James Maki   45:12
+Yeah.
+Well, you're you're on RPO too. Yeah, go to web 01.
+You're you're on the image server. Go to the FTP.
+You're going to love this.
+It's taking its time.
+Yeah, just go to sources though.
+Yeah, those are images. Yeah, good images.
+
+Manjunath S   46:39
+Images.
+Resets.
+
+James Maki   46:44
+And going. No, don't not receipts. Go to go to the equity.
+The Equifax one, the one, the one at the top, yeah.
+Yeah, going there. Alright, now do instead of LL.
+Do a instead do LS space dash LTR.
+Your screen just froze.
+There we go. Yeah. Yeah, that's it.
+
+Manjunath S   47:31
+Enter.
+
+James Maki   47:32
+Yeah, yeah, do enter. So, so this will put it in order.
+Like in order by date, so this way we can see all the files for any given day.
+So for one, so for one if you notice while that was loading.
+
+Manjunath S   47:48
+May 28, 2013.
+
+James Maki   47:54
+Their files go like all the way back. They go like to December, like their stuff from last year. They're not picked, like they're not removing the files. So that's one problem, but that's not what we're focused on right now. So she said that they're missing the files from the end of May, right? That's what she said.
+
+Manjunath S   48:10
+OK.
+
+James Maki   48:12
+Yeah, So what? What dates exactly did she say?
+
+Manjunath S   48:17
+May 28, 2930 31st.
+
+James Maki   48:20
+Uh-huh. Yeah. OK, so on the server. So we are, yeah, so we already see.
+On the server, right, right there we are. We already see May 31st, we see May 30th, 29th, they're all there. So that's ********. The the first is potentially the only ones that are missing, but I believe those ones from the second, I believe.
+
+Manjunath S   48:28
+31st OK.
+OK.
+
+James Maki   48:45
+Those will include the ones from the first because again, like the downloads were stopped. So then whenever it resumed, they would have all been received. So I mean we can, well, I mean even like trying to look these up, I'm sure everything is just going to say received on June 2nd.
+Yeah, yeah, yeah. So there's no files from June 1st because of the download issue. So everything from that day was sent on the 2nd.
+And the image files from the ending from the last days of March or May, all of those are still on the server. So if she wants them, she can just download them. They're already there. You don't have to do anything.
+
+Manjunath S   49:32
+7.
+
+James Maki   49:33
+But also they need to be removing their files like we are not infinite storage for our clients like it is an issue when they do this.
+
+Manjunath S   49:33
+OK.
+
+James Maki   49:43
+Because this takes up server space, right? Like this. And when we have multiple clients, especially our bigger ones, people like Credence who aren't removing their files, like that's going to create issues for us. So they need to do their job.
+
+Manjunath S   49:51
+OK.
+
+James Maki   49:58
+And do their part.
+But so, so on the ticket we can say we've verified all.
+Oh, oh, never mind. Hold on. Wait, he did say receipts. Why was I thinking images?
+Oh, all bureaus on June 1st, OK.
+All right. I was getting confused. All right, hold on. All right, let's go back to the receipts.
+And let's see.
+Maybe I got a little bit ahead of myself.
+All right, so receipts from May 28th are on there.
+So it would have been.
+Yeah, so receipts from that weekend.
+Oh God, that's not even the weekend because it stops on the 28th, which was a Wednesday. So receipts for Thursday, Friday. I think I messaged Lee about this. Did I did I stumble across this and then asked him to check?
+
+Manjunath S   51:06
+So.
+
+James Maki   51:07
+Think fixed it.
+I can't remember now. This is 3 weeks ago.
+Oh, regardless, my answer, my answer hasn't changed.
+All right, we just have to reword it a little bit.
+All right, so.
+Just confirm that we did not receive.
+Any disputes on June 1st, right?
+No. OK.
+OK, so the image files for June 1st.
+Oh.
+Would have been downloaded on June 2nd.
+So those files are available on the server. This is your answer no.
+Are you ready? Yeah. So this this is our response. This this is our answer.
+
+Manjunath S   52:32
+Should I go back?
+
+James Maki   52:41
+Images on June 1st were downloaded on June 2nd.
+And are available on the server.
+Yeah, full stop there. And then the receipts for those days, if you just wanna copy them, probably be easier, were also generated on June 2nd.
+It are available on the server.
+But they are all labeled as June 2nd because that's when they were generated.
+
+Manjunath S   53:37
+1.
+I get to run into a public repays, OK, Raja.
+
+James Maki   53:50
+Uh, yes, yeah, public reply.
+And then I would also mention, because if we don't mention it, then it's never gonna get like nothing's ever gonna be done about it. We should also mention that we notice.
+Uh.
+We noticed all the historic image and receipt files are still on the server.
+Please ensure those have been downloaded.
+And then they need to be removed from the server.
+So that we know they've been picked up.
+
+Manjunath S   54:52
+Something about.
+
+James Maki   54:55
+Yeah. Oh, well, it's it's just so so that we can tell that they've been picked up, because if they leave them out there, then we don't know if they picked them up, right? Yeah. So just so that we can tell they've been picked up.
+Because otherwise it's on us to just remove them.
+And.
+But.
+Yeah. And so potentially if they, yeah, it just is what it is, whatever. Yeah, that that's, that's good.
+Yeah, I would say, man, that's not even a task. Like, we didn't do anything. That's just a question. Like, yeah, I mean, like, you can do a task if you want. It doesn't really matter. But I'm just like, man, whatever, it doesn't matter, whatever.
+
+Manjunath S   55:47
+OK.
+We haven't ops to thing for two, so on hold open.
+
+James Maki   55:53
+Check. Yeah, let's check the let's check the dev tasks, see what that is, because I don't think we need anything from them. So if there's a test, a dev task for this, then I mean we can potentially just close it.
+I think 8216 is the it is close. OK, good. Yeah, that's what I thought.
+
+Manjunath S   56:14
+It's closed.
+
+James Maki   56:22
+Yeah, yeah, because Liddy, because when I found that receipts hadn't been running, Liddy fixed it. And that's what that task was, I think.
+
+Manjunath S   56:31
+Sorry.
+
+James Maki   56:34
+Uh.
+Let's do pending right now, just so just in case they have like a just in case they have some kind of response.
+Just because I don't want another follow up ticket if we close it.
+So this was something that I know Lydia was working on. I don't as Andrea hasn't mentioned it again. I believe it got fixed. If you want to verify with her, just ask.
+If Liddy completed this.
+Because I I know he was the one that was working on it.
+So let's just ask if this is still an issue.
+And and if it is, then we'll have to.
+I think it was already a temp task, so might have to like reopen it or something, I don't know.
+
+Manjunath S   57:42
+Is the series completed of to independent status?
+
+James Maki   57:54
+Yeah, I think that's good. Then let's let's see what she says.
+I know there's already so many things that they're trying to escalate, but this is like an old one that should have been.
+Or was done.
+
+Manjunath S   58:10
+So public supply only or you talking about?
+
+James Maki   58:10
+Yeah.
+Uh, public. Yeah, I'll do public.
+
+Manjunath S   58:15
+The name.
+
+James Maki   58:17
+Yeah, let's do pending. Yeah, 'cause we need her to confirm.
+
+Manjunath S   58:35
+This one thing so.
+This is what result for the.
+
+James Maki   58:43
+Uh.
+Oh, so, yeah, so we talked about this.
+On the Sprint call yesterday I I gave them like a little demo of where it was happening.
+Um.
+Do we do we have a dev task on there?
+I think we do.
+
+Manjunath S   59:09
+No.
+
+James Maki   59:11
+OK, I know, I know we created one.
+Except for.
+OK, so there is a ticket from opportunity.
+That had the same issue, right?
+But of course I do not have the ticket number on here.
+This one. All right. And is this a problem? It is not. It is now.
+This is for.
+All right, 22773, all right. And you are on.
+You are on ticket 22714.
+OK, you can make that an incident.
+
+Manjunath S   1:01:12
+Oh.
+
+James Maki   1:01:13
+And I just turned another ticket into a problem for this.
+Oh, wait, hold on. Did I make? Hold on. I didn't misread this, did I?
+This is like the 80s.
+Yeah, not appearing on the streets, OK.
+OK, yeah, incident. And then it should be the first problem that you see there 'cause it should be the newest one.
+
+Manjunath S   1:02:01
+OK.
+
+James Maki   1:02:03
+For for link problem, yeah, yeah, the opportunity one.
+
+Manjunath S   1:02:08
+Yeah.
+
+James Maki   1:02:08
+Yeah, and then change the change the category. It's not. It's not AUD. This is.
+We don't have like a UI issue, do we? Or like a UI option? I should probably add that. I think we're kind of at the point we need it. Let's just do dispute management I guess.
+Yeah, and then let's also change the subject on this. Change that from AUDQ.
+Change that to AUD not showing in 360 view.
+Yes. So that's that's actually like an accurate description of what's happening. It has nothing to do with the AEDQ. OK, and go ahead and oh, and I'll send you the link.
+It's coming.
+Here is the link link. Yeah, here's the link for you.
+
+Manjunath S   1:03:35
+Yeah.
+
+James Maki   1:03:42
+Oh yeah, put it on hold. Yeah.
+
+Manjunath S   1:03:58
+Onward.
+
+James Maki   1:04:06
+Uh, yes, on hold.
+
+Manjunath S   1:04:10
+No.
+Yeah.
+
+James Maki   1:04:15
+Yeah, it's kind of lagging a little bit.
+
+Manjunath S   1:04:22
+Yeah, my network is.
+OK.
+
+James Maki   1:04:28
+Yeah.
+
+Manjunath S   1:04:30
+So.
+There's a problem ticket.
+
+James Maki   1:04:39
+Yes.
+
+Manjunath S   1:04:43
+This is the problem. This on the on my end just to have this one. We are waiting for customer response, yeah.
+Uh.
+
+James Maki   1:05:12
+All right. Well, uh, so we, uh.
+I mean, should we take a break here?
+
+Manjunath S   1:05:20
+Yeah.
+
+Saravanabhavan S   1:05:22
+I like for 22870 can you share me the dev link?
+
+James Maki   1:05:22
+It does, yes.
+
+Saravanabhavan S   1:05:31
+Because he told me like we have to create a task for the ticket for the team.
+
+James Maki   1:05:32
+2.
+Uh, you have to make it. You have you have to make the link.
+So like use it, you know, use like the apps on the right hand side.
+You use the apt to.
+
+Saravanabhavan S   1:05:47
+I just just waiting. Actually I don't have access, I think so. Just waiting.
+
+Manjunath S   1:05:54
+It is effective to draw DPS on transaction of intent.
+
+James Maki   1:05:59
+Yeah, so if you click the the four squares on the far right.
+Or not the four, the nine squares. Yeah, so I see you wanna make. Yeah, so you wanna make a user story is what you wanna make.
+
+Manjunath S   1:06:06
+Yeah.
+And.
+
+Saravanabhavan S   1:06:14
+So like we can view task as user story.
+
+James Maki   1:06:20
+Yes, yeah, yeah. Like that is that that is the task.
+Yeah, so no. So do a do user story because a task goes under like a task gets assigned to either a user story or a bug.
+
+Saravanabhavan S   1:06:35
+OK, so shall I give you a story?
+
+James Maki   1:06:36
+So like a yeah, yeah, so do a user story and yeah, and it's gonna be just mid Florida rules logic or no touch logic. Make sure you put the the ticket number. Add that to the title here.
+
+Saravanabhavan S   1:06:52
+OK.
+
+James Maki   1:06:56
+And then and make sure you check the box on the attachments 'cause that's gonna be like the actual, yeah, like that's the actual like rules request.
+
+Saravanabhavan S   1:07:14
+So which iteration I have to give?
+
+James Maki   1:07:16
+Let's put it. Let's put it in the next one. Yeah, let's put it in 99 since since this Sprint is already pretty full. Yeah, so that's good.
+Yeah, uh, in the descriptions.
+Um.
+Yeah, I'll see you can just take all that out, yeah.
+
+Saravanabhavan S   1:07:58
+It's fine now.
+
+James Maki   1:08:00
+Uh.
+Yeah, yeah, it's it's said in the message that the rules is attached, right? Yeah.
+
+Saravanabhavan S   1:08:14
+So what should I give to the for the acceptance criteria?
+
+James Maki   1:08:19
+I mean this is a rules request, so I would just say the no touch rules deployed like yeah, cause like this this it's not done until it's deployed. So that's really.
+Yeah, it's really like the only acceptance criteria is.
+Put it in place and deploy. Yeah, I'd say no touch logic is deployed. Yeah, it's not something like that.
+
+Saravanabhavan S   1:08:49
+So uh, just no touch.
+Roads fine, right?
+
+James Maki   1:08:54
+Uh yeah, is is deployed.
+
+Saravanabhavan S   1:08:58
+OK.
+
+James Maki   1:09:01
+Yeah, I think that's good. Yeah. So you go in and create the story. Oh, we need to put the put the priorities and stuff.
+Oh, also in in area, yeah, I'll do threes for the severity and the priority. I'll just do threes for that.
+
+Saravanabhavan S   1:09:23
+On priority.
+
+James Maki   1:09:24
+Uh, yeah, 3.
+Yeah, yeah, well, we're just gonna do 3, so it's kind of by default in the area. Select a select support.
+The area drop down is right above iterations.
+Yeah, there's another drop down right above that.
+
+Saravanabhavan S   1:09:47
+It's not working.
+
+James Maki   1:09:48
+There's another drop down called area.
+Right above the iterations.
+Look to the next field.
+Go U to the next field.
+Go up to the next field. There you go. Support. There you go. That's what I was looking for. All right, now you can create the story.
+Yeah, N 99. Yep.
+
+Saravanabhavan S   1:10:15
+Actually they they it is also discredited in this song.
+
+James Maki   1:10:18
+Yeah, yeah, that's that's good because because the instructions are attached. So I mean like that's where the real request is, right? Is they they just need to know to check the attachments.
+
+Saravanabhavan S   1:10:30
+It's telling a user story now.
+
+James Maki   1:10:31
+Yeah, yeah, go ahead.
+All right, well, so you you actually you could have gotten to it from there. So you need to go over to Azure.
+We're gonna have to go, yeah, go start, like open up a new tab and go over to Azure. We're gonna have to go.
+
+Saravanabhavan S   1:10:59
+But.
+
+James Maki   1:11:09
+We'll have to go find that task.
+
+Saravanabhavan S   1:11:15
+This one.
+
+James Maki   1:11:16
+You want to go to dev.azure.com instead of portal.azure.com dev.azure.com.
+
+Saravanabhavan S   1:11:27
+Actually, I don't have a. I think so.
+
+James Maki   1:11:27
+Yeah.
+Oh, you don't have access yet, OK.
+All right, that's OK. I can grab the link for you.
+Here you go. I got it. I'm dropping it in the chat for you.
+This.
+
+Saravanabhavan S   1:12:33
+It's OK if I write jobs.
+
+James Maki   1:12:36
+Yes. Yep, that's right. And then, so you do need to fill out some of the other stuff. Yeah, so it's gonna be a task.
+
+Manjunath S   1:12:44
+I.
+
+James Maki   1:12:48
+Yeah, category rules engines.
+
+Saravanabhavan S   1:12:48
+OK.
+
+Manjunath S   1:12:50
+Right.
+
+James Maki   1:12:53
+And it's being escalated to development. Yep.
+The the company name is also in the top left up next to the to the user's name.
+Just FYI. But yeah, so that that that's good. Yeah. So task is created so you can put it on hold.
+
+Saravanabhavan S   1:13:23
+And he put it down onward.
+
+James Maki   1:13:25
+Yep.
+All right. All right. You guys ready for a break?
+
+Saravanabhavan S   1:13:50
+OK.
+Yes, it's.
+
+James Maki   1:13:54
+Yeah.
+All right, hit me up if anything else comes up here in the next little bit. Otherwise we can get back together.
+Uh, here in an hour or two.
+
+Manjunath S   1:14:09
+Yes, jumps.
+
+James Maki   1:14:12
+All right, guys. All right. Thanks for all your help. You guys are doing great. Talk to you later.
+
+Manjunath S   1:14:15
+Mhm.
+Yeah, James, thank you.
+
+Saravanabhavan S   1:14:17
+OK.
+
+Saravanabhavan S stopped transcription

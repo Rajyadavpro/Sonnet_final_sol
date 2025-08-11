@@ -1,0 +1,18 @@
+Questionnaire Covered in the Meeting:
+1. Steps for Setting Up the Environment:
+Detailed Answer: Lidiexy explained the steps to create polynom users, download the client, and install it on Windows. After installation, users need to access the UAT environment through SSO. 1:01
+2. Issues with Subdomain in Cato:
+Detailed Answer: Chandan faced issues with subdomain configuration in Cato. Lidiexy suggested checking with Emery for the correct subdomain and ensuring the SSO group is synced. 6:11
+3. Accessing UAT Instance:
+Detailed Answer: Chandan requested the URL for the UAT instance. Lidiexy provided the URL and mentioned that the database was being uploaded to the shared folder. 3:03
+4. Authentication Errors in Cato:
+Detailed Answer: Chandan and Neeteesh encountered authentication errors in Cato. Lidiexy and Luis suggested various troubleshooting steps, including clearing cache, revoking sessions, and ensuring the SSO group is synced. 2:42:07
+5. Database Connection Issues:
+Detailed Answer: Neeteesh faced issues connecting to the local PostgreSQL database. Luis and Lidiexy guided him through configuring the database connection, editing the pg_hba.conf file, and ensuring the correct user and password settings. 1:51:33
+6. Setting Up Email Accounts:
+Detailed Answer: Chandan and Neeteesh needed to set up their polynom email accounts to receive necessary emails for UAT access. Lidiexy mentioned that additional licenses might be required for email setup. 2:51:19
+7. Admin Access in UAT:
+Detailed Answer: Neeteesh requested admin access in UAT. Lidiexy and Luis provided guidance on granting admin privileges and ensuring proper access to the admin menu. 2:54:54
+8. Clearing Cache and Reconnecting to Cato:
+Detailed Answer: Chandan was advised to clear the cache in the Cato client, revoke sessions, and try reconnecting to resolve internal authentication errors. 2:58:15
+These questions and answers cover the main technical challenges and troubleshooting steps discussed during the meeting.

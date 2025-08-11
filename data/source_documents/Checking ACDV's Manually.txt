@@ -1,0 +1,17 @@
+Usecase - Are you able to tell me how many ACDV’s we are currently getting in WF for each of these codes?
+ 
+Manual review:
+002 - Belongs to another individual with same/similar name
+101 - Consumer not liable for account
+103 - Consumer claims true identity fraud/account fraudulently opened
+104 - Consumer claims account take-over, fraudulent charges made on account
+118 - disputes current balance or amount past due
+119 - Disputes original charge off amount
+704 - item blocked per valid copy of police report
+ 
+Step 1- If the organization has multiple companies you have check for all.
+Step 2 – go to pg-admin and execute the below query.
+
+Query - select * from dispute where company_id in(6600, 6601, 6602) and sonnet_received_timestamp > '2025-05-01' and (dispute_code_1 = '704' or dispute_code_2 = '704')
+
+Step 3 – Update in the ticket and mark it as pending .

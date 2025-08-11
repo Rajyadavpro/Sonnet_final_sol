@@ -1,0 +1,306 @@
+Transcript
+June 30, 2025, 7:07PM
+
+Manjunath S started transcription
+
+   0:07
+OK.
+
+Supriya Siddappa Kulageri   0:32
+Which one in this? The first one?
+
+James Maki   0:38
+Yeah, I mean the main company.
+So you're looking for their admins, yeah.
+
+Supriya Siddappa Kulageri   1:28
+So we have to reset his password.
+
+James Maki   1:32
+No, we need to reach out to them and have them reset our E Oscar API password.
+
+Supriya Siddappa Kulageri   1:39
+OK.
+API password reset.
+
+James Maki   2:10
+All right.
+Alright, so you don't wanna make yourself the requester. We wanna put this in their name.
+
+Supriya Siddappa Kulageri   2:39
+Oh, where in the subject?
+
+James Maki   2:43
+No, as as the requester.
+
+Supriya Siddappa Kulageri   2:45
+In that question, OK.
+
+James Maki   3:05
+Yeah, and then and then you'll make yourself the assignee.
+So it would be your ticket.
+And so we're we're just asking her to reset our E Oscar API password and that's that's all we need.
+
+Supriya Siddappa Kulageri   4:16
+Or no sunrise also.
+
+James Maki   4:17
+Right, right. Yeah. Sunrise credit is the other one.
+Uh, Yep.
+
+Supriya Siddappa Kulageri   6:52
+OK.
+What to tell him, James?
+
+James Maki   7:01
+I I don't want to answer them right now. I I don't have a.
+Um.
+
+Supriya Siddappa Kulageri   7:24
+Why the download was was too big?
+
+James Maki   7:27
+Tell him it was identified by us. We we already knew about it.
+Like the the dev team was like the dev team is the one that paused it like like we did that intentionally.
+
+Supriya Siddappa Kulageri   7:34
+Mm-hmm.
+
+James Maki   7:49
+Yeah, just let's just tell them that like the the dev team posited while they were investigating like a a a potential issue.
+It was restarted as soon as they completed their work.
+
+Supriya Siddappa Kulageri   8:01
+2.
+
+James Maki   8:23
+Yeah, I guess.
+Like like the issue was the issue was identified by us prior to your tickets.
+
+Supriya Siddappa Kulageri   8:38
+The issues.
+
+James Maki   8:40
+Identified by us prior to your ticket.
+
+Supriya Siddappa Kulageri   9:13
+OK.
+
+James Maki   9:17
+The the issue was identified prior to it, like we already knew about it, not data files identified.
+Like she, she said. Like, oh, like why it wasn't restarted or identified by you, that it was paused. Like it was. We did it. Yeah, yeah, that's right. There you go.
+
+Supriya Siddappa Kulageri   9:44
+Need to keep it in pending.
+
+James Maki   9:46
+Yeah, like, I don't know if you guys need to start talking to Sigar about this kind of thing. Like you guys need to decide like how you're gonna respond to this kind of stuff cause I'm only here for another month, right? Like I can't. I'm not gonna be able to tell you guys after I'm gone. I'm not gonna be able to tell you how to respond. You guys have to be able to figure this out without me.
+So like, if you need to talk to Cigar or someone else like to come up with answers, then you guys need to start doing that. And you guys need to start doing that like before me telling you like we're getting to that point, guys. Like you guys actually need to start owning this stuff, not just waiting for me to.
+To give you an answer, OK.
+
+Supriya Siddappa Kulageri   10:24
+Yes.
+
+James Maki   10:30
+Alright, yeah, so let's let's say that for now. And I don't know, she's probably still not gonna be happy with that. Like I know her. She's probably still gonna come back and and want more.
+Oh, what's that Step 3 file ticket?
+
+Supriya Siddappa Kulageri   10:48
+It has been resolved.
+
+James Maki   10:50
+Oh, perfect.
+
+Supriya Siddappa Kulageri   11:28
+Oh, so they're asking to set up AUD receipts.
+So this is what you are expected, right? Like they will ask this.
+
+James Maki   11:46
+Yes.
+Is there a cost associated with it? I don't think so.
+But I'm also not an expert in the contracts.
+
+Supriya Siddappa Kulageri   12:37
+OK.
+
+James Maki   12:37
+All right. I mean, so we can, we can turn it on for him. I mean, that's easy. I don't.
+I don't think there's a cost.
+Are you asking me out there?
+
+Supriya Siddappa Kulageri   13:06
+Shall we turn it or we need to ask someone?
+
+James Maki   13:11
+I'm asking Amanda.
+
+Supriya Siddappa Kulageri   13:18
+So shall we reply to interns?
+
+James Maki   13:28
+I just messaged her in the chat, so we'll wait and see what she says.
+While we wait on her, yeah, while we wait on her, is there another ticket?
+
+Supriya Siddappa Kulageri   13:57
+OK.
+
+James Maki   14:12
+I will have to switch.
+
+Supriya Siddappa Kulageri   14:13
+We will check for a hundred till then.
+
+James Maki   14:17
+OK.
+Alright, what's going on with the PDQ? Are we still having trouble connecting to their FTP?
+
+Supriya Siddappa Kulageri   14:25
+Yes, James.
+
+James Maki   14:26
+OK, all right, we all right. This needs this needs to be escalated at this point. Like we need to do something like this has been going on for how long? The like that like we're not getting our files like something actually needs to be done about this. So we don't have access to the firewall anymore. So as far as like testing the connection and like and all that stuff, like all we really know is that we can't get to it.
+
+Supriya Siddappa Kulageri   14:27
+Oh.
+
+James Maki   14:45
+So at this point, and she's arguing with us, right? It didn't work. It's because they didn't put in the port number.
+All right, OK.
+All right. How did we?
+Someone was doing something with Barclays.
+
+Supriya Siddappa Kulageri   15:24
+It.
+
+James Maki   15:29
+Alright, how do we do that? Tell that command.
+There we go.
+All right, so they're saying we need to with support number.
+
+Supriya Siddappa Kulageri   15:48
+Mm.
+
+James Maki   16:35
+Alright, and what port did they want us to use?
+Is it in the ticket? Or should you scroll up a little bit? Is it just port 22? Did it say?
+
+Supriya Siddappa Kulageri   16:52
+Where James?
+So in the server.
+
+James Maki   16:57
+Did did somewhere in this ticket, did they tell us what port number to use? Like when they told us to do the telnet command, did they tell us what port number to use?
+All right, you're not. You're not looking.
+So their answer is the reason the telnet the telnet didn't work is because they didn't put in the port number. Did they tell us what port number to use? Is it somewhere in the ticket? If you scroll up, look through their look through the history.
+Did they tell us what port to use?
+Keep going.
+It doesn't know. It doesn't know.
+
+Supriya Siddappa Kulageri   17:46
+I don't think so. They have given us number. Oh.
+
+James Maki   18:00
+Alright, alright. Well that was that's us connecting to them. That was us telling them that like that's your message.
+All right, so it doesn't look like they did. All right. I mean, it's an FTP connection, so I'm assuming it's port 22.
+Alright, we're just gonna do that.
+All right, and that did not work.
+I don't know how to spell. OK, hold on.
+OK.
+Alright, are you on the Web 01 server?
+
+Supriya Siddappa Kulageri   19:03
+Yes.
+
+James Maki   19:06
+OK, alright, go over to their their directory.
+And here is the command I just dropped in the chat for you on how to do the telnet.
+
+Supriya Siddappa Kulageri   19:35
+Direct this one or before this.
+
+James Maki   19:41
+Yeah, right. So, so that's doing the telnet command is what that's doing and that's their IP address and it's just space and then the port number. And I'm assuming since they didn't tell us, I'm assuming they just want us to use the the default FTP port which is 22.
+Uh, so yeah, so that's what I did. So hit enter. You can run that.
+And then the results that you get, uh, that's what we're gonna send to her.
+So I I would copy.
+Like copy the whole thing from like from where from where you sent the command. We're gonna send her the results.
+
+Supriya Siddappa Kulageri   20:29
+Mm.
+
+James Maki   20:30
+At this point we need to get this.
+So I don't know if you just wanna like CC one of them on onto the ticket.
+Like that's that's what I would do like and tell her that we're adding like one of our networking guys.
+But yeah, but at this point, like like we need to get them talking like this needs to get figured out 'cause it's.
+Like we're not getting any other files. This has been going on for for a whole week now that they're essentially behind, right? So that's that's not good.
+
+Supriya Siddappa Kulageri   21:01
+Yes.
+Hey.
+Shall I raise a dev task or we need to keep someone in CC?
+
+James Maki   21:13
+I I would see season one on the ticket now to try to escalate it as quickly as possible. Like I feel like it's at that point. Something needs to be done. Someone needs to figure this out and it's not gonna be us since we don't have firewall access.
+
+Supriya Siddappa Kulageri   21:22
+Good.
+
+James Maki   21:30
+Unfortunately.
+
+Supriya Siddappa Kulageri   21:31
+Thanks.
+
+James Maki   21:33
+So I don't know if you need to put like like Cameron or Tarun or I don't know someone someone from the from the Cato group.
+
+Supriya Siddappa Kulageri   21:45
+Kamran.
+
+James Maki   21:45
+Or maybe or or maybe maybe send them a message 1st and ask them.
+I tell them that maybe that's better. Actually, maybe let's let's talk to them first.
+I don't know, like like send them a message, tell them what's going on.
+And that you need help figuring it out and and then let them tell you who uh who to add.
+That's probably a better way to go about it instead of just picking someone at random.
+All right. And then I do have another call with Sagar that I need to switch over to in just a minute. But so Amanda did respond on the AAD receipts. There is not a cost, so we can turn that on in the additional settings.
+Like just go look at their company and like you'll see response receipts is already turned on. So you're just gonna do the exact same thing for AD receipts.
+
+Supriya Siddappa Kulageri   22:53
+That's probably it does.
+
+James Maki   22:54
+That was the Genesis one, Columbia.
+
+Supriya Siddappa Kulageri   22:59
+Hey.
+
+James Maki   23:18
+Yeah. So like responses just turned on. So you just need to do the same thing for AUD receipts and that's all and that's all you have to do to turn it on form. And then as Amanda said, there's not a cost associated.
+Yeah, so that should answer both of his questions.
+
+Supriya Siddappa Kulageri   23:35
+This one.
+
+James Maki   23:36
+Mhm.
+
+Supriya Siddappa Kulageri   23:46
+Yes.
+
+James Maki   23:47
+Yes.
+So hit the hit the green button. The green plus sign hit hit the green button to add it.
+
+Supriya Siddappa Kulageri   23:57
+No.
+
+James Maki   23:57
+And there you go. All right. So, so that's turned on for him now and then you can answer his other question. All right. And I will be back probably about like 10 or 15 minutes.
+So please like continue work, like work together, like do do whatever you guys can like while while I'm gone, don't just wait for me and we'll we'll pick back up in just a few minutes.
+
+Supriya Siddappa Kulageri   24:20
+OK.
+
+Supriya Siddappa Kulageri stopped transcription

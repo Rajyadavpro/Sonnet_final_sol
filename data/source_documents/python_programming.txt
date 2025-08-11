@@ -1,0 +1,16 @@
+This is a sample text document about Python programming.
+
+Python is a versatile programming language that is widely used for:
+- Web development
+- Data science
+- Machine learning
+- Automation
+- Desktop applications
+
+Key features of Python:
+1. Easy to learn and read
+2. Extensive libraries
+3. Cross-platform compatibility
+4. Strong community support
+
+This document is part of the RAG system example.

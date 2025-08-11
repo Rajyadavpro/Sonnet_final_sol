@@ -1,0 +1,44 @@
+Questionnaire on Topics Covered in the Meeting
+1. What is the current architecture of the system?
+2. What are the main components using Laravel or PHP as technology?
+3. What are the Python services mentioned, and what are their purposes?
+4. What is the role of Node.js in the system?
+5. How is data encryption handled in the system?
+6. What are the main databases used, and what are their purposes?
+Sonnet DB – All Data
+Log DB – Action Logs
+7. What is the purpose of the log synchronization service?
+UserAction is moved to the Log DB from Sonnet DB primarily due to the size which was causing Performance issue. In Sonnet DB 3 months of UserAction data is retained.
+8. What are the environments used for development and testing?
+Dev – Dev Testing
+UAT – QA Testing
+CQA – Customer UAT
+Prod - Production
+9. What is the process for handling batch clients and SFTP?
+
+10. How are disputes images and receipts moved to the correct customer folder?
+11. How are the demo disputes, with/without images and receipts generated in each environment?
+Questionnaire on Topics Covered in the Meeting (WITH Answers)
+1. What is the current architecture of the system?
+The current architecture includes a web application (client-facing), Sonnet API, and Core system, all primarily built in Laravel (PHP 8.x). The architecture also includes various services like data files, encryption as a service, and tools for generating disputes and receipts. 2:56
+2. What are the main components using Laravel or PHP as technology?
+The main components include the web application, Sonnet API, Core system, data files, encryption as a service, and tools/scripts for generating disputes and receipts. 7:30
+3. What are the Python services mentioned, and what are their purposes?
+The Python services include Rules engine (currently in Python 2.7), AUD, and direct, which are being migrated to Python 3. The main purpose of Rules is to Recommend a response based on policies and procedures from the customer. 7:52
+4. What is the role of Node.js in the system?
+Node.js was the technology selected for creating Sonnet 4.0. In that plan we start building services like Sonnet Probe & Notary for managing receipts, OCR engine for text analytics, and various internal interfaces for system records (SOR). 9:46
+5. How is data encryption handled in the system?
+Data encryption is managed by the encryption as a service (SKMS Service), which encrypts and decrypts data acting as well as a key management system. This service is crucial for encrypting sensitive data like Social Security Numbers and Date of Birth. 5:49
+6. What are the main databases used, and what are their purposes?
+The main databases are Postgres for the main database stack, log database for logging, and a separate database for encryption as a service. Memcached and Redis are used for caching. 14:54
+7. What is the purpose of the log synchronization service?
+The log synchronization service moves logs from the main database to the log database, ensuring that logs are reflected after three minutes and deleting logs older than 3 months. 14:05
+8. What are the environments used for development and testing?
+The environments include local development, UAT (user acceptance testing), CQA (customer QA), and production. UAT is used for internal testing, while CQA is used for customer-facing testing. 1:07:21
+9. What is the process for handling batch clients and SFTP?
+Batch clients use SSH credentials to connect to the SFTP server, where datafiles manage the transfer of step 1, step 2 and step 3 files. The process also includes moving images and receipts to the correct locations. 28:10
+10. How are disputes images and receipts moved to the correct customer folder?
+The move images or name strategy service handles the movement and renaming of files based on customer settings. 6:15
+11. How are the demo disputes, with/without images and receipts generated in each environment?
+Disputes, images and receipts are generated using tools and scripts. DB Scripts are customized to generate specific disputes using customer's needs. 6:15
+

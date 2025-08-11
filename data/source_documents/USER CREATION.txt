@@ -1,0 +1,13 @@
+USE CASE   -   SONNET USER CREATION.
+
+STEP 1 – Go to sonnet and select the company.
+
+STEP 2 - Select menu at right top corner and click on the sonnet admin and select view users and click on the add user.
+                                                
+STEP 3 – Enter the appropriate information in each of the designated fields.
+
+
+*** First name, last name and e-mail address will be available in the Zendesk.
+STEP 4– If the IP address is not specified in the zen desk then add all the available IP addresses and click on add user.
+STEP 5 – Re-fresh the page and check whether the user id created or not.
+STEP 6- Give response to the ticket and mark it as solved.

@@ -1,0 +1,10 @@
+Usecase – Delete the dispute from step 1 file and update the status as worked.
+
+Step 1 – Run the below query in the pg-admin
+update dispute set sonnet_status = 'Worked' where id = 63533380 
+
+Step 2 – Run the below query
+delete from facs_file_queue where file_step = 1 and dispute_id = 63533380
+
+Step 3 – Give response to ticket and mark as solve or pending
+

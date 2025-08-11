@@ -1,0 +1,217 @@
+Azure Client Implementation Back End 
+Objective:  Set up the automation for new clients; setup may include creating the applicable server directories and FTP Users, updating automation scripts, and allowing access to Palinode production servers.     
+
+
+Create Directory on prdrpa01 and prdrpa02 Servers 
+All Clients will need a directory on prdrpa01, prdrpa02.  Without these directories or an incorrect setup of a directory, downloading from e-Oscar will cause degraded server performance. 
+Log into the prdrpa01 and prdrapa02 Servers (sudo su – sonnet)
+Go to the directory /sonnet/images:   $ cd /sonnet/images.  All companies have a directory where images are placed. 
+Run the script to make the company directories.  This script uses sudo command to change permissions.   
+$ ./make_dirs.sh companyabbreviation 
+Enter server password if prompted
+Verify the directory was created correctly and the permissions and owner match other company folders.  ($ ll) 
+Also verify the directory in cd /sonnet_attachments/www has the correct permissions and owner. 
+To change owner run $ sudo chown sonnet:sonnet companyabbreviation 
+Enter server password 
+To change folder permissions run $ sudo chmod 775 companyabbreviation 
+Enter server password 
+If company using API proceed to API Data Exchange 
+If company using Batch files proceed to FTP Data Exchange 
+
+API Data Exchange 
+Create the company's directory in prdapi01  if the client is using the API.    
+Create Directory on prdapi01 Server 
+Log into prdapi01 
+Go to the directory /sonnet/images:   $ cd /sonnet/images 
+Make a directory with the company abbreviation as the name:  $ mkdir companyabbreviation) 
+Check the owner and permissions by listing the contents of the /sonnet/images/ directory.  Should be sonnet and drwxrwxr-x 
+If owner is not sonnet for the directory created change the owner ($ sudo chown -R sonnet:sonnet companyabbreviation/ ) 
+If permissions are incomplete change the permissions ($ sudo chmod -R 775 companyabbrevition/) 
+Repeat step 4 
+
+
+Update Move API Images Script 
+This script moves images from the company's prdrpa01 and prdrap02  server directory to the company's prdapi01 server directory for companies using the API Data Exchange method. *CollectOne platform clients use FTP for image transfers and will need to be added to the Move Images script instead of Move API Images. 
+Update local repository.  If using Visual Studio Code (VS) open the folder with move images repository.   
+Make sure you're on the master branch by using the git command "git status" in the Terminal.  If not on branch master use git command "git checkout master" which will update the branch to master. 
+The command "git pull" will refresh your local repository.  
+Create a branch named with the following naming convention:  companyIDzdtID 1000zdt1958  
+Open the move_api_images.php and add the Company ID to api_company_ids list starting on line 13.  Save changes. 
+Open the. gitignore and add the company abbreviation to the end of the list /companyabbreviation.  Save changes 
+Stage changes for commit then commit the saved changes.  The commit comments should provide a summary of the change.  Example:  Added companyabbreviation to API move images and gitignore. 
+Git push or Push to push branch to bitbucket 
+Go to the Move Images branches in move-images - Repos (azure.com), locate your branch and create a pull request.  The reviewer should be Lidiexy.   
+After the branch is approved, Lidiexy will merge the branch into master and pull the changes on the noon server. 
+NOTE:  This is not complete until the branch is merged by approver. 
+ 
+Whitelist Company's IP for prdapi01 Server 
+ZenDesk Ticket should include the public IP address that should be whitelisted for the company.  The public IP address may be different that the Sonnet user's public IP address. 
+Open up Cato https://palinode.auth.catonetworks.com ->Network -> IP Allocation -> Remote Port Forwarding
+Add the companies IP address to sonnetapi.palinode.io port 443
+ 
+Note the ZenDesk ticket with the CATO whitelisting when complete. 
+
+Test Connection 
+Provide company API Token and API URL via ShareFile link on the ZenDesk ticket. 
+Create a text document with the format below, update the <API Token> with the company's API Token and save in the Company's folder: 
+ 
+  
+To create and share a ShareFile link, go to https://palinode.sharefile.com/dashboard and select Share Files.  Attach the text document then Get Link.  Share the link with the company contact on the ticket. 
+The client should see the response   
+ 
+Setup for API company is complete.  Update ZenDesk ticket. 
+Troubleshooting 
+Client using URL, but the request is timing out. 
+Public IP address used does not match whitelisted IP.  Check the api_log in the database 
+Select * from api_log where company_id=companyid order by created_on desc 
+Check the IP Address of the request and verify matches whitelisted IP.   
+ 
+
+FTP Data Exchange 
+Create the company's directory in Prdweb01 if the client is using Batch files. *CollectOne platform clients are API but will use this for image transfers. 
+Create Directory on Prdweb01 Server 
+Log into Prdweb01 
+Go to the directory /sonnet/ftpdir:  $ cd /sonnet/ftpdir 
+Run the script to make the company directories.  This script uses sudo command to change permissions.   
+$ ./make_dirs.sh companyabbreviation 
+Enter your server password 
+Verify the directory was created correctly and the permissions and owner match other company folders. 
+
+
+Update Move Images Azure Script 
+
+
+This script is run every hour to transfer files from prdrpa01, prdrap02 to prdweb01 with logging. 
+Update local repository.  If using Visual Studio Code (VS) open the folder with move images repository.   
+Make sure you're on the master branch by using the git command "git status" in the Terminal.  If not on branch master use git command "git checkout master" which will update the branch to master. 
+The command "git pull" will refresh your local repository.  
+Create a branch named with the following naming convention:  companyIDzdtID 1000zdt1958  
+Open the move_images.sh and add the following to the last line of the file with the company's abbreviation companyabbreviation is listed. 
+
+/usr/bin/rsync -avz --remove-source-files --log-file=/sonnet/images/logs/companyabbreviation.`date +"%Y%m%d"`.log /sonnet/images/ companyabbreviation /* /sonnet/ftpdir/companyabbreviation/images
+ 
+Save changes. 
+Open the. gitignore and add the company abbreviation to the end of the list /companyabbreviation.   
+Save changes 
+Stage changes for commit then commit the saved changes.  The commit comments should provide a summary of the change.  Example:  Added companyabbreviation to API move images and gitignore. 
+Git push or Push to push branch to Azure 
+Go to the Move Images branches in Azure, locate your branch and create a pull request.  The reviewer should be Lidiexy.   
+After the branch is approved, Lidiexy will merge the branch into master and pull the changes on the noon server. 
+NOTE:  This is not complete until the branch is merged by approver. 
+ 
+
+
+FTP 
+If Sonnet is hosting the FTP (Client Gets and Puts files on Sonnet's FTP) proceed to Sonnet Hosted FTP 
+If Company is hosting the FTP (Sonnet Puts and Gets files on Company's FTP) proceed to External FTP 
+
+
+
+
+Sonnet Hosted FTP 
+     Whitelist Company's IP for Incoming Access via CATO to remote port forwarding
+ZenDesk Ticket should include the public IP address that should be whitelisted for the company.  The public IP address may be different that the Sonnet user's public IP address 
+Add to the SFTP Gateway groups (22, 38122, 30000-31000) in Cato 
+ 
+ 
+ 
+ 
+ 
+     Create FTP User for Company 
+Log into crushftp go to user menu
+Add user as company abbreviation
+Create new remote item with name of companyabbreviation
+Pick SMB3 use the string with the correct company abbreviation palinodeprodsftpstore.file.core.windows.net/prdsftpfs/companyabbreviation
+
+Go to Bitwarden to get the credentials for the ftp storage account palinodeprodsftpstore 
+Update the User name and Password – note this update the URL – save then test 
+Modify the permission to match permissions 
+
+
+Provide Client FTP Login Information
+Provide company FTP login information via ShareFile link on the ZenDesk ticket. 
+Create a text document with the format below, update the username with the company's abbreviation and the FTP user's password and save in the Company's folder named ftp_users: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+To create and share a ShareFile link, go to https://palinode.sharefile.com/dashboard and select Share Files.  Attach the text document then Get Link.  Share the link with the company contact on the ticket. 
+Company confirms they are able to access the FTP. 
+Backend setup is complete.  Solve ZenDesk ticket 
+
+External FTPS 
+     Whitelist Company's IP for Outgoing Traffic from prdweb01 Server 
+Hosting company should provide the DNS or Host name, Username and Password to access their FTP.  Attempt to locate the IP address for the DNS or Host. 
+Test the FTP connection from Dawn and accept the certificate:  
+$sudo su sonnet
+$sftp username@domainorip portnumberifprovided 
+Enter FTP password.  May need to accept a certificate. 
+If bad login, reach out to client for assistance.  Cannot proceed until credentials are validated. 
+Save FTP login information in a text file named ftp_user and save to company's folder 
+Create a ticket with Zendesk using standard format below with the highlighted fields updated.  Request may take up to 24 hours to process.  Assign to Emery Geyer  or John Hawkins
+Target IP or DNS preferred!, Port CompanyAbbreviation is all that is required.
+ 
+Note the ZenDesk ticket with the ZenDesk ticket number when complete. 
+ 
+     FTP Configuration Setup for Externally Hosted FTPS 
+Sonnet Admin:  Go to Company and add push_pull = T to Company Additional Settings 
+Sonnet Admin:  Got to Company and add file schedule to Company Scheduled Actions 
+Copy putimages.ftp, putstep1.ftp, putstep3.ftp and get.ftp in /sonnet/ftpdir/__blank (__ is 2 underscores).  This will move images to and from their root directory as in will not go into folders or move between folders in their FTP. 
+$cd /sonnet/ftpdir/__blank 
+$ cp ./*ftp /sonnet/ftpdir/companyabbreviation/ 
+Go to the company's directory and update the copied blank scripts  
+$cd /sonnet/ftpdir/companyabbreviation 
+$ll (verify the copied FTP files are present) 
+Edit the FTP files by replacing the blank with the company abbreviation 
+Select the file to edit $vi get.ftp 
+I to Change mode from View to Insert  
+To exit vi/vim ESC  
+To exit without saving enter :q! 
+To exit and save enter :wq 
+Repeat i-iii for all ftp files 
+Add the Commands and update the Kernel for Automation 
+Update local repository sonnet-datafiles 
+Create a branch named with the following naming convention:  companyIDzdtID 1000zdt1958 
+Copy BlankImages.php, BlankStep1.php, BlankStep2.php and BlankStep3.php from app>Console>Blank to Commands.   
+Rename the copied files with the companyabbreviationStep1.php, etc.  This is case sensitive. 
+Modify each file  
+Step 1  
+class blankStep1 extends Command – replace with name of the file companyabbreviationStep1 
+protected $signature = 'blank:step1'; - replace with company abbreviation 
+protected $description = 'blank: Send Step 1 file – replace with company abbreviation 
+$readpath = '/sonnet/ftpdir/blank/ - replace with company abbreviation 
+exec('sshpass -p blank sftp user@blank < /sonnet/ftpdir/blank/putstep1.ftp', $out); 
+'sshpass' -p ftppassword sftp username@dnsorip (if applicable port number) 
+/sonnet/ftpdir/blank/putstep1.ftp' replace with company abbreviation 
+Step 2 
+class blankStep2 extends Command – replace with name of the file companyabbreviationStep2 
+protected $signature = 'blank:step2' – replace with company abbreviation 
+protected $description = 'blank: Get Step 2 file' – replace with company abbreviation 
+$disputes = DB::table('dispute')->select('id')->where('company_id', 'blank')->w – replace with company ID 
+$fh = fopen('/sonnet/ftpdir/blank/get.ftp', 'wb'); file' – replace with company abbreviation 
+fwrite($fh, "lcd /sonnet/ftpdir/blank\nget – replace with company abbreviation 
+exec('sshpass -p blank sftp user@blank < /sonnet/ftpdir/blank/get.ftp'); see i5 
+Step 3 
+class blankStep3 extends Command – replace with name of the file companyabbreviationStep3 
+protected $signature = 'blank:step3' – replace with company abbreviation 
+protected $description = 'blank: Get Step 3 file' – replace with company abbreviation 
+$readpath = '/sonnet/ftpdir/blank/ - replace with company abbreviation 
+exec('sshpass -p blank sftp user@blank < /sonnet/ftpdir/blank/putstep3.ftp', $out); see i5 
+Images 
+class blankImages extends Command – replace with name of file companyabbreviationImages 
+protected $signature = 'blank:images'; - replace with company abbreviation 
+protected $description = 'blank: Send Image Files'; - replace with company abbreviation 
+$readpath = '/sonnet/ftpdir/blank/images/'- replace with company abbreviation 
+$r = exec('sshpass -p blank sftp blank < /sonnet/ftpdir/blank/putimages.ftp'); see i5 
+$log = fopen('/sonnet/logs/blank_images.'- replace with company abbreviation 
+Add Command to Kernel 
+Go to app\Console\Kernel.php 
+Add 4 commands to list.   
+Save Changes, Stage, Commit with comments and Push branch 
+Create Pull request in sonnet-datafiles - Repos (azure.com) with Lidiexy as the approver. 

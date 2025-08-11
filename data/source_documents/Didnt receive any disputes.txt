@@ -1,0 +1,21 @@
+USE CASE 3     -         Didn’t Receive Any Disputes.
+
+Go to Sonnet and select the company.
+`downloaded in the dashboard then we have to do some additional download.
+Go to Sonnet admin.
+Click on the schedule Downloads and select the company and change the amount to 0.	
+Check box for Sweep ACDV’s and click on add schedule download .
+Wait for the status to get complete.
+Once the status is completed click on the company name and click on the visit in sonnet.
+Create a Step 1 file, select menu at the right top corner and click on the data files.
+ Click on the make step # 1 file.
+Go to azure my roles and responsibilities and activate the virtual machine and run the SSH command in the command prompt.
+SSH command - az ssh vm --vm-name prdweb01 --resource-group rg-PaliPRD-DMZ --prefer-private-ip --subscription Sonnet_Production_Environment.
+Give command as    cd /sonnet/ftpdir/acuonline/     press enter.
+ ls    ----  list all files.
+ sudo rm/2023*   -- delete the files of the year 2023.
+Response to the ticket in the Zendesk.
+
+
+
+

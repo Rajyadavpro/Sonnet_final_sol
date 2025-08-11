@@ -1,0 +1,22 @@
+Questionnaire on Topics Covered in the Meeting:
+1. What is the primary function of the Sonnet system?
+Answer: The primary function of the Sonnet system is to act as an interface for E-Oscar, fetching information from it and making that information available to clients either through the UI or by sending specific details about the process.
+2. What are the three main entities in the Sonnet database structure?
+Answer: The three main entities in the Sonnet database structure are organization, company, and team. However, in practice, it is always the company that leads and owns the artifacts in the database.
+3. What are the key components involved in the Sonnet workflow?
+Answer: Key components involved in the Sonnet workflow include the E-Oscar connector, Sonnet API, system of record connectors, rules engine, notary service, and the front tab.
+4. How does the Sonnet system handle attachments and images?
+Answer: Attachments and images are converted to TIFF files and extracted as JPEGs using VIPs. The Move Images service handles the movement of these files to the appropriate locations, ensuring they are available for client consumption.
+5. What is the role of the rules engine in the Sonnet system?
+Answer: The rules engine provides a tentative response for disputes, making it easier for users to validate or change the response. It also includes features like "no touch" responses for certain conditions.
+6. What is the purpose of the Sonnet API?
+Answer: The Sonnet API allows clients to interact with Sonnet without using files, providing them with information about active disputes, responses, notifications, and attachments.
+7. How does the Sonnet system ensure data consistency and security?
+Answer: The Sonnet system ensures data consistency and security by moving away from direct database access, using API endpoints instead, and implementing periodic triggers and cron jobs for synchronization.
+8. What challenges are associated with the current Sonnet system?
+Answer: Challenges include reliance on shared database access, dependency on cron jobs, sequential data processing, and the need for manual intervention in case of failures.
+9. How does the Sonnet system handle errors and retries?
+Answer: The Sonnet system is designed to be resilient, with most processes being retrievable. If something fails, the process can be restarted, and everything goes back into place without affecting other components.
+10. What improvements have been made to the Sonnet system over time?
+Answer: Improvements include migrating from web scraping to using APIs, implementing a rules engine for automated responses, and enhancing the Move Images service for better handling of attachments.
+These questions and answers cover the key topics discussed in the meeting, providing a comprehensive overview of the Sonnet system and its components.

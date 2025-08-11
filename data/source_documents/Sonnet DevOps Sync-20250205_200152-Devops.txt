@@ -1,0 +1,21 @@
+Questionnaire on Topics Covered in the Meeting
+1. What is the purpose of the DevOps pipelines discussed in the meeting?
+Answer: The DevOps pipelines are used for evidence gathering, static code analysis, and deployments. Each repository has a straightforward pipeline hooked up to the SonarCloud environment for static code analysis. 0:27
+2. How are the pipelines configured for static code analysis?
+Answer: The pipelines perform a SonarCloud prepare, an analysis phase, and then publish the results. This setup is required for a security audit for static code analysis. 1:15
+3. What are the stages involved in the Sonnet app Main pipeline?
+Answer: The stages include building and scanning the code, deploying to UAT, and optionally deploying to production. The deployment to production is usually handled manually due to the need for quick hotfixes and customer requests. 4:50
+4. What is the role of the Sonnet user in the deployment process?
+Answer: The Sonnet user owns and runs all the services, including the web app. The deployment script resides in the home directory of the Sonnet user and handles various tasks such as checking for access tokens, running Laravel artisan commands, and managing hard-coded changes. 7:56
+5. How are the environments and agent pools organized?
+Answer: There are separate agent pools for each environment, including CQA, Dev, Prod, and UAT. These are self-hosted Linux boxes (Ubuntu Pros) used as pipeline agents. 11:40
+6. What is the purpose of the Azure Configurator repository?
+Answer: The Azure Configurator repository contains scripts to configure servers, including Apache, PHP, and other necessary packages. These scripts are manually triggered to set up the server environment. 15:05
+7. How are code changes merged and deployed to UAT?
+Answer: Code changes are merged through pull requests (PRs) and trigger the pipeline after meeting certain criteria, such as multiple approvers and linking to a work item in DevOps. The deployment to UAT is then handled through the pipeline. 24:18
+8. What are the key components of the deployment script?
+Answer: The deployment script includes tasks such as checking for access tokens, running Laravel artisan commands, managing hard-coded changes, and running NPM commands for production. 10:03
+9. What are the challenges mentioned regarding the current pipeline setup?
+Answer: The current pipeline setup faces challenges such as deprecated SonarCloud tasks, the need for manual deployments due to quick hotfixes, and the use of self-hosted agents due to internal VNet structure. 3:31
+10. What are the future improvements suggested for the pipeline setup?
+Answer: Future improvements include upgrading the pipeline to handle a full build within the pipeline agents, enhancing test cases, and integrating more automated processes to reduce manual interventions. 28:30

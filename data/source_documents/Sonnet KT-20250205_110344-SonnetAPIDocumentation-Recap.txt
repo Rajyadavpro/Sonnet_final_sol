@@ -1,0 +1,13 @@
+Key Topics:
+Documentation Overview: Amanda provided an overview of the documentation in progress, focusing on the BRR data exchange and the different environments (production, development, CQA). 1:25
+ACDV Process: Amanda explained the ACDV process, including the steps involved in handling disputes, the importance of the sonnet ID, and the possible actions clients might take based on their internal policies and procedures. 3:42
+Debug Functionality: Amanda discussed the debug functionality, which helps in troubleshooting during the implementation process and can be used by clients to generate debug records for troubleshooting in production. 7:43
+Step 2 Refresh: Amanda explained the Step 2 refresh function, which allows clients to keep their data updated by sending sonnet updated Step 2 information regularly. 8:33
+Step 3 Process: Amanda described the Step 3 process, where users work on disputes in active status, complete them, and sonnet sends them back to E Oscar. The details of each dispute are then retrieved using the sonnet ID. 11:07
+Image Handling: Amanda explained the process of handling images associated with disputes, including the ability to redownload images if needed and the limitations on the number of image files per dispute. 13:04
+Direct Disputes: Amanda discussed the direct disputes process, which involves users uploading documents to sonnet, reviewing them, and sending Step 2 posts. Verbal disputes are also handled in a similar manner. 23:30
+Notifications: Amanda explained the handling of notifications, which are essentially read-only and do not require a response. These notifications are downloaded and end up in Step 3. 25:44
+Block Rescission: Amanda mentioned that the block rescission process is similar to notifications, where users create and complete block rescissions, and they end up in Step 3. 29:29
+First and Third Party Differentiation: Amanda highlighted the differences between first and third party disputes, including the required fields and the complexity of decisioning for first party disputes. 30:34
+BRR in Production: Lidiexy clarified that the BRR functionality is in production but not widely used by customers yet. The documentation is still being updated to reflect this. 31:17
+Authorization and Authentication: Lidiexy introduced the authorization and authentication methods for the sonnet API, including API tokens and mutual TLS for customers requiring additional security. 32:12

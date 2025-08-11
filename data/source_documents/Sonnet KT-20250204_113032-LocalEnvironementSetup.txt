@@ -1,0 +1,26 @@
+Questionnaire on the Topics Covered in the Meeting
+1. What is the initial setup process for the local development environment?
+Answer: The initial setup involves cloning the project, touching the `.env` file, and installing a supported provider like VirtualBox or Parallels. Then, you need to install Vagrant and Homestead, configure the `Homestead.yaml` file, and map the necessary folders and sites. 1:47
+2. What are the key configurations in the `Homestead.yaml` file?
+Answer: Key configurations include specifying memory, CPU cores, IP address, provider (VirtualBox or Parallels), and mapping local folders to the vagrant environment. Additionally, you need to set up the public key for authorization and configure the sites and features. 5:51
+3. How do you handle PHP version compatibility in the local setup?
+Answer: The project requires PHP 8.2 for compatibility with Composer packages. It is recommended not to use older PHP versions like 7.2 or 7.4 due to package compatibility issues. 9:30
+4. What steps are involved in setting up Vagrant and Homestead?
+Answer: After configuring `Homestead.yaml`, you need to run `vagrant up` to start the virtual machine. If there are large changes to the YAML config, use `vagrant reload --provision`. SSH into the vagrant box and ensure the directory structure and permissions are set correctly. 14:50
+5. What are the necessary permissions for the project directories?
+Answer: Set the proper permissions using `chown -R vagrant:www-data` for the `sonnet` directory and `chmod 777` for `bootstrap/cache` and `storage` directories to ensure they are writable. 18:20
+6. How do you install project dependencies?
+Answer: Start with `composer install` to install PHP dependencies. For JavaScript dependencies, use NVM to install Node.js and run `npm install`. 19:24
+7. What is the purpose of the `.env` file in the project?
+Answer: The `.env` file contains environment-specific configurations such as application keys, database connections, and other service credentials. It is essential for setting up the local environment correctly. 29:43
+8. How do you handle Redis configuration in the development environment?
+Answer: Redis can be set to true or false in the `Homestead.yaml` file. It is recommended to set it to true for caching purposes, but it can be disabled if necessary. 13:34
+9. What are the steps to generate a new application key?
+Answer: Use the command `php artisan key:generate` to create a new application key, which will be automatically added to the `.env` file. 25:03
+10. How do you run the web application locally?
+Answer: After setting up the environment and installing dependencies, run `npm run dev` to compile assets and start the development server. Access the application through the mapped domain specified in the `Homestead.yaml` file. 26:35
+11. Where can you find Apache logs in the vagrant environment?
+Answer: Apache logs can be found in the `/var/log/apache2` directory within the vagrant virtual machine. 28:14
+12. What is the role of the Azure Configurator repository?
+Answer: The Azure Configurator repository contains scripts for setting up various projects and services on the servers, including configurations for Apache, key management, and other essential services. 37:40
+These questions and answers cover the main topics discussed in the meeting, providing a comprehensive overview of the local development setup and related configurations.

@@ -1,0 +1,5 @@
+All fields available in CrBurInfoInq service 
+
+
+
+

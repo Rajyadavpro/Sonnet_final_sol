@@ -1,0 +1,60 @@
+
+© 1999-2014 Jack Henry & Associates, Inc.
+All rights reserved. Information in this document is subject to change without notice.
+Printed in the United States of America.  
+
+No part of this document may be copied, reproduced, stored in a retrieval system, displayed, distributed or transmitted in any form or any means whatsoever (electronic, mechanical or otherwise), including by photocopying or recording for any purpose, without the prior written permission of Jack Henry & Associates, Inc.  Making unauthorized copies of this document for any purpose other than your own personal use is a violation of United States copyright laws.
+Any unauthorized use of Jack Henry & Associates, Inc.’s trademarks and service marks is strictly prohibited. 
+
+The following marks are registered and unregistered trademarks and service marks of Jack Henry & Associates, Inc.:
+3rd Party Sweep™; 4|sight™; Account Analysis™; Account Cross Sell™; Account Cross Sell Jumpstart™; Account Number Change™; ACH/Check Conversion Services™; ACH Client™; ACH Manager™; ACH Origination/Processing™; Advanced Reporting for Credit Unions™; AlertCenter™; AlertManager™; AllAccess™; Alogent®; Alogent® Back Counter™; Alogent® Commercial Remote Deposit™; Alogent® Enterprise Duplicate Detection™; Alogent® Front Counter™; Alogent® Image ATM™; Alogent® Mobile Remote Deposit™; Alogent® Payment Web Services™; Alogent® Payments Gateway™; Alogent® Retail Remote Deposit™; Andiamo™; Annual Disclosure Statement Online™; ArgoKeys®; ArgoKeys® Branch Sales Automation™; ArgoKeys® DepositKeys™; ArgoKeys® LendingKeys™; ArgoKeys® RelationshipKeys™; ATM Manager Pro®; ATM Manager Pro® – Asset & Site Management™; ATM Manager Pro® – Cash Management™; ATM Manager Pro® – Event Management™; ATM Manager Pro® – Financial Management™; AudioTel™; Basel II Pro™; Biodentify™; BladeCenter™; BondMaster™; Branch Deposit Reporting Pro™; Brand Management Services™; BusinessManager®; Call Report Pro™; Cash Automation™; Cash Dispenser™; Cash Recycler™; Centurion Business Continuity Planning™; Centurion Business Recovery Consulting Group™; Centurion Co-Location™; Centurion Disaster Recovery®; Centurion Emergency Notification™; Centurion Enterprise-Level Recovery™; Centurion Episys Hosted Failover™; Centurion Hosted High Availability™; Centurion LiveVault™; Check 21 Cash Letter™; Check 21 Exception Processing™; CheckCollectPlus™; Check Collect Recovery Services™; CheckMaster™; CheckMaster Plus™; Check Writer for Core Director®; CIF 20/20®; Co-Mingle™; Cognos 10™; Collateral and Document Tracking™; Compliance Access™; Core Director®; Core Director® Teller™; Core Director® Teller Capture™; CreātaCard®; Cruise®; CruiseNet®; CTRMaster™; CUPRO® ALM™; CUPRO® ALM Express™; Customer Payment Portal™; Database Cleansing Package™; DataLink CU™; Demand Account Reclassification™; DIME™ (Document Image Management Engagement); DirectLine International™; DirectLine® OFX; DirectLine Wires™; Dynamic Content Modules™; ECS Capture Solutions™; ECS Digital Data Conversion™; ECS Paper-to-Digital Conversion™; ECS Web™; eCTR™; Electronic Statements™; Electronic Statements – Interactive™; Enhanced Account Analysis™; Enhanced Loan Application™ (ELA); Enhanced Loan Collections™; Enhanced Member Application™ (EMA); Enterprise Backup and Tape Encryption™; Enterprise Capture Solutions™; Enterprise Conversion Solutions™; Enterprise Payment Solutions™; Episys®; Episys® Anywhere™; Episys® Collateral and Document Tracking™; Episys® Collection Toolkit™; Episys® Dealer Reserve Accounting™; Episys® Escrow Module™; Episys® ID Scanner Interface™; Episys® Management Server™; Episys® Overdraw Tolerance™; Episys® Quest™; Episys® University™; Episys® Vaulting™; Episys® Virtualization™; EPS Remote Deposit Capture™; Extra Awards®; Failover™; Fed-File Pro™; FlexPass™; FormSmart™; FX Gateway™; Genesys Check Imaging Suite™; Gladiator®; Gladiator® Advanced Malware Protection™; Gladiator® Consulting Services™; Gladiator® CoreDEFENSE Managed Security Services™; Gladiator® eBanking Compliance Services™; Gladiator® eCommercial SAT™; Gladiator® Enterprise Network Design, Implementation & Support Services™; Gladiator® Enterprise Security Monitoring™; Gladiator® Enterprise Virtualization Services™; Gladiator® eSAT™; Gladiator® eShield™; Gladiator® IT Regulatory Compliance/Policy Products™; Gladiator® Managed IT Services™; Gladiator® Managed Unified Communications Services™; Gladiator® NetTeller® Enterprise Security Monitoring™; Gladiator® Network Services™; Gladiator® Phishing Defense and Response Service™; Gladiator® Social Media Compliance Services™; Gladiator Technology®; Gladiator® Unified Communications Services™; goDough®; GoldPass™; Hosted Pay Page™; iBizManager™; Image ATM™; Image ATM Capture and Reconciliation™; ImageCenter™; ImageCenter ATM Deposit Management™; ImageCenter Image Capture™; ImageCenter Interactive Teller Capture™; Intellix CIF 20/20® OutLink Renewal Engagement™; Intellix Consulting™; InTouch Voice Response®; Investor Servicing™; iPay Biz 2.0™; iPay Consumer Online Bill Pay™; iPay OneClick™; iPay Payment Data API™; iPay QuickPay™; iPay Solutions™; iRisk™; Isosceles™; iTalk™; Jack Henry & Associates, Inc.®; Jack Henry Banking®; JHA Consumer Pieces™; JHA Merchant ServicesSM; JHA OutLink Processing Services™; JHA Payment Processing Solutions®; jhaAddress Verify™; jhaCall Center™; jhaDirect®; jhaEnterprise Workflow™; jhaID Scan™; jhaKnow™; jhaKnow Express™; jhaPassPort Debit Optimizer™; jhaPassPort™; jhaPassPort.pro™; jhaPassPort Direct™; jhaPassPort Extra Awards™; jhaPassPort Fraud Center™; jhaPassPort Hot Card Center™; jhaPassPort Promotions and Consulting Services™; jhaPassPort Switch™; jhArchiveSM; jVault®; jXchange™; Know-It-All Credit Programs™; Know-It-All Education™; Know-It-All Learning Management Portal™; Know-It-All Now™; Landlord/Tenant Security Deposit Tracking™; LendingNetwork®; Loan Collateral Tracking™; Margin Maximiser Interactive™; Margin Maximizer Interactive™; Margin Maximiser MaxConnect™; Margin Maximizer MaxConnect™; Margin Maximiser Pronto™; Margin Maximizer Pronto™; Margin Maximiser Suite®; Margin Maximizer Suite®; MasterlinkSM; MaxConnect Interactive™; MedCashManager®; Member Business Services™; Member Privilege™; Merchant Deposit Capture™; Mobile Website™; Multifactor Authentication™; Mutual Fund Sweep™; Net.Check™; NetTeller®; NetTeller® Bill Pay™; NetTeller® Cash Management™; NetTeller® Member Connect™; NetTeller® Online Banking™; OnBoard Loans™; OnNet™; OnX™; OpCon™; Opening Act™; Opening Act Express™; Optimizer™; Participation Lending™; PassBook™; PointSM; PointMobilitySM; PowerOn®; PowerOn2™; PowerOn Marketplace®; PowerOn® Studio™; PPS ImageSelect™; Prepaid Cards™; Professional Consulting Services™; PROFITability®; Organizational PROFITability® Analysis System™; Product PROFITability® Analysis System™; PROFITability® Budget™; PROFITability® Reporting Service™; PROFITstar®; PROFITstar® ALM Budgeting™; PROFITstar® Budget™; PROFITstar® Classic™; PROFITstar® Reporting Service™; ProfitStars®; ProfitStars® Direct™; ProfitStars mRDC™; ProfitStars Synergy®; Real Time™; Real Time Gateway™; Refi Analyzer™; Regulatory Reporting Solutions™; Relationship 360™; Relationship Profitability Management™ (RPM); RemitCentral™; RemitPlus®; RemitPlus® Remittance/Lockbox™; RemitWeb™; Remote Deposit Anywhere™; Remote Deposit Capture™; Remote Deposit Complete™; Remote Deposit Express™; Remote Deposit Now™; Remote Deposit Scan™; RPM Reporting Service™; Shared Branch™; SigMaster™; Silhouette Document Imaging®; SilverLake System®; Smart EIP™; Smart GL™; SmartSight®; smsGuardian™; Store Forward™; StreamLine Platform Automation®; StreamLine Platform Automation® – Deposits™; StreamLine Platform Automation® – Loans™; Summit Support®; Sweep Account Processing™; SymAdvisor™; SymChoice Loan™; SymConnect™; SymForm™; SymForm PDF™; Symitar®; Symitar® ATM Services™; Symitar® Fraud Management™; Symitar® EASE™; SymX™; SymXchange™; Synapsys®; Synapsys® Lobby Tracking™; Synapsys® Member Relationship Management™; Synergy API Integration Toolkit™; Synergy AutoImport™; Synergy Automated Document Recognition™ (ADR); Synergy Batch Document Recognition™ (BDR); Synergy Check Archive™; Synergy DataMart™; Synergy Document Management™; Synergy Document Tracking™; Synergy eDistribution™; Synergy Enterprise Content Management™ (ECM); Synergy eSign™; Synergy eSignWeb™; Synergy Express™; Synergy ID Scan™; Synergy iSign™; Synergy Kofax Capture™; Synergy PowerSearch™; Synergy Reports™; Synergy Workflow Management™; TeleBank™; TeleWeb Bill Payment™; TeleWeb Cash Management™; TeleWeb Mobile™; TeleWeb Online Banking™; TellerMaster™; TheWayiPay®; TimeTrack Human Resources™; TimeTrack Payroll System™; TimeTrack Time and Attendance™; Transaction Logging and Vaulting Server™; Transaction Logging Server™; ValuePass™; Vehicle Pricing Interface™; Vertex Teller Automation System™; Vertex Teller Capture™; Virtual Transaction Logging Server™; WebEpisys™; Website Design & Hosting™; Website Security Services™; Wire Management™; Yellow Hammer™; Yellow Hammer ACH Origination™; Yellow Hammer BSA™; Yellow Hammer BSA Regulatory Consulting Service™; Yellow Hammer EFT Fraud Detective™; Yellow Hammer Fraud Detective™; Yellow Hammer SAR Center™; Yellow Hammer Wire Origination™; Xperience™
+
+Slogans
+Cutting-Edge IT Solutions for the Future of Credit UnionsSM; Know-It-All – Empowering Users Through KnowledgeSM; Leading through technology … guiding through supportSM; Powering Actionable InsightSM; Snap it Send it Spend it®; The Depth of Financial IntelligenceSM; We Are Looking Out For YouSM; Where Tradition Meets TechnologySM 
+
+Various other trademarks and service marks used or referenced in this document are the property of their respective companies/owners.
+
+
+
+Purpose:
+The purpose of this document is to provide an extra layer of certainty as to the end goals of the project before entering into the development phase.  
+
+This helps identify any GAP items that may exist and allows for them to be addressed pro-actively instead of being discovered once the actual development work is underway.
+
+What is a Use Case?
+
+In software and systems engineering, a use case is a list of steps, typically defining interactions between an “actor” and a system to achieve a goal.
+
+For the purposes of consuming jXchange services, the actor is the Consumer and the system is the Provider.
+
+A typical jXchange use case would include the following focal points:
+
+Purpose/Summary – a high level description of the goals of the specific scenario
+Operation(s) being used if known, if not N/A is fine and this can be worked through during the GAP analysis call with the Business Analyst.
+Parameters/Values that will be supplied to the requested Operation
+Parameters/Values expected or required from the response in order to fulfill the use case objective.
+ Example:
+Use Case #1: Ping the endpoint to make sure services are active
+
+Purpose/Summary:
+
+As a consumer I plan to send a ping request to the service gateway endpoint to ensure that the services are up and running.  I will send a message such as “Hello jXchange” in the request and I will expect to receive my message echoed back if everything is up and running.
+
+Operation:
+
+PING
+
+Request Parameters/Values:
+
+Ping Request Element: Hello jXchange
+
+Response Parameters/Values:
+
+Ping Response Element: Hello jXchange 
+Please list out any known use cases below:
+
+Use Case #1: Search by Account Number.
+Purpose/Summary: Search the Account Number related to the downloaded ACDV.
+Operation(s): 
+Request Parameters: getAcct
+Response Parameters: <What data will be utilized from the operation>

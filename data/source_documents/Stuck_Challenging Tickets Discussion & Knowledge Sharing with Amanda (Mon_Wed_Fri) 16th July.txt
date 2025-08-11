@@ -1,0 +1,639 @@
+Transcript
+July 16, 2025, 5:28PM
+
+Manjunath S started transcription
+
+Amanda Gilbert   0:10
+Are we recording this?
+
+James Maki   0:13
+Yes, we are recording now Majhi. Justin Majhi just started.
+
+Amanda Gilbert   0:14
+OK.
+Just making sure.
+
+James Maki   0:19
+Oh, and then I made it.
+I do actually see what Andrew was talking about with the receipts.
+So there's some out there on the server from today.
+And so he's talking about like, all these account numbers, I guess should all be like the same length, is what he's looking for.
+So like some of these like delete zeros are being dropped off.
+
+Amanda Gilbert   0:42
+Mm hmm.
+
+James Maki   0:43
+But it's not from one specific Bureau, so I did pull up a couple of those.
+So there's like one from Experian and one from TransUnion.
+So it's not dependent on anything like that.
+But but this is what he's talking about, though, is.
+
+Amanda Gilbert   0:58
+Yeah, I see.
+I don't know what he wants us to do about it because he's got that other one right to stop the truncating.
+And now there's this one.
+
+James Maki   1:10
+Yeah, yeah.
+
+Amanda Gilbert   1:11
+And if he had it his way, he's gonna say pat it with zeros so that it gets to the 10 digits.
+Like what are we doing here?
+Are we padding or do you want us to just not truncate anymore?
+Send it as is.
+So what are we doing?
+He needs to figure it out.
+Or we're gonna start charging him.
+
+James Maki   1:33
+Yes.
+Alright, I just wanna show that real fast.
+
+Amanda Gilbert   1:47
+Can we look?
+At the problem 23291 real quick like there's only a couple tickets open still.
+But Supriya one of them doesn't look like it's related.
+
+Supriya Siddappa Kulageri   2:10
+Oh yes.
+Oh, American Airlines.
+
+Amanda Gilbert   2:18
+Nope. Figure.
+
+Supriya Siddappa Kulageri   2:22
+Yes.
+
+Amanda Gilbert   2:24
+Why did you associate it with this problem ticket?
+
+Supriya Siddappa Kulageri   2:32
+I'm not sure.
+I think I gave all of them at one shot, maybe in that it went by mistake.
+
+James Maki   2:44
+I can either share your screen also so we can see the ticket.
+
+Supriya Siddappa Kulageri   2:51
+Yeah.
+
+Amanda Gilbert   3:10
+So this one looks to be like a completely separate.
+
+Supriya Siddappa Kulageri   3:15
+Yes.
+
+Amanda Gilbert   3:15
+Question. So it should not be associated with this problem.
+Right. Would you agree with that?
+
+Supriya Siddappa Kulageri   3:30
+Yes, I removed that.
+
+Amanda Gilbert   3:33
+OK.
+So this one should be separate.
+And he's just asking a couple questions.
+So Supriya I would fix your comment to them and and I would just say.
+My apologies, I associated your request with an unrelated issue.
+
+Supriya Siddappa Kulageri   3:59
+Who?
+Yes, I will do that.
+
+Amanda Gilbert   4:04
+OK. And then just say I'm working on getting you the answers to your questions about Doctor Notifications.
+
+Supriya Siddappa Kulageri   4:10
+OK.
+
+James Maki   4:17
+Oh, are there still tickets open from the from the server being down from that issue?
+Like, are are those incidents? Are all those still open?
+
+Amanda Gilbert   4:27
+So there's only a couple that I'm seeing now.
+That was one that we just went through.
+There's one for eight ACU, and then there's one impending.
+I can share my screen.
+I got it up.
+So here it is.
+But I wanted James.
+I wanted to make sure we got everything attached.
+To this, so Supriya Manju. I just want to make sure you guys like when you're working through these tickets and you're you. I you got the problem right? Supriya, you did the right thing by creating like an individual problem that kind of like is your main problem and.
+Then you attach everything to it.
+It's really important that you attach to the right problem, because.
+'Cause like if worth if you guys are thinking like you're getting all these tickets in, right.
+And you're like, Oh my gosh, we have a problem.
+Oh, there's 16 incidents attached to it that makes it a high priority item, right?
+There's multiple tickets associated with one problem, so the dev team should focus on that because that means that you can close 16 tickets if they can resolve it.
+So it's just important that we associate properly.
+See what this is?
+So.
+
+Supriya Siddappa Kulageri   5:58
+No, actually they were asking about the, you know, is the image file.
+
+Amanda Gilbert   6:05
+Yes. So why did you tell them that?
+
+Supriya Siddappa Kulageri   6:08
+Yeah. And later I have corrected that.
+
+Amanda Gilbert   6:12
+OK.
+
+Supriya Siddappa Kulageri   6:13
+And sent them the correct response.
+
+Amanda Gilbert   6:17
+OK.
+
+Supriya Siddappa Kulageri   6:21
+And again, they came back.
+
+Amanda Gilbert   6:46
+OK.
+
+Supriya Siddappa Kulageri   6:51
+OK.
+So they are informing or like.
+
+Amanda Gilbert   7:09
+Maybe this is referring to 711, right?
+You said there was no innovis files, OK.
+They're saying there may not be a Step 2 file. OK, so maybe what you should do is.
+Check their data files.
+And you would.
+I would check them through like this data files view here.
+
+Supriya Siddappa Kulageri   7:33
+Yeah.
+
+Amanda Gilbert   7:34
+And I would check them everyday. I would just go through them like this.
+Here I'm going to go back to the 11th.
+I'm going to look.
+
+Supriya Siddappa Kulageri   7:41
+Learn.
+
+Amanda Gilbert   7:41
+They only got a step one right, so they should have gotten a step three if they completed disputes.
+OK.
+So they got one on Monday, so that would have contained everything and then they got, they got 2 on Monday.
+That looks like when you were working the ticket, and then there's two on.
+One is probably AUD S, though, so there's two on the 15th, so it looks like they're good.
+I I think we've got everything.
+
+James Maki   8:16
+Yes, there's nothing.
+Waiting for data.
+
+Supriya Siddappa Kulageri   8:20
+MMM.
+
+Amanda Gilbert   8:23
+So I would say for this one that you could tell them Supriya that we confirm the data file exchange is.
+Running as expected.
+
+Supriya Siddappa Kulageri   8:37
+Hmm.
+
+Amanda Gilbert   8:37
+Since Monday.
+All of the image and all of the batch files have been sent, and those that you have sent we have received.
+Please let us know if there's anything else we can help you with and then you should be able to get rid of this ticket.
+
+Supriya Siddappa Kulageri   8:54
+Yeah, I will do that.
+
+Amanda Gilbert   8:56
+OK.
+
+James Maki   8:58
+So just to add an extra layer to this like part of the reason that we don't receive a Step 2 file every day from them is because they're also exchange client.
+And so if I remember right, these guys are kind of a hybrid like where they're kind of doing some of both.
+
+Amanda Gilbert   9:08
+Oh yeah.
+
+James Maki   9:15
+And so that's why we don't always get to Step 2 file back.
+That's because if I remember right, I could.
+I could be wrong.
+I might be confused with someone else, but I think they might be working at a two different systems.
+I think is why that's a thing. And so I think like the.
+Just so two files from like a different, uh, a different system of record. I think that's what Andrea told me.
+
+Amanda Gilbert   10:06
+OK.
+What else?
+I'm still sharing, but you guys are welcome to share and pull up the ticket. Follow along.
+
+Saravanabhavan S   10:26
+Umm.
+Hello.
+Amanda. So we have received one more acvda error, the same 22999 we forgot for self bank.
+So even hello.
+
+Amanda Gilbert   10:50
+OK.
+
+James Maki   10:50
+Yeah, we hear you. We hear you.
+
+Saravanabhavan S   10:52
+Yeah. So even I tried to date that one that duplicate things still they are getting this error.
+
+James Maki   11:05
+All right. So so there's no duplicate there. So check the other.
+
+Saravanabhavan S   11:08
+No, there is no problem.
+
+James Maki   11:10
+So check the other table that we were looking at response queue.
+
+Amanda Gilbert   11:14
+MMM.
+
+Saravanabhavan S   11:17
+OK, we have to check in the response queue.
+
+James Maki   11:20
+Yeah.
+So. So. So in your in your query.
+We're going to change the table name change that change that from E Oscar response, change that to response queue.
+Alright and look there.
+And there's her duplicate.
+
+Saravanabhavan S   11:53
+OK.
+So it can be duplicates from 2 table also.
+
+James Maki   11:58
+Yes.
+
+Saravanabhavan S   12:00
+OK.
+OK.
+So this one Amanda.
+
+James Maki   12:18
+Alright, can you?
+Can you click on the person on your on the right side of your screen?
+Like the like the profile? Yeah, there just so we can read the tickets a little bit easier.
+
+Amanda Gilbert   12:32
+So this one I.
+Follow up to so. If you go back to to. Yeah. To go back to that ticket.
+And I think.
+So read the last couple comments.
+And it just went wrong.
+OK so.
+
+Saravanabhavan S   12:53
+So.
+
+Amanda Gilbert   12:55
+There.
+
+Saravanabhavan S   12:57
+So when choosing last six months, I'm getting still getting error message.
+Any other options such as 30 days works?
+
+Amanda Gilbert   13:07
+Yep.
+
+Saravanabhavan S   13:09
+So when they are trying to push that for six months, they are getting error.
+So we don't have like that much of capacity to get six months.
+
+Amanda Gilbert   13:14
+Mm H.
+
+Saravanabhavan S   13:22
+Dispute summary report maybe?
+
+Amanda Gilbert   13:27
+There's two things here, right?
+Number one, I thought there was a fix in that.
+Didn't time out the page as quickly while it was waiting on results so that they would be able to run a longer report.
+So we need to confirm with Dev.
+Like what did you actually fix?
+And then the second part is the client.
+We said, hey, there's been a fix and the client came back and they said, well, it's still not working for us. And we said, OK, thanks for the confirmation and just close the ticket.
+So that's why it got reopened.
+
+Saravanabhavan S   14:08
+OK.
+
+Amanda Gilbert   14:09
+Did you see that where we did that?
+Yeah, you said.
+Thanks for the confirmation, Armand.
+You did, but right above that the client is saying like, hey, it's still not working.
+So I don't know.
+
+Saravanabhavan S   14:24
+OK.
+
+Amanda Gilbert   14:25
+Did did we put a fix in to fix something else and we assumed that it was going to fix this.
+Or did they actually fix this because it's not standard for us to allow a client to run a huge report like that because it's like not going to generate for them?
+
+Saravanabhavan S   14:47
+OK.
+
+Amanda Gilbert   14:48
+So that's what I want to know.
+Like, did we really fix it?
+Was that the intended fix or we just grouping this together with everything else and this is a separate issue?
+
+Saravanabhavan S   15:28
+Hello.
+
+Amanda Gilbert   15:31
+Yes.
+
+Saravanabhavan S   15:32
+OK.
+OK then.
+
+Amanda Gilbert   15:34
+So so this is what you need to do.
+
+Saravanabhavan S   15:39
+OK.
+
+Amanda Gilbert   15:40
+You need to look at the original DevOps links DevOps link in the first task and then you need to reach out to the dev team and you need to understand what they think they fixed.
+
+Saravanabhavan S   15:46
+OK.
+OK.
+OK.
+
+Amanda Gilbert   15:57
+So ask them to tell you what they fixed and then let me know.
+
+Saravanabhavan S   15:57
+OK.
+OK.
+OK.
+
+Amanda Gilbert   16:03
+And we'll decide what to do next.
+
+Saravanabhavan S   16:05
+OK.
+This one Amanda that was here.
+He's returning data easily, working less than 50%.
+
+Amanda Gilbert   16:27
+OK.
+So this one needs.
+
+Saravanabhavan S   16:30
+So.
+
+Amanda Gilbert   16:33
+To go to Dev with that feedback.
+And.
+I would say.
+That you need a user story. So create a user story, put it in Sprint 101.
+And then make sure it's tied to this.
+Task.
+
+Saravanabhavan S   17:15
+So we have to create for the useful story.
+
+Amanda Gilbert   17:18
+Yes.
+Not this one.
+The possible one meets the user story.
+This one.
+
+Saravanabhavan S   17:36
+Hey, Samantha.
+So actually the dev op access was we are not able to access the dev OPS.
+So we getting a trial was done. So we not be able to create.
+
+Amanda Gilbert   17:52
+OK.
+Well, can you go directly to DevOps?
+It's taking so long.
+
+Saravanabhavan S   19:33
+Metal tube issue and things.
+
+Amanda Gilbert   19:36
+OK.
+Just go to the top and hit that little plus symbol.
+Right there.
+Where it says sonnet on the left side.
+Go to the left.
+
+Saravanabhavan S   19:52
+This one I want.
+
+Amanda Gilbert   19:53
+Go to the left.
+Your other left left all the way to the other side of the screen.
+Keep going.
+You're almost there.
+See the little plus where it says sonnet.
+Alright.
+Do you see the little plus symbol to your left?
+Just look right to your left where that purple S is next to sauna. Keep going.
+You're so close.
+There you go. Hit that.
+New work item user story.
+User story.
+OK.
+Create a title and your title should be like.
+OCR improvement.
+Need improvement needed based on user feedback.
+And 1:01.
+Perfect.
+And then you might want to reference the ticket number in the subject. Also you can just put like zdt and then put the ticket number and then.
+23192.
+192 perfect.
+And then I think for the description you can just.
+You can just copy what the client says.
+In this case, they said it pretty good.
+We'll put it in the right user story format.
+But just so see where it says description.
+
+Saravanabhavan S   22:31
+OK.
+
+Amanda Gilbert   22:34
+Yeah, just expand that and then just copy and paste it right there and then you can tell the client that we've assigned it to the development team.
+I'll wait for you.
+
+Saravanabhavan S   22:45
+S.
+
+Amanda Gilbert   23:27
+That'll work.
+So save it.
+OK.
+And now it disappeared.
+So we have to find it.
+So put the search for the ticket number there at the top where it says search.
+Hit enter.
+No where did it go.
+You might have to refresh.
+See if I can find it.
+We might have to go to the Sprint Board 101 'cause. That's where you placed it.
+Maybe it's there.
+Yeah, so I found it.
+So go to sprints on the left side.
+All right.
+And then once it loads, change your iteration to 101.
+You see it right there at the top where it says iteration.
+Yeah. Change it to 101.
+Change your.
+Where it says support up at the top right there, change it to Sonnet team.
+OK.
+Click backlog so you're viewing the task board, which is difficult to view. So hit the backlog tab.
+There you go.
+All right. So with the one we just created is #7.
+So if you right click on it.
+For that.
+So you can copy it two ways.
+You can go to the three the the ellipses in the top right and you can click there and hit copy link.
+Perfect. Now go put it on the ticket.
+So this would be direct.
+
+Saravanabhavan S   26:05
+Who was in?
+
+Amanda Gilbert   26:10
+There's no direct here.
+OK.
+So I guess dispute management, which is everything.
+OK.
+
+Saravanabhavan S   26:56
+So priority is not locking. Amanda. Amanda.
+
+Amanda Gilbert   27:01
+OK.
+So you're gonna tell her hi.
+Thank you for the feedback.
+We have sent this over to our development team so that they can work to improve your OCR results.
+
+Saravanabhavan S   27:07
+Yeah.
+OK.
+
+Amanda Gilbert   27:15
+It is assigned.
+And currently scheduled for resolution.
+You can say.
+Mid August, so you can just say approximately mid August 'cause we put it in the next Sprint so.
+
+Saravanabhavan S   27:35
+Mid August.
+
+Amanda Gilbert   27:38
+Yep.
+My response queue has OK.
+This one is the same thing as KIRO.
+This should.
+Be something that makes you go. Oh, something's wrong.
+So what did you do for KIRO? Was that you?
+
+Saravanabhavan S   28:34
+The response queue.
+
+Amanda Gilbert   28:38
+There was just a ticket we were talking about at the beginning of the call. That was KIRO.
+Right. I don't know who that was though.
+
+Saravanabhavan S   28:47
+Yes.
+
+Amanda Gilbert   28:48
+OK.
+So the exact same thing for them.
+
+Saravanabhavan S   28:53
+OK.
+
+Amanda Gilbert   28:55
+You you should just be able to go check and it should. It should be submitted now.
+So who can walk in through how to go check that?
+Who did the KIRO ticket?
+
+James Maki   29:08
+So pretty I had that one, I think.
+
+Saravanabhavan S   30:09
+Well, my dispute was not there, Amanda. So it was resolved, right?
+
+Amanda Gilbert   30:13
+The what wasn't there?
+Did you go to the response queue?
+So there's nothing there.
+Yep. So you can just tell him everything has been cleared out while you're there.
+
+Saravanabhavan S   30:29
+Yes.
+
+Amanda Gilbert   30:35
+I would check his there's two companies for M and TI would check them both.
+Since you're already there.
+
+Saravanabhavan S   30:45
+To company in Spain, so we have to go.
+
+Amanda Gilbert   30:48
+Yeah.
+Perfect. So you check them both. You can just let them know.
+I checked both and.
+The response queue is clear. Bam.
+
+Saravanabhavan S   31:16
+And.
+That's all from my.
+
+Amanda Gilbert   31:54
+All right, we have to drop.
+I gotta drop for another call, but we have another one on Friday and I think we made good progress.
+So snack stack em up for Friday.
+
+Saravanabhavan S   32:02
+OK.
+
+Amanda Gilbert   32:05
+Let's blow through them, just like we did now, OK?
+
+Saravanabhavan S   32:08
+OK.
+
+Manjunath S   32:09
+Show reminder.
+
+Amanda Gilbert   32:10
+See ya.
+Thank you. Good job.
+
+Saravanabhavan S   32:11
+Steve, thanks.
+
+Manjunath S   32:12
+Thank you.
+Thank you, Amanda.
+
+Supriya Siddappa Kulageri   32:14
+Thank you.
+
+Amanda Gilbert   32:15
+Thanks, bye.
+
+Saravanabhavan S stopped transcription

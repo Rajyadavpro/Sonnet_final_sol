@@ -1,0 +1,13 @@
+Questionnaire on the Topics Covered in the Meeting
+1. What are the main tools discussed for database management?
+Answer: The main tools discussed are the Azure portal, DB Forge, and pgAdmin. DB Forge is installed on the production and QA jump servers and is used for schema visualization and management. 0:04, 0:16, 0:30
+2. How many tables are in the schema, and what is the complexity of their interconnections?
+Answer: There are approximately 158 tables in the schema. Some tables are interconnected with dependencies and foreign keys, while others are not. The schema is complex and requires time to understand fully. 1:12, 1:23, 1:33, 1:43
+3. What is the significance of the 'dispute ID' in the database schema?
+Answer: The 'dispute ID' is a common key in many tables and is crucial for data originating from individual disputes, which is the basis of the Sonnet system. 2:19, 2:30, 2:37
+4. How are indexes managed and applied in the database?
+Answer: Indexes are suggested by Azure's index tuning tool, which captures query logs and provides recommendations. These recommendations are evaluated based on query performance and application benefit before being applied. Indexes are first tested in UAT before being applied to production. 8:20, 8:24, 9:03, 9:41
+5. What is the process for syncing databases between environments?
+Answer: Changes are first applied to UAT and tested. If approved, a change control ticket is created, and the changes are scheduled for production. There is no automatic promotion of changes; it is a manual process. 16:05, 16:10, 16:48, 17:01
+6. How are backups and disaster recovery handled?
+Answer: Backups are automatic and managed by Azure, with a 30-day retention policy. Restorations can be done to a point in time or a full restore. The process involves creating a new server with a unique name and using tools like DB Forge for data comparison and restoration.

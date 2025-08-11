@@ -1,0 +1,10 @@
+USECASE – When You click on the dispute id the page seems to be error.
+
+
+Step 1 – Go- to Pg-admin and execute the below query.
+Query - insert into facs_data_snapshot (dispute_id) values (18793248)
+
+Step 2 – Run the rules engine command in the command prompt until you find the company id.
+Step 3- Once the company is found refresh the page and check whether the dispute page is available or not.
+
+Step 4 – respond to the customer in the Zendesk.

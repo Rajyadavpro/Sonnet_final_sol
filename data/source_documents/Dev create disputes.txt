@@ -1,0 +1,20 @@
+Log on to server sonnetdataapidev.palinode.io
+	You must have the ec2_access.pem file for access
+	Open Bash window where you have the .pem file stored
+	Run command in Bash, use the folder path to where you have the .pem:
+$ ssh -i c:/Users/JamesMaki/Desktop/Dev/ec2_access.pem ubuntu@ec2-3-14-121-153.us-east-2.compute.amazonaws.com
+
+Navigate to the images directory:
+	$cd /sonnet/images
+Create directory for the new company and make sure permissions match the others
+	$sudo su sonnet
+	$mkdir companyabbreviation
+	Copy small, medium, large and larger.tif files to the new directory
+	$cp *.tif ./companyfolder
+Navigate to /sonnet/db-scripts
+	$cd /sonnet/db-scripts
+If you see these warnings when running the script:
+PHP Warning:  Attempt to read property "social_security_number" on null in /sonnet/db-scripts/make_api_newautonation.php on line 446
+PHP Warning:  Attempt to read property "date_of_birth" on null in /sonnet/db-scripts/make_api_newautonation.php on line 447
+
+Correction is to add “?? null” to those lines as shown:

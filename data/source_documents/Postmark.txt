@@ -1,0 +1,11 @@
+Website
+https://account.postmarkapp.com/login
+UN: palinode 
+PW: G.!'rh4|89fX 
+
+Go to
+Sonnet Mail -> Default Transactional Stream -> Activity
+You should see this screen:
+
+
+From here you can search by the user’s email address or the company domain.

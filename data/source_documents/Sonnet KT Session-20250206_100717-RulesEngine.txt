@@ -1,0 +1,32 @@
+Questionnaire on Topics Covered in the Meeting
+1. What is the primary focus of the meeting?
+The primary focus of the meeting is to discuss the setup and functionality of the rules engine, particularly in the context of Python environments and the handling of disputes.
+2. What are the prerequisites for setting up the rules engine in a local environment?
+To set up the rules engine, you need to have Python installed on your system, specifically versions 2.7 and 3.x. You also need to create a virtual environment and install the necessary packages listed in the requirements file. 1:32
+3. What are the main components of the rules engine discussed in the meeting?
+The main components include the dispute table, base segment, fax data snapshot, Oscar response, and fax response table. These components are used to manage and process disputes, set recommended responses, and handle custom logic for different customers. 18:10
+4. How does the rules engine handle custom logic for different customers?
+Custom logic is handled by creating individual files for each customer, which are then imported and called based on the company ID. This allows for specific rules and settings to be applied to different customers. 17:23
+5. What is the purpose of the dispute queue in the rules engine?
+The dispute queue is used to trigger the rules engine to process disputes. When a dispute is entered into the dispute queue, the rules engine picks it up and processes it according to the defined rules and logic. 14:58
+6. What are the different statuses a dispute can have, and how do they affect processing?
+Disputes can have statuses such as new, active, QA, WIP, and complete. The status determines how the dispute is processed by the rules engine. For example, a dispute in a complete status will not be processed further. 19:24
+7. What is the role of the compliance condition code in the rules engine?
+The compliance condition code is used to set specific values in the dispute response. It can be customized based on customer settings to use values from the SOR, leave it blank, or use the original dispute value. 33:08
+8. How does the rules engine handle no-touch logic?
+No-touch logic is defined by the customer and includes criteria for automatically processing disputes without manual intervention. It excludes disputes with images or FCRA relevant information and can be customized further based on specific phrases or conditions. 1:12:03
+9. What are the response codes used in the rules engine, and how are they determined?
+Response codes such as 01, 02, 03, 07, 21, 22, 23, and 24 are used to indicate the outcome of a dispute. They are determined based on the fields being updated and the specific dispute codes involved. 55:13
+10. What is the significance of the random integer function in the AUD rules engine?
+The random integer function is used to determine the percentage of disputes sent to QA for manual review. It assigns a number from 0 to 99, and if the number is less than 5, the dispute is sent to QA. 1:27:53
+Detailed Answers
+1. Primary Focus: The meeting primarily focuses on discussing the setup and functionality of the rules engine, particularly in the context of Python environments and the handling of disputes. 0:48
+2. Prerequisites: To set up the rules engine, you need Python 2.7 and 3.x installed, create a virtual environment, and install the necessary packages listed in the requirements file. 1:32
+3. Main Components: The main components include the dispute table, base segment, fax data snapshot, Oscar response, and fax response table, which are used to manage and process disputes. 18:10
+4. Custom Logic: Custom logic is handled by creating individual files for each customer, imported and called based on the company ID, allowing specific rules and settings to be applied. 17:23
+5. Dispute Queue: The dispute queue triggers the rules engine to process disputes, picking up entries and processing them according to defined rules and logic. 14:58
+6. Dispute Statuses: Disputes can have statuses like new, active, QA, WIP, and complete, affecting how they are processed by the rules engine. 19:24
+7. Compliance Condition Code: This code sets specific values in the dispute response, customizable based on customer settings to use SOR values, leave it blank, or use the original dispute value. 33:08
+8. No-Touch Logic: Defined by the customer, no-touch logic includes criteria for automatically processing disputes without manual intervention, excluding disputes with images or FCRA relevant information. 1:12:03
+9. Response Codes: Codes like 01, 02, 03, 07, 21, 22, 23, and 24 indicate the outcome of a dispute, determined by the fields being updated and specific dispute codes involved. 55:13
+10. Random Integer Function: In the AUD rules engine, this function determines the percentage of disputes sent to QA for manual review by assigning a number from 0 to 99, sending disputes to QA if the number is less than 5. 1:27:53

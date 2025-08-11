@@ -1,0 +1,15 @@
+
+USE CASE 9 - Disputes are in new state want to pushed over to active (Sym-exchange) or Load the dispute.
+
+Step 1 – Go to the sonnet and select the company.
+                                                                      
+Step 2 – Go to Pg-admin and type query as    à select id from dispute where company_id = ____ and sonnet_status = 'New'
+Step 3 – Once u execute the step 2 you will get the id below..
+
+Step 4 – Go to sonnet admin and select the rules engine queue from the dispute section and paste the id one by one and click submit.
+                                               
+Step 6 – Run the Rules engine command in the command prompt till u find the company id.
+
+Step 7 – Once you run the rules engine queue in the command prompt data waiting in the Sym-exchange should be changed to 0.
+                             
+Step 8 – Give a response and mark the ticket as solved.

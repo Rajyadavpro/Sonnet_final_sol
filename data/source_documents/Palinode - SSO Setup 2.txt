@@ -1,0 +1,77 @@
+Table of Content
+
+
+Introduction
+
+This document will guide you through the steps on how to create a custom Single Sign On (SSO) application in Azure Portal using Entra ID and SAML configuration. This will make it possible for Sonnet to provide SSO authentication for your users in your organization.
+The SSO ID is needed to begin the setup and is provided by Sonnet. The SSO ID is the string used to customize specific authentication URLs, only allowed to your organization. The sso_id placeholder will appear many times in this guide, make sure to replace it with your real SSO ID in your setup.
+After the SSO Application is created and configured in your organization environment, provide the following parameters to Sonnet:
+SSO application Login URL
+SSO application Logout URL
+Microsoft Entra Identifier
+Base64 encoded certificate (the .cer file provided by Entra ID)
+Depending on your organization policies, you can instead provide the Federation Metadata XML. file. That file can be downloaded at the end of the setup and contains all the information required by Sonnet.
+
+Creating a Custom Azure Application for Sonnet
+
+You will first create a custom Azure application. Sonnet will use this application within your organization to request login and logout actions through SAML. Ensure this Azure application is created in the same context your organization’s user accounts reside, since this application is the only way Sonnet will be able to consume the correct user sessions.
+
+Navigate to Azure Portal(https://portal.azure.com) and access Microsoft Entra ID (previously Azure AD)
+
+If quick access is not available on the landing page of your Azure portal, you can use the search bar to search for “Entra ID” at the top of your portal.
+
+Once inside Entra ID, select “Enterprise Applications”.
+
+
+Use the New Application link in the top menu section. 
+ 
+Select “Create your own application” from the top menu section. It will open a right-side drawer with a small form.
+
+Enter some name for the custom application so you can easily identify it among others (we recommend Sonnet-SSO) and make sure to select the bottom option Non-gallery. Click on the Create button at the bottom of the form.  It will take a few seconds and then open the new application overview page.
+
+
+Configure SAML SSO in the new application.
+
+For the SAML configuration, use the SSO ID for your organization provided by Sonnet. Use the SSO ID in the setup to replace the sso_id placeholder. This placeholder will appear a couple of times in the following steps, so do not forget to use the provided SSO ID instead.
+
+In the Sonnet Application page, select the option 2. Set up single sign on. 
+
+If option 2. Set up single sign on is not available, you can use the option Single sign-on in the left-side menu bar.
+
+Tip: After creation, the new application will also be searchable. Type in the name used in Step 5 and select the link.
+
+Select the box SAML from the options available for single sign-on. It will open a new page with many options to configure SAML. 
+
+
+The many options available are grouped into 4 categories. You only need to set values for the first two.
+You should be able to edit each group using the pen icon at the top-right corner of each box. Every edition will open a right-side menu form, like the one used while creating the custom app.
+
+Basic SAML Configuration. The SSO ID will be used here. Sonnet does not support SAML sign-on and that is why the Sign on URL is not required.
+
+
+
+
+Attributes & Claims. Because Sonnet maintains the ownership of user roles and details, the email address is the only claim currently required. It is used to link the SAML authentication with a valid Sonnet session.
+The main goal is to assign e-mail address as required.
+
+Click on the required claim row. In the new form, select user.mail as the Source Attribute.
+
+Use the link Save in the top menu options. You can add or remove any number of attributes. Sonnet only needs to get emailaddress. The bare minimum required by Sonnet is:
+
+
+
+
+Configuration parameters required by Sonnet.
+
+After completing the SAML setup for the custom Azure application, your environment is ready to accept SAML2 authentication requests. Now we will need to know the resulting details of your setup to make it possible to provide the SSO service on Sonnet.
+
+To provide configuration details for Sonnet, we will need the information available in the third and fourth categories in the very same SAML Single sign-on setup page.
+
+Download the Base64 certificate. This can be found in the first Download link at the third box.
+
+Copy all three URLs available in the fourth category box
+
+Create a zip file with all this info and send an encrypted email to support@palinode.io  containing the following:
+Certificate (Base64)
+URLs – Login URL, Microsoft Entra Identifier and Logout URL
+Alternatively, you can get all that information by downloading the Federation Metadata XML. That’s the third link in the SAML Certificates box. You can zip it and send it to Sonnet.

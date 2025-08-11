@@ -1,0 +1,114 @@
+*to find which controller the logic is in, just find the route in web.php
+
+Dashboard
+
+Dispute Backlog and Volume Per Day we use echarts
+Changes are in dashboard.js (echart logic) and dashboard controller and dashboardHiome.blade
+
+The tiles are in dashboardHome.blade but we use dashboard controller for the logic. 
+
+The query for tiles is from the dispute table
+Query for vpd from daily_totals table (not currently running in uat) except images which is dispute table – new pr making whole vpd graph asynchronous 
+
+Reasons come from default_dispute_reason for the description and the dispute table for most popular dispute codes this month
+
+
+As a Sonnet user, I want to see the number of disputes with images for 30 days regardless of status so that I can monitor my volume of disputes with images.
+
+Load dashboard data in without making Sonnet slow
+
+The problem is that there are so many disputes on the dispute table and the vpd images is not in the daily_totals table so ultimately for speed sake we just took out the  Complwted disputes from the graph, but that looks weird. Navy recently noticed that it looked weird so we need to address this.
+
+After discussing with Lidi, we decided we needed to make the vpd data retrival asynchronous.  
+
+We need a new method in the controller for this, so see pr 2302 https://dev.azure.com/Palinode/Sonnet/_git/4e242732-d1dc-47ab-a7d7-4ebce03855aa/pullrequest/2302
+
+We need a new route in web.php and we need to update the data retrieval in dashboard.js to use ajax. 
+
+As a Sonnet user, I want to see the number of disputes received for the day on the Dispute Received today tile so that I can see the actual number of disputes receiving.  On 08/05/2024 the download for 08/04/2024 was delayed so the count is showing 0, but there were 2909 disputes downloaded for the day, but the tile is still showing 0.  The volume line graph at the bottom and this tile should match.
+
+Basically for this one the query was wrong at it was only looking for disputes created on before today and not today. Including this to show that all the dashboard queries are in the dashboardcontroller.
+
+https://dev.azure.com/Palinode/Sonnet/_git/4e242732-d1dc-47ab-a7d7-4ebce03855aa/pullrequest/1939
+
+
+ 
+Tiles are all in the dashboardHome blade. If you want to make a new one, just create the query or whatever data you want in the controller and then update the blade and css and voila.  
+
+https://dev.azure.com/Palinode/Sonnet/_git/4e242732-d1dc-47ab-a7d7-4ebce03855aa/pullrequest/471
+
+dispute.js
+
+		
+As a Sonnet user, I want Sonnet to update the consumer comparison indicators as I make changes to the consumer information so that I can save a step.
+
+When the dispute is processed through the rules engine, the consumer comparison indicators are set.  The user can update the recommended response values and then Sonnet automatically updates the comparison indicator.  The user can also change the comparison indicator against sonnet's recommendation which will result in the user getting an error and be unable to submit.
+
+I am searching in dispute.js for anywhere that has .addClass("eoscar-warning");
+Instead of sending false validation, change the indicator if it pertains to the _comparison
+
+We do some of them differently (names and addresses) so you also need to search _comparison and make sure you’re not returning true for any comparison
+
+If you make changes in js or css, don’t forget npm run dev to see the changes
+
+https://dev.azure.com/Palinode/Sonnet/_git/sonnet-app-20/pullrequest/2312
+
+
+
+
+When the response code 01, 12, 21, 22, 23, or 24 then the ssn and dob comparison indicator should be selected and not left blank.  Do not allow the user to navigate away from the consumer information if the ssn and dob comparison indicator is left blank.  Should function like the middle name field and comparison
+
+
+So when the ssn, dob, or middle_name fields are blank, the inicator has to be Unk and not blank 
+  function isValidDate(dateString, dateType = "") {
+    // blank is OK
+
+    if (dateType == "dob" && dateString == "" && $('select[name="dob_comparison"]').val() != "Unk") {
+      $('select[name="dob_comparison"]').val('Unk').change;
+      verify_consumer_fields()
+      return true;
+    } else if (dateType == "dob" && dateString != "" && $('select[name="dob_comparison"]').val() == "") {
+      $('select[name="dob_comparison"]').val('Unk').change;
+      verify_consumer_fields()
+      return true;
+    } else if (dateType == "dob" && dateString == "" && $('select[name="dob_comparison"]').val() == "Unk") {
+      return true;
+    } else if (dateType != "dob" && dateString == "") {
+      return true;
+    }
+
+
+
+User used the consumer information indicator E without a DOFD and was able to complete in Sonnet, but the dispute was returned with a response error - FCRA 1st Date of Delinquency is required when Consumer Information Indicator is E. Sep 27th, 2023, 8:25:39am CDT.  
+
+The user then corrects the response error and inputs the DOFD, but Sonnet will not allow the user to complete as it produces the error 
+
+https://dev.azure.com/Palinode/Sonnet/_git/4e242732-d1dc-47ab-a7d7-4ebce03855aa/pullrequest/1264
+
+this is old but if Date of Delinquency must have a value if consumer information indicator is 'E'
+
+
+Reports (most common UI request)
+
+e-Oscar Report Card is showing different totals between the total number of items based on the response type and the total number of items based on the response time. The response type is showing the correct number so need to identify where the extras are coming from for the All eOscar Queues.
+
+Reports are in either acdvreportsservice (dispute), directreportservice, customreportservice, audreportservice, brrreportservice, 
+
+If the customer wants any report that is just for them, put it in custom so we’re not cluttering up the main reports with if statements
+
+For the above bug, the fix was in the accdvreportsservice and the function was eoscarReportCardReport. You can look for the title from the browser and then the function related to it to find the report 
+
+https://dev.azure.com/Palinode/Sonnet/_git/4e242732-d1dc-47ab-a7d7-4ebce03855aa/pullrequest/2189?_a=files
+
+As a Sonnet user, I want to see a Direct Dispute Checklist report for each Direct Dispute Completed in Sonnet with the Sonnet ID, Account Number, Date Complete, User who completed and each checklist item so that I can have better reporting for checklist utilization for Direct Disputes.
+
+This was a brand new report request but it was one that we wanted to globally offer so we wrote a new array item in the constructor for directreportsservice. Each of those things get sent in the payload to return the needed information. And then the function is where you would go to write the query.
+
+https://dev.azure.com/Palinode/Sonnet/_git/4e242732-d1dc-47ab-a7d7-4ebce03855aa/pullrequest/2278
+
+Getting an error
+
+
+This was happening in the blade. When you run that report to see the error, the category will tell you which service is is, the the name will tell you which function it is, and then the function name is the blade name (plus blade.php at the end) 
+
+https://dev.azure.com/Palinode/Sonnet/_git/4e242732-d1dc-47ab-a7d7-4ebce03855aa/pullrequest/2036

@@ -1,0 +1,2553 @@
+Transcript
+June 23, 2025, 4:07PM
+
+Manjunath S started transcription
+
+James Maki   0:03
+In that, but yeah, but if but if we need to, we can go back in and just disable the user.
+
+Sagar Gurudatta Pai   0:11
+OK, OK.
+
+James Maki   0:11
+But normally, yeah, but I but I really don't even see the point in doing that because like as as soon as they stop using it, like if they don't log in for what is it like 30 days? If they don't log in, it'll go inactive automatically. So I really don't. Yeah, so I don't see much reason.
+
+Sagar Gurudatta Pai   0:24
+OK.
+
+James Maki   0:26
+To actually have to do that manually.
+
+Sagar Gurudatta Pai   0:30
+Got it. Cool.
+
+James Maki   0:32
+Yeah, yeah. Unless she, unless she has like some reason for that.
+
+Sagar Gurudatta Pai   0:39
+OK, I'll create a request for that right away and for other one as well.
+
+James Maki   0:45
+Good.
+
+Sagar Gurudatta Pai   0:46
+I'll update the ticket with the private comment with the RFC number.
+
+James Maki   0:55
+Right.
+All right.
+See.
+All right. Either Manju or Supriya, either one of you want to drive. We're we're gonna get into the dev environment and and we're gonna see if we can set up these new companies.
+So in the past in the dev environment, sometimes I've seen like error messages come up like trying to create a company like something about the.
+Like the way that it's inserting in the company, like how it's supposed to go up.
+Like the the company ID is supposed to go up like 100 for like the next ID or whatever. Something about that iteration. Sometimes it gets kind of messed up.
+So we'll we're gonna try and see if it works and and hopefully we won't get any kind of error here.
+So we're gonna go over to the dev environment whenever you're ready.
+
+Sagar Gurudatta Pai   2:22
+So the user needs to be created first in Sonnet before applying the K2 changes, right?
+
+James Maki   2:28
+I mean, it doesn't have to be, but the the Cato's, yeah, the Cato's completely separate. So like the white listing can be done before that, but but pretty much everything else has to be done afterwards.
+
+Sagar Gurudatta Pai   2:31
+OK.
+OK, OK.
+
+James Maki   2:40
+Yeah, but but white white listing can be done at any time though.
+Alright, so you are currently over in Azure and that's actually not what we're going right now. We're going to the dev environment.
+Yes.
+
+Supriya Siddappa Kulageri   3:30
+I have sent you in check check once.
+
+James Maki   3:40
+Just put put the web address in the chat for you.
+
+Sagar Gurudatta Pai   3:40
+Of.
+
+James Maki   5:24
+Alright, you're in. OK, alright, go over to the to the admin side, go over to the organizations.
+Uh, and that's where we're going to.
+Uh, try and add the new company.
+But doesn't matter which one we do first. Cigar doesn't look like that. Looks like Velocity is probably the older ticket, so I guess.
+
+Sagar Gurudatta Pai   5:49
+I'm creating the velocity one route now the RFC.
+
+James Maki   6:04
+Alright, uh.
+So Manji, the the ticket that we're gonna use for this is gonna be a 22586.
+For uh, Velocity is the company.
+Right. All right. So.
+Channel partner from Infinity building the API interface. OK, alright, so over in the dev environment we are going to.
+Try and create. So in the top right corner there's the add new customer.
+Yep, so we're gonna use that.
+All right, so organization is going to be velocity.
+Yeah, I can just copy that out the ticket.
+Yeah, you can do Fen V Velocity if you want, yeah.
+Right. And then the e-mail domain. So I think I you can copy it from the e-mail addresses were right there, right? You can copy it from from one of those. Yeah, the finv.com.
+Alright, so you just want the domain. So take out like you don't need an actual person's name and you don't need the at symbol, you just want the domain.
+Yeah, all right. Location for these guys. I don't know if it honestly it doesn't really matter for dev environment.
+This is for Finvy. Where are those guys located? Alright, so they're in.
+Let's see, can we find an actual location for these guys?
+
+Sagar Gurudatta Pai   8:18
+Dev James, Quick question. Sorry.
+
+James Maki   8:20
+Mm-hmm. Yeah.
+
+Sagar Gurudatta Pai   8:21
+This there are for Fenways. There are two IPS for one is for API dev which is AWS correct. Then for dev UI VDI workstation access the same that is also in AWS.
+
+James Maki   8:37
+Yes, yeah. So all three of those will have to be whitelisted in AWS. Like any any connection to the dev environment needs to be whitelisted there. But then those workstation ones, those are the two that need to be whitelisted for user access inside Sonnet.
+
+Sagar Gurudatta Pai   8:45
+OK.
+OK, so these are.
+
+James Maki   8:53
+Uh, so so that.
+Yeah.
+
+Sagar Gurudatta Pai   8:55
+But again, those two, those two needs to be whitelisted on AWS or no?
+
+James Maki   9:00
+They do, yeah. They need to be whitelisted on both. Yeah, AWS and and insights on it.
+
+Sagar Gurudatta Pai   9:03
+OK.
+OK, got it. Got it. Thanks.
+
+James Maki   9:06
+Yep.
+Yeah, no problem. All right, since this is just dev environment, let's not really worry about the location module. Let's just put like a.
+Let's just put something like New York, NY.
+
+Manjunath S   9:27
+In New York.
+
+James Maki   9:27
+Yeah.
+Yeah, yeah, that's fine. And then a collection system does. What options does it give us there?
+
+Manjunath S   9:45
+API TCS SIM exchange.
+
+James Maki   9:48
+Alright, Infinity's not in there anywhere. Oh, TCS. Well, no, actually, no, don't use that. Don't use that because that's actually something specific.
+OK, uh.
+Uh, let's just say like API.
+So I kind of at the top there. Yeah, let's just do that. That works. All right, let's, let's create and let's see if it works.
+
+Manjunath S   10:11
+Yeah.
+
+James Maki   10:22
+Perfect. OK, it worked. Awesome. Excellent.
+
+Manjunath S   10:22
+Yes.
+
+James Maki   10:26
+All right. So we have our company now. All right. So what's our?
+Uh, let's go back to the ticket and let's see our next steps.
+The creation of disputes.
+
+Manjunath S   10:41
+That's right.
+
+James Maki   10:47
+OK.
+Uh, alright.
+All right, so Sigar, are you you're creating the SSD ticket for those those IP addresses? Are are you doing that? OK, cool. All right, so I would wait until we get confirmation that that's completed to set up the users.
+
+Sagar Gurudatta Pai   11:10
+Already done. Done.
+
+James Maki   11:18
+Just 'cause if you do it before then, like they're gonna log in and then they're they're gonna get blocked, right? So I would do the user creation. I would do that last.
+So let's focus on setting up some disputes and let's see.
+We can get you guys started on that. All right, so over in our in our shared documents drive, there's a yeah, there's a dev environment folder.
+
+Manjunath S   11:44
+The folder.
+
+James Maki   11:52
+All right, so you need to copy.
+You need to copy that bottom file that that dot Pim. You need to have that saved locally and I would put it in its own folder so that you have it separated from everything.
+Yeah, yeah, go ahead and download it.
+
+Manjunath S   12:13
+OK, should I download it?
+
+James Maki   12:20
+All right, and then I think we saw like you, you're not able to like create a desktop folder, right? So I think you had to do it here inside your downloads. So let's create like a dev folder.
+
+Manjunath S   12:26
+Uh.
+
+James Maki   12:34
+OK.
+
+Manjunath S   12:37
+A new folder.
+
+James Maki   12:38
+Yeah, yeah, let's create a new folder.
+
+Manjunath S   12:57
+Yes, yes.
+
+James Maki   12:59
+Oh, cool. You can do it on your desktop now. Awesome. All right. OK, yeah, all right. So let's let's paste that file in here. The dot, the dot PIM file.
+
+Manjunath S   13:00
+Yeah.
+
+James Maki   13:18
+All right. And then did you guys get the bash software installed? Do you have that?
+
+Manjunath S   13:24
+Which one, James?
+
+James Maki   13:25
+Bash the get bash software.
+I know we talked about it in the past.
+Yeah, so like if you, yeah, OK, so I guess so like if you right click here in this folder, you should see an option. If it's installed, you should have an option to get back here. All right. And I do not not on the file, just like on a blank. Yeah, just like anywhere in the folder.
+
+Supriya Siddappa Kulageri   13:36
+We have.
+
+Manjunath S   13:38
+Oh.
+Yeah.
+
+James Maki   13:52
+There we go. All right, so yeah, open GitBash here.
+
+Manjunath S   13:54
+Yeah.
+Mm.
+
+James Maki   14:00
+Yeah, Yep, that one. All right, so this is opening up your bash software inside of the folder that you are that you are in. Like it's exactly where you opened it.
+So I'm gonna send you a command. Hello. Well, alright, that's still not coming up yet.
+
+Manjunath S   14:23
+Just comment.
+
+James Maki   14:24
+Oh yeah, yeah, that whole thing.
+The whole thing, everything from the very beginning to the end.
+Including the SSH. Yep, there you go. OK, all right, so on your BIOS software. OK, cool. All right, so now it's open, so you can paste that there.
+
+Manjunath S   14:37
+Yeah, yeah, got it.
+
+James Maki   14:47
+And then we have to, so we need to kind of edit that, right? Because if you look at the command that's looking in the way that that's set up for me, the location that I have that folder is in my users, James Mackie desktop. So yours is different so.
+All right, so we need to edit that to match your folder location.
+Which for you, this is on a OneDrive. All right, so you are in. So it's kind of at the top there, like you see like in the top of the window. Like for you, it's C drive users slash your name slash OneDrive. Yeah, so you so you want to.
+
+Manjunath S   15:25
+Yeah.
+
+James Maki   15:29
+You wanna put that into?
+
+Manjunath S   15:32
+This comment.
+
+James Maki   15:32
+Uh, like, yeah, yeah, like replace James Mackey slash desktop. Replace that with your name slash OneDrive.
+Alright, and then your folder is not named dev, it's just new folder, right? So you also wanna change that.
+So it needs to be exact. So currently there's a space after new and then the F is lowercase.
+There you go. OK, all right, let's run that and let's see if that works.
+
+Manjunath S   16:25
+Accessible.
+
+James Maki   16:25
+Not accessible. All right, so we got the folder. We got the folder path wrong, so go to your folder.
+All right, so we we need the full. We need the folder path for this.
+So like what? What do we have wrong here?
+Alright, we need the folder path like we need the location like the the file itself doesn't matter right now. We need to know where that new folder that you're in. We need the full path to that.
+
+Manjunath S   17:10
+OK.
+
+James Maki   17:16
+You keep clicking on the file, but that's not what we need right now. We need the folder paths.
+So like in the top where it says new folder, we need that path. Like how do we get? We need the full path for that. There we go. All right, go ahead and copy that. Yeah, yeah, copy that. OK, so it looks like the way that OneDrive is named. All right, I guess it.
+
+Manjunath S   17:28
+This one, right? Yeah.
+
+James Maki   17:37
+That whole Pravana, Pravana, India, PVTI guess all that's part of it. Alright, so let's go back to our command.
+And let's just hit up. So it works the same way as, yeah, like when you're on the server, like it stores your last like your command history so you can get back to it. All right, so let's take out.
+I guess everything. Do we just take out everything there?
+
+Manjunath S   18:11
+Yes, James, so.
+
+James Maki   18:11
+And and and paste. Or did you did you paste that in? You you pasted it. You didn't go up. You paste. OK.
+
+Manjunath S   18:16
+Yeah, yeah. I just pasted it. No, no, I just pasted it, yeah.
+
+James Maki   18:21
+Alright, so let's go over to the beginning and you have to add in the SSH space dash I in front.
+Cool.
+Let's keep it capitalized for right now. All right. And then you and then you need that file name. So after, yeah, so new folder.
+
+Manjunath S   18:39
+See.
+
+James Maki   18:51
+Then it's gonna be, oh, the.
+Do we have the slashes?
+The slashes are also facing the wrong way. We have back slashes in that folder path and we need forward slashes.
+Yeah, so we need we need to replace all those slashes as a.
+Yeah, that's forward. Yep.
+All right, and then you need one more, one more forward slash at the after folder and then you need to copy that that EC to access dot PIM file name. You need you need that.
+So everything after folder in the yeah in the in the top line, everything after folder you need to copy.
+Yeah, all the way just to the to the.com. Yeah, at the end of that line.
+Yeah, all right. Copy that, paste that, and let's try again. Let's run it.
+Is it running? There we go. What's it say? Those name contains invalid characters. Jeez. All right.
+Yeah.
+Yes.
+Yes.
+Can we move the folder? Is there anywhere else that we can put it? Like can can we actually put that on your local machine somewhere? Not not on OneDrive.
+
+Manjunath S   21:50
+OK.
+So we create it in downloads.
+
+James Maki   22:06
+Yeah, yeah, let's try that.
+
+Manjunath S   22:09
+No, not at all.
+
+James Maki   22:13
+All right, go ahead and change the name, change it from new folder, change it to dev or like whatever you want to call it, but change it from new folder.
+All right.
+OK, alright, let's try opening up opening up Dashroom here.
+
+Sagar Gurudatta Pai   22:39
+Me.
+Don't expect the RFCS to be completed today, OK? Because it needs to go through 2 approvals.
+
+James Maki   22:50
+Uh.
+The white listing, OK.
+
+Sagar Gurudatta Pai   22:59
+Yes, because it will go through my immediate supervisor's, what do you call approval and then IT director's approval. So two steps, so most probably tomorrow.
+
+James Maki   23:10
+OK.
+All right.
+It's fine.
+Alright, so if you hit hit up on your keyboard and it should give us the last commands.
+
+Manjunath S   23:33
+No, James.
+
+James Maki   23:34
+Is it not? It's not finding it. It's weird, OK?
+
+Manjunath S   23:36
+No.
+
+James Maki   23:40
+All right, copy the copy the command from chat again and this time the this time the only thing that we have to change is is the name like your name and then change desktop to download or downloads.
+
+Manjunath S   23:46
+Yeah.
+
+James Maki   23:58
+And then and hopefully that's.
+No.
+Yeah, alright, let's try that.
+
+Manjunath S   24:16
+Try to run.
+
+James Maki   24:18
+Yeah, you can just hit enter. Yeah, let's see if it works this time.
+There we go. That's what we wanted. All right. So yes.
+Perfect. All right, you are officially on the dev server.
+All right, so the 1st place that we are going to go is we are going to create an images directory so you can go to slash sonnet slash images.
+
+Manjunath S   25:13
+Enter.
+
+James Maki   25:13
+Yep. Yep.
+All right, and if you list out the contents here, you will see a folder for all the companies that have been using the dev environment.
+All right, so whenever disputes get generated, this is where the the images that we generate along with them, this is where they go. So there needs to be a folder here for every client that you're setting up.
+So for this one, let's see, they didn't really give us.
+Uh.
+There's not a Fin V folder, right? OK, there's not good. All right, so we're going to use Fin V as the abbreviation. So you do want to do the pseudosus on it. You do want to do that first. You are going to need this on it access for everything that we're going to do here on the dev environment.
+Yeah, go ahead and do that. And then we're going to make a new directory, so it's MKDIR.
+Right. And we're gonna make this for Finvy. It's gonna be the name.
+All right, Yep.
+All right, you do that.
+So this part is very similar to like setting up an API client in production. So you're essentially doing all the same steps, but everything is on this one server and there's not multiple that you're going to have to go to. So that's the good news. All right, so next. All right, so you've made the folder.
+So we do want to check the permissions on it. So if you list out the contents again, we want to make sure that the left hand column, we want to make sure that that matches for the new folder, that it matches all the other ones.
+And it looks like it does.
+Right. Perfect. Right. And then the last thing that you need for.
+
+Manjunath S   27:26
+This one.
+
+James Maki   27:28
+Yep, Yep, that's the one. And so the the folder permissions are the left column, that DRWXR, all that stuff. That's like the read write permissions is what all that stands for. So yeah, so you just want to make sure that all that matches the other the other folders.
+And it does. So you're good. Oh, there is actually one thing though, the group. So the FINV folder, you notice it says kind of in the middle columns, it says Sonnet and then Sonnet again, but all the other ones say Sonnet and then WWW dash data.
+So that is kind of that's like the folder owner or like the group that owns the folder. So we do actually want to change that.
+And to do that.
+You are going to run.
+Alright, so the command that we're gonna run for this is gonna be change owner, so it's gonna be CHOWN.
+So it's kind of a it's abbreviating change owner. All right, that's the command. The next thing we're going to tell it is oh, what we want to set it to. So we're going to do sonnet and then space and then the WWW dash data.
+And the last thing we need to tell it is what we are setting that for and that is going to be for finvy. So do another space and then finvy.
+And that should work. Let's do that.
+Right.
+Uh, no, that's for a file.
+OK, it's a different.
+I haven't done this for a while. How did I do this?
+One second, let me find my command here.
+
+Manjunath S   30:31
+So Biggie was pseudo before the gyms.
+
+James Maki   30:36
+No, you're already pseudoed into the Sonnet user, so you don't need to do another pseudo.
+Oh, OK.
+I got it.
+All right, I'll just put the command in the chat for you.
+So I had the formatted wrong. It's supposed to be a colon between the user and the group, and then also since this is a directory, not a file, we needed the the dash R switch which is what tells it that it's a a folder and not a file.
+Yeah. So let's go ahead and run that and that should work for us.
+Operation not permitted, really, even as a Sana user. OK, alright, alright, let's do it one more time. And this time do like you said, let's put pseudo in front of it.
+
+Manjunath S   32:15
+Like.
+
+James Maki   32:16
+Yeah, let's try that.
+
+Manjunath S   32:22
+Got it.
+
+James Maki   32:22
+See, this is what? All right, do control C to control C to cancel that because we do not have like that's asking for like the admin password, like the admin password for the sonnet user and we don't have that.
+All right, exit out of the Sonnet user and then let's run that command again.
+
+Manjunath S   32:49
+The one you sent in the chat.
+
+James Maki   32:51
+Yeah, yeah, exit out the sonnet user.
+
+Manjunath S   33:05
+Exit.
+
+James Maki   33:06
+Mm-hmm.
+And then let's run it one more time with with the pseudo there.
+OK, alright, looks like it successfully ran that time. Alright, let's list out the contents and see if the update went through.
+
+Manjunath S   33:42
+Yeah, it changed.
+
+James Maki   33:42
+Right. All right. There we go. Now we got it. OK.
+All right, so yeah, so changing folder permissions. Can't do it from the Sonnet user. Have to do it from from yours. OK, let's go back to this. Let's pseudo back into Sonnet. So pseudo Sudsonnet again now that that's done.
+In this time.
+And this time we're we're going to copy those those green TIF files. We're going to copy those into the folder. So those are our templates for creating images. So those need to be in each like in every company folder.
+
+Manjunath S   34:11
+This.
+
+James Maki   34:26
+In order to in order to generate the images, so pseudosus on it again, you're gonna have to go back to that user.
+Yeah.
+All right, and we're going to copy all of the TIF files into the affinity folder. So easiest way to do that is going to be a CP for copy and then we're going to do a space star dash TIF.
+
+Manjunath S   35:07
+Or dash this.
+
+James Maki   35:08
+Oh, sorry, dud start dot tiff dot dash.
+
+Manjunath S   35:13
+No.
+
+James Maki   35:15
+Yeah, dot dot if.
+There we go. Alright, and we're gonna put it into the affinity folder. Uh, so we'll do another space.
+
+Manjunath S   35:28
+Henry.
+
+James Maki   35:30
+Alright.
+I think you need to do a period forward slash finvy because what you're saying is you're going to copy it into this local folder is what the period forward slash means, but then in there you want it to go into the finvy folder.
+So it's saying from the current folder into the fin V directory you need a period in front of the forward slash because that's that's what tells it it's the local or like the like the current.
+Yeah.
+Uh, Nope. Other other signs, yeah.
+There you go. All right, there we go. All right, go ahead and run that.
+OK, so now if you go into the Infinity folder.
+And list out the contents. You should see those dot tif files in there.
+
+Manjunath S   36:24
+It is Hindi.
+
+James Maki   36:26
+Uh, Yep.
+
+Manjunath S   36:41
+Yeah.
+
+James Maki   36:41
+And and there they are. Perfect. All right, so we've got our images. Yeah, so images directory is now set up. That's ready to go for the dispute creation. So now we're going to move on to that part. So the disputes are created from the sonnet forward slash.
+
+Manjunath S   36:44
+It's loading.
+
+James Maki   37:00
+Uh DB dash scripts folder.
+
+Manjunath S   37:09
+Sorry, judge Sonat.
+
+James Maki   37:12
+Yeah, so you need the CD. We're changing directories where we're going to a different folder.
+
+Manjunath S   37:12
+I.
+Yes.
+CD space Sonnet.
+
+James Maki   37:21
+Yep, Son it's the root folder, so we need the slash in front just like just like normal. Remember like whenever you're first going to.
+
+Manjunath S   37:31
+Oh.
+
+James Maki   37:32
+Like a our first folder. Yeah, alright, so slash sonnet slash DB dash scripts.
+Oh yeah, you had it. Yep.
+Cool. All right, let's go there. And if you list these out, you should see all of our automation scripts.
+And there they are. All right. So my general practice has been whenever I'm creating disputes for a company, I typically give them all their own individual scripts. That way we can control their disputes, do like.
+Create them however they want us to and we don't have to worry about affecting anybody else. All right, so.
+The first scripts that we are gonna concentrate on are going to be the make under score API under under score scripts.
+Excuse me, alright.
+
+Manjunath S   38:39
+Make under score API under score scripts.
+
+James Maki   38:42
+Well, we're we're just looking right now. We're we're just looking. I just want you to look at those. So like in in the list here, those are the scripts that we're gonna be kind of focused on for first. So these are the ones that actually generate the disputes.
+So this is basically creating like our step one for example. That's what these scripts are doing. So what I generally do is I usually just copy one and then I'll go through and edit it for the new company.
+
+Manjunath S   39:15
+Yeah.
+
+James Maki   39:15
+So let's do and and I wanted to make a template for you guys. OK, and I did. OK, so there's a there's the make API template.
+Yep, it's it's right after that group of three in the white. It's right after that. Yep. Yeah, right where, right where your cursor is. Yeah. All right. So we're gonna try and we're we're gonna use that. So go ahead and copy that file name.
+
+Manjunath S   39:38
+Yeah, here, please.
+
+James Maki   39:48
+All right, and we are going to copy the script. So just like we made the TIF files, we're going to do a CP for copy and then you can paste in that file name.
+And then we're good. So that's what we're copying. So then now we're going to say what we're copied, like what our our new copy is going to be. So you can do a space and we're going to do a make under score API under score velocity.
+Velocity.
+I think they spelled it with an S, didn't they? Yeah, yeah, SIDY is how they spelled it.
+So the the company name is what we're doing, right? So.
+Oh, well, actually, you know what? I said velocity, but we made the folder Finvi, so maybe we should do that. No, let's keep it. All right. It's it's DYD as in dog.
+That's how they spelled it.
+They they gotta be creative.
+All right, so let's go ahead and do that. All right, run that. And So what this is doing is this is making the the make API velocity. That script now exists and what it is currently is a copy of the API template, right?
+So that's what we just did. So if you list out the contents again, you should now see that velocity script in there. Oh, you know what we forgot though is the dot PHP at the end.
+
+Manjunath S   41:30
+OK.
+
+James Maki   41:32
+OK, uh, go ahead, list out the contents.
+And I think we'll have to remove that first one, see if we can find it. All right. Is it with the dot PHPS? It is. OK, so go ahead, copy that velocity.
+Name and we're just gonna remove it to make API velocity that you just made.
+It's right. It's right below the template.
+
+Manjunath S   42:02
+Well, that's it.
+Oh, this one.
+
+James Maki   42:12
+Yeah.
+All right, so we're just gonna do a RM and then paste that in.
+And we'll just remove that.
+Yeah.
+
+Manjunath S   42:27
+Oh.
+
+James Maki   42:32
+OK, all right. And then let's well, so the the command is in your history. So if you go up now, go up a couple, you'll see the copy command and this time we'll just add the dot PHP to the end. Yeah, yeah.
+
+Manjunath S   42:32
+So again I have to copy.
+And.
+
+James Maki   42:47
+Perfect. Alright, run that and this time.
+All right, and this time it should be good to go. All right, so if you list out the contents, we should see it there.
+And there it is. All right, so let's go into that. So we're going to do a VI and into the script you just created.
+All right, answer.
+
+Sagar Gurudatta Pai   43:31
+Amran perform the changes OK for 924758. I don't know for what that SSD was for. Let me check.
+
+James Maki   43:33
+Oh.
+
+Sagar Gurudatta Pai   43:53
+It can be a bit too. I think this is for velocity.
+
+James Maki   43:59
+Perfect.
+
+Sagar Gurudatta Pai   43:59
+Yeah, velocity velocity is done.
+
+James Maki   44:01
+Excellent.
+All right, so the first thing I like to do whenever I go into these scripts is I like to turn on the the line numbers so that I can see where I'm at in the scripts. So to do that it's a colon.
+And then set.
+Yeah, yeah.
+Yes, space num NUM.
+Yep, right. And run that and that should turn on our line numbers.
+Oh, is it set? Oh, actually it might be set new. I think it's just NU.
+
+Manjunath S   44:51
+New.
+
+James Maki   44:52
+Yeah, colon, yeah, colon, set, set in U, space in U.
+Set space in you.
+Take out the space after the colon. It needs to be all together.
+
+Manjunath S   45:15
+Select that new.
+
+James Maki   45:18
+Uh, yeah, yeah, hit her.
+There we go. That's what I wanted. OK, alright, so this just helps with navigating the file, right? So you can see exactly where you're at.
+And like, so like whenever there's an error, it should tell you like the line number that the error occurred on. So if you're ever having to troubleshoot.
+That will have that will like help you see where the problem is in the script. All right, so the first thing that we want to change here is going to be the company ID, which is on line #11.
+So currently that is set to 12,000 and we want to set that to our new company here, which is going to be 24600. So to change it you have to do all this like your mouse doesn't work here, so you have to use your keyboard.
+And so you want to go down to line 11 and you're going to hit I for insert and that's what's going to allow you to make changes.
+
+Manjunath S   46:25
+Yeah.
+
+James Maki   46:26
+Yep. Yeah. So go ahead and hit I.
+
+Manjunath S   46:33
+OK.
+
+James Maki   46:34
+All right. And you see like on the bottom left-hand corner it says insert. So that tells you that you are now editing. You are now editing the script. So let's go over to the 12,000 and we're going to take that out and we're going to change it to 24600.
+
+Manjunath S   46:39
+Yeah.
+
+James Maki   47:09
+OK, all right, so that's the first change that we want to make. Another good habit that I that I do is whenever I'm not making changes, I hit escape to get out of the insert option.
+
+Manjunath S   47:27
+OK.
+
+James Maki   47:30
+There you go. All right, so now we're no longer editing. So now you don't have to worry about accidentally hitting like hitting the button and adding something somewhere and whatever. So just whenever you're not making changes, it's always good to get out of that insert function.
+Just so you don't make any unwanted changes. All right, sure.
+
+Sagar Gurudatta Pai   47:49
+James, good question.
+I was on a call with Kamran now. So for Sunbit, the IP provided is a private IP. We would need the public IP, right?
+
+James Maki   48:00
+Uh, probably.
+
+Sagar Gurudatta Pai   48:03
+OK, cool. I will request for the public IP on the ticket. Cool. Bye.
+
+James Maki   48:08
+OK, Yep. All right. Good catch.
+Alright, so again, using your keyboard, let's kinda Scroll down here through the lines.
+And let's see if there's anything else that we need to edit.
+I don't believe so sometimes on the request like they'll tell you.
+They'll give us like a little bit more specifics. Like one thing that they didn't say on this was how many disputes they wanted created.
+So we're just gonna have to come up with a number that we think is gonna be good enough, right? So using your keyboard, let's let's move down through the file and let's look at these lines.
+And see if there's anything else that we need to edit.
+
+Manjunath S   49:07
+To the account numbers.
+
+James Maki   49:11
+So we're actually not worried about those for this.
+There's there's there's a lot of stuff in here that we're not gonna have to worry about. But yeah, so we're not gonna worry about that. So let's just keep going down.
+
+Manjunath S   49:16
+OK.
+
+James Maki   49:27
+And and somewhere down here should be a number of disputes to create.
+There we go. Yeah, that's what I wanted. All right.
+It's it's definitely a good idea for you guys to be like kind of noting these line numbers because these should be pretty much the same in most of the scripts. So this is where you're gonna be looking whenever you're setting up another new new company.
+So, so please take note of these line numbers just for future reference. So 50 sounds like a good number, so I think we can leave that how it is.
+Oh, and and the other thing to know about that. So it's saying disputes per day equals MT Rand. So that's like a random. It's basically selecting a random number. So if you wanted to change this.
+Like say a say a company wants it, they want between 10 and 20 disputes every day. You would change that from 50 comma 50 to 10 comma 20 and then and then that's what kind of sets the the random number of disputes.
+Additionally, we could take out that Mt rand altogether and just have disputes per day equal a set number. You can do that as well, and I have done that on a few scripts, so you will see that sometimes. And that's just like it says it's saying create this many disputes whenever the script runs.
+So there's two different ways to kind of do that, but all right. So and then the next thing is right below that you'll notice organization ID, company ID again and team ID. All of those need to match the.
+The proper company number, yes. So we're gonna change all three of those to 24600.
+
+Manjunath S   51:30
+So we change that.
+
+James Maki   51:38
+Uh, so you're gonna do your I to insert again.
+And now you can edit.
+
+Manjunath S   51:59
+So again, escape or can we continue the downline?
+
+James Maki   52:03
+Oh, you you can just continue, yeah.
+Yeah, it's really just like whenever you're like really kind of moving through the file and just like if you're looking for something, yeah, like if if you're in the place that you're gonna be making your edits, then yeah, you can definitely just do what you need to do before you escape again. But.
+Alright, perfect. Alright, so that's good. So now you can escape and I think that is the last.
+That should be the last variable that we're concerned with for today. Further down there is also an option to control how many images are are generated for a dispute. And so like I have had companies in the past saying like we usually do random.
+So that it's like some some disputes get images and some don't and that way they get like a mix of both kind of situations, right? Because this is all for testing purposes. So we want, we want to give them like as many different scenarios as possible so they can test all the different.
+Scenarios will work in disputes, so there's an option in there to control like the number of images that are set. And yeah, so if you ever do need to edit that, it is just further down and it'll look very similar to that number of disputes.
+It'll look very similar to that, but it's it says images and I think that's down in like the two hundreds is like the line number for that. I think it's kind of far down there like so these these scripts are kind of big like there is a lot in here and that's that's probably why or that's the main reason why I love to turn on the the line numbers.
+Just to help you keep track.
+Yeah, keep going, keep going. I think it was like around, it's like around like 270 maybe somewhere around there, like I think it was pretty far down.
+
+Manjunath S   53:56
+200.
+
+James Maki   54:06
+There's duplicates.
+Their attachments. Oh yeah, yeah, they called it attachments, not images. But yeah, but alright, and so it's.
+Yeah. So that's doing like a bunch of kind of random stuff, right? Like, that's what I I don't know how good you guys are at reading scripts, but but yeah, so there's a lot going on there, right? But so on line 274, there's a.
+Again, there's that random selector between zero to three, so if you want, yeah. So if you wanted to guarantee that they had images, you could just change that zero to a one, and that way there's always going to be at least one image for everything.
+
+Manjunath S   54:40
+Mhm.
+
+James Maki   54:49
+But we don't. We don't have to worry about that today, but but that's where you find that. All right, so that's the last change that we should have to make for right now. So to exit the script, it's just like whenever we're editing on the web 01 server. So we're going to do a colon, lowercase WQ.
+
+Manjunath S   54:53
+OK.
+OK.
+OK.
+
+James Maki   55:08
+For right and quit and that's gonna save, that's gonna save our changes.
+
+Manjunath S   55:10
+Uh huh.
+It's colon WQ.
+
+James Maki   55:17
+Yep.
+
+Manjunath S   55:23
+Enter.
+
+James Maki   55:23
+Yes.
+All right, OK, so that is our script to make the disputes. So now we can go ahead and run that and make sure we don't have any issues. So to do that, easiest way is you can just do to open your keyboard and just change that VI.
+Uh, change that to PHP.
+There you go. Alright, and let's run that.
+And make sure we don't get any errors.
+Looking good. Awesome.
+Excellent. Perfect. All right, so that was easy. So now over in our dev environment, if you pull that up.
+
+Manjunath S   56:24
+Which one jumps development?
+
+James Maki   56:25
+Yeah, back in, yeah, sonnet dev. So if you go over there now, you should see those disputes.
+Are created for the company.
+Yeah, so if you just visit in's on it.
+Yeah, you can just visit us on it. The big green button, top left.
+
+Manjunath S   57:06
+OK now.
+
+James Maki   57:07
+Oh, time timed out.
+There you go. All right. Yeah. So actually, yeah, it doesn't matter, but we're so we're just gonna go over to the affinity company now.
+
+Manjunath S   57:47
+So not at.
+Open the velocity.
+
+James Maki   58:10
+Yeah.
+Oh, wait, no. So that's adding a company. You don't want to do that. That's not what we're doing here. So pay attention to what you're doing because you're saying add a company to Fin V Velocity and that's not what we're trying to do. So this is, so this is an old version of Sonnet.
+I do need to point that out for you guys. Yeah. So yeah, on the new version of Sonnet, that's like a filter, right? And that does, yeah. And that's where you go, like to find the company. But yeah, so in this environment, yeah, it was a different function that was there. So yeah, so you can either do a control F.
+To to find or if you just want to go.
+Or you can also just go to Sonnet and.
+And to go to him over there either way.
+
+Manjunath S   58:55
+Control from here.
+
+James Maki   58:57
+Uh, yeah. So now if you type Infinity, we'll.
+There it is.
+
+Manjunath S   59:03
+Yeah.
+
+James Maki   59:05
+And there. Alright, so now let's let's go into the company.
+And then visits on it.
+And you'll see the disputes are in the step one queue now. Alright, so yeah, so so those are the the disputes that you just created.
+
+Manjunath S   59:17
+Yeah, whatever.
+
+James Maki   59:22
+So that's how you can verify that that's done. All right, so that part is now taken care of.
+So now back on our ticket.
+They did give us a list of users to set up, so Sagar already told us that the whitelisting has been completed for dev, so we can go ahead and set those users up.
+Just like normal.
+
+Manjunath S   59:59
+This useless.
+
+James Maki   59:59
+Yeah, those users. Yeah, yeah, yeah, yeah, you're ready to set all those guys up.
+
+Manjunath S   1:00:02
+OK, yeah, this is.
+A.
+
+James Maki   1:00:08
+Uh, uh. But before we do that, uh, let's still.
+Do our last thing. Um.
+So they wanna put this on a schedule. So there's there's still one more thing that we need to do on the server for this.
+Uh, so if you go back over to that.
+Over to the server we we need to, we need to set a schedule for these guys.
+Yeah, all right. And I.
+Yes, all right. So this is some, this is some pretty advanced stuff that we're doing here, but all right, so schedules are are controlled by cron jobs and cron jobs are set up on the cron tab.
+So to view that, you're already pseudoed into the Sonnet user, but whenever you're coming in to look at the schedule, you do need to make sure you're on the Sonnet user because all of these run.
+Using that user, right? So that's the owner for all this. So to view the crontab, the command is crontab space dash L.
+
+Manjunath S   1:01:30
+App spatial.
+
+James Maki   1:01:33
+Dash L it is Crontab CRON.
+OK. Yeah. Dash L, that's it. All right. Hit enter and that'll give us or that'll show us all of our cron jobs. All right. So these are all the schedules that we have set up. Any line that has the pound sign in front of it is commented out.
+So that means that it's not actually running currently. So like TBF Financial for example, there's that pound sign in front of their schedule. So that means that it is not in fact running, it's turned off.
+So anything that doesn't have that pound sign is of course running. So Continental Finance has schedules still running. Northridge has schedules still running. Anyone. There's just a couple more in there. And so here you can actually use your mouse and you can kind of scroll up some.
+And there is a kind of a top to this list.
+Yeah, right. Yeah. So there's our top or like the the beginning of our of our Chrome tab.
+So like there is some some general kind of scripts that are that looks like they're not currently running, but there's like that sonnet one. So that's the one that we we used to use back when the dev environment was.
+Really just used for like a completely different purpose. Um.
+But OK, so this is where we are going to set up a schedule.
+Uh, so the easiest way to do that is to find one that we can copy.
+So we're looking for just like a general one that doesn't have like account numbers listed and that kind of thing.
+All right, let's use the.
+Uh, let's use the Northridge one. Let's use uh.
+So right below Northridge creating 100 disputes daily, right below that is going to be their creation scripts. So if you will copy that starts with A9 space six, copy that whole line.
+Uh, right below Northridge.
+Yeah, the the next one down. Yeah, that first one.
+The 9/6 up up to up two lines. Yeah, that one. There you go. All right. Yeah. So go ahead and copy that. And what we're going to do is we're going to, we're going to add a new section here for velocity.
+
+Manjunath S   1:04:11
+Samiya.
+
+James Maki   1:04:27
+And we're just going to kind of tweak that to use the to use the command that you just created. All right, so so this is just listing out the crontab. You can't actually make any changes from here. So the way to actually make changes is to do crontab dash E.
+Instead of L so you can hit up on your keyboard and we're just gonna change that L to an E.
+
+Manjunath S   1:04:56
+OK.
+
+James Maki   1:04:59
+Yeah.
+Yep. Yeah. So this is going to be editing the cron tab. That's what the E is for. So you can go and hit enter and it's going to pull up the cron tab again. But this time it's going to be very colorful. So when you see it very colorful, that means that you are making changes.
+So just be very careful that you're not making any changes that you don't intend to make. So let's add these guys. All right, so it's starting at the top this time instead of at the bottom like it does when it's just listing. So let's go down.
+And we are going to add a line. Let's do it after Continental Finance.
+Yeah, so if you go to, we're gonna, we're gonna add our new scripts. We're gonna add that. Let's do it after Continental Finance. So using your keyboard, go down.
+
+Manjunath S   1:05:47
+Sorry, thanks.
+
+James Maki   1:06:02
+Yeah, all right. And and after Continental Finance, you can go to that post data. Yeah, you can start there and hit enter. Hit it like twice at above above the post data. I mean, it doesn't really matter, but let's do it there.
+
+Manjunath S   1:06:18
+OK.
+Yeah, from here twice.
+
+James Maki   1:06:25
+Uh.
+Go down one because you want to keep all those together. Yeah, there hit enter twice. So that's gonna add 2 lines for us.
+Oh, oh, sorry, you have to hit I first. You have to answer it again.
+There. Now hit enter twice. Yeah. All right. And now go up one and let's paste in or actually, sorry, let's not paste yet. So let's do. So we're kind of naming our section here. So we want to, we want to follow the same format all these other ones are doing.
+
+Manjunath S   1:06:47
+Oh.
+
+James Maki   1:07:05
+So let's do pound sign, space, pound sign and then fin V velocity.
+
+Manjunath S   1:07:14
+One time.
+
+James Maki   1:07:16
+Yeah, like the number sign pound, like see like all the other ones, all the blue lines. See how they all start with the pound sign.
+
+Manjunath S   1:07:22
+OK, uh, semi colon dot.
+
+James Maki   1:07:25
+That's not a semi colon, it's it's a pound sign.
+Like the number 3 shift shift 3.
+
+Manjunath S   1:07:34
+Oh, OK.
+
+James Maki   1:07:36
+Yeah, that one. There you go. All right. And so follow the same format. So all these other ones, like the way that they're labeled, we want to keep it uniform so they all look like they match. So space and then another pound sign.
+And then space. And let's call this. Yeah, yeah, let's do fin V velocity. Let's give it the full name. So anyone, anyone else that comes in here, they can tell exactly what it is, right? Is what we're is what the goal is here.
+
+Manjunath S   1:07:53
+Can we?
+Yes.
+
+James Maki   1:08:07
+Yeah, velocity.
+Yep, alright. And then hit enter again and now you can paste in.
+The copy that the the chron that we copied.
+
+Manjunath S   1:08:23
+And bring the next line.
+
+James Maki   1:08:25
+Yeah, yeah. Do one more line, hit enter.
+Yep. And then, yeah. And then paste in our commands, paste it in right below. Yep, perfect. All right. And then we want to edit that. So the command that you created, it's not Northridge images, right? It was velocity. So you want to change that.
+In the uh the make API.
+If you wanna set that to the script that we just made.
+
+Manjunath S   1:09:01
+So then change the APN.
+2.
+
+James Maki   1:09:06
+Yeah, yeah, yeah. So we need to change that to the name of the script that you just created.
+
+Manjunath S   1:09:08
+Hello.
+In the velocity.
+
+James Maki   1:09:16
+I think we just called it velocity, didn't we? Didn't we just say make AP?
+
+Manjunath S   1:09:20
+Yeah, Velocity.
+
+James Maki   1:09:24
+We definitely did not have images in the in the in the name.
+
+Manjunath S   1:09:29
+Or make under score API under score velocity right dot PHP.
+
+James Maki   1:09:34
+Right, yes.
+
+Manjunath S   1:09:45
+API under school.
+
+James Maki   1:09:48
+Yep, and and and capitalization matters. The name has to be exact. So we did. We did a lower case V, didn't we?
+Because I I think we keep all of our, yeah, pretty much all this stuff is named as lowercase just because, OK.
+All right, so yeah, so that is it. So you don't need to make any more changes, so you can escape to get out of your insert.
+
+Manjunath S   1:10:23
+Yes, I'm sorry.
+
+James Maki   1:10:26
+No, you're you're. Yes, there you go. All right. And we want to save these changes as well. So we're gonna do a colon WQ again.
+
+Manjunath S   1:10:26
+Please skip that. Uh, skip.
+Yeah, colon QW.
+Yeah.
+
+James Maki   1:10:43
+WQ that's I I'm not entirely sure. I've never tried to do it backwards. I don't know if it works.
+
+Manjunath S   1:10:46
+I'll see.
+
+James Maki   1:10:53
+Let's let's not try it here. Let's do a normal. Yeah, hit enter. Let's do that first. I am curious to know if that works, so I do kind of want to try that just for fun.
+
+Manjunath S   1:11:01
+Uh.
+
+James Maki   1:11:07
+Where can we try that at?
+Do LL. I'll list out all those scripts again.
+And uh, and I just wanna.
+Wanna mess with one that I know is not in use? Let's do.
+Let's do a Patelco the make API Patelco dot PHP.
+Let's let's go into that real fast and I just wanna test the.
+
+Manjunath S   1:11:49
+It on James Mike.
+
+James Maki   1:11:49
+I want to test that Patelco make API Patelco. It's like the third one from the top.
+
+Manjunath S   1:11:59
+So.
+
+James Maki   1:12:00
+Yeah, that one. Yeah. Yeah, let's go into that real fast. Uh, so VI.
+Yeah, yeah.
+
+Manjunath S   1:12:12
+And done.
+
+James Maki   1:12:13
+Yep.
+And and so I'm using this one just because I know it's not in use right now. So let's go over, let's just do on the companies. Let's just change that from 21,000, just like take out like one of the digits, like one of the zeros or something.
+
+Manjunath S   1:12:39
+From the companies.
+
+James Maki   1:12:41
+Yeah, yeah, yeah. Let's like, take out the two.
+I I just want to see what happens if if it'll let us. Let's do this.
+OK, all right, so escape and then let's do do QW colon QW. I just want to see if that works.
+
+Manjunath S   1:13:10
+Yeah, and.
+
+James Maki   1:13:11
+Yeah.
+
+Manjunath S   1:13:18
+No.
+
+James Maki   1:13:19
+Nope. OK. All right. That's my thought. OK.
+All right, we can just exit then. Colon Q exclamation mark is is quit without saving, so let's just do that.
+Uh, exclamation, not question.
+There you go.
+Cool. All right.
+OK, so that was that was just for fun. All right, so we've got our disputes created. We have a schedule set up for them. Oh, and then I know I told you guys this the first time we went over dent disputes. Did you did you save?
+That link to the the Quran guru.
+Did uh, did you save that?
+I'll send it to you again.
+Um, so this is just a. This is just a handy tool for.
+
+Manjunath S   1:14:15
+Oh.
+
+James Maki   1:14:27
+Oh, cigar messaged me like cigar messaged me like almost 30 minutes ago now. Jeez.
+
+Manjunath S   1:14:27
+Sorry, James.
+
+James Maki   1:14:32
+Oh, that's oh, that's what he asked about. OK, he got his answer. OK, cool. I just sent you a link in the chat like save that like your favourites or like wherever you want to. But so this like Cron Guru is a is a great tool for understanding for understanding the.
+
+Manjunath S   1:14:48
+Yes Sir.
+
+James Maki   1:14:52
+In the in the chat, I sent you a link.
+
+Manjunath S   1:14:59
+Contact this one.
+
+James Maki   1:14:59
+Yeah, yeah, that one.
+So this will help. This is a.
+Yeah, this is just a great a great tool for for setting a cron schedule. So like if you're ever confused about like the formatting or like what like what is happening like this, this will tell you how to like what it is. So on the server if you do the cron tab dash L again.
+
+Manjunath S   1:15:33
+I stink. Should I copy this?
+
+James Maki   1:15:34
+No go go back to the server and do crontab dash L.
+
+Manjunath S   1:15:50
+Under.
+
+James Maki   1:15:51
+I.
+Uh, you have the R in the wrong place. Cron tab.
+
+Manjunath S   1:16:01
+Oh.
+
+James Maki   1:16:11
+Yeah, that's it. Yep.
+OK, all right. And so so this is just to help you guys understand like how the cron like how like the formatting of it is. So so like on the one that we just created the FIN V velocity. So if you copy those numbers in front.
+Like the the 96 star star 1-5. So like if you copy that part and then paste it over into the cron guru, it'll tell you what the schedule is.
+
+Manjunath S   1:16:45
+OK.
+So again, contrab.
+
+James Maki   1:16:47
+So so copy the schedule that we just set for fin V velocity.
+
+Manjunath S   1:16:57
+This one.
+
+James Maki   1:16:58
+Yeah, just the just the numbers, just the numbers in the beginning.
+
+Manjunath S   1:17:01
+OK.
+By this day.
+
+James Maki   1:17:06
+To the 1-5, yes, right. So that is that is the schedule. So that is when the script is going to run. Yeah, so if you copy that and paste it over into Cron Guru.
+It'll tell you exactly what the schedule is.
+
+Manjunath S   1:17:23
+Yeah.
+
+James Maki   1:17:23
+Yeah, yeah, so we overwrite all that the the 54 star, star overwrite that.
+Uh, overwrite as in get rid of it. Like select the whole thing and just paste in what you copied.
+Yeah, there you go. All right. So this is the schedule that we have set up. So at 6:09 on every day of the week from Monday through Friday, that's when the script is going to run. So, so this is the formatting of the schedule.
+So you guys are going to need to know this. Whenever you're setting up new schedules, you need to know what the schedule is doing. So this is a great tool to help you remember and understand what the schedule is doing.
+
+Manjunath S   1:18:04
+OK.
+
+James Maki   1:18:18
+Does that make sense? Do you understand?
+
+Manjunath S   1:18:23
+One second, James. So this is like schedule for the company.
+
+James Maki   1:18:29
+Yes, this this is the schedule that we just set for the company.
+So this is when the script is going to run. And the other thing and that's important to know is that the dev server is in GMT time like it's in like the zero time zone, right? So for us over here in the States.
+Uh, for us, this schedule is.
+What is it? We're in daylight savings now, so I think this is 5 hours ahead.
+Of like of like my time zone. So whenever I'm setting a schedule, I have to keep that in mind, right?
+So, so the schedule for this is 609 on every day a week from Monday through Friday, but it's 609 in GMT. So for me in central time zone, it's actually running at midnight 09 or one or 109, whatever the whatever the hourly difference is.
+
+Manjunath S   1:19:12
+Mhm.
+
+James Maki   1:19:28
+Right. So like, so just keep that in mind with the time zones.
+So like whatever schedule you set, it's actually running like 5 to 6 hours before that, OK.
+
+Manjunath S   1:19:41
+Yeah.
+
+James Maki   1:19:44
+Yeah, OK, so it's just just something important. Yeah, just something important for you guys to remember, because for you it's gonna be.
+
+Manjunath S   1:19:45
+OK.
+
+James Maki   1:19:52
+Like you guys are gonna have to do a lot of calculations here, right? Because you have to keep these time zones in mind whenever you're setting the schedule. So like, it's not, it's not running. Yeah, like it's not running on your time. Well, actually it kind of is. It's kind of running closer to yours than it is ours, isn't it? But.
+
+Manjunath S   1:19:58
+OK, bye.
+I.
+
+James Maki   1:20:07
+Anyway, so those are all just side notes just to try and explain that for you. So hopefully that made sense and I didn't say too much and confuse, confuse my message. But OK, but yeah, so yeah, so I would, I would just save the cron tab guru. I would just save that in your favorites.
+Just whenever you're setting up a dev schedule, it's just a great tool to help you set it up the way that it needs to be, right? So just a just a great tool for you guys to have.
+
+Manjunath S   1:20:43
+No.
+
+James Maki   1:20:44
+Yeah, all right. So if you ever need to change this, so if you like, if you do need to change the cron jobs, the way you would do that is you would do the cron tab dash E and then you would go in and you can edit the numbers like say if they wanted to run at exactly the minute mark.
+Like you would take out that nine and change it to a 0.
+
+Manjunath S   1:21:07
+OK, so even these are the the same numbers for the the post data.
+
+James Maki   1:21:09
+Right.
+Yes, yeah, all of those are set up the same way.
+Yeah, so you're like you would. So like if you wanted to check like Mariner for example, if you wanted to check that schedule, it's everything after the pound sign because that's the comment symbol. So for Mariner Finance, the schedule is from the 12 to the 1-5.
+And so and so that really gets important when we're adding extra steps. So for this client, all we're doing is creating new disputes. So we're just putting stuff into the step one.
+Other clients will have us also post data and so we are mimicking the Step 2 process for that. So that's a whole nother script.
+That has to be edited for the company and then it has to be scheduled.
+To run at whatever time they needed to run.
+To accommodate whatever testing it is that they're doing.
+So say like we're creating disputes in the morning, they want us to post data for it in the afternoon and then they want receipts generated at the end. All of those are different scripts that we would have to edit and then schedule.
+In the proper order so that everything runs in the correct way, right? Because you want your step one, Step 2, and then step three to all run in order. So that's where the scheduling really gets important.
+So we don't have to worry about it right now, but we can definitely dig into this or we will dig into this more over the course of the week.
+And and yeah, and you guys will get a, you guys will get a lot more practice with this because we can kind of do whatever we want here in dev environment like we can use these companies that aren't actually using it, we can use them as our.
+
+Manjunath S   1:22:57
+Um.
+
+James Maki   1:23:09
+Like as our testing clients and you guys can come in, you can set up schedules, you can make disputes and you don't have to worry about interfering with any.
+Any kind of like daily business or like live processes? Um.
+So this is going to be great for just getting like a lot of ractice and that kind of thing.
+All right, so for this one on the ticket. All right, so we've set up our disputes. We've we've set up the schedule.
+Sigar has confirmed that the IPS are whitelisted, so we have done everything that they need for. Oh, actually, hold on, there is one more thing we need to do back in Sonnet. We need to give them an API token.
+They are gonna need that.
+O Let's go back over to Sonnet real fast.
+
+Manjunath S   1:24:07
+Sonet.
+
+James Maki   1:24:08
+OK, Yep, Yep, the sign it dev.
+
+Manjunath S   1:24:11
+Yeah.
+
+James Maki   1:24:16
+No, the dev that's on it.
+
+Manjunath S   1:24:21
+Oh, I'm deaf study.
+
+James Maki   1:24:23
+Yeah, that one. All right. We need to give them an API token. So if you go over to the admin side.
+
+Manjunath S   1:24:24
+Yes, James.
+
+James Maki   1:24:38
+Right. And you can just click on that green little the circle. It's almost like a refresh kind of a symbol for API token on the right side.
+
+Manjunath S   1:24:51
+And.
+
+James Maki   1:24:53
+Yeah, so that'll generate A token for them and they are. They are going to need that for their process. Oh, and the other thing I always forget this, I'm glad I remembered is the subscriber codes. They will not be able to pull the step one list.
+
+Manjunath S   1:24:59
+2.
+
+James Maki   1:25:14
+If you Scroll down just a little bit, you'll see the subscriber code section.
+So as I said, this is old sonnet. So like a a new sonnet in production we have all those tabs right? Like IP addresses and additional settings like all all that stuff, all that stuff is separated. That was not the case previously. So here in old sonnet.
+
+Manjunath S   1:25:30
+Yeah.
+Yeah.
+
+James Maki   1:25:37
+It's it's all on one screen. So you'll notice our subscriber codes there are currently blank. That is going to be a problem whenever they try to pull their step one list, so we need to add those.
+So give me just a second here and I will tell you.
+Which ones we need to add?
+
+Manjunath S   1:26:00
+Yes.
+
+James Maki   1:26:04
+And these are they are already added on some of the other companies that are currently using the dev environment.
+Uh, so you could uh.
+You could go over to one of those and copy the subscriber codes from there because they all use the same ones like all all the disputes that we generate.
+
+Manjunath S   1:26:26
+It will separate.
+
+James Maki   1:26:29
+Yeah, sorry, say it again.
+
+Manjunath S   1:26:33
+Oh, you said to copy the subscribe the code, right? So for that should I give an edit?
+
+James Maki   1:26:40
+Well, so you can you can copy them from a company that actually has them already. So you you would have to go find one. So off the top of my head, Mountain America is currently using the dev environment.
+So if you go over to organizations and look up Mountain America.
+Yeah, so if you click on them, they should have the subscriber codes that we need.
+
+Manjunath S   1:27:09
+Yeah.
+
+James Maki   1:27:18
+Yeah, yeah, yeah. So you got, yes, you want to put all those into the new company. Honestly, this is something that ideally would be part of our scripts, but it's not unfortunately so.
+
+Manjunath S   1:27:18
+Oh, this one.
+It.
+
+James Maki   1:27:34
+So we have to mainly add them. So what I would do is since there's multiple ones here that you have to copy instead of going back and forth if you if you scroll up to the organizations on the left side and right click and open in a new tab.
+Yeah. All right. So that way you can put these up side by side. So you have Mountain America here. So on the new tab, if you go back over to the Velocity company.
+Then you can kind of quickly.
+Yeah, this will just make it easier for going back and forth and copying them. Yeah, so if you go down to that subscriber code section now and go to add or edit.
+
+Manjunath S   1:28:24
+And it.
+
+James Maki   1:28:27
+On the on the on the other one. On the velocity. Yeah, yeah, that one. Yeah, yeah. From here you have to edit to add the new ones. There you go. All right, so now you can quickly copy and paste from from Mountain America into this one.
+
+Manjunath S   1:28:29
+Henry.
+So all this for anyone.
+
+James Maki   1:28:47
+Uh, all all of them.
+You have to do it one at a time. You can't just copy the whole list one at one at a time.
+
+Manjunath S   1:28:56
+OK.
+Understand.
+OK, folks.
+
+James Maki   1:29:05
+Yep.
+
+Manjunath S   1:29:07
+The three games.
+
+James Maki   1:29:09
+Don't worry about those other three, you just have to have the code.
+
+Manjunath S   1:29:12
+It's at 12:00.
+
+James Maki   1:29:14
+Yeah.
+
+Manjunath S   1:29:29
+Again, you give fax 3.
+
+James Maki   1:29:32
+Uh, Yep.
+
+Manjunath S   1:29:43
+Speak.
+
+James Maki   1:30:11
+There you go. All right, so that's necessary for them to pull to step one list. Like I said, if the subscriber codes are not entered, they will get an error message. And I have done that so many times where I've forgotten to add these and then and then, yeah, and then implementation gets mad at me, so.
+
+Manjunath S   1:30:25
+OK.
+
+James Maki   1:30:29
+So please make a note to add those in the dev environment. Whenever you're setting up a company, it'll it'll save you a little bit of time in the long run. I promise. OK, so codes are there. Disputes are in step one queue. Schedule is set up.
+I think we are finally ready for the user creation.
+And then and then they should be good to go.
+
+Manjunath S   1:31:05
+So that's it.
+So that's it.
+
+James Maki   1:31:09
+Yeah, for this one that should be it. After you after you create the users, that should be the last thing.
+Yeah, so you can do a back. There's a there's there's a there's a back to company option right below the editing subscriber codes.
+
+Manjunath S   1:31:25
+Yeah.
+
+James Maki   1:31:25
+Yeah, there we go.
+Right. And so you do wanna on the ticket when you respond after you set up the users, you do wanna send her the API token from there also, because they're gonna need that to pull the step one list, of course. And yeah, and you can tell her.
+
+Manjunath S   1:31:38
+OK.
+So I think.
+Hmm.
+
+James Maki   1:31:46
+Go ahead. What were you going to ask?
+
+Manjunath S   1:31:47
+Yeah, I was just what was the. I can create the users in this or not only right or should be creating dev task only.
+
+James Maki   1:32:00
+Only in dev. Yeah. So from here you can go to view users and then you can add them from there. Yeah. Oh, and actually before you do that, add the IP addresses because whenever you're setting up the user, it's gonna ask you for that IP address.
+
+Manjunath S   1:32:04
+OK.
+Sure.
+
+James Maki   1:32:16
+So if you don't have that injured, then yeah, then that'll be a little bit more of a pain also. So this is a little bit different like I said there. So there is no IP address section on the company page here in dev, just just another thing that that's another thing that was added.
+
+Manjunath S   1:32:18
+Mhm.
+Mhm.
+
+James Maki   1:32:34
+Whenever we did our last upgrade, so there but there is an IP addresses section on the left is where you want to go.
+
+Manjunath S   1:32:49
+IP address.
+
+James Maki   1:32:50
+Yep.
+Alright, and then to add new ones, it's gonna be down at the bottom.
+Yeah, all right. And so they sent us for Sonnet access. I believe they only sent us two IP addresses on the ticket, right? It's those the workstation ones. It's just those two should be the actual user IP addresses.
+
+Manjunath S   1:33:25
+Yeah, this winter.
+
+James Maki   1:33:27
+Uh.
+Yes, yes, correct. There's two there though, so you have to do them one at a time.
+So like the first, the the first one. Yeah, first one ends at the 103, yeah.
+
+Manjunath S   1:33:40
+Yeah.
+Description New IP.
+
+James Maki   1:33:58
+Yep, I I just put the company name. Usually I I just say either either Fenvi or Velocity, one of the two. Yeah, that's fine. And then and then you have to select the company so it it it defaults to Palinode.
+
+Manjunath S   1:34:03
+OK.
+Can we?
+
+James Maki   1:34:13
+But we're not setting this up for us. We're setting it up for them. So if you start typing the name, yeah, it should come up again.
+There are a bunch of like FIS. So yeah, so it there. That one. Yeah, there you go. All right. And add IP address. Yep.
+
+Manjunath S   1:34:29
+Yeah, got it.
+I need the address.
+I mean another one also, right?
+
+James Maki   1:34:38
+Right. And then it's gonna take. Yeah. And then copy the other one. Yeah. And it's whenever you add it, it does take you back up to the top. It's kind of annoying. This is This is why we changed it in the the new version I saw it. This is why all this stuff is gone is because this was not very.
+Intuitive.
+
+Manjunath S   1:35:00
+And I see.
+
+James Maki   1:35:01
+There you go. Yeah. And then and then now that you've added them in first, now when you're setting up the users, those will come up as options for the list. So that way you don't have to like set them up. Well, actually, because I think the IP address is required, I don't think it'll let you set up the user without it.
+Uh.
+
+Manjunath S   1:35:18
+So should I add all this IP addresses?
+
+James Maki   1:35:22
+No, you don't need the other ones. You just need those workstation ones. Those are going to be like the actual users. Everything else is going to be server related. So yeah, so like cigar, I believe he sent all of those to the Cato team already.
+
+Manjunath S   1:35:28
+Oh.
+
+James Maki   1:35:38
+So that should so this should all be good to go.
+
+Manjunath S   1:35:38
+Mhm.
+OK.
+
+James Maki   1:35:43
+And yeah, yeah, so after you have those users, that should be it. Like I said, just send the API token. Make sure you include that on the ticket when you respond because they are gonna need that.
+I.
+
+Manjunath S   1:35:59
+So this is the first name and this is the last name right James?
+
+James Maki   1:36:05
+Yes, correct. Yeah, it's yeah, first name dot last name looks like there.
+Yeah.
+
+Manjunath S   1:36:25
+So should I?
+
+James Maki   1:36:27
+Yep, yes.
+
+Manjunath S   1:36:30
+And yourself.
+
+James Maki   1:36:32
+Yep.
+
+Manjunath S   1:36:35
+OK, so adding all this also for the responses like the company has been created and the API token is this that's it right?
+
+James Maki   1:36:45
+Yep, yeah, yeah. And and that should should take care of that.
+
+Manjunath S   1:41:27
+This was created successfully.
+
+James Maki   1:41:38
+Yeah, that's the last one.
+
+Manjunath S   1:41:41
+Yeah.
+
+James Maki   1:41:42
+OK, excellent. All right. Yeah. So I think.
+OK. Oh, yeah. So let's respond to Amanda. Go ahead. You can take the ticket from me since you did all the work here.
+And let's do kind of, yeah, let's just do our normal stuff here. So yeah, task put it at, put it at a high priority since they escalated it. Let's say it was a high priority. Affinity. Yep.
+
+Manjunath S   1:42:07
+Yeah.
+Hello.
+Me.
+
+James Maki   1:42:19
+And there's a there's a category for dev.
+Yeah, there's a there's a dev category, so I would just use that.
+Uh, Yep. Yeah, 700 support.
+Support. No, because because we did all this ourselves. All right, so we can tell her company, company and users have been set up. Disputes of being, yeah.
+
+Manjunath S   1:42:38
+OK.
+Tom and.
+So.
+
+James Maki   1:42:49
+Yeah, this, yeah, this is just going to Amanda, so.
+
+Manjunath S   1:42:59
+Who's this?
+
+James Maki   1:43:03
+Yep, Yep. And then disputes have also been created.
+
+Manjunath S   1:43:05
+So.
+Disputes.
+
+James Maki   1:43:14
+And Yep, yeah, disputes have also been created and a schedule.
+Oh.
+Yeah, and scheduled to generate daily.
+Yep. And then and then just here is the API. Yep, here's the API token and let us know if there's anything else.
+
+Manjunath S   1:43:35
+OK.
+Sorry, excuse.
+
+James Maki   1:43:48
+Bless you.
+
+Manjunath S   1:43:53
+Yeah.
+
+James Maki   1:43:54
+All right. And that's it. So as of right now, that's all we have to do. So unless, unless they come back and say.
+
+Manjunath S   1:43:58
+I have to copy the.
+
+James Maki   1:44:07
+Uh, the API token? Oh yes, yeah, you do need that.
+Yeah, yeah, 'cause I added.
+
+Manjunath S   1:44:16
+Thank you.
+
+James Maki   1:44:20
+Oh, does it not let you?
+
+Manjunath S   1:44:21
+No.
+
+James Maki   1:44:22
+Oh, boy. OK, that's interesting. All right, wait, hold on. Really.
+So do that to me too.
+Oh oh, you can still double click on it and it'll still highlight.
+There you go. Yeah. Yeah. So you can still copy it. Yeah, I think that's just saying it won't let you edit. I think that's what that that's what that read.
+Some of those were.
+
+Manjunath S   1:44:52
+Also that let us say that IP address has been also a cluster or is it?
+
+James Maki   1:44:57
+Uh, yeah, yeah, you can add that too. Sure.
+I I do like to list out like everything that was done just for record keeping and just in case anyone else has to go back and look for whatever reason. I I do think it's better to list out as much stuff as possible like all the work that you did.
+Yeah, and that should be good. Yeah, let us know if there's anything else.
+
+Manjunath S   1:45:25
+Yeah.
+
+James Maki   1:45:26
+Alright, and then since this is a dev ticket and it's just going to Amanda.
+Oh, would I even put this in pin in?
+Yeah, let's put it in pending for right now, just to.
+Just to make sure they don't have to reopen it.
+
+Manjunath S   1:45:54
+Pending.
+
+James Maki   1:45:56
+Yeah, yeah, let's do pending just to be safe.
+And then, uh, I think there was a did we already merge it?
+I think there was a second ticket. I can't remember if me and Sigar. OK, we already merged it. OK, cool. We're good. All right. Yeah, that's it for that one. All right, so we are waiting for or we are needing the the public IP address. So Sunbit is the next dev company.
+It's a ticket 22892.
+
+Manjunath S   1:46:33
+Oh Jim, so Sagaras put a text in the group. This is like adjoint.
+
+James Maki   1:46:40
+OK. All right. Well, we'll look at that here in just a second. All right. I'm just a I'm a sign in.
+Assigning this other ticket over to you for a Sunday.
+And so, all right. And so you guys can work on Sunbit here. Let's take it 22892. I'll let you guys work on that on your own and you're basically, it's basically all the same stuff.
+Um.
+
+Manjunath S   1:47:10
+In the company. Oh yeah, for the your company name.
+
+James Maki   1:47:19
+Uh, Sunbit is the company.
+And yeah, so, yeah, so Sagar is getting their public IP address. Yeah, yeah. So it's gonna follow the same steps. So I'm, I'm gonna let you guys work on that without me and just let me know when you guys are. Yeah, let me know when you guys are done and we can kind of.
+
+Manjunath S   1:47:29
+OK.
+Sure, sure.
+
+James Maki   1:47:43
+Go back and double check everything, but OK, all right, so that's it for the dev stuff. All right, let's look at what was the what was the ticket that you had.
+
+Manjunath S   1:47:52
+This is like they are not received a step on step three.
+
+James Maki   1:47:58
+OK.
+All right, so they're not getting their step files. All right, so where do you think we should check first?
+
+Supriya Siddappa Kulageri   1:48:14
+ohh James I have checked that so for 19th and 20 we don't have step two from their end.
+
+Manjunath S   1:48:14
+Second, this is.
+
+James Maki   1:48:25
+OK, alright. Well, so, so they're saying.
+
+Supriya Siddappa Kulageri   1:48:30
+From 18th we don't they don't have.
+
+James Maki   1:48:34
+Huh. OK.
+The PDQ OK and files were actually generated, right? We did have step one files on those days.
+
+Supriya Siddappa Kulageri   1:48:47
+Yes.
+
+James Maki   1:48:48
+OK.
+Wait, hold on. What is she saying here? It's the 18th.
+
+Supriya Siddappa Kulageri   1:48:56
+On 18th.
+
+James Maki   1:48:59
+But that's not true.
+
+Supriya Siddappa Kulageri   1:48:59
+She has step one but not Step 3.
+
+James Maki   1:49:01
+Oh.
+
+Supriya Siddappa Kulageri   1:49:06
+But on 18th she got all those steps.
+
+James Maki   1:49:06
+OK.
+OK.
+All right.
+Alright, so they're saying they're not getting their files. Alright, so alright, so where do you guys think we should check first? Where do we need to look to start?
+Investigating this.
+Uh, right.
+
+Supriya Siddappa Kulageri   1:49:29
+The admin site.
+
+James Maki   1:49:30
+Let's see. OK, yes, alright. So you checked on there.
+Uh, who's uh, Major? Are you still in control?
+Did did you time out Moju? You still there?
+
+Manjunath S   1:49:55
+Sorry, James, I was on mute. I was talking about. Oh, sorry, not PDQ services.
+
+James Maki   1:49:58
+OK, OK. OK.
+Alright, no worries.
+Yeah.
+
+Manjunath S   1:50:13
+Let's see.
+
+James Maki   1:50:15
+Hmm.
+
+Manjunath S   1:50:18
+Which date on 18th?
+Open step two, step three.
+
+James Maki   1:50:29
+OK.
+All right, so the 18th looks normal. Step 1-2 and three are all there.
+And she's saying that they did not receive their step three file.
+All right. And then that's when everything broke. So they're saying they did not receive the step three file on the 18th, and then they haven't received any any of the other files since then. All right, so the first question is, do we still have those files?
+
+Manjunath S   1:51:03
+The FTP server I think no gems even now you also check this.
+
+James Maki   1:51:03
+Yeah.
+OK.
+All right, so yeah, so we can either we can either go over to the server directly or here in the UI. If you go to the company data files tab, that will show us all the pending files, right? So if they're if they are still on the server, we'll see them there.
+And if not, it should be nothing.
+
+Manjunath S   1:51:33
+Additional settings.
+
+James Maki   1:51:34
+Yeah, no, we're gonna look at the the data files tab. So we've got a visit inside it, yeah.
+
+Manjunath S   1:51:38
+The different system.
+Yeah.
+
+James Maki   1:51:44
+There we go. All right, all right. And so there's nothing in the files waiting. All right, so the files are not on our server, so it looks like they are being uploaded at least.
+Uh so.
+So what do you think we should check next? It it looks like the files are uploading for us. What else can we do to try and verify?
+
+Supriya Siddappa Kulageri   1:52:15
+In FTP server.
+
+Manjunath S   1:52:15
+Sorry, James.
+
+James Maki   1:52:19
+Uh, Yep, that's where I would look next.
+So if we go over to the web 01 server.
+
+Supriya Siddappa Kulageri   1:53:02
+In FTP, we do have those files.
+
+James Maki   1:53:08
+Oh, we do have the files.
+
+Supriya Siddappa Kulageri   1:53:10
+Yes.
+
+James Maki   1:53:11
+And for PDQ.
+
+Supriya Siddappa Kulageri   1:53:15
+Yes.
+
+Manjunath S   1:53:22
+Um.
+PDQ services.
+
+James Maki   1:53:36
+Where where are you seeing the files at Supriya?
+
+Supriya Siddappa Kulageri   1:53:41
+Oh, I have moved it, James.
+
+James Maki   1:53:44
+Oh, you moved it.
+
+Supriya Siddappa Kulageri   1:53:47
+Yes.
+But.
+
+James Maki   1:53:49
+Where'd you move it to?
+
+Supriya Siddappa Kulageri   1:53:57
+Inters on it.
+
+James Maki   1:54:04
+Uh, what do you mean? What do you mean into Sonnet?
+Do you? Do you? Do you want? Yeah, I was gonna say you wanna share your screen so we can see.
+
+Supriya Siddappa Kulageri   1:54:10
+We shared mostly.
+Oh, these were the files we were having before.
+And have moved some of those.
+
+James Maki   1:54:30
+Oh, OK.
+
+Supriya Siddappa Kulageri   1:54:32
+But here I don't see this like we will get right next step to.
+
+James Maki   1:54:34
+Alright.
+I.
+Yeah, well, you just moved them. You moved them out of the folder. Yeah, you just took them out of the the company folder.
+
+Supriya Siddappa Kulageri   1:54:44
+OK.
+Yes.
+
+James Maki   1:54:49
+So yeah, so you don't want to do that. Like, what's? What's the point of that? What?
+We we need them if they if they need to be uploaded to the company, then they still need to be in the company folder.
+So you don't wanna move those out to the sonnet directory or to the the FTP. So you put them into FTP dir.
+Peter.
+
+Supriya Siddappa Kulageri   1:55:11
+Mhm.
+
+James Maki   1:55:11
+If if you moved them U.
+Oh, and there's other files there. Have you done this before? Is that where these ones from May 17th?
+So if you so if you go up a level up to the FTP dir.
+
+Supriya Siddappa Kulageri   1:55:40
+Uh, Lord James.
+
+James Maki   1:55:42
+All right, so you need to go up a level, go go to where you moved the files.
+
+Manjunath S   1:55:48
+3D space.
+
+Supriya Siddappa Kulageri   1:55:52
+OK.
+
+Manjunath S   1:55:52
+dot dot.
+
+James Maki   1:55:55
+All right, so if you list these out.
+No, we've already been there. List out the contents.
+
+Manjunath S   1:56:11
+They love, they love to play.
+
+James Maki   1:56:12
+Yeah.
+All right, and it's and they're at the top. So if you scroll up, you're gonna see some CSV files there.
+All right, so all right, so like, do you see the problem here?
+
+Supriya Siddappa Kulageri   1:56:26
+Oh.
+
+James Maki   1:56:31
+So there's all these files here. Where did they come from?
+
+Supriya Siddappa Kulageri   1:56:33
+So the before if we move that it won't go to Sonic directly since before we have did the same procedure right? So I talked to do this.
+
+James Maki   1:56:48
+No, we there's there's there's really no reason to ever do this. So all right, so all all of those student files, all of those are the PDQ ones, every everything from the 18th. OK, it should be because they said that they're missing the step 3 from the 18th and they didn't get anything out for that, OK.
+All right, let's move these back like they they do need to be in the company folder. You you don't want to put stuff into the root FTP dir.
+Yeah, like we don't, we don't really do anything from there, so we need to move these back.
+O Let's do MV.
+And reduce space 20/25/06.
+And star.
+All right. And then space and we're gonna do period forward slash PDQ services.
+Yep. All right, so we're moving all the files that are in the FTP dir. We're moving all of these that have the date 2025 of 06. So everything for the month of June, because those are the only files that are there.
+So we're we're moving those back to the PDQ services folder, so hit enter.
+All right, and now let's go back to the PDQ directory and we should see those files there.
+OK, perfect. OK, so whenever we're sending files to a client, we want to do it from their company folder. You really you really shouldn't be doing anything from the FTP der folder unless you're setting up a new company or removing one.
+That's that's really all we kind of do there, right? So yeah, so you don't, you don't really ever want to move files back to that root because there's nothing here to identify it, right? So like, because there was a couple other files there that we saw from May, who and where? Where did those files come from?
+Right. Like we have to, we'd have to investigate and go into the file and look them up and find out where this came from because they're a month old now. So don't. So don't do that. OK, so all right, so they're not getting their files.
+
+Supriya Siddappa Kulageri   1:59:16
+OK.
+
+James Maki   1:59:21
+So they are hosting the FTP. That's why there's the the get dot FTP and the put dot FTP commands. All that stuff is there because they're hosting. So the next thing I would do is test the FTP connection.
+O We need to get their credentials.
+Out of VS code for VS Studio.
+Alright, and they are going to be in the data files repo, so we're going to change to that. So if you go to file.
+And we're going to open folder.
+And we're gonna select data files.
+Select folder.
+Right. All right. And so if you drop down that commands, if you drop that down so we can see the list.
+Just like the the arrow next to it. It's already highlighted commands.
+At the top.
+
+Supriya Siddappa Kulageri   2:00:51
+Mhm.
+
+James Maki   2:00:52
+Down the highlighted one. There you go. There we go. All right, so here's all of our data files commands for all of our companies, right? So this is where we're going to get our FTP credentials from. So you can find PDQ in this list.
+
+Supriya Siddappa Kulageri   2:00:54
+Yes.
+Mhm.
+
+James Maki   2:01:19
+Yep, yeah, in any of them. Yeah, it doesn't matter which one. Any of the PDQ ones, they they all have their credentials saved in them, so it doesn't matter which one you select.
+
+Supriya Siddappa Kulageri   2:01:20
+Yes.
+
+James Maki   2:01:29
+All right, and so if you Scroll down just a little bit here inside of the scripts, there are our SFTP commands. So the first thing we've talked about it before, but just as a reminder.
+In the password, watch out for escape characters. That's going to be those two backslashes there. So those are necessary to allow the dollar sign to be passed through in the password. So when we test this, we actually do not need those.
+That's just for the automation command, so you can take out those two backslashes inside inside of the password. So it's that FTP force on it in in between the dollar signs.
+See it.
+
+Supriya Siddappa Kulageri   2:02:23
+This month.
+
+James Maki   2:02:24
+Uh, Nope.
+It's gonna be that the orange. Look at the look at the orange.
+Yeah, right there. Yeah. So you want to take out those two backslashes because those are not actually part of the password. They're they're just escape characters.
+Yep, right there. And then the one in front.
+Great. OK, all right, so now we have the password in the correct format. So now we can actually test the credentials. So copy the SFTP through the IP address.
+Right after the password SFTP and then it's username and password you want SFTP.
+
+Supriya Siddappa Kulageri   2:03:14
+2.
+
+James Maki   2:03:18
+All the way, all the way to the IP address. Include the SFTP.
+Yeah, exactly. There you go. Perfect. All right, copy that. So that's our SFTSFTP command is what that is, right? So that's what we're gonna use on the server to connect to their server.
+So go back over to Web 01 and you can paste that in.
+Yep.
+
+Supriya Siddappa Kulageri   2:03:57
+OK.
+
+James Maki   2:03:59
+Alright, and then I generally I like to copy the password first, just so I have it ready.
+So you can you can either hit enter or we can go back and copy the password now either one.
+All right, it's taking a minute. It's not a good sign.
+OK, all right, so we are getting blocked.
+All right, so let's let's copy that error message there.
+And we're gonna send that to them.
+Yeah, I would copy the the key key exchange identification. I would copy that too, yeah.
+All right, there you go. All right. And and on the ticket, let's respond. So we need to tell them that we are having trouble connecting to their server.
+Yeah, this is the error message that we're getting.
+Yeah, and and let's ask her to check with her IT team.
+If there are any issues.
+So whenever we get blocked like that and there's not like A and there's not like an authentication error message or like, like you're getting blocked before it even asks you for the password, right? So it's not a login issue because you're not even getting that far, so.
+
+Supriya Siddappa Kulageri   2:06:02
+Stop.
+
+James Maki   2:06:12
+It definitely seems to be something changed on their side that's not blocking us and.
+Yeah, so that's good. So we need them to check and tell us.
+Yeah, you can do step file. Yeah, that's fine.
+Yeah, that's good.
+All right, display it in pending and hopefully they come back and say that they fixed it and we can try again.
+
+Supriya Siddappa Kulageri   2:06:39
+If.
+
+James Maki   2:06:40
+Excellent.
+
+Supriya Siddappa Kulageri   2:06:43
+This one I think.
+
+James Maki   2:06:45
+Yes, that is the one we had. Yeah, we had that phone call with him on Friday and I was supposed to follow up with the dev team and I forgot.
+
+Supriya Siddappa Kulageri   2:06:46
+On Friday we have.
+Yeah.
+
+James Maki   2:06:58
+So let me send them a message right now since I said I was going to.
+And this is for the receipt files, is that right?
+And what do their files look like currently?
+
+Manjunath S   2:07:55
+Again, so 22887. Now can I close the ticket?
+
+James Maki   2:08:05
+Give me just one second here. Let me finish this message to the devs and I need to get clarification on this.
+
+Manjunath S   2:08:09
+Or.
+
+James Maki   2:08:52
+Yeah.
+All right, all right. So I'm getting getting clarification on that one before you respond, Sabria.
+And just to make sure that we're not, yeah, just just make sure that we're not going back to the full account numbers. And yeah, we'll we'll just kind of have to deal with that.
+Alright, so we'll wait and wait until they respond. Alright, what was the ticket you sent, Maju?
+Uh, for Hughes.
+Oh, OK, yeah.
+Oh.
+Yes, yeah, that was. So, yeah, that was when the the account masking was not working. All right. And that's tied to a problem ticket, right?
+
+Manjunath S   2:09:41
+Yeah.
+
+James Maki   2:09:42
+Let's actually.
+Yeah, yeah, go ahead and tell them.
+Tell them on that. On that use ticket. Tell them that this. Oh yeah, Sherry said. Yeah, she said she can see the whole numbers now. Thank you so much. Yeah, yeah, absolutely close that.
+
+Manjunath S   2:10:15
+Oh, can't.
+
+James Maki   2:10:15
+Yeah, definitely. And then and then there's probably a couple other tickets tied to the problem ones. Looks like a few of those are already solved. A couple are still open and so I think we might be able to.
+OK, it looks like Sigar already updated some of these. OK, perfect.
+Cool. Yeah. Yeah. So that one from Hughes. You can go ahead and close out.
+And then hopefully by the end of the day, hopefully we can close out this problem ticket 'cause there's a few more that are still in pending that Skari asked him to confirm that's working.
+So depending on what responses we get there, we can probably close that out.
+
+Manjunath S   2:10:56
+OK.
+
+Supriya Siddappa Kulageri   2:11:01
+Oh, James.
+I think these two are the same one, right?
+So here she is asking there are 254 files not downloaded.
+And this one.
+
+James Maki   2:11:31
+OK.
+OK, alright, yeah, so this ticket was for the white listing and then she has a second one for the.
+OK.
+
+Supriya Siddappa Kulageri   2:11:50
+Hmm.
+
+James Maki   2:11:52
+Let's see.
+
+Supriya Siddappa Kulageri   2:11:53
+So this is respond and she have raised a new ticket. So I think those two are the same request, right?
+
+James Maki   2:11:54
+OK. OK. Yeah.
+Right.
+It looks like it, yeah. Yeah. And so you already said, yeah, you said that we'll follow up.
+
+Supriya Siddappa Kulageri   2:12:05
+Yeah.
+Yes, but she's telling this is a different action.
+
+James Maki   2:12:11
+Yeah.
+I don't know what she means by that. I mean, this ticket was for a different action, yes, because it was for a sign in issue, which is resolved, and now there's a new ticket for the data issue, which is what we're gonna follow up on.
+Yeah, I would still go ahead and solve that. Yeah, go ahead and solve this one. You've already told her what you're doing, so I don't think you need to send another message. Solve this one. And then, yeah, and then we'll focus on the on the 959.
+
+Supriya Siddappa Kulageri   2:12:36
+Yes, so that's.
+
+James Maki   2:12:51
+We'll uh, yeah, we'll respond to the data issue on this one.
+
+Supriya Siddappa Kulageri   2:12:51
+It.
+
+James Maki   2:12:57
+Because, yeah, you're you're right. I I I don't know what she was trying to say with that.
+Yeah, that didn't really make sense.
+Yeah, so let's work.
+
+Supriya Siddappa Kulageri   2:13:12
+Sport.
+
+James Maki   2:13:12
+Yeah, let's work on this one. All right, so let's see what's going on.
+All right, so 254 in the step one queue. All right.
+Alright, do these guys use step files? I believe they do, right? We've looked at these guys a few times.
+All right. And so there is no Step 2 there.
+Oh, but there are a couple step to file. Oh, if you Scroll down just a little bit.
+And that file's waiting. There's two files there, right?
+So we should have the files that we need. So my next thought is.
+What's? What's blocking these from loading? So the files are on the server, but they're not loading for some reason.
+O Let's go look on the server.
+OK, alright. So that's kind of exactly what I was expecting. So we talked about this a little bit last week. This looks like the same issue that CCS is having, right? Like where their step 2 files are getting hung and so there's that dot locked file is there.
+And it's from. It's been there since the 19th, so it's blocking all the other files from processing because it's essentially hung. So what we need to do is we need to remove that dot locked file.
+dot CD You're you're already in dot CD. You're not changing directories.
+There you go.
+Yeah, Yep, run that.
+All right, so that'll take care of the lock. So now we can process those files. So now back over in Sonnet. Now you can just click that button to read the step two file and those should load in now.
+Yeah, and you only have to hit it once. Yeah, it'll load. It'll load both the files, so it'll take care of everything after that. So now you're just waiting for those to load. So that should only take a few minutes.
+Because then after the files load, then they have to run through the rules engine also, right? So it's going to take a few minutes for that to process and get done. But then when that is when that is done, just double check and make sure that there's no more disputes.
+
+Supriya Siddappa Kulageri   2:16:14
+Yeah.
+OK.
+
+James Maki   2:16:24
+Waiting for data and as long as that number goes down to zero, you can respond and say that the step 2 files have been processed.
+And they should be good to go.
+
+Supriya Siddappa Kulageri   2:16:36
+OK.
+Oh, this one I have asked to Amanda.
+
+James Maki   2:16:49
+OK.
+It was.
+
+Supriya Siddappa Kulageri   2:16:53
+So just looking into this.
+
+James Maki   2:16:59
+Oh, what's this one? Oh, this is the account history one. Oh, yeah, yeah, yeah.
+Jeez, that looks ugly. What's going on here?
+
+Supriya Siddappa Kulageri   2:17:18
+So this one.
+
+James Maki   2:17:19
+Oh, so it looks like they're. Yeah, so it looks like they just want a root cause.
+Yes.
+All right, yeah, that's definitely one that we need to follow up with Amanda on, because I have absolutely no idea what she was doing to resolve this. But yeah, so if if you've already messaged, yeah, if you've already messaged Amanda about her, then yeah, that's really all you can do for the moment.
+
+Supriya Siddappa Kulageri   2:17:39
+Uh.
+
+James Maki   2:17:44
+Yeah, and and if you don't get a response, you just keep trying to escalate with her. I know she's she's pretty busy, so like, I don't think she's ignoring you intentionally or anything.
+Um, she just has a lot of stuff going on, but yeah.
+
+Supriya Siddappa Kulageri   2:18:02
+Yeah, I understand. Um, yes.
+OK, we'll ask her later. I will remind her.
+
+James Maki   2:18:14
+OK, sounds good.
+
+Saravanabhavan S   2:18:16
+James James 22953.
+
+James Maki   2:18:18
+Yes.
+OK.
+
+Saravanabhavan S   2:18:24
+I just, uh, reset the password and sent to him, but he's telling I didn't receive the receive the tone.
+
+James Maki   2:18:25
+OK.
+OK, oh, he's oh.
+Oh, he.
+That looks like that's a Pravana e-mail, I don't think.
+Uh, that's not Sonnet.
+It doesn't look like.
+Um, I think he needs.
+All right, so this is Russ. So he was. I can't remember what his official title was, but he was, he was basically like our contract manager.
+Was like one of the big things that he did for Palinode, or I guess still does for Palinode.
+But yeah, all right. But so he looks that screenshot that he sent, right? Like that's coming from Pravana AADFS. It looks like that's for his outlook for his e-mail. So that's not a password that we can reset.
+
+Saravanabhavan S   2:19:33
+Is.
+
+James Maki   2:19:41
+So he needs to talk to the IT looks like he needs to talk to the Pravana IT team.
+
+Saravanabhavan S   2:19:48
+OK.
+
+James Maki   2:19:49
+Um.
+I'm honestly not sure how.
+So the only contact I have with those guys is in teams, right? Like we're in the IT help group. That's the only way that I know how to get ahold of those guys.
+I don't know if I don't know if Russ can enter an SSD ticket. I think that's what he really needs.
+
+Saravanabhavan S   2:20:22
+So what's it? I tell him that we can contact the IT team on SSC ticket.
+
+James Maki   2:20:29
+I yeah, yeah. Ask him if he's able to access the SSD system.
+
+Saravanabhavan S   2:20:35
+OK.
+
+James Maki   2:20:36
+Because, yeah, I think he, yeah, he needs to. Or I wonder if he needs us to do to do that for him too. Yeah, this honestly just has nothing to do with us.
+Is there do you guys know? Is there like an IT e-mail address? Can what if we can you CC them on the ticket? Is there like an IT at pravana.com or something? Do you guys know?
+
+Supriya Siddappa Kulageri   2:21:07
+need to check gyms. IT we will be having but not sure which one that is.
+
+James Maki   2:21:14
+OK.
+
+Supriya Siddappa Kulageri   2:21:16
+We last several.
+
+James Maki   2:21:19
+OK. All right. Sounds good.
+
+Supriya Siddappa Kulageri   2:21:24
+Yeah.
+
+Saravanabhavan S   2:21:25
+James 22952.
+
+James Maki   2:21:36
+OK, these are for the control number errors. OK, all right, so we do. We already have a dev task for that, but I know that these people disputes won't wait for that, right? Disputes have a due date. They can't wait for two weeks.
+Yes.
+Oh God, what is happening here?
+All right, I just stumbled across something else. OK, so we can fix those and we definitely need to fix the ones that are coming up soon. I fixed some at the end of last week that we're going to.
+Expire over the weekends.
+Um, but OK.
+Uh.
+OK, scroll up.
+Or is is this a different?
+
+Saravanabhavan S   2:22:39
+This way.
+
+James Maki   2:22:51
+OK.
+Alright, so they gave us the control numbers and what we really need are gonna be the dispute IDs.
+So let's go ahead, copy that first control number.
+Just, just, just the first one. Well, we have, we have to do these. Yeah, we have to do these one at a time. Yeah. So we need to look up the Sonnet IDs first. So yeah, so copy that and then let's go over to Sonnet and on the admin side.
+
+Saravanabhavan S   2:23:13
+OK.
+Plus.
+
+James Maki   2:23:28
+I will use the the dispute search.
+Yeah, you just, uh, just go to admin.
+Yeah, just go to admin from right here. Like it's right there on the right. Sign in admin.
+No, just go, just go to Sonnet admin.
+Yeah, right there. There you go. OK, yeah. So let's look these up on on this side. So on the left side under admin, there's like the the dispute section.
+And we can do a search from there.
+There you go.
+Yeah, so we're gonna do a search and we do have to, we have to use PG admin to fix these. But yeah, yeah, go ahead, paste in the control number, do a search and that'll give us the the sonnet ID.
+Alright, uh, go ahead and copy that ID.
+Because we're going to need it later.
+
+Saravanabhavan S   2:24:50
+So like I think company name is a different.
+
+James Maki   2:24:55
+No, it's the same. So Selfbank is like the is like the parent is like the parent company and lead bank is like their main is like their main branch is all is all that is. Yeah, so you're looking at the right one. So copy that's on it ID.
+
+Saravanabhavan S   2:24:57
+Yeah.
+Put.
+OK.
+OK.
+
+James Maki   2:25:12
+And over in PG admin.
+Yeah, we're gonna run a query. So we've talked about this a few times over the last couple weeks.
+Yeah, so what's happening is we're seeing duplicates in the E Oscar response table. So if you do a select.
+Let's, yeah, select. Let's do ID comma dispute under score ID.
+Yep, right.
+Uh, you don't need the second comma. That's that's that's enough.
+Take out that comma and reduce space from E Oscar under score response.
+E Oscars altogether. There's no no under score between it.
+Yeah.
+
+Saravanabhavan S   2:26:20
+Yeah.
+
+James Maki   2:26:21
+OK, where dispute dispute under score ID equals and then paste in the ID that you copied.
+
+Saravanabhavan S   2:26:31
+Dispute.
+
+James Maki   2:26:32
+Yep, under score ID.
+Yeah, and then.
+
+Saravanabhavan S   2:26:40
+So I have to give the control number or a dispute ID.
+
+James Maki   2:26:44
+We're we're doing the dispute ID. So the the control number I don't think exists on the E Oscar response table like that's not it's not logged there. So we can't use that we we need. That's why we looked it up in the admin side first is because we need the dispute ID in order to do this.
+Uh, so that's that's why we did it. Uh, so you so you can paste in the ID that you copied.
+
+Saravanabhavan S   2:27:08
+So the same control number that.
+
+James Maki   2:27:11
+No, paste it. We copied the ID, right? We we just copied the ID. Yes, there you go. You got it. All right, so now you can run. You can run that.
+
+Saravanabhavan S   2:27:12
+That song.
+OK, OK, sounded.
+
+James Maki   2:27:22
+And we're gonna see two entries here. Oh, we lost your connection. Oh, you gotta refresh your PG admin.
+Copy before you close it. Before you close it, copy this, copy this query and let's just let's just like paste it onto the ticket so that way you don't lose it and we can just get it right back.
+
+Saravanabhavan S   2:27:45
+So where I have to Google gemstone?
+
+James Maki   2:27:47
+Just paste it on the ticket for right now, just just so we can keep it.
+Yeah.
+Yeah, or or in your word. Yeah. Or you can put it in a word. Yeah, either one. Yeah, there you go. All right. And yeah, because you're gonna have to recopy your like your token, right, to get back onto the PG admin. So yeah, all right, so.
+
+Saravanabhavan S   2:27:58
+I will.
+The 10th.
+
+James Maki   2:28:16
+Uh, I think if you click.
+So right now you're in the query tool like on the on the left side of your PG admin like highlighted is the query tool. Right above that is the yeah the default workspace. Click on that up above above.
+And one more, one more.
+Yep. All right, so if you click the button to open up a new query tool.
+And this should prompt you for the token.
+In a in a second after it gets.
+There we go. Alright, yeah, and now in your command prompts, you can just run the.
+
+Saravanabhavan S   2:29:14
+So I run.
+
+James Maki   2:29:15
+You shouldn't have. You can click out of it like so if you go over to your command prompts you have to get a new token.
+Yeah, and I don't. I don't think the token changes. I think you could just copy and paste this again and let's see if that works.
+Yeah.
+All right, so let's see if that'll. Yeah, and hit OK.
+Excellent. OK, OK, yeah, yeah. Copy the query over over here.
+
+Saravanabhavan S   2:29:45
+So shall I?
+
+James Maki   2:29:51
+And this time it should work.
+Oh, no, I guess not.
+Uh, did your uh did your PIM access expire?
+
+Saravanabhavan S   2:30:03
+No names I just.
+
+James Maki   2:30:08
+I bet it expired. So if you go back over to the the web portal like where you where you you have to sign into your groups, right? You have to activate them.
+
+Saravanabhavan S   2:30:18
+So shall I do it again or I can do this key?
+
+James Maki   2:30:21
+Uh, I think it expired.
+
+Saravanabhavan S   2:30:25
+OK.
+
+James Maki   2:30:25
+So let's let's let's check your PIM access. Like let's go to the PIM screen.
+And we need we need to check your active groups or roles, I think is what it is.
+
+Saravanabhavan S   2:30:36
+I was like I can generate the new one.
+
+James Maki   2:30:39
+I mean you you can generate a new one if your PIM access is still active. So we need to verify that first. We need to make sure that your PIM.
+
+Saravanabhavan S   2:30:50
+OK, so.
+OK, so how to verify that one?
+
+James Maki   2:30:56
+Alright, so where do you go to activate your groups?
+But before you get your token, there's something else you have to do, right?
+
+Saravanabhavan S   2:31:08
+Yes, we have to do in Azure.
+
+James Maki   2:31:11
+Oh yeah, so you already have the tab up. You have the my roles. It's your second tab.
+You already have it up.
+OK, if you want to open up a new one, that's fine.
+
+Saravanabhavan S   2:31:41
+Active only.
+
+James Maki   2:31:42
+OK, alright, so it is still active. OK, so yes, so just run the command to get a new token then.
+Yeah, yeah. So if you just hit up on your keyboard there, it should take you to the.
+You need you need to generate a new one. It looks like that one expired, so if you just hit up to run the command again.
+
+Saravanabhavan S   2:32:03
+OK.
+
+James Maki   2:32:29
+Yeah.
+All right, there we go. Now I think we're good.
+There we go. It's now we run this. We should get 2.
+Results here.
+Or at least two. I have actually seen it before where there was 3.
+Wow, that's taking a while. This is not a hard query.
+There we go. OK, all right, so this dulication, this is what's causing that error. So what we need to do is we actually do need to delete one of these.
+
+Saravanabhavan S   2:34:34
+Yeah.
+
+James Maki   2:34:34
+So I always do the one with the higher number, so like this one ends in 902 and then 903. I always delete the second one, so I I would do the 903. Yeah, so copy that and then and then below your first query.
+Uh, start start a new line.
+And we're gonna do a second query this time to delete from E Oscar response.
+Don't forget the under score.
+
+Saravanabhavan S   2:35:17
+Uh, where I I can give ID.
+
+James Maki   2:35:22
+Oh, just yes, where ID equals.
+And then paste in.
+Yeah, and then you can paste in that ID. OK, all right. Not yet. So you have a couple of mistakes here. Well, there's one. Your your table name. You're missing something. E Oscar response. You're missing something.
+I can compare that to the line above. What's different?
+Yep.
+OK, uh uh.
+
+Saravanabhavan S   2:36:13
+Will I run the query now?
+
+James Maki   2:36:19
+So are you? Yeah, you can try.
+You're you're gonna have a problem here, but go ahead.
+
+Saravanabhavan S   2:36:32
+OK.
+
+James Maki   2:36:47
+Yeah, all right. So the problem here is that you have two different queries, so you can't run 2 queries simultaneously, so you have to highlight just the second line.
+Because we're just running the delete statement.
+Yeah, now you can run it.
+And so this will just run the delete query.
+And that's what you're trying to do.
+
+Saravanabhavan S   2:37:18
+Because I can date the first first line and run it, it takes almost longer.
+
+James Maki   2:37:23
+Yeah, well, it's not done yet. Yeah, it's still running, so I would wait for that to finish before you start editing stuff. But and then so after this is done though, so then the the response can be submitted.
+
+Saravanabhavan S   2:37:41
+OK.
+
+James Maki   2:37:41
+And so so you so you can either. You can either do that for them, which is what I generally do, but you don't have to.
+But generally over in Sonnet, I would go into their air recue, I would find that dispute the the ID that you had there and I would just submit it for them just to get it done. But you don't have to you you can you can make them responsible for that part and that's totally fine.
+So, all right, so we fixed the first one. So there's a couple more IDs that they sent us there, right? Or control numbers. So now we need to do the next one.
+
+Saravanabhavan S   2:38:31
+I just, uh, change.
+
+James Maki   2:38:33
+Not, not here. We're we're not using the control.
+
+Saravanabhavan S   2:38:34
+Controllable.
+Maybe how to bust like?
+As we have to go to and.
+
+James Maki   2:38:41
+Yeah.
+Yep, yeah, look up the sunet ID first.
+There you go.
+Is the Siri Internet connection a little slow?
+
+Saravanabhavan S   2:41:50
+I don't know what it was taking too long.
+
+James Maki   2:41:52
+So.
+Yeah, uh, just curious if that's why these queries take so long to run.
+Yeah, because these are really small queries. Like they really, like typically they shouldn't take more than a couple seconds. So yeah, it's it's great. It's crazy that you're.
+Taking almost a full minute to get the get the results.
+
+Saravanabhavan S   2:43:04
+OK, James, we have done this three controllers. We have deleted this duplicates, so.
+
+James Maki   2:43:07
+Yep. So I would tell them that they can resubmit those 3.
+Those 3 errors now and they should and and they should go through now.
+
+Saravanabhavan S   2:43:25
+So like that we can't tell them we can you can't resend the.
+Resend this three. OK so so we have deleted so duplicate so they will have only now one unique values in what's all three control numbers.
+
+James Maki   2:43:31
+Uh, yeah.
+Uh.
+Yeah.
+Right, right. So that should stop the error message from coming up again. So now when they go through and and now if they resubmit those, they should go through to E Oscar. Now they they shouldn't have any more problems.
+That's that's just for those three though. So I did notice, I noticed last week. I think they had put in another ticket they had.
+So they do have like they have a few more disputes with that same error I think.
+Um.
+Uh, maybe not. Actually, I'm looking through, it looks like.
+Those are all something different now.
+OK, so oh, there is one more.
+Oh, no, that's one that you fixed. OK, yeah, that should be good. Yeah, tell them that they should, that they can resubmit and the responses should go through to Oscar now.
+
+Saravanabhavan S   2:44:41
+OK, and there's one more ticket.
+Uh, this one, James.
+
+James Maki   2:45:06
+Yes. OK, so the answer to her question is no. So she's asking when they complete an ACDV, so like a regular dispute if that also responds to the block notification.
+No, it does not. Responding to the ACDV only goes on the ACDV. The block notification is separate and would require a BRR to for a response.
+
+Saravanabhavan S   2:45:38
+OK.
+
+James Maki   2:45:40
+Yeah, yeah. So you can tell her. Yeah. So you can tell her no, the response is only on ACDD. It's a is a good way to phrase that.
+
+Saravanabhavan S   2:45:42
+OK.
+Oh.
+OK, so uh.
+Uh, that's all from my my site James.
+
+James Maki   2:45:58
+OK, excellent.
+All right, guys, well, we're coming up on three hours, so let's let's definitely take a break and and I'm going to go get some lunch.
+If you guys have any other questions or anything else that needs to follow up on, just shoot me a message and if we need to have another call today, we can definitely do that also so.
+
+Supriya Siddappa Kulageri   2:46:26
+With Bing Music, I don't have anything.
+
+James Maki   2:46:27
+Alright guys, stay.
+All right. Perfect. All right. Thanks for all your help. You guys are doing great.
+Yeah, and you guys killed it. Monja, you did. You did awesome with the dev disputes. The dev disputes is definitely one of the most complicated things that we do here on the support team. So yeah.
+
+Supriya Siddappa Kulageri   2:46:37
+Yes.
+
+James Maki   2:46:49
+Yeah, good. Good job on all that stuff. But all right, guys, thanks a lot. I'll talk to you later, OK?
+
+Supriya Siddappa Kulageri   2:46:55
+Thank you. Bye bye.
+
+Saravanabhavan S   2:46:56
+Thank you.
+
+Saravanabhavan S stopped transcription

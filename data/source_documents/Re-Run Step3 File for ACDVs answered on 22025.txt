@@ -1,0 +1,27 @@
+                                          USE CASES: SONNET SUPPORT
+
+ISSUE: Re-Run Step3 File for ACDVs answered on 2/20/25
+Steps to be followed:
+1)Open the command prompt and log in using the following command: --az ssh vm --vm-name prdweb01 --resource-group rg-PaliPRD-DMZ --prefer-private-ip --subscription Sonnet_Production_Environment
+2)Navigate to the data files directory by running: --cd /sonnet/datafiles
+3)Switch to the sonnet user by using the command: --sudo su sonnet
+4) ***To find the Tracker ID: In Sonnet’s web browser, go to the "Data Files" section, select the specific date and company name, then click "Submit." Copy the Tracker ID from there.
+
+
+
+
+
+
+5)Execute the following command to check the file with the given paths: --php artisan sonnet
+
+6) Then enter the step number that need to be pushed: php artisan sonnet:makestep3 --company_id=8300 --file_tracker_id=623463
+7)Once done, exit the data files path by typing: --exit.
+6)To check the file in the pdqservices/ directory, use the command: --cd pdqservices/.
+7)Go to Sonnet and verify the data files for the specific step that needs to be pushed, then proceed to push the step.
+8)Then recheck whether the step is pushed or not in CMD –
+
+8)Finally, notify the customer and close the task.
+
+
+
+

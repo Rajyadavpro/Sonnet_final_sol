@@ -1,0 +1,7 @@
+                             GENERIC: MISSING DISPUTES
+
+Resolving steps:
+Step 1)From Sonnet Admin go to Scheduled Downloads
+Step 2)run a new download for the client set the count to 0 
+Step 3) check the box for Sweep ACDVs which means to download all disputes
+Step 4) Inform the customer and solve the ticket.

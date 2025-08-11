@@ -1,0 +1,13 @@
+Key Topics:
+Introduction of Sona: Lidiexy introduced the concept of Sona, an all-in-one solution designed to integrate information from various systems, including Oscar and other systems of record, to streamline investigations and improve compliance. 0:31
+Sona's Functionality: Lidiexy explained that Sona imports information from different entities and systems, including images, and uses a rules engine to apply customer-specific policies and procedures for dispute investigations. 3:22
+Auto Response Feature: Lidiexy and Chandan discussed the auto response feature in Sona, which allows for automatic responses to disputes based on predefined criteria, reducing the need for human intervention. 4:45
+Validation Process: Lidiexy mentioned that a small percentage of auto responses are put back into the queue for validation to ensure the accuracy of the rules engine. 5:17
+Indirect Disputes: Amanda explained the process of handling indirect disputes (ACDVs) and the notifications received from bureaus when changes are made to trade lines. 8:39
+Direct Disputes: Amanda provided an overview of direct disputes, which are disputes that come directly from consumers through various channels such as letters, emails, or phone calls. 13:36
+Handling Credit Repair Letters: Amanda discussed the challenges of handling credit repair organization letters and how different clients may treat them differently, with some treating them as direct disputes and others disregarding them. 17:39
+Sona Direct Demo: Amanda offered to provide a demo of Sona Direct to showcase its features and how it handles direct disputes, including the OCR process and validation document uploads. 18:42
+Customization of Dispute Reasons: Amanda demonstrated how clients can customize dispute reasons and responses in Sona, allowing for flexibility in handling different types of disputes. 27:44
+Checklist Customization: Amanda explained that the checklist for investigating disputes can be customized for each client, ensuring that the investigation process aligns with their specific policies and procedures. 29:48
+Future Improvements: Lidiexy mentioned that there are plans for future improvements in Sona, such as automatically checking off checklist items based on completed fields. 30:59
+Reading FCRA: Amanda and Lidiexy recommended reading the FCRA and CDIA documentation to gain a better understanding of the domain and the processes involved in handling disputes. 31:56

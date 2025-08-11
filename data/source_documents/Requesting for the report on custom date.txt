@@ -1,0 +1,39 @@
+USE CASE: Requesting for the report on custom date.
+
+1)Access Sonnet and Select the Company:
+
+First, log into the Sonnet platform and select the relevant company from the available options.
+Navigate to Reports:
+
+2)On the left-hand side of the Sonnet interface, locate and click on the Reports section.
+Choose the Report Category and Type:
+
+3)From the list of available categories, select ACDV (Automated Credit Dispute Verification).
+Next, find and click on the Dispute Submitted report type.
+Set the Date Range:
+
+4)Choose Custom Range as the date selection option.
+Input the desired date range for the report and then proceed to run the report.
+Handling Errors and Running the Report in PGAdmin:
+
+5)If you encounter an error while generating the report in Sonnet, you will need to generate the report manually in PGAdmin.
+6)Before proceeding with PGAdmin, make sure that the PostgreSQL service is activated in your Azure account.
+7)Open PGAdmin and select the appropriate server from the available list to begin the connection process.
+9)After running the command, copy the access token that is generated in the terminal
+10)Go back to PGAdmin and paste the access token in the password field for authentication.
+Select the Sonnet Database:
+
+11)Once logged in, locate and select the Sonnet database under the Databases section in PGAdmin.
+Open the Query Tool:
+
+12)Click on the Query Tool to open the space where you can write and execute SQL queries.
+Write and Execute the Query:
+
+13)Write the necessary SQL query to retrieve the report data. Once the query is ready, click the Execute button to run it and fetch the report.
+Download the Report:
+
+14)After the query has been executed successfully, download the generated report to your local machine.
+Respond to the Customer in Zendesk:
+
+15)Finally, log in to Zendesk and locate the corresponding customer support ticket.
+Attach the downloaded report to the ticket and provide a clear, concise response to the customer regarding the report or any further action required.

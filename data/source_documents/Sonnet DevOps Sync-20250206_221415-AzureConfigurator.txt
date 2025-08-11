@@ -1,0 +1,21 @@
+Questionnaire on the Topics Covered in the Meeting:
+1. What was the main technical setup discussed by Chip and Vandana?
+Answer: Chip and Vandana discussed setting up an Azure environment, including configuring Apache and PHP 8.2, and using SSH to connect to the server. They also talked about using PowerShell and Bitwise SSH client for Windows. 6:52
+2. What challenges did Chip face while setting up the environment?
+Answer: Chip faced issues with swapping between Microsoft Teams and other applications, which caused disruptions. Additionally, there were challenges with installing PHP 8.2 and configuring the necessary repositories. 4:53
+3. What was Vandana's role in the setup process?
+Answer: Vandana was involved in understanding the setup process and ensuring that all necessary tools and configurations were installed on her system. She also planned to clone the project from Sonnet to Provana. 7:49
+4. What was the purpose of Praveen's participation in the meeting?
+Answer: Praveen joined the meeting to discuss the possibility of migrating resources from Sonnet's Azure environment to Provana's environment. He also provided guidance on accessing resources and setting up the necessary permissions. 51:05
+5. What specific tasks did Chandan request during the meeting?
+Answer: Chandan requested access to the SharePoint where billing files are kept and asked for the URL to access it. Chip confirmed that he had added access and provided the necessary link. 33:58
+6. What was the outcome of the discussion regarding the migration of resources?
+Answer: It was concluded that migrating resources from Sonnet to Provana might be challenging due to the presence of a virtual firewall and other dependencies. Instead, a fresh setup was initiated in Provana's dev and test subscription. 51:33
+7. What were the next steps agreed upon by Chip and Vandana?
+Answer: Vandana agreed to configure all the repositories and clone the project from Sonnet to Provana. Chip planned to work with Liddy to finalize the Apache configurations and continue the setup process. 1:38:33
+8. What tools and commands were discussed for connecting to the server and configuring the environment?
+Answer: The tools and commands discussed included using PowerShell, Bitwise SSH client, and Azure CLI for connecting to the server. Commands for installing Apache, PHP 8.2, and configuring Apache modules were also covered. 6:52
+9. What was the issue with the default branch in the Sonnet app repository?
+Answer: The default branch in the Sonnet app repository was set to "master" instead of "main," which caused confusion during the setup. It was suggested to change the default branch to "main" to avoid this issue. 1:19:04
+10. What was the final status of the setup by the end of the meeting?
+Answer: By the end of the meeting, the initial setup was completed, and the Apache default page was accessible. Further configurations were planned to be done with Liddy's assistance. 1:36:49

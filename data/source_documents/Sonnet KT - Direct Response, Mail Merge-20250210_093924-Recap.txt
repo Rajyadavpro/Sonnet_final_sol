@@ -1,0 +1,6 @@
+Key Topics:
+Direct Dispute Response Letter Templates: Amanda discussed the long-term plan to allow users to manage their direct dispute response letter templates. Once implemented, the system will generate the letter from their templates based on their response to the dispute and send it to the client via API or FTP. 0:17
+Temporary Mail Merge Solution: Amanda explained that the mail merge is a temporary solution for companies using Word documents to generate their letters. Clients can download the report, perform the mail merge function in Word, and modify the report to meet their needs. 1:32
+Troubleshooting and Environment Setup: Lidiexy mentioned the importance of continuing with the troubleshooting from the previous session and setting up the local environment. They also noted that Amanda has a lot to do. 4:32
+Future Plans for Direct Response: Lidiexy highlighted the pipeline plans for creating a letter generation module or service to close the gap in the direct response process. They emphasized the need to document everything and set up the CQA environment. 5:44
+Debugging Local Environment: Chandan suggested continuing with the debugging of the local environment, and Lidiexy agreed to proceed with it. 7:25

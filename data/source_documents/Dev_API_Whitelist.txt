@@ -1,0 +1,11 @@
+Dev API Whitelist
+Objective: Whitelist new client’s IP address(es) for access to the Dev API.
+Access Requirements: Amazon Web Services login
+Log in to the AWS website.
+Click the Services drop down menu at the top of the page then select EC2.
+On the left side of the page scroll through the menu to Network & Security and select Security Groups.
+Select Sonnet Web.
+In the bottom portion of the page go to Inbound rules and then click Edit Inbound Rules.
+Scroll down to the bottom and click Add rule.
+Select HTTPS in the first drop down, enter the IP address or range, and a description.
+When finished click Save rules.

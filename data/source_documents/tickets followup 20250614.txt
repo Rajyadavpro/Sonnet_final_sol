@@ -1,0 +1,395 @@
+Transcript
+June 13, 2025, 8:04PM
+
+James Maki   0:04
+And so I'm showing that the emails have been delivered.
+
+Manjunath S started transcription
+
+James Maki   0:15
+If you want, since it's, since it's should my. If you if you look at her most recent e-mail.
+So one from yesterday.
+So if you look at the password reset from that, actually look at the e-mail the the password will be in there. So if you want to just copy it from there and just send it to her like in teams or something, might make it a little bit easier and.
+Get her. Get her logged down.
+
+Supriya Siddappa Kulageri   0:56
+Do we have her password?
+
+James Maki   1:02
+Yeah, it's in a. You can get it out of postmark.
+
+Supriya Siddappa Kulageri   1:14
+Mm hmm mm hmm.
+
+James Maki   1:15
+Come on, share my screen. So yeah. So if you just look up her e-mail.
+I'd just her most recent.
+The most recent reset you can get the password from there and just send it to her.
+
+Supriya Siddappa Kulageri   1:29
+So put it in chat, James, I will send her.
+
+James Maki   1:57
+Alright. Whether any other any follow-ups on any of the other tickets that we talked about earlier, anything else?
+Any replies or anything that we can?
+If I if there's anything I know there was a few that we sent out some replies on and uh, we said like if they didn't respond by the end of the day, go ahead and close it. Uh, if you if you have any of those, go ahead and go ahead and solve them.
+
+Supriya Siddappa Kulageri   2:08
+I think it's.
+I don't have some.
+
+James Maki   2:23
+And therefore OK.
+Yeah. Perfect.
+
+Supriya Siddappa Kulageri   2:54
+What this song means, she had replied.
+That's saved for Euless.
+
+James Maki   3:03
+OK so.
+Uh, huh. That's still not very clear. I'm assuming that she's talking about the receipts.
+OK, alright, 2225.
+This week, yeah, account number loan ID.
+At eight. Oh, man, I swear you people.
+Swear to God.
+They really just want us to do absolutely every single link for them.
+No, I'm not showing.
+I'm not showing a custom format for them.
+Is she just making that up?
+I don't understand why do we not have.
+Lock file.
+That does not make sense.
+Alright, that doesn't make any sense. How did this happen?
+So apparently we don't have log files for American Airlines. It looks like they.
+Or not added.
+And the repo.
+Which doesn't make sense.
+How did that get missed?
+But they're in the get ignore.
+Why are they not?
+Up to they have their own.
+Yeah.
+Well, the first thing is, like, she's asking us to.
+This is so ridiculous.
+I don't. I don't understand how this could possibly just quit working. That doesn't make sense. Like what?
+What the hell happened here?
+Alright, so she is. She's talking about the receipts.
+So over on the server looks like the AUD receipts are being like a by by default they're labelled as AED receipts like they start with AUD, underscore and then it has like the account number and then whatever else after that.
+But so it looks like in the move images repo.
+Share my screen.
+So here in the move images repo.
+We have a custom script for them.
+Or move a a credit union.
+And so if looking in there, I found this part here about like the receipt where it's supposed to be.
+And it looks like it's supposed to be cleaning the filename and removing AUD underscore.
+With just the cleaned filename.
+And so here is like the current receipts on the server. You see how they all start with AUD, underscore, so that's what she's basically asking us to remove.
+Umm.
+You so try and I was gonna try and verify that like the past files were being sent that way.
+So from here I went to.
+On it logs. Oh, so this is on on the web 01 server.
+So this is where we have like all of our images logs and there should be one here for every company that we're.
+Uh getting files or getting image files for which is literally every company? Umm, but.
+A credit union is not in here.
+And so it looks like it's because they have this custom script, so they're not in this script, which is the normal move images.
+Which I think they still need to be here.
+Is this is the script that creates our log file.
+So here's the sonnet images. What logs?
+Oh, actually, all right, this is on web 02.
+Yeah, I'm not totally sure. So this is another one that I want to talk.
+This is another one I want to discuss on a Level 3 call.
+Or we can get clarification on what exactly needs to be done.
+Alright.
+Actually, maybe I should make it up.
+I'm sorry to make a task for this. Is that a better way to go about it?
+Oh yeah. OK.
+All right, let me just put that note on there for now.
+If I if you want to reply to her, you can tell her like we're gonna have the Dev team review the the file naming.
+But that's about all we can say for the moment.
+So can either do that or wait till Monday. We should have a a better response for her.
+
+Supriya Siddappa Kulageri   15:54
+Or should I reply it on Monday?
+
+James Maki   16:01
+Yeah, you can wait till then. That's fine.
+
+Supriya Siddappa Kulageri   16:10
+So this one.
+The user word which I have sent is not able to open.
+
+James Maki   16:22
+If you have trouble logging in.
+Like else, Jess has not able to open. I'm assuming she needs like a password reset. If you click on her name.
+And go to the security side.
+
+Supriya Siddappa Kulageri   16:43
+I know James and the students.
+Not for reset password. We have sent them the user guide PDF no.
+
+James Maki   16:49
+Should she is trying to open up the attachment, the attachment is gonna make her log in in order to download it. Like in order to view it. It's gonna make her log into Zendesk in order to get to it. So she needs her password reset, so she needs her password reset for Zendesk so she can get to the attachment.
+
+Supriya Siddappa Kulageri   17:01
+Mm hmm.
+
+James Maki   17:07
+So we're send her a password. I know. She's not saying that, but that's the only thing that could possibly be the issue. Like I I know she's not giving you any details.
+
+Supriya Siddappa Kulageri   17:07
+OK.
+
+James Maki   17:18
+It like that's the only.
+Yeah, but that's the only thing it could be. So let's send her a password reset. So I click on her name.
+Not insights on it. This is not a sonnet reset. This is a Zendesk reset.
+So click on her name and go to security settings.
+Up up in the middle security settings.
+In the middle.
+
+Supriya Siddappa Kulageri   17:44
+Page.
+
+James Maki   17:46
+Right there. Yep. Centre reset.
+And then we and then we're gonna respond on the ticket and let her know that we sent her a password reset for Zendesk.
+And and and you could just ask her like, or tell her. Let us know if that resolves the issue or let us know if you still have trouble after that.
+I feel pretty confident that that's her issue and she should be good after this.
+
+Supriya Siddappa Kulageri   18:45
+And I put it on pendant.
+
+James Maki   18:48
+Yeah, put it up in for now. And then 'cause, we need her to verify that she can get to it now, and hopefully she's gonna say yes, that worked and we can close the ticket.
+Oh yeah, that block notification one we were looking at that earlier.
+What did happen with that?
+I think there might be a problem with their notification download 'cause they have one scheduled.
+So if you go to their block notifications.
+And what side?
+Go to the very end of them to the last page.
+Do I Scroll down? Yeah.
+Go to, go to the variant, go to the 31.
+Yeah.
+Create it on OK, all right. And those still say.
+Like 521, OK.
+So it does look like we are not getting.
+That they're new block notifications.
+All right. I mean for download issues, that's not really something that we're gonna be able to troubleshoot either.
+Yeah, dude, like we really just can't catch a break here.
+Oh, OK. All right. How do we get to this screen?
+So the download has the the one that you scheduled earlier. That download still has not started.
+So I have no idea why. How do we get to this screen?
+So look, I just scheduled a new one and it took me to the sonnet notification job. Oh, is that it? OK.
+OK, great. OK. So if you go back over to the admin side.
+And over on the the dashboard menu to get to the notifications.
+Yeah, like the, uh, same place that we ran that download earlier, yeah.
+If you go to the the jobs.
+Alright, so that first one there, that's the one that you ran earlier today and then the one above it, that's the one that I just tried to start, so.
+That download is not starting.
+So I mean that may explain.
+Kinda what's going on here.
+'Cause in the in the notifications in the schedule jobs, hpcr's does have one set to download at 4:00 AM, so that that's supposed to be running every day, and so for some reason it's not.
+
+Supriya Siddappa Kulageri   23:36
+So do we need to raise a dev tasks for this as it?
+
+James Maki   23:42
+Yeah, yeah, we need the devs to look. I'm not even gonna raise the task, so I'm just gonna put it in the chat because.
+
+Supriya Siddappa Kulageri   23:45
+Yeah.
+
+James Maki   24:24
+No, I'm. I'm sending a message on that. You're at.
+
+Supriya Siddappa Kulageri   24:28
+Out.
+
+James Maki   26:05
+Alright, what's up? Oh, it's the cqa.
+I did see that earlier. What's going on there?
+API is not responding in CK region or is it 401 error?
+We need a new business token.
+All right. I mean, the token's easy enough.
+I don't know what that means, Lydia.
+We'll check if RPA 01 has the Cron working.
+Row. Are you serious?
+I want.
+OK, I don't know where.
+I don't know where the crown jobs.
+List of athletic.
+Images are still a problem, but download will work.
+Oh my God, it just never ends.
+I don't know where to go, buddy. Where?
+Probably download. Let's go there.
+As soon as I might be a good spot.
+You have cron's do have crons, OK.
+And this can't be right.
+Oh my God, dude.
+Like, how are they still giving me new things to do?
+I'm supposed to be.
+On my way out.
+Where does that?
+I see now.
+He absolutely.
+Said RPA, 01.
+And his initial response?
+And now he's all like, oh, I'm at RBA O2. That's where it runs. Ha ha ha.
+Psych.
+OK.
+Right, so I must have been *** **** it.
+It was right the first time. I think it was RPA 01.
+So I do not see notifications.
+I'll show my screen so you guys can look with me.
+I've never done this before, by the way, I'm just figuring this stuff out right now on the call. Just looking so.
+Take you along for the ride.
+Right, so I'm currently on.
+RPA O2 in the slash sonnet slash download folder.
+So Cron jobs run on E Cron tab. So to view the Cron tab it's just Cron tab space dash L.
+Uh, so that lists out the contents of the tab. If you wanna make changes.
+I would use crontab dash E to edit.
+Yeah, but so these are all like the scheduled jobs that are running.
+From this location on the RPA O2 server.
+So we have stuff here for the user action log, so that's the actions that users are taking inside of sonnet. So this is like what you see in the account history. That's what these tasks are related to.
+So do they do have everything labelled pretty well, so that's good. So here's attachments and images.
+So this is all the different.
+Animations that we have for moving.
+Move in the images after they've been downloaded, move in the metre to the API or FTP servers. That's what all these different commands are.
+And then we have AE, DS and some A/C DVS. So regular dispute stuff. So regular downloads, receipts.
+And a reconciliation process that we don't use anymore.
+So that's all that's on RPA O2. So it looks like he was actually correct the first time.
+And you do have to pseudo into the sonnet user in order to view, because they do run under like the Cron jobs run under a user profile. So if you're.
+If you're not acting as that user, like if you look at your own Cron jobs like, you won't see anything. They all they all run under the sonnet user.
+Right. So I'm gonna go back to RPA 01.
+'Cause it looked like that was actually correct.
+Alright, so go back to the Sonic download.
+So it's on it, and Crumb, tab, dash L.
+Right. So most of this is the same. This is the one that's different. So here is the notifications.
+And so it looks like this is the correct place that it runs because it was not listed in RPA O2.
+So to edit this, we're going to do Cron tab dash E.
+And you we use the Chron tabs, we use that quite a bit for the the dev disputes.
+So when we do actually finally get time to focus on that, like I've been trying to do all week.
+You guys will get some more experience with that. Wow. Which will be really helpful.
+Right. So I'm going to.
+Select in the crowd in the crowds, the.
+The pound sign here. That's the that's the comment.
+Simple. So if so, any line that has the pound sign in front of it that's commented out and so that's why this drop has not been running. It's because this was commented out and that's how they turned it off, right? So I just took out the pound sign. So just like whenever we're editing a text file on one of the links servers, when you're done.
+With escape.
+Escape would Take Me Out of that, but it didn't.
+I told you.
+Oh, X oh boy.
+Cancel.
+All right, I think I messed up this up. Oh boy.
+How do I get out of?
+Set.
+How do I exit? I don't understand how it wants me.
+To modify buffer, let's say no.
+Modification rate. OK, good.
+All right, let's try that again.
+I'm gonna say yes to start. Oh, boy. Oh, *** **** you.
+All right, so this actually works a little bit differently than what I'm used to and.
+I'm not quite sure.
+I don't think I feel comfortable. I'm trying to edit this.
+I feel like I'm about to break something.
+Run job A/C copy thumbnails.
+Don't see BC copies thumbnails.
+Right here.
+Are you saying that needs to be stopped?
+And it might have lost lady.
+None.
+Alright, well, at this point we're just waiting for Liddy to respond.
+So.
+Anyway.
+Let's look back at this what was going on here again?
+Oh yeah, possibly a new token.
+So I was on the 11th.
+So a 401 error.
+I believe is an unauthorised error, so it's basically a login issue. Is what that is, what that should be if I if I remember right?
+Actually I wonder if you can just Google that real fast.
+Yeah, unauthorised. OK.
+So yeah, token token's possible could be the issue.
+So M&T has two branches. They have mortgage and retail. I believe mortgage is what they typically use.
+Did they put the token in?
+Good. All right. So there's their token right there.
+OK, so 3.
+The FGB OK, that is the wrong token.
+I wonder if that's there.
+Yep, that's their production token. So yeah, that would explain their issue.
+So who's sapria? You sent this to him if you.
+I'll let you share screen again if you go into the cqa environment.
+We're just gonna copy their token for them and send it.
+'Cause. Yeah, it looks like they're trying to use their production token in cqa.
+And that would definitely result in a login issue.
+Just copy that token. Don't. Yeah. Careful not to hit the.
+Oh, you did hit it. Did you hit it?
+I mean, I guess it doesn't matter if they didn't have it anyway, but OK, no, you're fine.
+I think if you if you click the the little circle thing next to it, I think that generates a new token. So we used to have that kinda like greyed out so you couldn't do it by accident. But I think it's kind of open now. And for a second I thought you would have clicked on it, but you're fine, you're good.
+
+Supriya Siddappa Kulageri   46:23
+OK.
+
+James Maki   46:27
+Yeah. So I would tell him.
+It looks like you're using the production token in your screenshot. Here is the CQA token.
+
+Supriya Siddappa Kulageri   47:06
+OK.
+
+James Maki   47:08
+Yeah, Yep, looks good.
+
+Supriya Siddappa Kulageri   47:15
+Category.
+
+James Maki   47:17
+Do we have a CQA category?
+Yeah. There you go. Yeah, she's that.
+
+Supriya Siddappa Kulageri   47:25
+I put it on pending or salt.
+
+James Maki   47:29
+I would put it on pending until they confirm that they've that that's resolved the issue.
+But I'm looking at the screenshot, it looks like that's all it was though.
+
+Supriya Siddappa Kulageri   47:43
+OK. OK. James, I don't have any more tickets.
+
+James Maki   47:49
+Last one alright.
+
+Supriya Siddappa Kulageri   47:50
+I'm done with my. Oh, this one is the same. Let that be.
+There is not.
+
+James Maki   48:05
+Oh, yeah, yeah. What's the? Yeah, the emails.
+Uh.
+Let me just look inside postmark again real fast and just see what her activity has been for today.
+Alright. Yeah, it looks like she hasn't logged in since this morning.
+Do do you? Do you want me to respond? Since she's, like, being kind of combative.
+All right. Yeah. So like.
+Alright, I see. Like there wasn't another update sent here.
+That didn't she have a?
+Yeah. Tell you what, I'm just gonna respond.
+Alright, there you go.
+And I put myself as follower. So if she, uh, if she responds again.
+I'll. I'll get in front of it.
+Alright guys, if that's it, I'll let you go. Enjoy your weekend.
+Thanks for all your time and all your work I know.
+Tickets are still a little high, right? Yeah. Tickets still a little high right now, but we're making progress. We're 130 now, so that's actually pretty good from where we were this morning.
+
+Supriya Siddappa Kulageri   52:11
+Thank you, James.
+
+James Maki   52:23
+So all right.
+
+Supriya Siddappa Kulageri   52:25
+We can. Bye bye.
+
+James Maki   52:28
+Bye.
+
+Supriya Siddappa Kulageri stopped transcription

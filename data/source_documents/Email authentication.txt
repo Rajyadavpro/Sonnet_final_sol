@@ -1,0 +1,11 @@
+USE CASE  - Not getting authentication code sent to email.
+Login into sonnet and select the company
+Select the menu at the left top corner and go down to the admin page
+Select view users tab and select the user.
+Open the Postmarkapp.com    (Log In to Postmark)   in the new tab and login by the given credentials which is available in the shared folder.
+(For the credentials open the shared folder select user admin folder and follow the steps mentioned).
+Select sonnet mail and select Default Transactional Stream.
+Select activity and search for e-mail address from the sonnet copay and paste it in the search bar.
+Copy the authentication code from the sonnet.
+Give a response – Please use a code 170644 to login. Please find below the soft bounded message due to which emails are not getting delivered. Copy the soft bounded message and paste it in response section.
+Submit ticket as solved.

@@ -1,0 +1,91 @@
+AAD PostgreSQL Setup
+
+To register and login Azure PostgreSQL servers, the following procedure, step by step, must be performed.  Also, each login will require repeating certain steps as noted.
+
+Open a terminal or command line application and type in the following command as shown below: (az login)
+
+
+
+Select the appropriate account as shown below:
+
+
+
+
+Once the account is selected, the following page will be displayed after a successful login:
+
+
+
+The terminal will show the following output:
+
+
+
+
+Next, type in the following command as show below: (az account get-access-token --resource https://ossrdbms-aad.database.windows.net)
+
+
+
+The following output from the command in Step 5 will be display as follows:
+
+
+
+NOTE!  The accessToken value between the double quotes will need to be used as the password for logging into PostgreSQL servers the account is authorized for during the current session.  Do not close the terminal window or the process will need to be repeated from Step 1.
+
+
+Open and login to the Azure Portal and the AADPIM (Azure AD Privileged Identity Management) area as shown below: (Entering Azure AD Privileged Identity Management in the search bar within the Azure Portal will also navigate to the appropriate landing page)
+
+
+
+Select on the “Groups” item in the list at the left side of the page as shown below:
+
+
+
+After the redirect occurs and the new page loads, select the appropriate group shown below:
+
+
+
+After the page redirects from Step 9, click on the “Activate” link on the page that loads as shown below:
+
+
+
+
+After clicking “Activate”, the following tab will be displayed and must be completed, see example below: (Make sure to put in the necessary information under the “Reason” for accessing an upper environment, such as a CR number or other appropriate reason, then click on “Activate” to complete the process.)
+
+
+
+
+Once the “Activate” button is clicked, a series of operations will take place as shown in the following screenshots shown:
+
+
+
+
+
+
+
+
+
+The image above represents the landing page that will be displayed after the two preceding images processes are completed.  The AADPIM process is now completed, and no further action currently is necessary within the portal.
+
+Open pgAdmin, enter the master password for the installation locally.  Once loaded, right click on the “Servers” item in the list, then “Register”, then “Server” as shown below:
+
+
+
+
+The following screenshots show the registration details, but those will vary according to the server being register and are only provided as an example with one exception.  The username for ALL registrations MUST be the AAD Group shown, which is the same group which was used in Steps 7-11.  Also note that during the setup, make sure to deselect the “Connect now?” option before clicking the “Save” button.  Images on the left show the state before clicking “Save”.  Images on the right show a successfully registered server as well as the required entries for the given fields.
+
+ 
+
+ 
+Double click on the newly registered server as shown below:
+
+
+
+
+The following password entry dialog will be displayed.  Copy the accessToken that was created from Step 5 and displayed in Step 6.  Take care to copy only the value between the double quotes and do not include the double quotes.  This value will be the password that is required to be entered into the dialog box as shown below: (Note!  Do not click “Save Password” as a new accessToken will likely be required upon next login.  Tokens expire regularly and will not last longer than 4-8 hours.  These tokens are randomly assigned expiry dates and times.  Once done pasting the accessToken, click on the “OK” button to complete the login process.
+
+
+
+After clicking “OK”, and provided the correct accessToken has been entered, the following screenshot shows a successful login:
+
+
+
+The process is now complete, no further actions are required unless the token expires.  If the token expires, all steps must be repeated, omitting Step 12 and Step 13 if the AADPIM has expired.  If AADPIM has not expired, Step 7 through Step 13 will be omitted.

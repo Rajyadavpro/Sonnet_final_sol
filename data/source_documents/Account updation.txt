@@ -1,0 +1,11 @@
+Use case – Forgot to add account number in the dispute.
+
+
+Note – If the dispute is a direct dispute we can update the account number but cannot update if it is for regular dispute (ACDV’s)
+
+
+Query to update-  update direct_dispute set account_number = '205A1YD75Y1O1FM2MRB8G98UJ' where id = 50128346
+
+change the account number and the id number according to the information provided.
+
+Run the above query in pg-admin and give response to the ticket and mark as solved.

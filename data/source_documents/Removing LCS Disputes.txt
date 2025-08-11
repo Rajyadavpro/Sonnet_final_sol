@@ -1,0 +1,18 @@
+
+
+USE CASE – 7    REMOVING LCS DISPUTES FROM THE SONNET FOR THE REQUESTED SONNET ID.
+
+STEP 1 – GO to sonnet and select the company and select the disputes.
+STEP 2 – Click on the search option, copy the sonnet id from the Zendesk and paste in the sonnet id and click the Search Disputes.
+STEP 3 -  Check for the Status if it is Active state then we need to change the status.
+STEP 4 –  For changing the status of sonnet write the below query in the pgadmin
+     QUERY -----   update dispute set sonnet_status = 'Worked' where id = enterID  
+(the above query is for changing the status for one sonnet id)
+
+QUERY ------ update dispute set sonnet_status = 'Worked' where id in (enter id)
+(the above query is used to change the sonnet status for the multiple disputes)
+
+STEP 5 – After the query is executed copy the sonnet id from the Zendesk and paste it in the sonnet id and check for the status. Status should change from Active status to Worked status.
+
+Step 6 – Give response to the ticket and close.
+
